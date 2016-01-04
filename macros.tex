@@ -1,0 +1,113 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\synctex=-1 
+\usepackage[english]{babel}
+
+\usepackage{rotating}
+
+%\usepackage[numbers]{natbib} % back referencing 
+\usepackage[hidelinks]{hyperref} % back-referencing + hyperlinks
+%\usepackage{etoolbox} % back referencing
+\usepackage{paralist}
+\usepackage{listings} % soruce code
+\usepackage{array}
+\usepackage{soul}
+\usepackage{tablefootnote}
+\usepackage{adjustbox} % resize boxes (for resizing arrays)
+\usepackage{bookmark} % add bookmark to a PDF
+\usepackage{pdfpages}
+\usepackage{pifont}
+\usepackage{amsthm}
+\usepackage{pdflscape} % landscape images
+
+\usepackage{xspace}
+\usepackage{subscript}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{tabularx}
+
+%\usepackage[normalem]{ulem}
+%\usepackage{fixltx2e}
+%\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pslatex}
+%\usepackage{mathptmx,helvet,courier}
+
+% Long Table and decimal aligned columns
+%\usepackage{dcolumn}
+\usepackage{longtable}
+
+
+% Adjust settings from the class to make them fit with UVic LaTeX template
+\renewcommand{\defaultspacing}{\onehalfspacing}
+\renewcommand{\floatpagefraction}{0.01} % Float Customization
+\renewcommand{\cftfignumwidth}{0.80in}  % Figure's separation space in the ToC
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% ----PACKAGE listings 
+% Source code formating
+%\captionsetup[lstlisting]{margin=5pt}
+\lstset{
+    frame=single,
+    frameround=tttt,
+    framesep=6pt,
+    breaklines=true,
+    basicstyle=\footnotesize\ttfamily,
+    captionpos=b,
+    %aboveskip=1\parskip,
+    xleftmargin=6pt,
+    %belowcaptionskip=1\parskip,
+    showstringspaces=false,
+    postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+\renewcommand{\lstlistingname}{Code}
+
+\newcommand{\mytitle}{Knowledge Curation in a Developer Community: \\A Study of Stack Overflow and Mailing Lists}
+\newcommand{\myauthor}{Carlos Arturo G{\'o}mez Teshima}
+\newcommand{\mysubject}{}
+\newcommand{\mykeywords}{Knowledge, Case study, media channels}
+
+% Comments
+% commands for inserting comments
+\usepackage{color}
+\usepackage[normalem]{ulem} % for \sout (strikethrough o tachado)
+\usepackage{ifthen}
+\usepackage{comment}
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+  {
+		%\usepackage{showkeys} %Show lables and refs
+		\newcommand{\nbb}[2]{
+		% \fbox{\bfseries\sffamily\scriptsize#1}
+		\fcolorbox{black}{yellow}{\bfseries\sffamily\scriptsize#1}
+		{\sf$\blacktriangleright$\textcolor{blue}{\textit{#2}}$\blacktriangleleft$}
+		% \marginpar{\fbox{\bfseries\sffamily#1}}
+		}
+
+        \newcommand{\todo}[1]{\textcolor{red}{{\sc #1}}}
+        \newcommand{\internalnote}[1]{\marginpar{\scriptsize note: #1}}
+        \newcommand{\version}{\emph{\scriptsize{$-$\today$-$}}}
+		\newcommand{\remarks}[1]{\color{red}[#1]\color{black}}
+		\newcommand{\modified}[1]{\color{blue}[#1]\color{black}}
+		\newcommand{\raw}{$\rightarrow$}
+		\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+		\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+		\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\raw}\textcolor{blue}{\uline{#2}}} % please change
+		\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+  }
+  {
+		\newcommand{\nbb}[2]{}
+        \newcommand{\todo}[1]{}
+        \newcommand{\internalnote}[1]{}
+		\newcommand{\remarks}[1]{}
+		\newcommand{\modified}[1]{#1}
+		\newcommand{\version}{}
+		\newcommand{\ugh}[1]{#1} % please rephrase
+		\newcommand{\ins}[1]{#1} % please insert
+		\newcommand{\del}[1]{} % please delete
+		\newcommand{\chg}[2]{#2} % please change
+  }
