@@ -1,0 +1,36 @@
+# Generic backup files
+*~
+\#*#
+mainthesisUVIC.pdf
+# LaTeX temporary files
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bak
+*.bbl
+*.blg
+*.brf
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.spl
+*.synctex
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+#/notes/
