@@ -353,16 +353,24 @@ Lorena Casteñeda\\
 	The adoption of social media has occurred at a much faster rate than any previous communication technology \cite{Chui2012}.
 	In the last decade, Stack Overflow has become the most popular media channel for answering software development related questions, nearly replacing previous methods of communication that accomplished the same objective (e.g., mailing list)~\cite{Vasilescu2014c}.
 	%<<
-	Figure \ref{fig:VasilescuFA1} shows the number of questions asked each month on Stack Overflow, Cross Validate and the R-help mailing list (TOP), and the number of questions answered on the R-help mailing list (after September 2008) and Stack Exchange each month (BOTTOM).
+	Figure~\ref{fig:VasilescuFA1-1} shows the number of questions asked each month on Stack Overflow, Cross Validate and the R-help mailing list, and Figure~\ref{fig:VasilescuFA1-2} shows the number of questions answered on the R-help mailing list (after September 2008) and Stack Exchange each month.
 	%>>
 	Despite Stack Overflow's advantages over Q\&A mailing lists such as the R-help (i.e., social network features, gamification environment and rich visual user interface), there are still many users who prefer the latter.
 	Later in this thesis, we learn about the way programmers use Stack Overflow and the R-help mailing list to gain and share knowledge.
 
 	\begin{figure}
 		\centering
-		\includegraphics[width=1\columnwidth]{Figures/VasilescuFA1}
-		\includegraphics[width=1\columnwidth]{Figures/VasilescuFA2}
-		\caption{(TOP) Number of questions asked (threads started) each month on R-help and Stack Exchange (Stack Overflow and Cross Validated)~\cite{Vasilescu2014c}. (BOTTOM) The number of questions answered on the R-help mailing list (after September 2008) and Stack Exchange each month: participants exclusive to the mailing list versus those also active on Stack Exchange~\cite{Vasilescu2014c}.}
+	    \begin{subfigure}[b]{0.86\columnwidth}
+	      \includegraphics[width=\columnwidth]{Figures/VasilescuFA1}
+          \caption{Questions asked (threads started) per month on R-help and Stack Exchange (Stack Overflow and Cross Validated).}
+	      \label{fig:VasilescuFA1-1}
+        \end{subfigure}
+	    \begin{subfigure}[b]{0.86\columnwidth}
+	      \includegraphics[width=\columnwidth]{Figures/VasilescuFA2}
+          \caption{Questions answered on R-help mailing list (after September 2008) and Stack Exchange per month: participants exclusive to the mailing list versus those also active on Stack Exchange.}
+      	  \label{fig:VasilescuFA1-2}
+        \end{subfigure}
+		\caption{Comparison of the number of questions asked and answered~\cite{Vasilescu2014c}.}
 		\label{fig:VasilescuFA1}
 	\end{figure}
 
@@ -1077,15 +1085,24 @@ Lorena Casteñeda\\
 	On the R-help mailing list, I defined comments as messages written to \emph{improve an answer in response to an incomplete question, or as follow-up on a discussion}.
 	Most importantly, messages should be written by a \emph{different person than the author of the question or answer} to which they are responding.
 	The difference between an update and a comment on the R-help mailing list is the motivation of the user who wrote the message and the author of the message.
-	For example, if user A posts a question, B asks A to clarify something about the question, and A answers back to B, then the last message is an update and the message sent by B to A is a comment (see Figure \ref{fig:ExCommentUpdate1} top). 
-	Similarly, if user A posts a question, B answers A's question, A asks B to clarify something about the answer, and B answers back to A, then the second message is an answer, the third message is a comment, and the last message is an update (see Figure \ref{fig:ExCommentUpdate1} bottom).
+	For example, if user A posts a question, B asks A to clarify something about the question, and A answers back to B, then the last message is an update and the message sent by B to A is a comment (see Figure~\ref{fig:ExCommentUpdate1-1}). 
+	Similarly, if user A posts a question, B answers A's question, A asks B to clarify something about the answer, and B answers back to A, then the second message is an answer, the third message is a comment, and the last message is an update (see Figure~\ref{fig:ExCommentUpdate1-2}).
 	% END>>
 
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.7\columnwidth]{Figures/ExCommentUpdate1}
-		\includegraphics[width=0.7\columnwidth]{Figures/ExCommentUpdate2}
-		\caption{The arrows represent a message sent to the mailing list, and the labels specify the motivation behind the message. \emph{Example 1 (Top)}: a user A posts a question; later, B asks to A to clarify something about the question; and A answers back to B. \emph{Example 2 (bottom)}: a user A posts a questions; later, B answers A's question; A asks to B to clarify something about the answer; and B answers back to A.}
+	    \begin{subfigure}[b]{0.86\columnwidth}
+	      \includegraphics[width=\columnwidth]{Figures/ExCommentUpdate1}
+          \caption{A posts a question; later, B asks to A to clarify something about the question; and A answers back to B.}
+	      \label{fig:ExCommentUpdate1-1}
+        \end{subfigure}
+	    \begin{subfigure}[b]{0.86\columnwidth}
+	      \includegraphics[width=\columnwidth]{Figures/ExCommentUpdate2}
+          \caption{A posts a question; later, B answers A's question; A asks to B to clarify something about the answer; and B answers back to A.}
+      	  \label{fig:ExCommentUpdate1-2}
+        \end{subfigure}
+
+		\caption{Two different interations. The arrows represent a message sent to the mailing list, and the labels specify the motivation behind the message.}
 		\label{fig:ExCommentUpdate1}
 	\end{figure}
 
