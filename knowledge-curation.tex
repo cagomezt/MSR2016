@@ -573,9 +573,9 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 
 	Because Stack Overflow only provides the email addresses as MD5 hashes, and to make both data sets comparable, the mailing list emails were converted to their corresponding MD5 hashes.
 
-	It is important to note that MD5 hashes are not \textit{collision resistant}\footnote{\url{https://en.wikipedia.org/wiki/Collision_resistance}} and therefore, this could possibly lead to false positive resistant outcomes. 
-	However, it is unlikely for two different email addresses to share a MD5 hash.
-	According to the Request for Comment (RFC) 1312\footnote{\url{https://www.ietf.org/rfc/rfc1321.txt}} from the Internet Engineering Task Force (IETF), the probability to find a MD5 collision is less than $1/2^{64}$.
+	Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positive outcomes, it is unlikely for two different email addresses to share a MD5 hash.
+    The probability to find a MD5 collision is less than $1/2^{64}$~\cite{Rivest1992}.
+	%\footnote{\url{https://en.wikipedia.org/wiki/Collision_resistance}}, and therefore, this could possibly lead to false positive resistant outcomes.
 
 \paragraph{Data Analysis Process}
 \label{sec:dap}
