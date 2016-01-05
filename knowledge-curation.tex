@@ -529,14 +529,14 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	(10) transforms the email addresses to MD5 hashes,
 	(11) changes the creation date (the R-help mailing list time zone is UTC+2) to UTC (Stack Overflow's server time),
 	and (12) uploads the data to our database.
-	Figure \ref{fig:ML-ERD} depicts the entity--relational model used to store the data from the mailing list.
+%	Figure \ref{fig:ML-ERD} depicts the entity--relational model used to store the data from the mailing list.
 
-	\begin{figure} [!ht]
-		\centering
-		\includegraphics[width=\columnwidth]{Figures/ML-ERD}
-		\caption{Entity Relation Diagram of the R-help mailing list data.}
-		\label{fig:ML-ERD}
-	\end{figure}
+%	\begin{figure} [!ht]
+%		\centering
+%		\includegraphics[width=\columnwidth]{Figures/ML-ERD}
+%		\caption{Entity Relation Diagram of the R-help mailing list data.}
+%		\label{fig:ML-ERD}
+%	\end{figure}
 
 \subsubsection*{Stack Overflow}
 	% time zone of the mailing list is UTC
@@ -552,14 +552,14 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	As stated previously, I used a modified version of Sam Saffron's application, So-Slow.
 	The purpose of this is to extract the information in the file using XML tags (e.g., post, user, and comment), and load it in a database.
 	I filtered all R-related data by selecting only messages with the R tag (i.e., \texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (i.e., \texttt{rstats} and \texttt{r-language}).
-	Figure \ref{fig:SO-ERD} depicts the entity--relational model used to store the Stack Overflow data.
+%	Figure \ref{fig:SO-ERD} depicts the entity--relational model used to store the Stack Overflow data.
 
-	\begin{figure} [!ht]
-		\centering
-		\includegraphics[width=0.8\columnwidth]{Figures/SO-ERD}
-		\caption{Entity--Relation Diagram of the Stack Overflow data.}
-		\label{fig:SO-ERD}
-	\end{figure}
+%	\begin{figure} [!ht]
+%		\centering
+%		\includegraphics[width=0.8\columnwidth]{Figures/SO-ERD}
+%		\caption{Entity--Relation Diagram of the Stack Overflow data.}
+%		\label{fig:SO-ERD}
+%	\end{figure}
 
 \subsubsection*{Data Merging}
 	There are some studies that propose different techniques for merging users' identities by analysing the data from multiple repositories (e.g., mailing lists, bug tracking information, and source code management tools)~\cite{Bird2006, Kouters2012,Vasilescu2014c}.
