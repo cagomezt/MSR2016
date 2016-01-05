@@ -509,15 +509,6 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	However, the information inside of the email is still unstructured data.
 	The MBOX format separates the metadata (header) from the content (body), but there is not a clear division between what are source code examples, the sender's message and signature, and other semantic elements that might exist on emails.
 	The MBOX format only provides certain information about the email, such as the sender and receiver's email addresses, the subject of the email, and the emails on the thread.
-	Figure \ref{fig:WellFormedEmail} depicts an example of a well-formed MBOX file.
-	In the top, a clear defined information that can be extracted from the email (header), but the body is unstructured. To analyze the body, it has to be cleaned from noisy data such as signatures and quoting text.
-
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=0.8\columnwidth]{Figures/WellFormedEmail}
-		\caption[Example of a well-formed MBOX file]{Example of a well-formed email in the MBOX format.}
-		\label{fig:WellFormedEmail}
-	\end{figure}
 
 	Bettenburg \textit{et al}.~\cite{Bettenburg2009} proposed a series of recommendations for proper processing of mailing list data, to ensure accurate research results.
 	In my search of existing tools, I found a couple used for research that handles MBOX data, such as Herraiz \textit{et al}. tool, MailingListStats\footnote{\url{https://github.com/MetricsGrimoire/MailingListStats}}, and REmail\footnote{\url{https://code.google.com/p/r-email/}} tool.
