@@ -146,7 +146,7 @@ Lorena Casteñeda\\
 	Based on the knowledge categories analysis, I compared the way knowledge was shared on Stack Overflow and the R-help mailing list.
 	Finally, I provided a set of recommendations to assist in the usage of multiple Q\&A channels, and when linking resources that are external to both channels.
 
-\section{Research Questions}
+\subsection{Research Questions}
 
 	This thesis is based on an open challenge from Vasilescu's dissertation \textit{Social Aspects of Collaboration in Online Software Communities}~\cite{Vasilescu2014b}, that states \textit{``...to better understand the effects associated with a transition from mailing lists to social Q\&A and, e.g., whether mailing lists will eventually die off, future research could also consider analysing the content of the discussions from the two venues...''}, thus my desire is to understand the knowledge flow through channels that serve the same purpose. 
 
@@ -164,45 +164,34 @@ Lorena Casteñeda\\
 
 	\end{enumerate}
 
-\section{Contributions}
+\subsection{Contributions}
 
-	The contributions of this thesis are summarized as follows:
+	The contributions of this paper are:
+	    a comparison of how knowledge is shared on the two channels,
+%		I compared the way knowledge is shared on both channels based on the findings of this thesis and the survey data.
+%		My objective was to identify the differences of how knowledge is shared on Stack Overflow and the R-help mailing list.
+		a categorization of messages on Q\&A media channels,
+%		I built a categorization of knowledge based on the analysis of data that flows through media channels. 
+%		My objective was that categories should support further studies when comparing media channels based on the knowledge flowing through them.
+%		With these categorizations I gained insights about knowledge that flows through the channels, and the differences between them.
+        a set of recommendations for using multiple Q\&A media channels,
+%		I created and provided a set of recommendations for using multiple media channels based on the observation and analysis of the data.
+%		It is meant to improve multiple media channel usage by providing a best practices reference.	
+		and a tool to extract information from mailing lists.
+%		Mailing list repositories such as R-help contain valuable information about user behaviours, best practices, topics, problems, and discussions.
+%		However, such information exists as unstructured data that needs special processing before it can be studied.
+%		To that end, I developed GTMail\footnote{This tool is available online \url{https://github.com/cagomezt/GTMail}.}, a software tool capable of dealing with multiple standardization issues when presented on mailing list data (e.g., duplicates, text formatting), extracting URLs embedded in email bodies, eliminating unnecessary information, and uploading the data to a database for further analysis.
+%		My tool is compatible with MBOX mailing list formats, and therefore, can be used in any other research that involves mailing list repositories.
 
-	%\begin{enumerate}[\bfseries1.]
-	\begin{description}
-		\item[Comparison of how knowledge is shared on the two channels.]
+%	\begin{figure}[!htb]
+%		\centering
+%		\includegraphics[width=1\columnwidth]{Figures/RQ-contributions}
+%		\caption{Mapping between the research questions in this thesis and the contributions.}
+%		\label{fig:RQ-contributions}
+%	\end{figure}
 
-		I compared the way knowledge is shared on both channels based on the findings of this thesis and the survey data.
-		My objective was to identify the differences of how knowledge is shared on Stack Overflow and the R-help mailing list.
-
-		\item[Categorization of messages on Q\&A media channels.]
-
-		I built a categorization of knowledge based on the analysis of data that flows through media channels. 
-		My objective was that categories should support further studies when comparing media channels based on the knowledge flowing through them.
-		With these categorizations I gained insights about knowledge that flows through the channels, and the differences between them.
-
-		\item[A set of recommendations for using multiple Q\&A media channels.]
-
-		I created and provided a set of recommendations for using multiple media channels based on the observation and analysis of the data.
-		It is meant to improve multiple media channel usage by providing a best practices reference.	
-
-		\item[A tool to extract information from mailing lists.]
-
-		Mailing list repositories such as R-help contain valuable information about user behaviours, best practices, topics, problems, and discussions.
-		However, such information exists as unstructured data that needs special processing before it can be studied.
-		To that end, I developed GTMail\footnote{This tool is available online \url{https://github.com/cagomezt/GTMail}.}, a software tool capable of dealing with multiple standardization issues when presented on mailing list data (e.g., duplicates, text formatting), extracting URLs embedded in email bodies, eliminating unnecessary information, and uploading the data to a database for further analysis.
-		My tool is compatible with MBOX mailing list formats, and therefore, can be used in any other research that involves mailing list repositories.
-	\end{description}
-
-	\begin{figure}[!htb]
-		\centering
-		\includegraphics[width=1\columnwidth]{Figures/RQ-contributions}
-		\caption{Mapping between the research questions in this thesis and the contributions.}
-		\label{fig:RQ-contributions}
-	\end{figure}
-
-	Figure \ref{fig:RQ-contributions} depicts the mapping between my research questions and my contributions. 
-	In the figure, GTMail tool is mapped with all research questions because the tool processes the data used in this thesis.
+%	Figure \ref{fig:RQ-contributions} depicts the mapping between my research questions and my contributions. 
+%	In the figure, GTMail tool is mapped with all research questions because the tool processes the data used in this thesis.
 
 
 \section{Background}
