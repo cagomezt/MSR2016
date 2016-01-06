@@ -747,7 +747,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	This is explained as a result of the analysis of the R-help mailing list that by definition is more flexible on the topics allowed on the channel (e.g., announcements)
 
 	Our 10 categories related to \textit{questions} are:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 	\item \textbf{How-to}: Questions that ask how to do something specific.
 	\item \textbf{Bug/Error/Exception}: Questions that ask for a solution or reasons for a error message.
 	\item \textbf{Discrepancy}: Questions that ask about an unexpected result of a specific function, process, or package.
@@ -758,8 +758,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	\item \textbf{Non-functional}: Questions that ask for help (or suggestions) with a non-functional requirement such as performance, and memory usage.
 	\item \textbf{Future reference}: Questions that users ask---and normally answered themselves---that might not exist on the channel, but that are interesting enough to create a thread as a future reference.
 	\item \textbf{Other}: Questions that ask for other assistance (i.e., questions not related to the channel) or the message contains unrelated information (e.g., announcements, ideas for improvement).
-
-	\end{enumerate}
+	\end{packed_enum}
 
 %	Table \ref{table:questions} shows examples from each channel for every type of knowledge shared through questions.%\remarks{I'm not sure about the use of USER in all the descriptions. I would rewrite them to remove the term, but that's me. If you stick with this format, should you differentiate between the user that posts a question vs the users that post answers, etc? Perhaps it's not important. Maybe ask Peggy.}
 
@@ -818,7 +817,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 
 	Answers represent solutions to questions.
 	my colleague and I found nine types of knowledge related to \textit{answers}:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 	\item \textbf{Redirecting}: The user provides a link to an existing solution that is not in the thread (e.g., external application, tutorial, or project).
 	\item \textbf{Tutorial}: The user answers the question with a set of steps in order to teach people how to solve the issue.
 	\item \textbf{Source code}: The user provides a chunk of source code as the solution without an extensive explanation about the answer.
@@ -830,7 +829,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	\item \textbf{Opinion}: The user provides their own opinion or expands other answers by adding scenarios and examples.
     %\item \textbf{Acceptance}: the user corroborates that the answer provided was accepted.
     On Stack Overflow there is a check mark element that represent the acceptance of the answer (see figure \ref{fig:SOInterface_B}).
-	\end{enumerate}
+	\end{packed_enum}
 
 %	Table \ref{table:answers} shows examples from each channel for every type of knowledge shared through answers.
 
@@ -901,15 +900,14 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	Depending of the type of update (i.e., labelled or non-labelled), the usage is different.
 	Non-labelled updates are mainly used to correct format, grammar, spelling, and semantic mistakes, or to incorporate explanations, examples, and suggestions without changing the meaning of the question or answer. Labelled updates are for everything else.
 	Our analysis showed that there are six types of knowledge related to \textit{updates}:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 		\item \textbf{Announcement:} Announces specific events (e.g., bounties, future updates).
 		\item \textbf{Background:} Adds additional context to the question or answer (e.g., what the user did previously or what the user already knows).
 		\item \textbf{Correction:} Corrects format, grammar, spelling, and semantic mistakes.
 		\item \textbf{Expansion:} Expands the question or answer by providing scenarios or examples.
 		\item \textbf{Explanation/Clarification}: Explains or clarifies a specific point in the question or answer, such as why the user chose a specific data structure, or the meaning of a variable.
 		\item \textbf{Solution:} The user answers their own question.
-
-	\end{enumerate}
+	\end{packed_enum}
 
 %	Table \ref{table:updates} shows examples from each channel for every type of knowledge shared through updates.
 
@@ -972,7 +970,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	% END>>
 
 	Our analysis showed that there are six types of knowledge related to \textit{flags}:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 		\item \textbf{``Off-topic''}, \textbf{``Not constructive''} or \textbf{``opinion-based''}: They are used to identify questions that are not related to the list's interests or which answers are based on the opinion of channel participants (not actual facts).
 		These flags can be assigned for different reasons or they can be used on different ways.
 		\begin{itemize}
@@ -988,7 +986,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		\item The \textbf{``Repeated question''} flag is used to acknowledge that the user is asking a repeated question. For example, because they could not find a proper answer that fit their needs, or because people did not search the archives to see if the question had already been asked.
 		\item The \textbf{``Too localized''} flag is used for questions that are too specific and do not help any future reader.
 		\item \textbf{``Unclear''} and  \textbf{``Not a real question''} flags are for questions that are difficult to understand.
-	\end{enumerate}
+	\end{packed_enum}
 
 %	Table \ref{table:flags} shows examples from each channel for every type of knowledge shared through flags.
 %	Some flags and sub-categories are specifically of one of the channel, to the best of our knowledge, there is no example available.
@@ -1096,13 +1094,13 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	\end{figure}
 
 	Our analysis showed that there are five types of knowledge related to \textit{comments}:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 		\item \textbf{Clarification/Related question:} Provides (or requests) additional information about a question or answer.
 		\item \textbf{Expansion:} Provides additional information.
 		\item \textbf{Correction/Solution/alternative:} Suggests a change to a question or an answer, offers an alternative solution or a correction.
 		\item \textbf{Compliment/confirmation/Criticism:} Posts something good, offers thanks, provides an opinion or criticise someone.
 		\item \textbf{External reference:} References an external resource.
-	\end{enumerate}
+	\end{packed_enum}
 
 %	Table \ref{table:comments} shows examples of comments posted on each channel.
 
@@ -1216,7 +1214,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	% END>>
 
 	Our analysis showed that there are 11 resource types:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 		\item \textbf{Q\&A channels}: A online media channels for asking questions and answers (e.g., Stack Overflow and the R-help mailing list).
 		\item \textbf{Source code management systems, project hosting or issue trackers}: Online services that provided support for management of changes to documents (e.g., GitHub), hosting of projects (e.g., SourceForge or Google Code), and management of the software issues (e.g., Bugzilla).
 		\item \textbf{File hosting}: Online services that provide support for management of files (e.g., MediaFire and Dropbox).
@@ -1228,10 +1226,10 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		\item \textbf{Libraries, packages and applications}: collection of non-volatile source code or resources used by programs (e.g., GGPLOT) or entire software solutions (e.g., RSTudio)
 		\item \textbf{Online environments}: website that provide online environments such as IDE or notepads with source code syntax highlighting (e.g., GitHub Gits, or Pastebin)
 		\item \textbf{Other}: Websites from companies, non- official documentation sites, or any other online services do not include on the previous resources list.
-	\end{enumerate}
+	\end{packed_enum}
 
 	Additionally, we identified 10 types of resources that are linked to support knowledge construction:
-	\begin{enumerate}[\bfseries (1)]
+	\begin{packed_enum}
 		\item \textbf{Answers}: Links to an answer on a Q\&A media channel.
 		\item \textbf{Tutorial/Guide}: Links to tutorial or guides.
 		\item \textbf{Source code/Examples}: Links to source code example, implementation, or final products.
@@ -1242,7 +1240,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		\item \textbf{Images}: Links to images.
 		\item \textbf{Data}: Links to data.
 		\item \textbf{Announcement}: Links to company or personal webpage or project.
-	\end{enumerate}
+	\end{packed_enum}
 
 %	Table \ref{table:motiveType} summarizes the types of external resources my colleague and I found in our study and the ways these resources support the construction of knowledge.
 
