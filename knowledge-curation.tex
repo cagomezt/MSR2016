@@ -1828,51 +1828,56 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 %	This issue might represent a threat to validity of the GTMail tool.
 %	%>>
 
+In this section, we explain how we addressed each threat to
+validity.\remarks{Consider make the data available online.}
+
+\subsection{Construct Validity}
+
+The manual open coding of a large collection of messages may introduce bias in the outcome.
+We minimize the bias by misinterpretation, we used multiple data sources to triangulate our findings (survey, documentation, and messages from both media channels), and randomly selecting data, and two researchers performed the data coding.
+We applied the Cohen Kappa coefficient on categories that were not mutually exclusive.
+The purpose of calculating the coefficient were solely to trigger discussion between coders.
+We set a threshold of 80\% as the minimum to obtain agreeable results, which is higher than the 60\% suggested to obtain substancial results~\cite{Landis1977}.
+As a result, we were able to identify and report discrepancies and contradictions.
+
 \subsection{Internal Validity}
 
 %	It is important to clarify that given the exploratory nature of the study, the evidence found in this work is not statistically significant
-	Internal validity refers to the amount of bias within a study~\cite{Creswell2009}. 
-	In an exploratory case study, the researchers' actions and biases affect the finished work in each step,  
-	such as during the selection and analysis of data. 
+%	Internal validity refers to the amount of bias within a study~\cite{Creswell2009}.
+%	In an exploratory case study, the researchers' actions and biases affect the finished work in each step, such as during the selection and analysis of data. 
 
-	In this study, two researchers with a similar background---both computer scientists from the same country, with English as their second language---	worked together to code the data. 
-	The open coding technique used in this work involved the analysis of large collections of messages based on the researchers' observations. 
-	Our background might have biased how we coded the data, as well as our understanding of the context of the study. 
-	Additionally, our results may have been influenced by the method we used to select data for analysis (as explained in section \ref{subsec:preparation}) or the pre-processing of the information that we did before loading the data to the database (as explained in section \ref{sec:dap}), which might be influence the reconstruction of threads for the R-help mailing list. 
-	Moreover, there may have been bias in the mapping of message types between Stack Overflow and the R-help mailing. As the R-help mailing list contains unstructured data, our understanding of that data and the observations we made played a big role in the mapping exercise. 
+To compare two different data sources, we mapped the message types between Stack Overflow and the R-help mailing.
+However, the R-help mailing list contains unstructured data, and some data may be unsuitable to compare as both data sets, R-help mailing list and StackOverflow, have different time frames.
+To minimize unsuitable messages, we limited the analysis to the time frame that all the information was available in both data sets.
+Additionally, our understanding of that data and the observations we made played a big role in the mapping exercise, and it is subject to research bias.
+To minimized the bias, two researches performed the mapping.
 
-	%<<
-	In terms of the techniques applied during the study, I used Cohen Kappa coefficient on categories that were not mutually exclusive. 
-	The purpose of calculating the coefficient were solely to trigger discussion between coders. 
-	However, it might introduce bias to the study as a consequence of Cohen Kappa's limitations---it should be applied over mutually exclusive categories.
-	%>>
 
-	As consequence of our exploratory case study methodology and the parallel execution of \textit{phase 1} and \textit{2}, some of the survey results were not aligned with our findings. 
-	Moreover, the survey recruitment methods listed in chapter \ref{cha:discussion} might have biased the population. 
-	For instance, when we announced the survey through Stack Overflow, moderators removed our message a few minutes after we posted; for this reason, it is possible that we did not reach enough of the Stack Overflow population.
-	The number of responses to the survey and the high variability of the answers might also contribute to the analysis bias---given that we could not obtain enough participants, we had to support users' opinions with just a few responses.  
-	The survey questions were created solely by the author of this thesis, and while we tried to conduct pilot studies, no one else had a thorough enough understanding of the research. 
-	After the survey data was collected, the author was the only researcher that analysed the information.
-	Finally, as a consequence of running the survey phase in parallel with the data analysis some of the survey responses are not aligned with the results of this thesis.
+%	As consequence of our exploratory case study methodology and the parallel execution of \textit{phase 1} and \textit{2}, some of the survey results were not aligned with our findings. 
+%	Moreover, the survey recruitment methods listed in chapter \ref{cha:discussion} might have biased the population. 
+%	For instance, when we announced the survey through Stack Overflow, moderators removed our message a few minutes after we posted; for this reason, it is possible that we did not reach enough of the Stack Overflow population.
+%	The number of responses to the survey and the high variability of the answers might also contribute to the analysis bias---given that we could not obtain enough participants, we had to support users' opinions with just a few responses.  
+%	The survey questions were created solely by the author of this thesis, and while we tried to conduct pilot studies, no one else had a thorough enough understanding of the research. 
+%	After the survey data was collected, the author was the only researcher that analysed the information.
+%	Finally, as a consequence of running the survey phase in parallel with the data analysis some of the survey responses are not aligned with the results of this thesis.
 
-	In terms of the tool presented in this thesis, our biggest limitation was identifying the existence of Bettenburg tool while we were already conducting the analysis.
-	Indeed there are two different approaches that solve the same problem and that are based on the same process of data cleaning.
-	However, some of the GTMail tool features can be applied to Bettenburg as an extension of his work.
+%	In terms of the tool presented in this thesis, our biggest limitation was identifying the existence of Bettenburg tool while we were already conducting the analysis.
+%	Indeed there are two different approaches that solve the same problem and that are based on the same process of data cleaning.
+%	However, some of the GTMail tool features can be applied to Bettenburg as an extension of his work.
 
-	Moreover, the GTMail tool was tested manually, and through out the study of the R-help mailing list data.
-	All tests that I performed were not exhaustive, or formal.
-	In addition, the GTMail tool was not compared against other tools that accomplish the same objective (e.g., MailingListStats, and REmail), neither tested to be resilient to all the possible errors that might exist in the data.
-	This issue might represent a threat to validity of the GTMail tool.
+%	Moreover, the GTMail tool was tested manually, and through out the study of the R-help mailing list data.
+%	All tests that I performed were not exhaustive, or formal.
+%	In addition, the GTMail tool was not compared against other tools that accomplish the same objective (e.g., MailingListStats, and REmail), neither tested to be resilient to all the possible errors that might exist in the data.
+%	This issue might represent a threat to validity of the GTMail tool.
 
 	%Moreover, I did not measure how accurate was the GTMail tool to recreate the data from the R-help mailing list, neither compare the tool against other tools. 
 \subsection{External Validity}
 
-	External validity is concerned with the extent to which the findings from this work can be generalized~\cite{Runeson2012, Calder1982}. 
-	As a case study, it cannot be assumed that these cases can be generalizable until further evaluations have been conducted~\cite{Yin2009}.
+	%External validity is concerned with the extent to which the findings from this work can be generalized~\cite{Runeson2012, Calder1982}.
+	This study is exploratory case study and only applies to the R community.
+	A case study cannot be assumed to be generalizable until further evaluations have been conducted~\cite{Yin2009}.
 	Findings in this research should be tested in other communities and with other channels to see if they apply to these other contexts.
 
-    This study focuses in one single community: the R community.
-    
     In addition, the R community is composed by atypical programmers.
     The R programming language is used to solve statistical problems, the final product is a script that process a specific data.
     Most R language users are likely to be \textit{casual developers} with limited or non-existent programming experience, with backgrounds that vary from biologists to statisticians.
@@ -1880,23 +1885,6 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 
 %    However, some of these my findings have been tested in other knowledge domains, communities, or media channels.
 %	For instance, studies on knowledge construction ~\cite{Tausczik2014} and question categorization~\cite{Treude2011}\remarks{elaborate}.
-
-\subsection{Standards of Rigour}
-	This work incorporated a number of approaches to minimize the threats to validity mentioned above and to establish rigour~\cite{Runeson2012,Yin2009}.	
-	These approaches included triangulating multiple sources of data (i.e., survey, documentation, and messages from both media channels), randomly selecting data, and using multiple researchers to code the data. 
-	As a result, we were able to identify and report discrepancies and contradictions.
-
-	This study was conducted over a one-year period in which we were heavily immersed in the information within the channel, such as messages and official community documentation. This allowed us to gain a good understanding of the context and the community. 
-	When we began to code the data, I told my colleague to code by ``what she observed'', avoiding any previous knowledge she had related to the topic (if any). 
-	The description of what we had to code was intentionally vague in order to minimize researcher bias.
-	As was expected, our categorization did not always align, however, 
-	we came to agree on our interpretation of the data before starting the next coding session. 
-	As mentioned before, we used an inter-rater agreement coefficient (i.e., Cohen Kappa) to measure our mutual understanding and to promote discussion.
-
-	In terms of the data selection process, we minimized the threats by randomly selecting the data to analyse (see chapter \ref{cha:methodology}).
-	This guaranteed that the information selected had the same probability of being chosen for the study.
-
-	In summary, even with all the countermeasures that we applied to minimize bias, our findings are limited by our experience in the qualitative research environment and our vision of the world.   
 
 
 \section{Future Work}
