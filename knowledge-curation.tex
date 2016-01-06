@@ -684,11 +684,11 @@ This section presents the findings of our study that answer each research questi
 
 \subsubsection{Questions}
 
-	Questions express one or more problems or doubts that a Stack Overflow or R-help user is experiencing.
-	Through our coding my colleague and I identified 10 type of categories related to questions.
-	This is explained as a result of the analysis of the R-help mailing list that by definition is more flexible on the topics allowed on the channel (e.g., announcements)
+Questions express one or more problems or doubts that a Stack Overflow or R-help user experiences.
+We identified 10 type of knowledge related to \emph{questions}:
+%This is explained as a result of the analysis of the R-help mailing list that by definition is more flexible on the topics allowed on the channel.
+%	The 10 categories are:
 
-	Our 10 categories related to \textit{questions} are:
 	\begin{packed_enum}
 	\item \textbf{How-to}: Questions that ask how to do something specific.
 	\item \textbf{Bug/Error/Exception}: Questions that ask for a solution or reasons for a error message.
@@ -699,7 +699,7 @@ This section presents the findings of our study that answer each research questi
 	\item \textbf{Code reviewing}: Questions that ask for a code review explicitly or implicitly.
 	\item \textbf{Non-functional}: Questions that ask for help (or suggestions) with a non-functional requirement such as performance, and memory usage.
 	\item \textbf{Future reference}: Questions that users ask---and normally answered themselves---that might not exist on the channel, but that are interesting enough to create a thread as a future reference.
-	\item \textbf{Other}: Questions that ask for other assistance (i.e., questions not related to the channel) or the message contains unrelated information (e.g., announcements, ideas for improvement).
+	\item \textbf{Other}: Questions that ask for other assistance (i.e., questions unrelated to the channel) or the message contains unrelated information (e.g., announcements, ideas for improvement).
 	\end{packed_enum}
 
 %	Table \ref{table:questions} shows examples from each channel for every type of knowledge shared through questions.%\remarks{I'm not sure about the use of USER in all the descriptions. I would rewrite them to remove the term, but that's me. If you stick with this format, should you differentiate between the user that posts a question vs the users that post answers, etc? Perhaps it's not important. Maybe ask Peggy.}
@@ -758,16 +758,16 @@ This section presents the findings of our study that answer each research questi
 \subsubsection{Answers}
 
 	Answers represent solutions to questions.
-	my colleague and I found nine types of knowledge related to \textit{answers}:
+	We identified 9 types of knowledge:
 	\begin{packed_enum}
-	\item \textbf{Redirecting}: The user provides a link to an existing solution that is not in the thread (e.g., external application, tutorial, or project).
+	\item \textbf{Redirecting}: The user provides a link to an existing solution that is not in the thread (e.g. external application, tutorial, or project).
 	\item \textbf{Tutorial}: The user answers the question with a set of steps in order to teach people how to solve the issue.
-	\item \textbf{Source code}: The user provides a chunk of source code as the solution without an extensive explanation about the answer.
+	\item \textbf{Source code}: The user provides a source code snippet as the solution without an extensive explanation about the answer.
 	\item \textbf{Clue/Suggestion/Hint}: The user provides possible ways to solve the issue without solving it.
-	\item \textbf{Alternative}: The user provides a different approach to a solution that is related to but not exactly what the user is asking for (e.g., mathematical approaches, data structure modification).
-	\item \textbf{Explanation}: The user provides a solution that explains the approach to answer the question and lists steps on how to do it.
-	\item \textbf{Announcement}: The user provides a notification about something (e.g., packages, libraries).
-	\item \textbf{Benchmark}: The user provides a benchmark of multiple solutions posted by authors of the answer or compares answers on the thread.
+	\item \textbf{Alternative}: The user provides a different approach to a solution that is related to but not exactly what is being asked for (e.g. mathematical approach, data structure modification).
+	\item \textbf{Explanation}: The user explains an approach that answers the question and lists steps on how to do it.
+	\item \textbf{Announcement}: The user provides a notification about some artifact (e.g., packages, libraries).
+	\item \textbf{Benchmark}: The user provides a benchmark of multiple solutions posted by others or compares answers on the thread.
 	\item \textbf{Opinion}: The user provides their own opinion or expands other answers by adding scenarios and examples.
     %\item \textbf{Acceptance}: the user corroborates that the answer provided was accepted.
     On Stack Overflow there is a check mark element that represent the acceptance of the answer (see figure \ref{fig:SOInterface_B}).
@@ -828,23 +828,24 @@ This section presents the findings of our study that answer each research questi
 \subsubsection{Updates}
 
 	An update is a modification to a question or answer.
-	On the R-help mailing list, updates are not easily identifiable as a consequence that all communications are presented as plain text emails.
-	Therefore, I defined updates on the R-help mailing list as \emph{emails submitted by the author of the question or answer}.
+	On the R-help mailing list, updates are not easily identifiable as the communication is presented as plain text emails.
+	Therefore, we defined updates on the R-help mailing list as \emph{emails submitted by the author of the question or answer}.
 
-	In contrast, on Stack Overflow updates are presented in multiple ways:
-	\begin{itemize}
-		\item \textbf{Labelled updates} are explicitly shown in the body of questions or answers next to a label that identifies the update (e.g., edit, update, and p.s.).
-		In the case where multiple update labels appear in a message, each label is accompanied by a number (e.g., \textit{``[Edit 1:]''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), by a date (e.g., \textit{``Edit/Update (April 2011):''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), or by a bulleted list (e.g., ``EDIT: - anova... -drop1...'' {\footnotesize URL:  \href{http://goo.gl/sQiq0M}{Q7273695}})
+	In contrast, on Stack Overflow updates are presented in two ways:
+	\begin{description}
+		\item[Labelled updates] are explicitly shown in the body of questions or answers next to a label that identifies the update (e.g., edit, update, and p.s.).
+		When multiple update labels appear in a message, each label is accompanied by a number (e.g., \textit{``[Edit 1:]''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), by a date (e.g., \textit{``Edit/Update (April 2011):''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), or by a bulleted list (e.g., ``EDIT: - anova... -drop1...'' {\footnotesize URL:  \href{http://goo.gl/sQiq0M}{Q7273695}})
 
-		\item \textbf{Non-labelled updates} are only visually recognizable through the message history system. There is no clear indication of the change except for a box at the end of the message that contains the user who performed the change and the date when they changed it.
-	\end{itemize}
+		\item[Non-labelled updates] are only visually recognizable through the message history system. The only indication of the change is a box at the end of the message that contains the user who performed the change and the date when it happened.
+	\end{description}
 
-	Depending of the type of update (i.e., labelled or non-labelled), the usage is different.
+	Depending of the type of update, the usage is different.
 	Non-labelled updates are mainly used to correct format, grammar, spelling, and semantic mistakes, or to incorporate explanations, examples, and suggestions without changing the meaning of the question or answer. Labelled updates are for everything else.
-	Our analysis showed that there are six types of knowledge related to \textit{updates}:
+
+	We identified 6 types of knowledge related to \textit{updates}:
 	\begin{packed_enum}
 		\item \textbf{Announcement:} Announces specific events (e.g., bounties, future updates).
-		\item \textbf{Background:} Adds additional context to the question or answer (e.g., what the user did previously or what the user already knows).
+		\item \textbf{Background:} Adds additional context to the question or answer (e.g., what the user did previously or already knows).
 		\item \textbf{Correction:} Corrects format, grammar, spelling, and semantic mistakes.
 		\item \textbf{Expansion:} Expands the question or answer by providing scenarios or examples.
 		\item \textbf{Explanation/Clarification}: Explains or clarifies a specific point in the question or answer, such as why the user chose a specific data structure, or the meaning of a variable.
@@ -893,27 +894,27 @@ This section presents the findings of our study that answer each research questi
 	Flags are short announcements shown below a question, containing information about the alias of the user who flagged the question and the reason why it was flagged.
 	Flags can accomplish a variety of objectives: they mark spam messages, rude or abusive behaviour; they identify messages that do not answer the question, duplicate questions, off-topic messages, unclear questions, questions that are too broad, primarily opinion-based questions, and low-quality answers.
 	Depending of the type of the flag threads can be closed (e.g., duplicate question, and off-topic), or users can lose reputation point (i.e., rude or abusive behaviour).
-	Figure~\ref{fig:SOFlagsExample} depicts an example on a flagged message on Stack Overflow.
+%	Figure~\ref{fig:SOFlagsExample} depicts an example on a flagged message on Stack Overflow.
 
-	\begin{figure} [!htb]
-		\centering
-		\includegraphics[width=\columnwidth]{Figures/SOFlagsExample}
-		\caption{Flagged post on Stack Overflow}
-		\label{fig:SOFlagsExample}
-	\end{figure}
+%	\begin{figure} [!htb]
+%		\centering
+%		\includegraphics[width=\columnwidth]{Figures/SOFlagsExample}
+%		\caption{Flagged post on Stack Overflow}
+%		\label{fig:SOFlagsExample}
+%	\end{figure}
 
 	% <<UPDATED 08-12-2015 BEGIN
 	On the R-help mailing list, the flag concept does not exist. 
-	However, based on the definition of flags on Stack Overflow, I defined flags as messages used to call the attention of other community members.
+	However, based on the definition of flags on Stack Overflow, we defined flags as \emph{messages used to call the attention of other community members}.
 	Based on the previous definition, flags on the R-help mailing list are used to keep a healthy community, promote discussion, and call the attention of community members to certain issues.
 	In contrast with Stack Overflow, flags might be used by the person who asked or answered a question.
 	Due to the plain text format of messages on the R-help mailing list, flags can be mixed among the text of answers, comments, questions and updates.
 	Flags in the R-help mailing list do not constrain users to answer questions, or to clarify what it is already asked.
 	% END>>
 
-	Our analysis showed that there are six types of knowledge related to \textit{flags}:
+	We identified 6 types of knowledge related to \textit{flags}:
 	\begin{packed_enum}
-		\item \textbf{``Off-topic''}, \textbf{``Not constructive''} or \textbf{``opinion-based''}: They are used to identify questions that are not related to the list's interests or which answers are based on the opinion of channel participants (not actual facts).
+		\item \textbf{``Off-topic''}, \textbf{``not constructive''} or \textbf{``opinion-based''}: Used to identify questions that are unrelated to the list's interests or which answers are based on the opinion of channel participants (not actual facts).
 		These flags can be assigned for different reasons or they can be used on different ways.
 		\begin{itemize}
 			\item \textit{Typographical error}: The problem was caused by typographical error.
@@ -921,13 +922,13 @@ This section presents the findings of our study that answer each research questi
 			\item \textit{Book, tool, software library}: User is asking for a book, tool, software library, tutorial or other off-site resource.
 			\item \textit{Minimal understanding of the problem}: User did not demonstrate a minimal understanding of the problem being solved.
 			\item \textit{Insufficient information}: the question lacks sufficient information to diagnose the problem
-			\item \textit{Extra information}: User provide extra information that is not related with the questions but that it might be interesting for the user who asked the question.
+			\item \textit{Extra information}: User provide extra information that is unrelated to the question but that it might be interesting for the user who asked the question.
 			\item \textit{Homework}: When users ask something that looks like an assignment.
 		\end{itemize}
-		\item \textbf{``Not an answer''}: It is used to emphasize \textit{alternative answers} that are outside of the scope of the question, or to identify that a specific solution that does not answer the question.
-		\item The \textbf{``Repeated question''} flag is used to acknowledge that the user is asking a repeated question. For example, because they could not find a proper answer that fit their needs, or because people did not search the archives to see if the question had already been asked.
-		\item The \textbf{``Too localized''} flag is used for questions that are too specific and do not help any future reader.
-		\item \textbf{``Unclear''} and  \textbf{``Not a real question''} flags are for questions that are difficult to understand.
+		\item \textbf{``Not an answer''}: Used to emphasize \textit{alternative answers} that are outside of the scope of the question, or to identify that a specific solution does not answer the question.
+		\item \textbf{``Repeated question''}: Used to acknowledge that the user is asking a repeated question. Either because the user could not find a proper answer that fits its needs or did not search the archives to see if the question was already asked.
+		\item \textbf{``Too localized''}: Used for questions that are too specific and might not help any future reader.
+		\item \textbf{``Unclear''} and  \textbf{``Not a real question''}: User for questions that are difficult to understand.
 	\end{packed_enum}
 
 %	Table \ref{table:flags} shows examples from each channel for every type of knowledge shared through flags.
@@ -1011,7 +1012,7 @@ This section presents the findings of our study that answer each research questi
 	Comments can be visualized in a specific section below each question or answer.
 	On Stack Overflow, comments can be used as a follow-up to questions, to answer a question, or to clarify a question.
 
-	On the R-help mailing list, I defined comments as messages written to \emph{improve an answer in response to an incomplete question, or as follow-up on a discussion}.
+	On the R-help mailing list, we defined comments as messages written to \emph{improve an answer in response to an incomplete question, or as a follow-up on a discussion}.
 	Most importantly, messages should be written by a \emph{different person than the author of the question or answer} to which they are responding.
 	The difference between an update and a comment on the R-help mailing list is the motivation of the user who wrote the message and the author of the message.
 	For example, if user A posts a question, B asks A to clarify something about the question, and A answers back to B, then the last message is an update and the message sent by B to A is a comment (see Figure~\ref{fig:ExCommentUpdate1-1}). 
@@ -1035,12 +1036,12 @@ This section presents the findings of our study that answer each research questi
 		\label{fig:ExCommentUpdate1}
 	\end{figure}
 
-	Our analysis showed that there are five types of knowledge related to \textit{comments}:
+	We identified 5 types of knowledge related to \textit{comments}:
 	\begin{packed_enum}
-		\item \textbf{Clarification/Related question:} Provides (or requests) additional information about a question or answer.
+		\item \textbf{Clarification/related question:} Provides (or requests) additional information about a question or answer.
 		\item \textbf{Expansion:} Provides additional information.
-		\item \textbf{Correction/Solution/alternative:} Suggests a change to a question or an answer, offers an alternative solution or a correction.
-		\item \textbf{Compliment/confirmation/Criticism:} Posts something good, offers thanks, provides an opinion or criticise someone.
+		\item \textbf{Correction/solution/alternative:} Suggests a change to a question or answer, offers an alternative solution or a correction.
+		\item \textbf{Compliment/confirmation/criticism:} Posts something good, offers thanks, provides an opinion or criticise someone.
 		\item \textbf{External reference:} References an external resource.
 	\end{packed_enum}
 
@@ -1080,7 +1081,7 @@ This section presents the findings of our study that answer each research questi
 
 	%<<
 	The format of the message in Stack Overflow and the R-help mailing list, permits participants to ask multiple questions in the same thread.
-	Therefore, the categorization of knowledge presented in this chapter is non-mutually exclusive. 
+	Therefore, the categorizations of knowledge presented in this section are non-mutually exclusive.
 	%>>
 
 \subsection{RQ-2. How is knowledge constructed on Stack Overflow and the R-help mailing list?}
