@@ -513,14 +513,14 @@ We filtered all R-related data by selecting only messages with the R tag (\textt
 %	Furthermore, Kouter \textit{et al}.~\cite{Kouters2012} used a natural language processing technique called Latent Semantic Analysis to merge identities on very noisy data.
 %	However, it has been demonstrated that all existing approaches produce false positives and false negatives~\cite{Goeminne2013}.
 
-To merge both datasets, we used the most conservative technique found in the litareture and considering the available data~\cite{Vasilescu2014b}.
-The technique does not use any method to infer email addresses based on user names.
-In practice, this technique consisted in matching Stack Overflow's email MD5 hashes with the MD5 hash version of email addresses from the R-help mailing list data.
-With this technique, the resulting set included 1,421 different users with the same email address on both media channels.
+To merge both datasets, we matched Stack Overflow's email MD5 hashes with the MD5 hash version of email addresses from the R-help mailing list data.
+We did not use any method to infer email addresses based on user names.
+%In practice, this conservative approach~\cite{Vasilescu2014b}
+The resulting set was 1,421 different users with the same email address on both media channels.
 
 %	Because Stack Overflow only provides the email addresses as MD5 hashes, and to make both data sets comparable, the mailing list emails were converted to their corresponding MD5 hashes.
 
-	Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positive outcomes, it is unlikely for two different email addresses to share a MD5 hash.
+Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positives, it is unlikely that two different email addresses share a MD5 hash.
     The probability to find a MD5 collision is less than $1/2^{64}$~\cite{Rivest1992}.
 	%\footnote{\url{https://en.wikipedia.org/wiki/Collision_resistance}}, and therefore, this could possibly lead to false positive resistant outcomes.
 
