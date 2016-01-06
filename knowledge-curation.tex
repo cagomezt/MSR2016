@@ -127,8 +127,8 @@ Lorena Casteñeda\\
 	% Software development today
 	Today's software development is more about just-in-time learning than reading manuals~\cite{Hartmann2008}.
 	With instantaneous access to information on the Web, programmers do not have to be experts in a particular technology to build an application.
-	Programmers can consult a variety of online resources, such as Stack Overflow\footnote{\url{http://stackoverflow.com/}} or Nabble\footnote{\url{http://www.nabble.com/}}, by entering combinations of keywords in a search engine.
-	If they cannot find the correct answer there are many easy-to-use \textit{media channels} for assistance. For example, after posting a question to a specific media channel, programmers can access high-quality answers from a global user base that can address most programming problems within minutes or seconds~\cite{Mamykina2011}.
+	Programmers can consult a variety of online resources, such as Stack Overflow\footnote{\url{http://stackoverflow.com/}}, by entering combinations of keywords in a search engine.
+	If they cannot find the correct answer there are many easy-to-use \textit{media channels} for assistance, from which they can address most programming problems within minutes or seconds~\cite{Mamykina2011}.
 
 	% Role of media channels
 	Media channels play an important role in today's knowledge economy, as well as the collaboration, coordination, and communication activities that occur between programmers. However, selecting the most appropriate media channel to transmit an idea can be challenging, given the variety of equally suitable tools and sites.
@@ -146,26 +146,16 @@ Lorena Casteñeda\\
 	They provide insights on the way channels are used~\cite{Guzzi2013, Storey2014, Singer2014},  topic trends~\cite{Barua2012, Kavaler2013, Wang2013d}, best practices~\cite{Asaduzzaman2013, Treude2011, Allamanis2013}, and \textit{social programmer} behaviours~\cite{Lang2013}.
 	Understanding channels is key to improve the developer practices, communication, coordination, and knowledge sharing.
 
-	However, a review of the literature substantiates that only a few studies investigate the interplay between channels.
-	Some studies that provide valuable insights on channel migration processes~\cite{Vasilescu2014c}, synergy between channels~\cite{Vasilescu2013a, Bird2006, Kavaler2013}, and channel usage~\cite{Stolee2010,Storey2014}, and yet, there is a need to analyse and compare media channels and the way programmers use them~\cite{Vasilescu2014b}.
+	Only a few studies investigate the interplay between channels.
+	They provide valuable insights on channel migration processes~\cite{Vasilescu2014c}, synergy between channels~\cite{Vasilescu2013a, Bird2006, Kavaler2013}, and channel usage~\cite{Stolee2010,Storey2014}, and yet, there is a need to analyse and compare media channels and the way programmers use them~\cite{Vasilescu2014b}.
 	Questions raised that still beg unanswered are: Is one communication channel replacing the other, or are they cooperating?, Why communities have more than one channel to solve the same problem? In which circumstances one communication channel should be used over another?.
+
+This investigation is motivated by an open challenge presented by Vasilescu~\cite{Vasilescu2014b}, that states \textit{``...to better understand the effects associated with a transition from mailing lists to social Q\&A and, e.g., whether mailing lists will eventually die off, future research could also consider analysing the content of the discussions from the two venues...''}.
+This challenge raised a desire to understand the knowledge flow through channels that serve the same purpose.
 
 	We investigated the way \textit{knowledge} (or user generated content) is curated within a particular software development community.
 	For this study we chose the R community, since it provided broader relevance outside the software development community by including users with no or limited programming experience (e.g., biologist or statisticians).
 	Our overarching goal was to provide tools for further studies that analyse and compare the knowledge flowing through media channels.
-	Thus, the R developer community has the potential for a broader selection of users' backgrounds and more diverse knowledge types. 
-
-    We analysed the main Q\&A channels related to programming that the R community contains: R-help mailing list\footnote{\url{https://stat.ethz.ch/mailman/listinfo/r-help}} and StackOverlow (from now on, by Stack Overflow we mean the R community on Stack Overflow).
-    To analyse the channels, we applied a qualitative \textit{exploratory case study} methodology, as proposed by Runeson \textit{et al}.~\cite{Runeson2012}.
-	Additionally, we conducted a survey to bring further insights on the findings.
-	With this findings, we constructed a series of categories that supports knowledge classification and knowledge comparison of the main type of messages (i.e., questions, answers, updates, flags and comments), which these two channels provided.
-	Based on the knowledge categories analysis, we compared the way knowledge was shared on Stack Overflow and the R-help mailing list.
-	Finally, we extracted a set of recommendations to assist in the usage of multiple Q\&A channels, and when linking resources that are external to both channels.
-
-\subsection{Research questions}
-
-	This investigation is based on an open challenge presented by Vasilescu~\cite{Vasilescu2014b}, that states \textit{``...to better understand the effects associated with a transition from mailing lists to social Q\&A and, e.g., whether mailing lists will eventually die off, future research could also consider analysing the content of the discussions from the two venues...''}.
-	This challenge raised a desire to understand the knowledge flow through channels that serve the same purpose.
 	Thus, the research question investigated are:
 
 	\begin{enumerate}[\bfseries RQ-1.]
@@ -175,17 +165,25 @@ Lorena Casteñeda\\
 		\item Why do certain users post to both Stack Overflow and the R-help mailing list?
 	\end{enumerate}
 
-\subsection{Contributions}
+We analysed the main Q\&A channels related to programming that the R community contains: R-help mailing list\footnote{\url{https://stat.ethz.ch/mailman/listinfo/r-help}} and Stack Overlow.
+To analyse the channels, we applied a qualitative \textit{exploratory case study} methodology.
+We also conducted a survey to bring further insights on the findings.
+We constructed a series of categories that supports knowledge classification and knowledge comparison of the main type of messages which these two channels provided.
+Based on the knowledge categories analysis, we compared the way knowledge was shared on Stack Overflow and the R-help mailing list.
+Finally, we extracted a set of recommendations to assist in the usage of multiple Q\&A channels, and when linking resources that are external to both channels.
 
-	The contributions of this paper are:
-	    a comparison of how knowledge is shared on the two channels,
+
+%\subsection{Contributions}
+
+%	The contributions of this paper are:
+%	    a comparison of how knowledge is shared on the two channels,
 %		I compared the way knowledge is shared on both channels based on the findings of this thesis and the survey data.
 %		My objective was to identify the differences of how knowledge is shared on Stack Overflow and the R-help mailing list.
-		a categorization of messages on Q\&A media channels, and
+%		a categorization of messages on Q\&A media channels, and
 %		I built a categorization of knowledge based on the analysis of data that flows through media channels. 
 %		My objective was that categories should support further studies when comparing media channels based on the knowledge flowing through them.
 %		With these categorizations I gained insights about knowledge that flows through the channels, and the differences between them.
-        a set of recommendations for using multiple Q\&A media channels.
+%        a set of recommendations for using multiple Q\&A media channels.
 %		I created and provided a set of recommendations for using multiple media channels based on the observation and analysis of the data.
 %		It is meant to improve multiple media channel usage by providing a best practices reference.	
 %		and a tool to extract information from mailing lists.
@@ -354,12 +352,12 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	and (8) comments to the answer, which are fairly short and limited to include only text.
 
 	The adoption of social media has occurred at a much faster rate than any previous communication technology \cite{Chui2012}.
-	In the last decade, Stack Overflow has become the most popular media channel for answering software development related questions, nearly replacing previous methods of communication that accomplished the same objective (e.g., mailing list)~\cite{Vasilescu2014c}.
+	In the last decade, Stack Overflow has become the most popular media channel for answering software development related questions, nearly replacing previous methods of communication that accomplished the same objective~\cite{Vasilescu2014c}.
 	%<<
 	Figure~\ref{fig:VasilescuFA1-1} shows the number of questions asked each month on Stack Overflow, Cross Validate and the R-help mailing list, and Figure~\ref{fig:VasilescuFA1-2} shows the number of questions answered on the R-help mailing list (after September 2008) and Stack Exchange each month.
 	%>>
-	Despite Stack Overflow's advantages over Q\&A mailing lists such as the R-help (i.e., social network features, gamification environment and rich visual user interface), there are still many users who prefer the latter.
-	Later in this thesis, we learn about the way programmers use Stack Overflow and the R-help mailing list to gain and share knowledge.
+	Despite Stack Overflow's advantages over Q\&A mailing lists such as the R-help (i.e., gamification environment and rich visual user interface), there are still many users who prefer the latter.
+	We will learn the way programmers use Stack Overflow and the R-help mailing list to gain and share knowledge.
 
 	\begin{figure}
 		\centering
@@ -373,7 +371,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
           \caption{Questions answered on R-help mailing list (after September 2008) and Stack Exchange per month: participants exclusive to the mailing list versus those also active on Stack Exchange.}
       	  \label{fig:VasilescuFA1-2}
         \end{subfigure}
-		\caption{Comparison of the number of questions asked and answered~\cite{Vasilescu2014c}.}
+		\caption{Number of questions asked and answered~\cite{Vasilescu2014c}.}
 		\label{fig:VasilescuFA1}
 	\end{figure}
 
