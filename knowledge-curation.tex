@@ -545,6 +545,9 @@ Figure \ref{fig:ContentAnalysisFlow} depicts a visual explanation of the data an
 The coloured shapes depict the techniques used to support the data analysis, which are explained as follow:
 
 	\begin{description}
+      \setlength{\itemsep}{3pt}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0pt}
 		\item[Memoing] is the act of taking notes (coding) on what the researcher is learning from the data during the analysis~\cite{Groenewald2008}.% for example, the hypotheses regarding a code, and relationships between concepts.
 We wrote reflective memos in a spreadsheet next to the applicable codes (see figure \ref{fig:CodingExample}).
 These memos were used to create the codes, and hypotheses about the relationships between concepts.
@@ -567,68 +570,70 @@ These memos were used to create the codes, and hypotheses about the relationship
 		The final version of the code book is detailed in section~\ref{cha:findings}.
 	\end{description}
 
-\paragraph{The Analysis Process}
+%\paragraph{The Analysis Process}
 
 	The focus of the analysis is to \textit{understand the context of the media channels and the community}.
 	The process consisted of:
 	First, a recollection of the official information for both channels and the community to build a background of the community of practice and the channels studied.
-    From the channels, I collected posting guides, rules, channel objectives, and competitors, whereas from the community I collected the number of members, how it works, and the media channels that the community uses.
-
+%    From the channels, I collected posting guides, rules, channel objectives, and competitors, whereas from the community I collected the number of members, how it works, and the media channels that the community uses.
 	Second, a mapping between messages from Stack Overflow (i.e., question, answer, update, comment, and flag) with messages on the R-help mailing list.
     This is to overcome how the data is structured in both channels.
-    Stack Overflow has a clear delimitation of what is a question, an answer, a comment, a flag and an update, while the R-help mailing list is just plain text.
-    The mapping of messaged between both channels was as follows:
+%    Stack Overflow has a clear delimitation of what is a question, an answer, a comment, a flag and an update, while the R-help mailing list is just plain text.
+    The mapping of messages between both channels was as follows:
 
-	\begin{itemize}
-		\item \textbf{Question:} the message is the first on the thread, and it contains the main question.
-		\item \textbf{Answer:} the message provides a solution to the main question of the thread.
-	 	\item \textbf{Update:} the message claims for a modification to a question (or answer) made by the author of such a question (or answer).
-		\item \textbf{Comment:} the message offers a clarification to a specific part of the question or answer.
+	\begin{description}
+      \setlength{\itemsep}{3pt}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0pt}
+		\item[Question:] the message is the first on the thread, and it contains the main question.
+		\item[Answer:] the message provides a solution to the main question of the thread.
+	 	\item[Update:] the message claims for a modification to a question (or answer) made by the author of such a question (or answer).
+		\item[Comment:] the message offers a clarification to a specific part of the question or answer.
 		\item \textbf{Flag:} the message requests attention from the moderator (e.g., repeated questions, spam, or rude behaviour).
-	\end{itemize}
+	\end{description}
 
-	Next, for the \textit{data sampling} step, to answer RQ1, RQ2 and RQ3, I used a simple database query that selected a time frame and randomly returned threads from each channel.
+	Next, for the \textit{data sampling} step, to answer RQ1 and RQ2, we used a simple database query that selected a time frame and randomly returned threads from each channel.
 	%<<
-	The data set was capped at 400 threads for each channel (0.4\% and 0.6\% of the data available at the time of writing this thesis for the R-help mailing list and Stack Overflow respectively), when my collaborator and I deemed our observations as being saturated.
-	To answer RQ4, I used the same query as before, but I added a condition that matched, on both channels, messages with the same subject written by the same author (we merged the data).
+	The data set was capped at 400 threads for each channel when we deemed our observations as being saturated.
+	To answer RQ3, we added a condition that matched, on both channels, messages with the same subject written by the same author.
 	%>>
-	Given that only 79 threads were returned from this query, my colleague and I analysed the entire population available. 
+	The results were 79 threads, and therefore, we analysed the entire population available. 
 
-	To code the data, we used an \textit{open coding} technique that involves reporting \textit{what the researcher saw} during each coding session. 
-	The researcher has to keep in mind, all the time, the objective of the study and perform the coding based on it.
-	Each researcher coded the data on a separated way.
-	During the coding session, we wrote memos as needed, and marked repetitive patterns.
-	Later, we met to compare and discuss findings, and begin developing codes.
+%	To code the data, we used an \textit{open coding} technique that involves reporting \textit{what the researcher saw} during each coding session. 
+%	The researcher has to keep in mind, all the time, the objective of the study and perform the coding based on it.
+%	Each researcher coded the data on a separated way.
+%	During the coding session, we wrote memos as needed, and marked repetitive patterns.
+%	Later, we met to compare and discuss findings, and begin developing codes.
 
-	From our initial codes, we began the process of creating a \textit{coding book} to outline definitions. 
-	This set of codes were used later during the \textit{selective coding} step.
-	At this point, the researcher stops coding every occurrence, and begins seeing larger trends and connections within the data and codes.
-	It is possible that during the \textit{selective coding} step some codes have to be reformulated, or maybe split into more codes. 
-	Also, it is possible to formulate completely new codes as needed.
-	Whenever there is a new code or any is changed, it is necessary to go back and recode the material.
+%	From our initial codes, we began the process of creating a \textit{coding book} to outline definitions. 
+%	This set of codes were used later during the \textit{selective coding} step.
+%	At this point, the researcher stops coding every occurrence, and begins seeing larger trends and connections within the data and codes.
+%	It is possible that during the \textit{selective coding} step some codes have to be reformulated, or maybe split into more codes. 
+%	Also, it is possible to formulate completely new codes as needed.
+%	Whenever there is a new code or any is changed, it is necessary to go back and recode the material.
 
-	As a coding tool, my colleague and I used a spreadsheet in which each row represents a message of the thread.
-	%<<
-	If for any reason a message appeared to fit in more than one category, each researcher selected, at their own discretion, a primary category to represent the message.
-	%>>
-	Figure~\ref{fig:CodingExample} depicts an example of the coding spreadsheet that we used.
-	The number in the first column identifies if the message is a question, an answer or a comment. 
-	For instance, if the number assigned to the question was ``1'', then the answers were enumerated with consecutive numbers separated by a point (e.g., 1.1); and the comments were enumerated in a similar way to enumerated answers, but using three numbers: the first number represents the question, the second represents the answer, and the third represents the comment consecutive (e.g., 1.0.1). 
-	The second column contains the message, the third column the channel, the fourth column the question categorization, and so on.
-	The last column contains the URL to the thread on the channel.
-	Inside each cell, a semicolon ($;$) represents a sub-category, and the double pipe ($||$) divides two different ideas (e.g., in the \textit{MEMOS} column), or indicates that a message was re-classified after an update (e.g, \textit{ANSWER} column).
+%	As a coding tool, my colleague and I used a spreadsheet in which each row represents a message of the thread.
+%	%<<
+%	If for any reason a message appeared to fit in more than one category, each researcher selected, at their own discretion, a primary category to represent the message.
+%	%>>
+%	Figure~\ref{fig:CodingExample} depicts an example of the coding spreadsheet that we used.
+%	The number in the first column identifies if the message is a question, an answer or a comment. 
+%	For instance, if the number assigned to the question was ``1'', then the answers were enumerated with consecutive numbers separated by a point (e.g., 1.1); and the comments were enumerated in a similar way to enumerated answers, but using three numbers: the first number represents the question, the second represents the answer, and the third represents the comment consecutive (e.g., 1.0.1). 
+%	The second column contains the message, the third column the channel, the fourth column the question categorization, and so on.
+%	The last column contains the URL to the thread on the channel.
+%	Inside each cell, a semicolon ($;$) represents a sub-category, and the double pipe ($||$) divides two different ideas (e.g., in the \textit{MEMOS} column), or indicates that a message was re-classified after an update (e.g, \textit{ANSWER} column).
 
-	At the beginning of the coding, before we created the code book, the spreadsheet had only the \textit{ID}, the \textit{MESSAGE}, the \textit{MEMOS}, and the \textit{URL} columns.
-	During each iteration, the spreadsheet was updated with the classification and type of messages that my colleague and I were defining.
+%	At the beginning of the coding, before we created the code book, the spreadsheet had only the \textit{ID}, the \textit{MESSAGE}, the \textit{MEMOS}, and the \textit{URL} columns.
+%	During each iteration, the spreadsheet was updated with the classification and type of messages that my colleague and I were defining.
 
-	Originally, both researchers read the threads directly from the spreadsheet.
-	However, this method of reading turned out uncomfortable, and we fell back to read the threads directly from each channel rather than the spreadsheet.
+%	Originally, both researchers read the threads directly from the spreadsheet.
+%	However, this method of reading turned out uncomfortable, and we fell back to read the threads directly from each channel rather than the spreadsheet.
 
 %	\begin{landscape}
 	 	\begin{figure}[!ht]
 			\centering
 			\includegraphics[width=\columnwidth]{Figures/CodingExample}
-			\caption[Example of how we coded the data]{Example of the way we coded the data. Each row of the spread sheet represents a message of the thread. Questions, comments, and answers can be identified with the number on the first column. The columns in yellow contain the codification for each message type. The last two columns contain the memos and the URL of the thread.}
+			\caption{Example of data coding. Each row represents a thread message. Questions, comments, and answers can be identified with the number on the first column. Columns in yellow contain the codification for each message type. The last two columns contain the memos and the URL of the thread.}
 			\label{fig:CodingExample}
 		\end{figure}
 %	\end{landscape}
