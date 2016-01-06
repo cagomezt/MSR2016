@@ -162,7 +162,7 @@ Lorena Casteñeda\\
 	Based on the knowledge categories analysis, we compared the way knowledge was shared on Stack Overflow and the R-help mailing list.
 	Finally, we extracted a set of recommendations to assist in the usage of multiple Q\&A channels, and when linking resources that are external to both channels.
 
-\subsection{Research Questions}
+\subsection{Research questions}
 
 	This investigation is based on an open challenge presented by Vasilescu~\cite{Vasilescu2014b}, that states \textit{``...to better understand the effects associated with a transition from mailing lists to social Q\&A and, e.g., whether mailing lists will eventually die off, future research could also consider analysing the content of the discussions from the two venues...''}.
 	This challenge raised a desire to understand the knowledge flow through channels that serve the same purpose.
@@ -175,7 +175,7 @@ Lorena Casteñeda\\
 		\item Why do certain users post to both Stack Overflow and the R-help mailing list?
 	\end{enumerate}
 
-\subsection{Contributions}
+\subsection{contributions}
 
 	The contributions of this paper are:
 	    a comparison of how knowledge is shared on the two channels,
@@ -231,7 +231,7 @@ Lorena Casteñeda\\
 	To our knowledge, just a few researchers have investigated these topics.
 	We know the activity in mailing lists correlated with the activity in source code~\cite{Bird2006}, the role of social media in software engineering~\cite{Storey2014, Storey2010}, a complementary perspective on using APIs and the questions asked on Stack Overflow~\cite{Kavaler2013}, and the interplay between Stack Overflow and the software development process, which were reflected on changes committed in a source code management system (GitHub)~\cite{Vasilescu2013a}.
 
-\subsection{Media Channels}
+\subsection{Media channels}
 
 	% What is a media channel?
 	The Oxford dictionary\footnote{\url{http://oxforddictionaries.com/definition/english}} defines medium as \textit{``a mean by which something is communicated or expressed''}, and a channel as \textit{``a method or system for communication or distribution''}.
@@ -250,7 +250,7 @@ Lorena Casteñeda\\
 	Some research have focused on different components and aspects of channels, such as,
 categorize questions according to their topic~\cite{Treude2011}, determine the characteristics of unanswered questions~\cite{Asaduzzaman2013}, study the way messages are disseminated on social coding sites~\cite{Jiang2013}, and propose a method to quantify the risk of not having maintainers for code implemented in a certain programming language~\cite{Vasilescu2013b}.
 
-\subsection{Community of Practice}
+\subsection{Community of practice}
 	% What it is
 	A community of practice is \textit{``a group of people who share a concern or a passion for something they do and learn how to do it better as they interact regularly''}~\cite{Wenger2000}.
 	In contrast with formal work groups and project teams, community members are part of the community by their own will~\cite{Wenger2000}.
@@ -273,7 +273,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 %	Communities change their practices and structure regularly while adapting dynamically to new situations.
 %	For example, Mozilla adopted the Mercurial tool~\cite{Rodriguez-Bustos2012} and changed their version release strategy~\cite{Khomh2012} as a way to keep up with a fast changing business environment.
 
-\subsection{The R Community}
+\subsection{The R community}
 
 	The R project\footnote{\url{https://www.r-project.org/}} was born in 1993, as a free and open source programming language and software environment for statistical computing, bioinformatics, and graphics~\cite{Ihaka1996}. 
 	R is an implementation of the S programming language combined with lexical scoping inspired by Scheme. 
@@ -443,7 +443,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		\label{fig:StudyPhases}
 	\end{figure}
 
-\subsection{Phase 1: Mining Data Archives} 
+\subsection{Phase 1: Mining data archives} 
 \label{sec:studyDesign}
 
 	The mining of the data archives method involved a three step process: data collection, data analysis, and reporting~\cite{Runeson2012}.
@@ -452,7 +452,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	In the \textbf{data analysis} step, I analysed the data looking for answers for the research questions.
 	Finally, the \textbf{report} step, consolidated the results, which are presented in section~\ref{cha:findings}.
 
-\subsubsection{Data Collection and Preparation}
+\subsubsection{Data collection and preparation}
 \label{subsec:preparation}
 
 	Stack Overflow and the R-help mailing list store their messages in publicly available archives.
@@ -507,7 +507,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 
 	The following subsections detail the analysis process for each media channel.
 
-\subsubsection*{The R-help Mailing List}
+\subsubsection*{The R-help mailing list}
 \label{subsec:r-help}
 
 	As stated earlier, the R-help archives are in the MBOX format. 
@@ -543,7 +543,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 %		\label{fig:ML-ERD}
 %	\end{figure}
 
-\subsubsection*{Stack Overflow}
+\subsubsection*{StackOverflow}
 	% time zone of the mailing list is UTC
 	%Update on the table
 	Every three months, Stack Exchange releases a new data dump file in XML format that contains data from all their Websites\footnote{\url{http://stackexchange.com/sites}}.
@@ -566,7 +566,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 %		\label{fig:SO-ERD}
 %	\end{figure}
 
-\subsubsection*{Data Merging}
+\subsubsection*{Data merging}
 	There are some studies that propose different techniques for merging users' identities by analysing the data from multiple repositories (e.g., mailing lists, bug tracking information, and source code management tools)~\cite{Bird2006, Kouters2012,Vasilescu2014c}.
 	Bird \textit{et al}.~\cite{Bird2006} proposed a heuristic to match users' identities across multiple mailing list archives by combining parts of user names and email addresses. For example, the \textit{cagomezt} prefix is likely to belong to \textit{Carlos Arturo Gomez Teshima}.
 	Furthermore, Kouter \textit{et al}.~\cite{Kouters2012} used a natural language processing technique called Latent Semantic Analysis to merge identities on very noisy data.
@@ -582,7 +582,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
     The probability to find a MD5 collision is less than $1/2^{64}$~\cite{Rivest1992}.
 	%\footnote{\url{https://en.wikipedia.org/wiki/Collision_resistance}}, and therefore, this could possibly lead to false positive resistant outcomes.
 
-\paragraph{Data Analysis Process}
+\paragraph{Data analysis process}
 \label{sec:dap}
 
 	I used a qualitative data analysis approach to study the data that flows through Stack Overflow and the R-help mailing list.
@@ -608,7 +608,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	The next sections, for the sake of clarity for the reader, have been presented in a linear fashion. 
 	However, the process as depicted in Figure \ref{fig:ContentAnalysisFlow} is not linear. 
 
-\paragraph{Techniques Used to Support the Analysis}
+\paragraph{Techniques used to support the analysis}
 	Figure~\ref{fig:ContentAnalysisFlow} contains some coloured shapes that depict the techniques used to support the data analysis, which are explained as follow:
 
 	\begin{itemize}
@@ -702,7 +702,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		\end{figure}
 %	\end{landscape}
 
-\subsection{Phase 2: The Survey} 
+\subsection{Phase 2: The survey} 
 
 	In \textit{phase 2}, I conducted a survey\footnote{A copy of the survey is published in \url{http://goo.gl/mxmH5J}} with members of the R community with the purpose of obtaining additional insights on the findings.
 	First, I created a draft of the survey and did two pilots:
@@ -733,7 +733,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	(4) a characterization of the knowledge based on the analysis of active users using both channels; and
 	(5) interesting remarks about users regarding their behaviour on these two media channels.
 
-\subsection{RQ-1. What types of knowledge are shared on Stack Overflow and the R-help mailing list within the R community?}
+\subsection{RQ-1. What types of knowledge are shared on StackOverflow and the R-help mailing list within the R community?}
 %\section{Types of Knowledge}
 \label{cha:findings-types}
 
@@ -1146,7 +1146,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	Therefore, the categorization of knowledge presented in this chapter is non-mutually exclusive. 
 	%>>
 
-\subsection{RQ-2. How is knowledge constructed on Stack Overflow and the R-help mailing list?}
+\subsection{RQ-2. How is knowledge constructed on StackOverflow and the R-help mailing list?}
 \label{sec:rq2}
 %\section{Construction of Knowledge}
 
@@ -1346,7 +1346,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 %		\end{longtable}
 %	\end{footnotesize}
 
-\subsection{RQ-3. Why do Certain Users Post to Both Stack Overflow and the R-help Mailing List}
+\subsection{RQ-3. Why do certain users post to both StackOverflow and the R-help mailing list}
 %\section{Characterization of the Knowledge \\from Active Users}
 
 	For a community such as R, the variety of channels makes it possible to reach different users of the same community.
@@ -1412,7 +1412,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		For instance, a user asked a question that seems to be the opposite of what the posting guide recommend, and someone answered: \textit{``...If you read the Posting Guide I think you will find precisely the opposite expectation explicitly presented. Using my "cheeky code" would only be part of the recommended actions to take before posting if you follow the recommendations of the "Do your homework before posting:"...''} {\footnotesize URL: \href{http://goo.gl/FUm1HC}{QFUm1HC}}
 	\end{itemize}
 
-\subsection{Survey Results}
+\subsection{Survey results}
 \label{sec:survey}
 
 	As previously mentioned, the objective of the survey was to bring further insights on the study.
@@ -1533,7 +1533,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	In this section we present a theory that encapsulates the observations and insights found during the analysis of the data, including, the comparison of the way knowledge is shared on both channels, and the recommendations of the use of Q\&A media channels
 
 %Categorization of the way resources are used on Q\&A media channels.
-\subsection{Comparison of How Knowledge is Shared on Both Channels}
+\subsection{How the knowledge is shared on channels}
 
 	Based on the categorization performed, both channels provide roughly the same knowledge support for questions and answers.
 	However, there are some differences between both channels which are summarized in Table~\ref{table:constrat}.
@@ -1611,7 +1611,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	\end{quote}
 
 %{Compendium of best practices to assist in the usage of multiple Q\&A media channels.}
-\subsection{Recommendations For Using Multiple Q\&A Media Channels}
+\subsection{Recommendations for using multiple Q\&A media channels}
 
 	One of the interests in this thesis was to derive a set of recommendations for using media channels, as a mechanism to improve the benefits of their usage.
 	Based on the analysis of the \textit{flags} (which are often used to point out users' behaviours); rules, manuals and FAQ resources from Stack Overflow and the R-help mailing list; threads that were posted in both channels (i.e., the same question by the same user in both channels); and the answers of the survey.
@@ -1706,7 +1706,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		The R-help mailing list can be used for the same purpose as Stack Overflow, but it has a different audience as well as other benefits as demonstrated on this thesis.
 		For instance, the R-help mailing list is less confronting, it can be used to learn rather than just get the answer, and it can be sometimes friendlier.
 
-	\subsubsection{Provide a Background to the Question}
+	\subsubsection{Provide a background to the question}
 
         Sometimes, in spite of reading the documentation available, a user can fail to address the channel appropriately. 
         The community may feel that the question asked, the information provided or something else is not in compliance with the expectations and rules of the channel (e.g., read the posting guide, demonstrate minimum knowledge about the technology used).
@@ -1714,7 +1714,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 		This would avoid answers like \textit{``read the manual''}, or \textit{``read the posting guide''}, as well as helping the participants to help.
 		As an example, in the thread \textit{``lme4 GLMM''}\footnote{\url{https://goo.gl/Gbek3R}}, a user asked \textit{``I'm very sorry for my repeated question, which I asked 2 weeks ago, namely: I'm interested in possibly simple random-part specification in the call...''}.
 
-\subsection{Recommendations For Using External Resources}
+\subsection{Recommendations for using external resources}
 
 	When answering or asking questions, it is a common practice to provide links for sharing documentation, examples, source code, or other resources.
 	As links point to online resources that might or not exist in the future, it is important to include the key points of the resource within the question or answer.
@@ -1741,7 +1741,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	We now discuss the findings in the analysis of the knowledge flow through media channels and the related literature. 
 %	I also present the implication of the study and how it can be used for future research.
 
-\subsection{Comparison of the Way Knowledge is Shared on Both Channel}
+\subsection{How the knowledge is shared}
 
 	Based on my findings, Stack Overflow is more suitable for questions with a clear answer, and the R-help mailing list is more suitable to discuss topics that are in and out of the software development domain.
 	The study by Squire~\cite{Squire2015a} presents a similar difference between Stack Overflow and a mailing list of multiple projects through a different approach. 
@@ -1760,7 +1760,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	Finally, this study shows that the difference between media channels might be more complex than just the differences based on channels' features. 
 	Every feature (e.g., gamification) might: affect the way in which community members work~\cite{Antin2011,Singer2013}, push away part of the community members~\cite{Vasilescu2013}, or change the way the knowledge is constructed.
 
-\subsection{Message Categorization}
+\subsection{Message categorization}
 
 	In this thesis my colleague and I categorised the messages and the resources that flow through Stack Overflow and the R-help mailing list.
 	In a previous study, Treude \textit{et al.}~\cite{Treude2011} categorized questions of different communities on Stack Overflow.
@@ -1780,7 +1780,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	Moreover, my knowledge categorization can be used to analyse in more detail the knowledge that flows through a channel. 
 	For instance, it can be used to analyse unanswered questions~\cite{Asaduzzaman2013}, successful answers~\cite{Calefato2015}, or identify topic trends for each categorization type.
 
-\subsection{Knowledge Construction}
+\subsection{Knowledge construction}
 
 	In this work, I present two ways to construct knowledge, the participatory and the crowd knowledge construction described in chapter \ref{cha:findings}.
 	Tausczik \textit{et al}.~\cite{Tausczik2014} found the same collaborative knowledge construction over another knowledge domain and channel, the mathematics domain on Math Overflow (a Q\&A channel focused on solving mathematical problems).
@@ -1815,7 +1815,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 	The approach of Bacchelli \textit{et al}.~\cite{Bacchelli2012a} could be a valuable extension to Bettenburg's tool.
 
 
-\section{Threats to Validity}
+\section{Threats to validity}
 \label{cha:threats}
 
 %    This chapter outlines the threats to the validity of this study. As we had multiple researchers coding the data, and found using a case study methodology to be a challenging task, multiple limitations surfaced.
@@ -1833,7 +1833,7 @@ categorize questions according to their topic~\cite{Treude2011}, determine the c
 In this section, we explain how we addressed each threat to
 validity.\remarks{Consider make the data available online.}
 
-\subsection{Construct Validity}
+\subsection{Construct validity}
 
 The manual open coding of a large collection of messages may introduce bias in the outcome.
 We minimize the bias by misinterpretation, we used multiple data sources to triangulate our findings (survey, documentation, and messages from both media channels), and randomly selecting data, and two researchers performed the data coding.
@@ -1842,7 +1842,7 @@ The purpose of calculating the coefficient were solely to trigger discussion bet
 We set a threshold of 80\% as the minimum to obtain agreeable results, which is higher than the 60\% suggested to obtain substancial results~\cite{Landis1977}.
 As a result, we were able to identify and report discrepancies and contradictions.
 
-\subsection{Internal Validity}
+\subsection{Internal validity}
 
 %	It is important to clarify that given the exploratory nature of the study, the evidence found in this work is not statistically significant
 %	Internal validity refers to the amount of bias within a study~\cite{Creswell2009}.
@@ -1873,7 +1873,7 @@ To minimized the bias, two researches performed the mapping.
 %	This issue might represent a threat to validity of the GTMail tool.
 
 	%Moreover, I did not measure how accurate was the GTMail tool to recreate the data from the R-help mailing list, neither compare the tool against other tools. 
-\subsection{External Validity}
+\subsection{External validity}
 
 	%External validity is concerned with the extent to which the findings from this work can be generalized~\cite{Runeson2012, Calder1982}.
 	This study is exploratory case study and only applies to the R community.
@@ -1889,10 +1889,10 @@ To minimized the bias, two researches performed the mapping.
 %	For instance, studies on knowledge construction ~\cite{Tausczik2014} and question categorization~\cite{Treude2011}\remarks{elaborate}.
 
 
-\section{Future Work}
 \label{cha:future-work}
 %We distinguish three areas for further research: explore the knowledge categories in other software development communities, understand the topics of discussions in both R-help mailing list and StackOverflow, and understand the next logical step in the evolution of R-help mailing list.
 %We discuss them below.
+\section{Future work}
 
 	% Generalization of these findings. Explore other communities both with mailing list and QA website.
 	%\paragraph{Is the type of knowledge different in other software development communities?}
@@ -1913,7 +1913,7 @@ Survey participants provided a list of areas that might improve the experience f
 Through the evaluation of functional and non-functional requirements, along with the execution of user studies, the research community could help the R community to continue supporting its extensive user base.
 
 
-\section{Concluding Remarks}
+\section{Conclusions}
 \label{cha:conclusion}
 
 	Understanding the interplay between channels should be the next step to gain further insights into software development practices.
