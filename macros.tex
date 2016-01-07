@@ -4,8 +4,8 @@
 \usepackage[english]{babel}
 
 \usepackage[hidelinks]{hyperref} % back-referencing + hyperlinks
-\usepackage{paralist}
 \usepackage{listings} % source code and othe space redefinitions
+%\usepackage{paralist}
 
 \usepackage{xspace}
 \usepackage{subscript}
@@ -21,7 +21,7 @@
 \usepackage{booktabs}
 \usepackage{pslatex}
 %\usepackage{mathptmx,helvet,courier}
-
+\usepackage[inline]{enumitem}
 \usepackage{flushend}
 
 
@@ -42,10 +42,7 @@
 
 
 \newenvironment{packed_enum}{
-\begin{enumerate}
-  \setlength{\itemsep}{3pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}
+\begin{enumerate}[itemsep=3pt, topsep=2pt, leftmargin=2.4em, parsep=0pt]
 }{\end{enumerate}}
 
 % Comments

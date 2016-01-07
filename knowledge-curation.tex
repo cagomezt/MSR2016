@@ -155,10 +155,7 @@ Understanding channels is key to improve the developer practices, communication,
 	Our overarching goal was to provide tools for further studies that analyse and compare the knowledge flowing through media channels.
 	Thus, the research question investigated are:
 
-	\begin{enumerate}[\bfseries RQ-1.]
-	  \setlength{\itemsep}{3pt}
-      \setlength{\parskip}{0pt}
-      \setlength{\parsep}{0pt}
+	\begin{enumerate}[label=\bfseries{RQ-\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 		\item What types of knowledge are shared on Stack Overflow and the R-help mailing list within the R community?
 		\item How is the knowledge constructed on Stack Overflow and the R-help mailing list? 
 %		\item How does the sharing of links on Stack Overflow and the R-help mailing list support knowledge construction?
@@ -276,8 +273,10 @@ The R project\footnote{\url{https://www.r-project.org/}} was born in 1993, as a 
 %R is an implementation of the S programming language combined with lexical scoping inspired by Scheme.
 %	It was created by Ross Ihaka and Robert Gentleman and is now developed by the R Development Core Team.
 The R community is composed of two groups:
- (1) \textit{R-core}, a team of 20 software developers that maintains and evolves the R language, and
- (2) \textit{Periphery} includes everybody else (language users and package developers).
+\begin{enumerate*}[label=(\arabic*)]
+  \item \textit{R-core}, a team of 20 software developers that maintains and evolves the R language, and
+  \item \textit{Periphery} includes everybody else (language users and package developers).
+\end{enumerate*}
 
 	The R community is an eclectic open source community beyond software development.
 	% It provides broader relevance outside the software development community, since it
@@ -462,8 +461,10 @@ For Stack Overflow, we obtained a data dump file available in its website.
 For the R-help mailing list data, we retrieved the archives available as MBOX files from the R website.
 
 	We used two different software tools to prepare the data.
-	(1) to process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}; and,
-	(2) to process the R-help mailing list archives, we wrote a software application\footnote{Our tool is available at \url{https://github.com/cagomezt/GTMail}}, based on the Bettenburg \textit{et al}~\cite{Bettenburg2009} recommendations of how to process mailing list data.
+	\begin{enumerate*}[label=(\arabic*)]
+	\item to process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}; and,
+	\item to process the R-help mailing list archives, we wrote a software application\footnote{Our tool is available at \url{https://github.com/cagomezt/GTMail}}, based on the Bettenburg \textit{et al}~\cite{Bettenburg2009} recommendations of how to process mailing list data.
+	\end{enumerate*}
     Once we pre-processed the data, we stored them in a database for further analysis.
 
 %	The following subsections detail the analysis process for each media channel.
@@ -554,10 +555,7 @@ As advised to reduce bias~\cite{Runeson2012}, two researchers conducted the anal
 
 The techniques used to support the data analysis, which are explained as follow:
 
-	\begin{description}
-      \setlength{\itemsep}{3pt}
-      \setlength{\parskip}{0pt}
-      \setlength{\parsep}{0pt}
+	\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 		\item[Memoing] is the act of taking notes (coding) on what the researcher is learning from the data during the analysis~\cite{Groenewald2008}.% for example, the hypotheses regarding a code, and relationships between concepts.
 We wrote reflective memos in a spreadsheet next to the applicable codes (see figure \ref{fig:CodingExample}).
 These memos were used to create the codes, and hypotheses about the relationships between concepts.
@@ -591,10 +589,7 @@ These memos were used to create the codes, and hypotheses about the relationship
 %    Stack Overflow has a clear delimitation of what is a question, an answer, a comment, a flag and an update, while the R-help mailing list is just plain text.
     The mapping of messages between both channels was as follows:
 
-	\begin{description}
-      \setlength{\itemsep}{3pt}
-      \setlength{\parskip}{0pt}
-      \setlength{\parsep}{0pt}
+	\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 		\item[Question:] the message is the first on the thread, and it contains the main question.
 		\item[Answer:] the message provides a solution to the main question of the thread.
 	 	\item[Update:] the message claims for a modification to a question (or answer) made by the author of such a question (or answer).
@@ -678,11 +673,13 @@ This section presents the findings of our study that answer each research questi
 
 	As mentioned above, the R-help is not a specialized mailing list, therefore we were motivated to investigate whether Stack Overflow shares the same types of knowledge as R-help.
 	As a result, we were able to identify that the messages from the Stack Overflow R tag and R-help mailing list contain five types of knowledge:
-	(1) Questions,
-	(2) Answers,
-	(3) Updates,
-	(4) Flags, and
-	(5) Comments.
+	\begin{enumerate*}[label=(\arabic*)]
+        \item Questions,
+        \item Answers,
+        \item Updates,
+        \item Flags, and
+        \item Comments.
+	\end{enumerate*}
 
 \subsubsection{Questions}
 
@@ -729,7 +726,7 @@ We identified 10 type of knowledge related to \emph{questions}:
 	Therefore, we defined updates on the R-help mailing list as \emph{emails submitted by the author of the question or answer}.
 
 	In contrast, on Stack Overflow updates are presented in two ways:
-	\begin{description}
+	\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 		\item[Labelled updates] are explicitly shown in the body of questions or answers next to a label that identifies the update (e.g., edit, update, and p.s.).
 		When multiple update labels appear in a message, each label is accompanied by a number (e.g., \textit{``[Edit 1:]''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), by a date (e.g., \textit{``Edit/Update (April 2011):''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), or by a bulleted list (e.g., ``EDIT: - anova... -drop1...'' {\footnotesize URL:  \href{http://goo.gl/sQiq0M}{Q7273695}})
 
@@ -775,7 +772,7 @@ Due to the format of messages on the R-help mailing list, flags can be mixed amo
 	\begin{packed_enum}
 		\item \textbf{``Off-topic''}, \textbf{``not constructive''} or \textbf{``opinion-based''}: Identify questions that are unrelated to the list's interests or which answers are based on the opinion of channel participants (not actual facts).
 		These flags can be assigned for different reasons or they can be used on different ways.
-		\begin{description}
+		\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 			\item[\textit{Typographical error}:] A problem was caused by typographical error.
 			\item[\textit{Debugging help}:] User is asking help for debugging.
 			\item[\textit{Book, tool, software library}:] User is asking for a book, tool, software library, tutorial or other off-site resource.
@@ -852,8 +849,10 @@ In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a qu
 	\end{packed_enum}
 
 	On the R-help mailing list, participatory knowledge takes place when:
-	(1) previous answers are included in the actual answer and it is possible to infer a link between them; or
-	(2) when a in the message contains a direct reference to other answers or authors.
+	\begin{enumerate*}[label=(\arabic*)]
+	\item previous answers are included in the actual answer and it is possible to infer a link between them; or
+	\item when a in the message contains a direct reference to other answers or authors.
+	\end{enumerate*}
 	Figure \ref{fig:ML-PK1} depicts two examples of the way participatory knowledge occurs on the R-help mailing list:
 	direct citation of the author of a previous answer (top), and inferable links between answers (right).
 
@@ -867,8 +866,10 @@ In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a qu
 	\end{figure}
 
 	On Stack Overflow, participatory knowledge takes place when:
-	(1) it is possible to infer a link between answers, via either a direct or indirect reference; or
-	(2) comments complement the answer, or directly cite another author.
+	\begin{enumerate*}[label=(\arabic*)]
+	\item it is possible to infer a link between answers, via either a direct or indirect reference; or
+	\item comments complement the answer, or directly cite another author.
+	\end{enumerate*}
 
 	On Stack Overflow, participatory knowledge happens in different places, perhaps as a consequence of its rich interface.
 	We observe this phenomena, when a user answers a question and directly cites or links to the author of another answer in the thread, or when a user cites the author of a question or answer in a comment made on that question or answer, by including more information, or by suggesting that the answer provided is an additional solution.
@@ -883,8 +884,10 @@ In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a qu
 	\end{figure}
 
 	Crowd knowledge construction is observable when:
-	(1) there is not a direct or inferable reference between answers, 
-	(2) answers are a variation of one of the answers on the thread.
+	\begin{enumerate*}[label=(\arabic*)]
+	\item there is not a direct or inferable reference between answers,
+	\item answers are a variation of one of the answers on the thread.
+	\end{enumerate*}
 	Figure \ref{fig:CKC_MLSO} depicts an example of how crowd knowledge construction is visible on Stack Overflow.
 	As can be seen from the figure, there are two of the three answers that provided a repeated solution.
 
@@ -1224,10 +1227,7 @@ A common practice to answer or ask questions is to provide links for documentati
 % * \footnote{\url{http://goo.gl/OAXoCl}}
 % * \footnote{\url{http://goo.gl/6YfShw}}
 % * \footnote{\url{http://goo.gl/xF1j3R}}
-	\begin{description}
-      \setlength{\itemsep}{3pt}
-      \setlength{\parskip}{0pt}
-      \setlength{\parsep}{0pt}
+	\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 		\item[Well known websites] are expected to be maintained in the long term like Wikipedia, the official documentation in CRAN.
 		For example, the Stack Overflow's thread \textit{``calculating convolution of multinomial distribution''} a user posted \textit{`I'm doing a simulation where I need to calculate a \href{https://en.wikipedia.org/wiki/Convolution_of_probability_distributions}{[Wikipedia convolution]} of \href{https://en.wikipedia.org/wiki/Multinomial_distribution}{[Wikipedia multinomial distributions]}...''}.
 
