@@ -60,7 +60,8 @@
 		{\sf$\blacktriangleright$\textcolor{blue}{\textit{#2}}$\blacktriangleleft$}
 		% \marginpar{\fbox{\bfseries\sffamily#1}}
 		}
-
+        \newcommand{\dmg}[1]{{\color{blue}\emph{Daniel says: #1}}\xspace}
+        \newcommand{\gpoo}[1]{{\color{red}\emph{Germán says: #1}}\xspace}
         \newcommand{\todo}[1]{\textcolor{red}{{\sc #1}}}
         \newcommand{\internalnote}[1]{\marginpar{\scriptsize note: #1}}
         \newcommand{\version}{\emph{\scriptsize{$-$\today$-$}}}
@@ -73,6 +74,8 @@
 		\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
   }
   {
+        \newcommand{\dmg}[1]{}
+        \newcommand{\gpoo}[1]{}
 		\newcommand{\nbb}[2]{}
         \newcommand{\todo}[1]{}
         \newcommand{\internalnote}[1]{}
