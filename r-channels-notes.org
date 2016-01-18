@@ -1,0 +1,111 @@
+#+STARTUP: showall
+#+STARTUP: lognotestate
+#+TAGS:
+#+SEQ_TODO: TODO STARTED DONE DEFERRED CANCELLED | WAITING DELEGATED APPT
+#+DRAWERS: HIDDEN STATE
+#+TITLE: Notes and TODOs for R-channels paper
+#+CATEGORY: todo
+
+* For "theory" section
+
+    In the last decade, Stack Overflow has become the most popular \channel for answering software development related questions, nearly replacing previous methods of communication that accomplished the same objective~\cite{Vasilescu2014c}.
+    Despite Stack Overflow's advantages over Q\&A mailing lists such as the R-help (i.e., gamification environment and rich visual user interface), there are still many users who prefer the latter.
+    We will learn the way programmers use Stack Overflow and the R-help mailing list to gain and share knowledge.
+
+* FOr that chapter
+
+- importance of the community of practice
+ - developers benefit from it
+
+- CPs questions:
+ - What channels to support?
+ - 
+
+
+- We will concentrate on knowledge creation and curation, hence we will look only at q&a in both media
+- MLs are the old channel
+- SO is the new kid in town
+- Why hasn't one replaced the other?
+  - do they support the community in different ways?
+  - Why do developers choose one over the other?
+  - Do they provide different benefits to the community?
+
+* When I have internet:
+
+- search for flashmob in slashdot
+
+The R community is vibrant and keeps growing at a very fast rate. 
+
+The R language continues to growth in popularity, and with it, the size of its community of practice. The recent TIOBE index for Programming Languages ranks it
+number 19 among all languages.  According to a recent survey, R has become the highest paying skill in IT. The interest in R continues to grow. Few weeks ago
+Microsoft announced support for R in Visual Studio\cite{r-microsot}.
+
+Being an open source project, without commercial backing, the R community has played an important role in its diffusion. Those new to the R language have
+numerous resources to learn the language and receive help: mailing lists, blogs, books, online- and offine--courses, questions-and-answers sites (such as
+\so). In all, these resources provide a vast and rich corpus of knowledge. The R-community benefit from this corpus, but it also the one that drives its
+creation and curation.  For example, in July of 2009, during the Open Source Convention (OSCON'09), the organizers of a birds-of-a-feather session invited users
+to participate in a Flashmob to seed Stackoverflow with R related questions\cite{rflashmob09}. The premise of the session was that \so lacked R-related
+content. The organizers have gathered a list of commonly asked questions from the R-help mailing list, Rseek.org and a survey of R-users. Its impact was
+noticed, and \so acknowledge to "officially condone" the practice~\cite{soFlashmob09}.
+
+The size of the R community has a network effect. As the number of its members grows, the awareness of the language increases, jobs are created, available
+resources increase their size, depth and quality, new tools and libraries appear. In essence, helping individuals cope with R has benefits the entire R
+community: its members learn and/or improve their expertise, the experts gain reputation for their knowledge and willingness to help, the R-users base grows and
+with it, its cloud and market.
+
+Without a single entity directing and controlling the R-language, knowlege in R has grown organically from its community. Knowledge is exchanged and curated in
+many \channels (emails, blogs, books, presentations, web sites, etc). Like any other community of practice, the R-community takes advantage of available \channels
+to achieve this goal.
+Two \channels are at the center of this process: R-help mailing list and \so. The R-users mailing list was established \dmg{when} as way to assist those using
+the language. \so is not specifically oriented towards R, but its section dedicated to the language has grown rapidly.
+
+Without a doubt, \so has changed, for the better, the way programmers seek knowledge. \so can play the role of a expert-on-call, who is capable---and willing--
+to answer questions of any level about any programming technology. The gamification features of so have also guaranteed the willingness of experts to answer
+those questions, frequently within minutes of being posted. Equally important is the ability of \so users to curate the knowledge being created, making sure that
+the best answers surface to the top. \so has become an effective tool to create, curate and exchange knowledge, including knowlege or R.
+
+One would expect that the traffic in the R-users \ml would have begin to fizzle as \so popularity increses. If \so is so effective at matching those who seek
+knowlege with those that have it, doesn't that obviate the need for the R-users mailing list? at least regarding questions and answers. Yet, that does not appear
+to be the case. The R-help \ml continues to grow in traffic, implying that there it is still an important resource for the R-community. It appears as if R-users
+and \so complement each other.
+
+There exist obvious inherent differences between both \channnels. \mls join users by subscription, creating a tight community, and their content lacks organization (except for
+its natural organization provided by the metadata of the emails---subject, threading, authors, date) and are not optimized for long term storage and retrieval.
+\so, on the other hand, is a more loose community and it is opmitized for the curation and long term storage of the knowledge.
+
+However, little is known of the actual differences of use between both \channels. 
+In particular, how the questions and answers seeked in one channel compare to
+the other, why users choose one channel over the other and why some users participate in both channels and what are the perceptions that its participants have
+regarding each \channel.
+
+The objective of this study is to emprically compare how knowledge, specifically knowledge manifested as questions-and-answers, is seeked, shared and curated in
+both, the R-users mailing list and the R section of \so.
+
+
+
+those providing knowledge must seek to explicitly answer questions at a particular time. Who is likely to read
+a question is unknown. While \mls place postings in the mailboxes of their users, \so relies on its users to go to \so and 
+
+
+
+The creation and curation of knowledge regarding R has a long impact that
+goes well beyong simply helping new users of the language.
+
+
+
+results in a
+better, richer envinonment
+
+
+
+
+
+- Dice Tech Salary Survey: 
+
+ 
+ there was as a message in R-help mailing list to participate in a "flashmob" and seed Stack Overflow with questions.
+
+
+soFlashmob09 http://conferences.oreilly.com/oscon/oscon2009/public/schedule/detail/10432
+
+rflashmob09 https://blog.stackoverflow.com/2009/07/stack-overflow-flash-mobs/
