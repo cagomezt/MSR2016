@@ -4,41 +4,58 @@
 \section{Methodology}
 \label{cha:methodology}
 
-    We carried out a qualitative case study of the knowledge that flows through the channel. 
-    This method is considered to be suitable for studies that explore under-researched phenomena and for providing an in-depth analysis within its real-life context~\cite{Yin2009}.
+The main goal of our study is to understand how knowledge is constructed and shared in both \SO and the \RH mailing list. To accomplish it, we decided to break
+the study into the 
+following research questions:
+ 
 
-\subsection{Phase 1: Mining data archives} 
+    \begin{enumerate}[label=\bfseries{RQ-\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
+        \item \rqa
+        \item \rqb
+        \item \rqc
+        \item \rqd
+    \end{enumerate}
+
+To answer these questions we performed a qualitative case study of the knowledge that flows through both \RH and \SO. 
+This research method is applicable when a concept or phenomenon requires more understanding, with little pre-existing research~\cite{Creswell2009}.
+
+This study was composed
+of two phases. In the first we did a random sampling of questions in both channels. Its purpose was to characterize the types of discussions that happen in both
+channels. We sampled 400 questions in each channel; this sample guaranteed both saturation and a reliability of 95% $\pm$ 5\%. The second phase was a survey of members of the R-community to obtain further additional insights and to verify our findings. 
+
+
+
+\subsection{Phase 1: Understanding questions} 
 \label{sec:studyDesign}
 
-	The mining of the data archives method involved a three step process: data collection, data analysis, and reporting.%~\cite{Runeson2012}.
+In this phase we mined both the archives of the R-users mailing list and \SO.
 
 \subsubsection{Data collection and preparation}
 \label{subsec:preparation}
 
-	Stack Overflow and the R-help mailing list store their messages in publicly available archives.
-	The records available for Stack Overflow start in 2008 (the birth of Stack Overflow), while the R-help archives go back to 1997.
-	To make both data sets comparable, we analysed the data from 2008 until 2013, a period of time that both channels were available simoultaneously.
-    For Stack Overflow, we obtained a data dump file available in its website.
-    For the R-help mailing list data, we retrieved the archives available as MBOX files from the R website.
+We used the publicly available archives of both	the R-help mailing list and Stack Overflow. The R-Users mailing list dates started in 1997, while
+the archives for Stack Overflow start in 2008 (when it was created).
+To make both data sets comparable, we analysed both datasets from 2008 until 2013, a period of time that both channels were available.
+For Stack Overflow, we obtained a data dump file available in its website. For the R-help mailing list data, we retrieved the archives available as MBOX files from the R website.
 
-	We used two different software tools to prepare the data.
+	We used two different software tools to prepare the data:
 	\begin{enumerate*}[label=(\arabic*)]
 	\item to process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}; and,
-	\item to process the R-help mailing list archives, we wrote a software application\footnote{Our tool is available at \url{https://github.com/cagomezt/GTMail}}, based on the Bettenburg \textit{et al}~\cite{Bettenburg2009} recommendations of how to process mailing list data.
+	\item to process the R-help mailing list archives, we wrote a our own mail mining application\footnote{Our tool is available at
+            \url{https://github.com/cagomezt/GTMail}}, To ensure accurate results when processing the R-help mailing list, we followed the series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
 	\end{enumerate*}
-    Once we pre-processed the data, we stored them in a database for further analysis.
 
-    To ensure accurate results when processing the R-help mailing list, we followed the series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
-    To make the data comparable againt the Stack Overflow dat set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by Stack Overflow (UTC).
+
+%To make the data comparable againt the Stack Overflow dat set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by Stack Overflow (UTC).
     
-    Stack Exchange releases a new data dump from all their websites every three months\footnote{\url{http://stackexchange.com/sites}}.
-    However, the last dump file that containing email addresses as MD5 hashes was released in September 2013.
-    Since then, Stack Overflow does not provide the email addresses.
-    Because of this, we used the data dump file from September 2014, but updated the table \texttt{users} with the hashes in the dump file from September 2013, for whose \texttt{ID}s were identical in both data sets.
-    If an user from the 2013 data file did not exist in the 2014 data, we ignored it.
-    We filtered all R-related data by selecting only messages with the R tag (\texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (\texttt{rstats} and \texttt{r-language}).
+Stack Exchange releases a new data dump from all their websites every three months\footnote{\url{http://stackexchange.com/sites}}.
+However, the last dump file that containing email addresses as MD5 hashes was released in September 2013.
+Since then, Stack Overflow does not provide the email addresses.
+Because of this, we used the data dump file from September 2014, but updated the table \texttt{users} with the hashes in the dump file from September 2013, for whose \texttt{ID}s were identical in both data sets.
+If a user from the 2013 data file did not exist in the 2014 data, we did not count it.
+From \SO we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (\texttt{rstats} and \texttt{r-language}).
 
-	Table~\ref{table:data} depicts a summary of the data uploaded in the database.
+	Table~\ref{table:data} depicts a summary of the data used for this study.
 	The R-help has more questions, answers, and users than Stack Overflow, because there were approximately ten years of additional data.
 	Only Stack Overflow's data contains ``comments'' information.
 
@@ -60,22 +77,22 @@
 	  \label{table:data}
 	\end{table}
 
-    To merge both datasets, we matched Stack Overflow's email MD5 hashes with the MD5 hash version of email addresses from the R-help mailing list data.
-    We did not use any method to infer email addresses based on user names.
-    The resulting set was 1,421 different users with the same email address on both media channels.
+To determine users who were common to both channels we compared the MD5 has of the participants of R-Users to the MD5s from \SO. Given the limitations of the
+\SO data, we did not perform any unification fo email addresses, and therefore consider every email address to belong to a different individual. 
+We found 1,421 different users (email addresses) on both media channels.
 
-    Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positives, it is unlikely that two different email addresses share a MD5 hash.
+    % Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positives, it is unlikely that two different email addresses share a MD5 hash.
+
+
 
 \subsubsection{Data analysis process}
 \label{sec:dap}
 
-    To analysis the data that flows through Stack Overflow and the R-help mailing list, we performed a qualitative and exploratory approach, as it best suits research when a concept or phenomenon requires more understanding, with little pre-existing research~\cite{Creswell2009}.
-    
-    In particular, we performed an inductive approach~\cite{Runeson2012} to analyse the data from Stack Overflow and the R-help mailing list.
+    We performed an inductive approach~\cite{Runeson2012} to analyse the data from Stack Overflow and the R-help mailing list. 
     This is an iterative process, where across the study is necessary to switch between data selection and data analysis, or between data reporting and data collection.
     As advised to reduce bias~\cite{Runeson2012}, two researchers conducted the analysis, both computer scientists with a background in qualitative data analysis.
     
-    \begin{figure*}[!htb]
+    \begin{figure*}[htbp]
     	\centering
     	\includegraphics[width=.95\textwidth]{Figures/CodingExample}
     	\caption{Example of data coding. Each row is a thread message. Questions, comments, and answers are identified with the number on the first column. Columns in yellow contain the codification for each message type. The last two columns contain the memos and the URL.}
@@ -84,7 +101,7 @@
 
     The techniques used to support the data analysis, which are explained as follow:
 
-	\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
+	\begin{description}[itemsep=2pt, topsep=0pt, leftmargin=0em, parsep=0pt]
 		\item[Memoing] is the act of taking notes (coding) on what the researcher is learning from the data during the analysis~\cite{Groenewald2008}.
         We wrote reflective memos in a spreadsheet next to the applicable codes (see figure \ref{fig:CodingExample}).
         These memos were used to create the codes, and hypotheses about the relationships between concepts.
@@ -119,19 +136,19 @@
 		\item[Flag:] the message requests attention from the moderator (e.g., repeated questions, spam, or rude behaviour).
 	\end{description}
 
-	To answer RQ1 and RQ2, we queried the database by selecting a random number of threads of each channels within a time frame.
-	The data set was capped at 400 threads for each channel when we deemed our observations as being saturated.
+	To answer RQ1 and RQ2, we selected 400 random threads of each channels.
+%	The data set was capped at 400 threads for each channel when we deemed our observations as being saturated.
+\dmg{The following does not seem obvious how it relates to the question}
 	To answer RQ3, we added a condition that matched, on both channels, messages with the same subject written by the same author.
 	The results were 79 threads, and therefore, we analysed the entire population available. 
 
 \subsection{Phase 2: The survey} 
 
-    In \textit{phase 2}, we conducted a survey\footnote{A copy of the survey is available at \url{http://goo.gl/mxmH5J}} with members of the R community with the purpose of obtaining additional insights on the findings.
+    We conducted a survey\footnote{A copy of the survey is available at \url{http://goo.gl/mxmH5J}} with members of the R community with the purpose of obtaining additional insights on the findings.
     To test and refine the questions, format and tone, we performed two pilots.
     
     We announced our survey on Twitter, Reddit, the R-help mailing list, and Meta Stack Exchange to reach users of both channels, and minimize the selection bias.
-    However, on Stack Exchange the announcement was not well received and therefore was deleted a few minutes later after posting it.
-    We received 26 valid responses out of 32 from the R community members.
+    However, on Stack Exchange the was deemed out of topic and was deleted a few minutes later. We received 26 valid responses.
 
 %%% Local Variables:
 %%% mode: latex
