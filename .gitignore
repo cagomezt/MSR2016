@@ -34,3 +34,5 @@ knowledge-curation.pdf
 *.fls
 
 #/notes/
+*.rel
+auto
