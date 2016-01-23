@@ -3,30 +3,34 @@
 %!TEX root = knowledge-curation.tex
 \section{Introduction}
 \label{cha:introduction}
+The adoption and emergence of socially enabled tools and channels (e.g., GitHub, \SO, \ml) fosters the formation of very large \textit{communities of practice} where members share a common interest, such as programming languages, frameworks, and tools. These communities of practice rely and use many different communication channels, however little is known about how these communities create, share, and curate knowledge using such channels. 
 
-    % Role of media channels
-    \Channels play an important role in the collaboration, coordination, and communication activities that occur between programmers.
-    \Channels are more than just delivery systems, they connect users with a \textit{community of practice} or groups of people with a common interest.
-    Two popular \channels used by software developer are Stack Overflow\footnote{\url{http://stackoverflow.com/}} and mailing lists.
-    To decide, a programmer considers the characteristics will benefit most among channels.
-\dmg{This should be changed from the challenge of the developer to the challenge of the community: which one to have?}
-    Such considerations are: experts on the channel, flexibility on topics allowed, if the channel is asynchronous, socially enabled, or has gamification elements~\cite{Vasilescu2014c}.
+The R programming language, being an open source project and without commercial backing, relies heavily on its rapidly growing and highly heterogeneous software development community. The R community plays an important role in its diffusion; members have numerous resources to learn the language and receive help: mailing lists, blogs, books, online- and offine- courses, questions \& answers sites (e.g., \SO). The R-community benefits from this vast and rich corpus of knowledge, but more importantly it also the one that drives its creation and curation.
 
-    We investigated the way \textit{knowledge} (or user generated content) is curated within a particular software development community.
-    For this study we chose the R community, mainly because it is a fast growing, highly heterogeneous software development community with many users with
-    limited software programming experience.
-\dmg{Revise this goal}
-    The main research goal of this paper is to understand and compare how a community uses its two most important \channels: its mailing list and
-    stack overflow. \dmg{needs sentence to link to the next list of research questions, use next sentece}
+Without a single entity directing and controlling the R-language, knowledge in R has grown organically from its community. Similarly to other communities of practice, knowledge is exchanged and curated in many \channels. Two \channels are at the center of this process: \textit{R-help mailing list} and \textit{\SO}. The R-users mailing list was created as way to assist those using the language, while \SO is not specifically oriented towards R, but its section dedicated to R has grown rapidly\footnote{\url{http://www.r-bloggers.com/r-is-the-fastest-growing-language-on-stackoverflow/}}.
 
-    We analysed the main Q\&A channels related to programming that the R community contains: R-help mailing list and Stack Overlow.
-    We also conducted a survey to bring further insights on the findings.
-    We constructed a series of categories that supports knowledge classification and knowledge comparison of the main type of messages which these two channels provided.
-    Based on the knowledge categories analysis, we compared the way knowledge was shared on Stack Overflow and the R-help mailing list.
-    Finally, we extracted a set of recommendations to assist in the usage of multiple Q\&A channels, and when linking resources that are external to both channels.
+Without a doubt, \SO has changed, for the better, the way programmers seek knowledge. \SO can play the role of a expert-on-call, who is capable---and willing--
+to answer questions of any difficulty level about any programming technology (R included). The gamification features of \SO have also guaranteed the willingness of experts to answer
+those questions---frequently within minutes of being posted. Equally important is the ability of \SO users to curate the knowledge being created, making sure that
+the best answers surface to the top, and become a valuable asset to those seeking the same answer in the future. \SO has become an effective tool to create, curate and exchange knowledge, including knowlege or R.
 
-    To analyse the channels, we applied a qualitative \textit{exploratory case study} methodology.
+One would expect that the traffic in the R-users \ml would have begin to fizzle as \SO popularity increses. If \SO is so effective at matching those who seek
+knowlege with those that have it, doesn't that obviate the need for the R-users mailing list? at least regarding questions and answers. Yet, that does not appear
+to be the case. The R-help \ml continues to grow in traffic, implying that there it is still an important resource for the R-community. It appears as if R-users
+and \SO complement each other.
 
+There exist obvious inherent differences between both \channels. Mailing lists unite users by subscription, creating a tight community, and their content lacks
+organization (except for its natural organization provided by the metadata of the emails---subject, threading, authors, date) and are not optimized for long
+term storage and retrieval.  \SO, on the other hand, is a more loose community and it is optimized for the curation and long term storage of the knowledge.
+
+However, little is known of the actual differences of use between both \channels. 
+In particular, how the types questions-and-answers seeked in one channel compare to
+the other, why users choose one channel over the other, why some users participate in both channels and what are the perceptions that its participants have
+regarding each \channel.
+
+The objective of this study is to empirically compare how knowledge, specifically knowledge manifested as questions-and-answers, is seeked, shared and curated in both, the R-users mailing list and the R section of \SO.
+
+Specifically, we applied a qualitative \textit{exploratory case study} methodology to answer the following research questions:
 
 \begin{enumerate}[label=\bfseries{RQ-\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
         \item \rqa
