@@ -1,16 +1,17 @@
 % vim: set fenc=utf-8 ft=latex encoding=utf-8
 % -*- mode: latex; coding: UTF-8; -*-
 %!TEX root = knowledge-curation.tex
-\section{Theory and Discussion}
+
+\section{Discussion}
 \label{cha:theory}
 
     In this section we present a theory that encapsulates the observations and insights found during the analysis of the data, including, the comparison of the way knowledge is shared on both channels, and the recommendations of the use of Q\&A media channels.
     We also discuss them with respect to the related literature.
 
 %Categorization of the way resources are used on Q\&A media channels.
-\subsection{How the knowledge is shared on channels}
+\subsection{knowledge creation and curation}
 
-    Based on the categorization performed, both channels provide roughly the same knowledge support for questions and answers.
+    Based on our results, both channels provide roughly the same knowledge support for questions and answers.
     However, there are some differences between both channels which are summarized in Table~\ref{table:constrat}.
     These observations are tendencies, and they are not behaviours unique of each channel.
 
@@ -19,74 +20,90 @@
       \caption{Comparison of the way knowledge is shared on Stack Overflow and the R-help mailing list.}
       \label{table:constrat}
       \begin{small}
-          \setlength{\tabcolsep}{5pt}
-          \begin{tabular}{@{}lll@{}}
-            \toprule
-            \textbf{}      & \textbf{Stack Overflow} & \textbf{R-help}\\
-            \midrule
-            Knowledge construction & Crowd             & Participatory \\
-            Topic restriction      & Topic restriction & No topic restriction \\
-            Knowledge              & Curated knowledge & Knowledge development\\
-            \bottomrule
-          \end{tabular}
+        \setlength{\tabcolsep}{5pt}
+        \begin{tabular}{@{}lll@{}}
+          \toprule
+          \textbf{}      & \textbf{Stack Overflow} & \textbf{R-help}\\
+          \midrule
+          Knowledge construction & Crowd-based             & Participatory \\
+          Topic restriction      & Yes & No \\
+          Emphasis & Curating Knowledge & Developing Knowledge \\ 
+          \bottomrule
+        \end{tabular}
       \end{small}
     \end{table}
 
-    Stack Overflow is more suitable for questions with a clear answer, and the R-help mailing list is more suitable to discuss topics that are in and out of the software development domain.
-    The study by Squire~\cite{Squire2015a} presents a similar difference between Stack Overflow and a mailing list of multiple projects through a different approach.
-    
-    The main benefit of using crowd knowledge construction is the existence of a pool of solutions, which combined with curation mechanisms, produces multiple ways to solve the same problem (diversity of solutions) in a clear solution that can be reused.
-
 \subsubsection{Knowledge construction}
 
-    Stack Overflow's gamification system encourages participation by giving points to those who participate~\cite{Singer2013}.
-    Even when the diversity of answers provided in Stack Overflow is high, users tend to not contribute (edit or comment) in such answers; instead, some users provide their own answers.
-    For instance, in the Stack Overflow thread \textit{\href{http://goo.gl/Mb4Pbk}{``Resources for learning SAS if you already familiar with R''}}, three of the six answerers referenced the same books.
-    The gamification mechanism gives reputation to those who answer the questions, even when each extra answer might not add any new insight about how to solve a specific problem.
-    Stack Overflow curation mechanism provides information about the popularity of answers, but not why, or how it is better than others answers.
+Stack Overflow's gamification system encourages being the first to answer the question~\cite{Singer2013}. In contrast, \RH is less competitive environment,
+where users tend to build on other
+responses; they work more as a team, rather than as individuals searching for points.
+As 
+a result, in \SO knowledge is built more in a crowd-source manner, while in \RH it is usually build in a participatory manner.
 
-    In contrast, the R-help mailing list tends to be more collaborative on how users construct knowledge, and discuss proposed answers.
-    Participants of the R-help mailing list tend to provide more background to the answers as well as to explain answers of other participants.
-    For example, the question \textit{``Arrange elements on a matrix according to rowSums + short `apply' Q''} was posted on both \href{http://goo.gl/a8AES8}{Stack Overflow} and \href{http://goo.gl/PGflT5}{R-help} mailing list.
-    Both communities answered the question using a different knowledge construction approach.
-    On Stack Overflow, each participant provided their own solution without any evidence of collaboration between them.
-    Whereas users on the R-help mailing list complemented each other answers by providing extra information.
+Even when the diversity of answers provided in Stack Overflow is high, users tend to not contribute (edit or comment) to such answers; instead, some users provide their own answers.
+    For example, in the Stack Overflow thread \textit{\href{http://goo.gl/Mb4Pbk}{``Resources for learning SAS if you already familiar with R''}}, three of the six answerers referenced the same books.
+%    The gamification mechanism gives reputation to those who answer the questions, even when each extra answer might not add any new insight about how to solve a specific problem.
+    Stack Overflow curation mechanism is a powerful way to make sure the best answers make it to the top, but it does not provide a mechanism to explain why an
+    answer is better than others.
 
-    The Stack Overflow's knowledge construction is not limited to crowd knowledge construction, it also presents collaborative ways to construct knowledge.
-    However, the crowd one seems more prevalent.
-    On the R-help mailing list happens the same as on Stack Overflow, but the other way around.
+    In contrast, the R-help mailing list tends to be more collaborative on how users construct knowledge, and discuss proposed answers. Its
+    participants tend to provide more background to the answers and explain better the rational behind answers.
+
+These differences are demonstrated in the question \textit{``Arrange elements on a matrix according to rowSums + short `apply' Q''}  posted to  Stack Overflow\footnote{\url{http://goo.gl/a8AES8}} and {R-help}\footnote{\url{http://goo.gl/PGflT5}}.
+    Each communities answered the question using a different knowledge construction approach.
+    On Stack Overflow, participants provided each their own solution without any evidence of collaboration between them.
+    Whereas users on the R-help mailing list complemented each other answers by providing extra information and insights into the answers.
+    
+    The Stack Overflow's knowledge construction is not limited to crowd knowledge construction, it also presents collaborative ways to construct knowledge (such
+    as voting up/down questions and providing comments).
+    However, the crowd-based construction appears to be the more prevalent.
+    Similarly, in \RH, knowledge is also crowed-constructed, but this form is less prevalent than the participatory one.
 
     Tausczik \textit{et al}.~\cite{Tausczik2014} found the same collaborative knowledge construction over another knowledge domain and channel, the mathematics domain on Math Overflow (a Q\&A channel focused on solving mathematical problems).
     Thus, we extend what Tausczik \textit{et al}. found to other media channels and domains.
 
-    The findings presented here as theory can be used to identify how channels' features or community members might affect the construction of knowledge.
-    For instance, we identified that gamification might affect collaboration between users. 
-    Users prefer to create their own answer instead of collaborating with others.
-    Additionally, it might be possible for indirect collaboration, like the one happening on the comments on Stack Overflow to improve discussion and participatory knowledge construction if there was a mechanism to provide points for this type of participation.
-    However, more studies are required to extend our observation to other domains, communities, and channels.
+    Our results seem to imply that the gamification features of \SO, nonetheless effective, have the side effect of reducing collaboration between users towards knowledge creation.
+    While \SO gives users the ability to vote on comments, it does not reward with points those who posted the comment\footnote{Some \SO \textsf{mercenaries}
+      recommend searching for answers in comments and convert them to proper answers to gain reputation (e.g. \url{http://goo.gl/0qUjQw}).}.
+    % The findings presented here as theory can be used to identify how channels' features or community members might affect the construction of knowledge.
+    % For instance, we identified that gamification might affect collaboration between users. 
+    % Users prefer to create their own answer instead of collaborating with others.
+    % Additionally, it might be possible for indirect collaboration, like the one happening on the comments on Stack Overflow to improve discussion and participatory knowledge construction if there was a mechanism to provide points for this type of participation.
+%    However, more studies are required to extend our observation to other domains, communities, and channels.
 
 \subsubsection{Topic restriction}
 
-    One of the best ways in which the R-help mailing list complements Stack Overflow is on the topics that can be posted on both channels, and the format of the questions that can be answered. 
-    On the R-help mailing list, questions related to R, but not focused on software development, are not rejected by the community (see section \ref{cha:findings-types} Flags).
-    Also, topics that trigger a discussion, even when they are not related to software development, are welcomed in to the R-help mailing list.
-    For instance, when users discuss the creation or improvement of the R community channels (see section \ref{sec:userbeh}); or when a question about installing R on \textit{Linux} is asked on the R-help mailing list (like {\href{http://goo.gl/1JLOUF}{\textit{``R on X11 under Linux''}}}).
-    In contrast, on Stack Overflow, questions that trigger discussion are flagged as opinion-based, or as off-topic, and they might be closed. 
-    For example, the questions \textit{\href{http://goo.gl/9JjZW1}{``What's a good example of really clean and clear [R] code, for pedagogical purposes?''}} was closed as off-topic because the question was not related to software development.
+The participation rules of \SO make it topic restrictive, since it only allows questions that have a clear answer; in contrast, the R-help mailing list is suitable to discuss
+any topic regarding R. For example, on \RH, questions related to R, but not focused on software development, are not rejected by the community (see section
+\ref{cha:findings-types} Flags).\dmg{give a concrete example?}
+The study by Squire~\cite{Squire2015a} found a similar difference between Stack Overflow and a mailing list of multiple projects.
 
-    As explained by, one of the participants discussing on \textit{\href{http://goo.gl/mTccwx}{``creating an equivalent of r-help on r.stackexchange.com?''}} commented:
+Topics that trigger a discussion are welcomed in to the R-help mailing list. 
+%    For instance, when users discuss the creation or improvement of the R community channels (see section \ref{sec:userbeh}); or when a question about installing R on \textit{Linux} is asked on the R-help mailing list (like {\href{http://goo.gl/1JLOUF}{\textit{``R on X11 under Linux''}}}).
+In contrast, in Stack Overflow questions that trigger a discussion are flagged as opinion-based, or as off-topic, and they are likely to be closed. 
+For example, the questions \textit{``What's a good example of really clean and clear [R] code, for pedagogical purposes?''}\footnote{http://goo.gl/9JjZW1} was
+closed as off-topic because the question was not related to software development. 
+The advantages of each channel are explained by a user in a message in \RH \emph{``creating an equivalent of r-help on r.stackexchange.com?''}\footnote{\url{http://goo.gl/mTccwx}}:
     \begin{quote}
         \textit{``got an R programming question that you think has a definite answer? Post to [Stack Overflow]. Want to ask something for discussion, like what options there are for doing XYZ in R, or why lm() is faster than glm(), or why are these two numbers not equal-- post to R-help. Questions like that do get posted to [Stack Overflow], but we [moderated] them down for being off-topic and they disappear pretty quickly.''}
     \end{quote}
 
-    We believe that is important to understand how the knowledge is constructed on media channels, and how different mechanisms such as gamification or topic restriction can affect the knowledge construction~\cite{Li2015}.
-    Through this understanding, researchers can gain insights of how to support future media channels, and user diversity~\cite{Vasilescu2014b}.
+    % We believe it is important to understand how the knowledge is constructed on media different channels, and how different mechanisms such as gamification or topic restriction can affect the knowledge construction~\cite{Li2015}.
+    % Through this understanding, researchers can gain insights of how to support future media channels, and user diversity~\cite{Vasilescu2014b}.
 
 \subsubsection{Curated knowledge and knowledge development}
 
-    On the R-help mailing list questions tend to have more background than on Stack Overflow.
-    The knowledge embedded in the R-help mailing list's answers can be used to learn new procedures, as well as identify the train of thought that guided participants when forming an answer.
-    For instance, U26 explains:
+    The main benefit of using crowd-based knowledge construction is the creation and maintenance of a pool of questions and answers. In contrast, \RH provides an environment in which users
+    develop knowledge through participation, but this knowledge is not curated for future use, making it difficult to be reused by those who were not
+    participants (either active or passive) during its creation.
+
+
+    % On the R-help mailing list questions tend to have more background than on Stack Overflow.
+    % The knowledge embedded in the R-help mailing list's answers can be used to learn new procedures, as well as identify the train of thought that guided
+    % participants when forming an answe
+While \SO  has been successful, some users feel that by now fostering discussion, it restricts thinking that might lead towards better anwers. 
+For instance, U26 explains:
     \begin{quote}
         \textit{``Many developers share my view that [Stack Overflow] is a very bad model, ... [it] removes the value added by reading list traffic that doesn't seem directly relevant to a currently conceptualised question, but which may lead to a new conceptualisation (out of the frame thinking). [Stack Overflow] cannot do that.''}
     \end{quote}
@@ -100,12 +117,16 @@
         Ability to include light markup, render code blocks nicely, [and] not [having] nested email threads all helps the experience of searching for and finding the help that a user needs, and I want to contribute to that.''} [U14]
     \end{quote}
 
-    Thus, we identified that there are certain benefits for keeping the history of the question available.
-    As U26 said, there are some benefits to reading what a user thinks is not important for conceptualized questions, but which may lead to out of the frame thinking. 
+    % Thus, we identified that there are certain benefits for keeping the history of the question available.
+    % As U26 said, there are some benefits to reading what a user thinks is not important for conceptualized questions, but which may lead to out of the frame thinking. 
+
+An important research question that arises from these findings is whether \SO can be improved with a more participatory development of knowledge without
+hindering its ability to curate it for future use.
+
 
 \subsection{Recommendations for using multiple Q\&A media channels}
 
-    One of the interests of this study was to derive a set of recommendations for using media channels, as a mechanism to improve the benefits of their usage.
+    One of the interests of this study was to derive a set of recommendations for using media channels.
     Based on the analysis of the \textit{flags} (which are often used to point out users' behaviours); rules, manuals and FAQ resources from Stack Overflow and the R-help mailing list; threads that were posted in both channels (i.e., the same question by the same user in both channels); and the answers of the survey.
     From this data, we provide a set of 4 recommendations.
 
