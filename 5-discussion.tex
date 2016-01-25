@@ -5,7 +5,8 @@
 \section{Discussion}
 \label{cha:theory}
 
-    In this section we present a theory that encapsulates the observations and insights found during the analysis of the data, including, the comparison of the way knowledge is shared on both channels, and the recommendations of the use of Q\&A media channels.
+    In this section we present a theory that encapsulates the observations and insights found during the analysis of the data, including, the comparison of the
+    way knowledge is shared on both channels, and the recommendations of the use of Q\&A communication channels.
     We also discuss them with respect to the related literature.
 
 %Categorization of the way resources are used on Q\&A media channels.
@@ -42,7 +43,7 @@ As
 a result, in \SO knowledge is built more in a crowd-source manner, while in \RH it is usually build in a participatory manner.
 
 Even when the diversity of answers provided in Stack Overflow is high, users tend to not contribute (edit or comment) to such answers; instead, some users provide their own answers.
-    For example, in the Stack Overflow thread \textit{\href{http://goo.gl/Mb4Pbk}{``Resources for learning SAS if you already familiar with R''}}, three of the six answerers referenced the same books.
+    For example, in the Stack Overflow thread \textit{``Resources for learning SAS if you already familiar with R''}\footnote{\url{http://goo.gl/Mb4Pbk}}, three of the six answerers referenced the same books.
 %    The gamification mechanism gives reputation to those who answer the questions, even when each extra answer might not add any new insight about how to solve a specific problem.
     Stack Overflow curation mechanism is a powerful way to make sure the best answers make it to the top, but it does not provide a mechanism to explain why an
     answer is better than others.
@@ -61,7 +62,7 @@ These differences are demonstrated in the question \textit{``Arrange elements on
     Similarly, in \RH, knowledge is also crowed-constructed, but this form is less prevalent than the participatory one.
 
     Tausczik \textit{et al}.~\cite{Tausczik2014} found the same collaborative knowledge construction over another knowledge domain and channel, the mathematics domain on Math Overflow (a Q\&A channel focused on solving mathematical problems).
-    Thus, we extend what Tausczik \textit{et al}. found to other media channels and domains.
+    Thus, we extend what Tausczik \textit{et al}. found to other communication channels and domains.
 
     Our results seem to imply that the gamification features of \SO, nonetheless effective, have the side effect of reducing collaboration between users towards knowledge creation.
     While \SO gives users the ability to vote on comments, it does not reward with points those who posted the comment\footnote{Some \SO \textsf{mercenaries}
@@ -124,31 +125,50 @@ An important research question that arises from these findings is whether \SO ca
 hindering its ability to curate it for future use.
 
 
-\subsection{Recommendations for using multiple Q\&A media channels}
+\subsection{Recommendations for using multiple Q\&A communication channels}
 
-    One of the interests of this study was to derive a set of recommendations for using media channels.
-    Based on the analysis of the \textit{flags} (which are often used to point out users' behaviours); rules, manuals and FAQ resources from Stack Overflow and the R-help mailing list; threads that were posted in both channels (i.e., the same question by the same user in both channels); and the answers of the survey.
-    From this data, we provide a set of 4 recommendations.
+    One of the expected outcomes of this study was to derive a set of recommendations for using different communication channels.
+    % Based on the analysis of the \textit{flags} (which are often used to point out users' behaviours); rules, manuals and FAQ resources from Stack Overflow and the R-help mailing list; threads that were posted in both channels (i.e., the same question by the same user in both channels); and the answers of the survey.
+    Based on our results, we provide four recommendations.
 
     By studying communities that migrated development support towards Stack Overflow, Squire~\cite{Squire2015a} found that the main reason for communities coming back to the mailing list are topic restriction and the question's format expected on Stack Overflow.
     Squire and us suggest that communities of practice should evaluate the real benefits of each channel before moving to newer technologies.
 
-\subsubsection{Choose the correct channel}
 
-    As described in section~\ref{cha:background}, media channels provide a list of \textit{topics} permitted, this are available either in the description of the channel or in their limitations.
-    The control of topics is often regulated by the community or channel's moderators.
+    \begin{table*}[htbp]
+      \caption{Recommendations to improve the benefits from using several Q\&A communication channels.}
+      \centering
+\small
+      \begin{tabularx}{1.0\linewidth}[h]{p{4.6cm}p{12.5cm}}
+\reca & Make sure the channel is the best according to the specifics of the question.\\
+\recb & Make sure the question uses the proper nomenclature and does not violate the rules of the channel.\\
+\recc & Explain the context that prompts to ask the question.\\
+\recd & Reference external resources appropriately and use tools (such as gists.github.com) that make it easier for others to help.\\
+\rece & Help others and work towards improving the community and the channels.\\
+      \end{tabularx}
+      \label{tab:recom}
+    \end{table*}
+
+\subsubsection{\reca}
+
+
+    As described in section~\ref{cha:background}, each channel provides a list of \textit{topics} that are deemed acceptable.
+    The control of topics is regulated either by the community or channel's moderators.
     U35 explains that \textit{``...Stack Overflow has more limited range of help topics (help for code only), whereas R-help is broader (philosophy, posting announcements, etc.)''}.
-    Knowing what channel is \emph{more suitable for a specific topic can improve the response time or quality of the answer by taking advantage of the community members' knowledge}.
+    \textbf{Knowing what channel is more suitable for a specific topic can improve the response time or quality of the answer}.
 
-    Additionally, \emph{choosing the proper channel keeps the knowledge where it is most useful, thus enhancing the quality of the content of the channel}.
-    For example, in the R-help's thread \textit{\href{http://goo.gl/EJHWrs}{``Bumps chart in R''}}, an user wrote: \textit{``(cross posting to the ggplot2 group for posterity) Here's how I'd approach it...''}, that is, cross-posting the question---previously posted and answered on the R-help list---in order to keep a record of the knowledge where it reaches more users, and where it is more useful to the community.
+\dmg{The following is not clear and I would delete it}
+    Additionally, \textbf{choosing the proper channel keeps the knowledge where it is most useful, thus enhancing the quality of the content of the channel}.
+    For example, in the R-help's thread \textit{``Bumps chart in R''}\footnote{\url{http://goo.gl/EJHWrs}}, a user wrote: \textit{``(cross posting to the ggplot2 group for posterity) Here's how I'd approach it...''}, that is, cross-posting the question---previously posted and answered on the R-help list---in order to keep a record of the knowledge where it reaches more users, and where it is more useful to the community.
 
-    In some cases, questions should be \emph{answered by a \textit{specific group} (e.g., r-core team) regardless of the topic}.
+    In some cases, questions are expected to be \textbf{answered by a \textit{specific group} (e.g., r-core team) regardless of the topic}.
     U32 stated \textit{``If I really want an answer from someone in R-core or closely related people, I would definitely choose the mailing list''}.
-    For example, in the R-help's thread \textit{\href{http://goo.gl/7olLv7}{``Cointegration and ECM in Package \{urca\}''}}, a participant asked the R-core team directly how to solve a problem: \textit{``Dear R Core Team, I am using package \{urca\} to do cointegration and estimate ECM model, but I have the following two problems...''}.
+    For example, in the R-help's thread \textit{``Cointegration and ECM in Package \{urca\}''}\footnote{\href{http://goo.gl/7olLv7}}, a participant asked the R-core team directly how to solve a problem: \textit{``Dear R Core Team, I am using package \{urca\} to do cointegration and estimate ECM model, but I have the following two problems...''}.
+    In this scenario, \textbf{websites of a specific package or library might be the best method to communicate directly with the creators of that technology}.
+     
 
-    In this scenario, \emph{websites of a specific package or library might be the best method to communicate directly with the creators of that technology}.
-    In some cases, the description of the channel or package provides the necessary information, such as the maintainers or participants (e.g., R-help primary help webpage\footnote{\url{https://stat.ethz.ch/mailman/listinfo/r-help}}, \emph{rcpp} package\footnote{\url{https://cran.r-project.org/web/packages/Rcpp/index.html}}, or \textit{r-tag} info page on Stack Overflow\footnote{\url{http://stackoverflow.com/tags/r/info}}).
+\dmg{I do not understand the following}
+In some cases, the description of the channel or package provides the necessary information, such as the maintainers or participants (e.g., R-help primary help webpage\footnote{\url{https://stat.ethz.ch/mailman/listinfo/r-help}}, \emph{rcpp} package\footnote{\url{https://cran.r-project.org/web/packages/Rcpp/index.html}}, or \textit{r-tag} info page on Stack Overflow\footnote{\url{http://stackoverflow.com/tags/r/info}}).
     Figure \ref{fig:CCchannel} depicts an example of how developers of a package can be reached using Stack Overflow (on the left) or by email (on the right). 
 
     \begin{figure} [!htb]
@@ -158,82 +178,48 @@ hindering its ability to curate it for future use.
         \label{fig:CCchannel}
     \end{figure}
 
-    Some channels are more suitable for certain \emph{type or format of questions}. 
-    Thus, R-help mailing list is a place for discussion, and Stack Overflow is a place for questions that have a clear answer.
+%    Some channels are more suitable for certain \emph{type or format of questions}. 
+
+Thus, R-help is a place for discussion, and Stack Overflow is a place for questions that have a clear answer.
 
 
-\subsubsection{Read the user manuals, channel rules and learn the basic concept of the technology used}
+\subsubsection{\recb}
 
-    Through the study, we noticed that most of the harsh responses from the community were give to users who did not read the posting guide or learned the basic concept for each technology (e.g., \textit{``An Introduction to R''}\footnote{\url{https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf}})---users should demonstrate a minimum understanding and use of the programming language.
+    Throughout this study, we noticed that most of the harsh responses were given to users who did not read the posting guide or had learned the basic concept of
+    R or statistics.
     The community expects that if someone wants to use a channel, they should learn about it in advance, and learn the basics of the technology that they are using.
-    For instance, in the R-help's thread \textit{\href{http://goo.gl/Dc8gXw}{``Quantile''}} it is remarked the points of a guide that the user asking the question did not follow: \textit{``...Please read the Posting Guide. It asks that you not crosspost. If you post a followup to rhelp, then the reading of the Posting guide will tell you that much more in the way of detail about your setup was requested...''}.
 
-    Depending on the channel, the amount of guide lines and posting guides available might differ. 
-    Stack Overflow provides user manuals\footnote{\url{http://stackoverflow.com/help}} for each of the main features of the channel such as badges, questions, answers, flags, comments, and reputation system.
-    In contrast, the R-help mailing list only has the general instructions\footnote{\url{https://www.r-project.org/mail.html\#instructions}} and the posting guide user manual\footnote{\url{https://www.r-project.org/posting-guide.html}}, which make the R-help mailing list a more user friendly environment for new users in terms of what users have to read in advance.
+    % For instance, in the R-help's thread \textit{\href{http://goo.gl/Dc8gXw}{``Quantile''}} it is remarked the points of a guide that the user asking the question did not follow: \textit{``...Please read the Posting Guide. It asks that you not crosspost. If you post a followup to rhelp, then the reading of the Posting guide will tell you that much more in the way of detail about your setup was requested...''}.
 
-    Moreover, depending on the technology, there are some \textit{community} user manuals that might be useful to read before participating in the channel.
-    For instance, the post on Stack Overflow \textit{``How to make a great R reproducible example?''}\footnote{\url{http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example}} provides tips and tricks for creating a reproducible example using the R language.
-    Another example is the channel related user manual written by Hadley Wickham.
-    It provides some tips for posting on the R-help mailing lists: \textit{``...Before putting all of your code in an email, consider putting it on \href{http://gist.github.com/}{[GitHub Gist app]}. It will give your code nice syntax highlighting, and you don't have to worry about anything getting mangled by the email system...''}
+%    Depending on the channel, the amount of guide lines and posting guides available might differ. 
+    Stack Overflow provides user manuals\footnote{\url{http://stackoverflow.com/help}} for each of the main features of the channel, such as badges, questions,
+    answers, flags, comments, and reputation system.     In contrast, \RH only has general instructions\footnote{\url{https://www.r-project.org/mail.html\#instructions}} and the posting guide user manual\footnote{\url{https://www.r-project.org/posting-guide.html}}.
 
-    Finally, there are technology manuals like \textit{``An Introduction to R''}), and the FAQ webpages that are available to the public---most of the time free of charge, from which any user can learn the basic of each technology.
-    For instance, the R community provides a compendium of PDF documents for new users on different languages\footnote{The R Manuals are available at \url{https://cran.r-project.org/}}.
-    While on Stack Overflow, supported technologies are provisioned with webpages and links to free and paid materials\footnote{Materials available at \url{http://stackoverflow.com/tags/r/info}}.
-    Members are able to reference these materials when needed, e.g., \textit{``...You may want to acquaint yourself with the 'An Introduction to R' manual that came with your R installation to learn more about indexing.''}
+    Moreover, depending on the purposes of the communication channels, there might exist community-developed guide that should be read before participating in the channel.
+    For example, the post on Stack Overflow \textit{``How to make a great R reproducible example?''}\footnote{\url{http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example}} provides tips and tricks for creating a reproducible example using the R language.
+    Another example is the guide for \RH written by Hadley Wickham \emph{How to write a reproducible
+      example}\footnote{\url{http://adv-r.had.co.nz/Reproducibility.html}}, geared towards mailing lists. 
+    It provides tips for posting R to mailing lists, such as: \textit{``...Before putting all of your code in an email, consider putting it on \url{http://gist.github.com/}{[GitHub Gist app]}. It will give your code nice syntax highlighting, and you don't have to worry about anything getting mangled by the email system...''}
 
-\subsubsection{Choose a channel according to the user experience}
-            
-    The variety of media channels can be overwhelming to decide in which channel post.
-    It is advisable to learn the characteristics of the channels before making a decision.
-    For example, using Stack Overflow has benefits such as low response time~\cite{Mamykina2011} and peer recognition~\cite{Singer2013}, but user manuals should be read prior participation.
-    A bad reputation in the channel might affect users in real life~\cite{Singer2013}.
-    U14 pointed that one of the biggest challenges of using Stack Overflow is learning the \emph{ethos} of the channel.
-    
-    Communities like R, have multiple channels with overlapping functionality.
-    The R-help mailing list can be used for the same purpose as Stack Overflow, but it has a different audience, which might bring some benefits.
-    For instance, the R-help mailing list is less confronting, it can be used to learn rather than just get the answer, and it can be sometimes friendlier.
-    
-    Squire's study~\cite{Squire2015a} as well as our findings suggest that Stack Overflow might not be enough to fully support software developers.
-    As it is suggested by the amount of active users on the R-help mailing list, a community might require a place to discuss topics that are in and out of the software development domain.
-    The fragmentation of topics within the Stack Exchange's Q\&A channels (each channel from Stack Exchange supports a small group of topics), the complex rules of their sites, and the gamification mechanism might be a difficult issue to handle for some users~\cite{Vasilescu2013}.
+    Finally, there are manuals like \textit{``An Introduction to R''}), and the FAQ webpages that are available to the public---most of the time free of charge,
+    from which any user can learn the basic of each technology.
+    For example, the R community provides a compendium of PDF documents for new users on different languages\footnote{The R Manuals are available at \url{https://cran.r-project.org/}}.
+    In Stack Overflow, supported technologies are provisioned with webpages and links to free and paid materials\footnote{Materials available at \url{http://stackoverflow.com/tags/r/info}}.
+    %Members are able to reference these materials when needed, e.g., \textit{``...You may want to acquaint yourself with the 'An Introduction to R' manual that came with your R installation to learn more about indexing.''}
 
-\subsubsection{Provide a background to the question}
+
+
+\subsubsection{\recc}
 
     In spite of reading the documentation available, a user may fail to address the channel appropriately.
     The community may feel that the question asked, the information provided or something else is not in compliance with the expectations and rules of the channel.
     In such cases, one should describe the documentation read, the attempts made, and what is being trying to achieve.
     This would avoid answers like \textit{``read the manual''} or \textit{``read the posting guide''}, as well as helping the participants to help.
-    As an example, in the thread \textit{\href{https://goo.gl/Gbek3R}{``lme4 GLMM''}}, a user asked \textit{``I'm very sorry for my repeated question, which I asked 2 weeks ago, namely: I'm interested in possibly simple random-part specification in the call...''}.
-
-\subsubsection{User Behaviour}
-\label{sec:userbeh}
-
-While analysing questions and answers, we identified user behaviours that are not reflected in the categories we developed, but that we believe are worth
-mentioning.  These behaviours provide evidence of their altruistic way of thinking and the strong commitment that users have within the community.
-
-    \begin{packed_enum}
-        \item \textbf{I answered my own question}: Some questions are answered by the same user who asked the question. They posted back to the channel to document their solution.
-        For example, \textit{\href{http://goo.gl/FG59Mw}``I've discovered the answer to my own question.''}} or \textit{\href{https://goo.gl/r3z0DX}{``Just for the records (and if anyone ever wants to find the ``solution"), I solved my own problem.''}}
-
-        \item \textbf{I did it for you}: When answering authors provide an extensive amount of source code to help others. For instance, \textit{\href{http://goo.gl/GXWGG3}{``I have coded up the algorithm from the Cameron and Turner paper. Dunno if it gives exactly the same results as my (Splus?) code from lo these many years ago...''}}.
-
-        \item \textbf{Answered, updated or continued years later}: Some answers are provided months or years after the question was asked.
-        For instance, \href{http://goo.gl/k6ZARR}{a user on Stack Overflow modified an answer to provide a more updated version of the source code}; and a \href{http://goo.gl/kgSHZv}{question asked on the R-help mailing list in 2012 was continued two years later}.
-
-        \item \textbf{Ideas for improvement or creation of the channel}: This behaviour is specific for the R-help mailing list. Sometimes users suggest modifications or new features to improve the channel. For instance, a \href{http://goo.gl/p0IunD}{user proposes to create a package repository that can be accessible through a public wiki, or version control interface}.
-    \end{packed_enum}
-
-    We also identified 2 behaviours that might result in a bad response from the community:
-    \begin{packed_enum}
-        \item \textbf{Cross-posting:} The user posts the same question in both channels at the same time.
-        For instance: \textit{\href{http://goo.gl/ENKrVK}{``-1 for cross posting to r-help – [user name]''}}.
-        \item \textbf{Posting guidelines violation:} The user behaves in a way that it becomes apparent that they did not read the posting guidelines.
-        For instance, a user asked a question that seems to be the opposite of what the posting guide recommend, and someone answered: \textit{\href{http://goo.gl/FUm1HC}{``...If you read the Posting Guide I think you will find precisely the opposite expectation explicitly presented. Using my "cheeky code" would only be part of the recommended actions to take before posting if you follow the recommendations of the "Do your homework before posting:"...''}}.
-    \end{packed_enum}
+    As an example, in the thread \textit{``lme4 GLMM''}\footnote{\url{https://goo.gl/Gbek3R}}, the user explicitly acknowledged the repeated question, and
+    explained his rational for doing so: \textit{``I'm very sorry for my repeated question, which I asked 2 weeks ago, namely: I'm interested in possibly simple random-part specification in the call...''}.
 
 
-\subsection{Recommendations for using external resources}
+\subsubsection{\recd}
 
     A common practice to answer or ask questions is to provide links for documentation, examples, source code, or other resources.
     As links point to online resources that might not exist in the future, it is important to include the key points of the resource within the question or answer.
@@ -253,38 +239,70 @@ mentioning.  These behaviours provide evidence of their altruistic way of thinki
         For instance, the R-help's thread \textit{``Using FUNCTION to create usable objects''} a user stated \textit{``I suspect you are trying to find your way into Circle 6 of 'The R Inferno' but haven't yet got in. \href{http://www.burns-stat.com/pages/Tutor/R\_inferno.pdf}{[R Inferno]}''}.
     \end{description}
 
-\section{Threats to validity}+
+\subsubsection{\rece}
+\label{sec:userbeh}
+
+It is obvious that users help others by answering questions. However, while analysing questions and answers, we identified positive user behaviours that
+we believe are worth mentioning.  These behaviours provide evidence of their altruistic way of thinking and the strong commitment that users have within their
+community towards knowledge building.
+
+\begin{packed_enum}
+\item \textbf{I answered my own question}: Some questions are answered by the same user who asked the question. They posted back to the channel to document
+  their solution and help others.
+        For example, \textit{``I've discovered the answer to my own question.''}\footnote{\url{http://goo.gl/FG59Mw}} or \textit{``Just for the records (and if
+          anyone ever wants to find the `solution'), I solved my own problem.''}\footnote{\url{https://goo.gl/r3z0DX}}. 
+ 
+        \item \textbf{I did it for you}: When answering, authors provide source code to help others. For example, \textit{``I have coded up the algorithm from the Cameron and Turner paper. Dunno if it gives exactly the same results as my (Splus?) code from lo these many years ago...''}\footnote{\url{http://goo.gl/GXWGG3}}.
+
+        \item \textbf{Updated or continued years later}: Some answers are provided months or years after the question was asked.
+        For example, a user on Stack Overflow modified an answer to provide a more updated version of the source code\footnote{\url{http://goo.gl/k6ZARR}}; and a {question asked on the R-help mailing list in 2012 was continued two years later}\footnote{\url{http://goo.gl/kgSHZv}}.
+
+        \item \textbf{Ideas for improvement or creation of the channel}: This behaviour is specific for the R-help mailing list. Sometimes users suggest modifications or new features to improve the channel. For example, a {user proposes to create a package repository that can be accessible through a public wiki, or version control interface}\footnote{\url{http://goo.gl/p0IunD}}.
+    \end{packed_enum}
+
+% \dmg{I would remove the two following bullets:}
+
+%     We also identified 2 behaviours that might result in a negative response from the community:
+%     \begin{packed_enum}
+%         \item \textbf{Cross-posting:} The user posts the same question in both channels at the same time.
+%         For instance: \textit{\href{http://goo.gl/ENKrVK}{``-1 for cross posting to r-help – [user name]''}}.
+% \dmg{This needs an example of a bad response, not just a crossposting, since this example does not show why users dislike it}
+% \dmg{This next one sounds repetitive... it is already above in learn to use the chnanel}
+%         \item \textbf{Posting guidelines violation:} The user behaves in a way that it becomes apparent that they did not read the posting guidelines.
+%         For instance, a user asked a question that seems to be the opposite of what the posting guide recommend, and someone answered: \textit{\href{http://goo.gl/FUm1HC}{``...If you read the Posting Guide I think you will find precisely the opposite expectation explicitly presented. Using my "cheeky code" would only be part of the recommended actions to take before posting if you follow the recommendations of the "Do your homework before posting:"...''}}.
+%     \end{packed_enum}
+
+
+
+\section{Threats to validity}
 \label{cha:threats}
 
-    In this section, we explain how we addressed each threat to
-    validity.\remarks{Consider make the data available online.}
+\remarks{Consider make the data available online.}
 
-\subsection{Construct validity}
+Regarding construct validity: the open coding of a large collection of messages may introduce bias.  To minimize this thread we used multiple data sources to
+triangulate our findings (survey, documentation, and messages from two different communication channels), we randomly selected data, and two researchers
+performed the data coding. We applied the Cohen Kappa coefficient on categories that were not mutually exclusive, whose purpose was to trigger discussion
+between coders.  We set a threshold of 80\% as the minimum to obtain agreeable results, which is higher than the 60\% suggested in the
+literature~\cite{Landis1977}. 
 
-    The open coding of a large collection of messages may introduce bias.
-    To minimize the bias by misinterpretation, we used multiple data sources to triangulate our findings (survey, documentation, and messages from two media channels), we randomly selected data, and two researchers performed the data coding.
-    We applied the Cohen Kappa coefficient on categories that were not mutually exclusive, whose purpose  was to trigger discussion between coders.
-    We set a threshold of 80\% as the minimum to obtain agreeable results, which is higher than the 60\% suggested in the literature~\cite{Landis1977}.
-    We identified and reported the discrepancies and contradictions.
+Regarding internal validity: in order to compare the emails to the stack overflow discussions we had to map the types of messages from one channel to the
+other. The R-help mailing list is unstructured emails that are connected between each other when they belong to the same thread. In contrast, \SO has a rich
+data type (questions, answers, comments, flags, etc.). Some of this mapping is automatic: a reply is a response to the original question, a follow-up to a reply
+is a comment to that question. Other had to be done by hand, this includes identifying some emails as containing a question, or a being a ``flag''.
+Also, \SO is newer than \RH, and for that reason we only used messages from \RH that were created after \SO was created.
+Two researchers performed this mapping to reduce any bias that it might have  introduced.
 
-\subsection{Internal validity}
+% Additionally, our understanding of that data and the observations we made played a big role in the mapping exercise, and it is subject to research bias.  To
+% minimized the bias, two researches performed the mapping.
 
-    To compare two different data sources, we mapped the message types between Stack Overflow and the R-help mailing.
-    However, the R-help mailing list contains unstructured data, and some data may be unsuitable to compare as both data sets, R-help mailing list and Stack Overflow, have different time frames.
-    To minimize unsuitable messages, we limited the analysis to the time frame that all the information was available in both data sets.
-    Additionally, our understanding of that data and the observations we made played a big role in the mapping exercise, and it is subject to research bias.
-    To minimized the bias, two researches performed the mapping.
-
-\subsection{External validity}
-
-    This study is an exploratory case study and only applies to the R community.
-    A case study cannot be assumed to be generalizable until further evaluations have been conducted~\cite{Yin2009}.
-    Findings in this research should be tested in other communities and with other channels to see if they apply to these other contexts.
-
-    The R community is composed by atypical programmers.
-    The R programming language is used to solve statistical problems, the final product is a script that process specific data.
-    Most R language users are likely to be \textit{casual developers} with limited or non-existent programming experience, with backgrounds that vary from biologists to statisticians.
-    As a consequence, this study might not represent the knowledge that a software developer community shares.
+Regarding external validity: the nature of this study is to be exploratory and its findings only apply to the R community.
+This type of case study cannot be assumed to be generalizable until further evaluations have been conducted~\cite{Yin2009}.
+    Hence, the findings of this research should be tested in other communities and with other channels to see if they apply to these other contexts.
+Another aspect to consider is that the R-community might not be composed of traditional programmers.
+    The R programming language is used to solve statistical problems, where the product is the statistical analysis or graphs it creates. The scripts written in
+    R are not the product, but the means to a product.
+    Also, many R language users are likely to be \textit{casual developers} with limited or non-existent programming experience, with backgrounds that vary from
+    biologists to statisticians. As a consequence, this study might not represent the knowledge that a software developer community shares. 
 
 %%% Local Variables:
 %%% mode: latex

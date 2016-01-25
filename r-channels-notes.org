@@ -6,7 +6,10 @@
 #+TITLE: Notes and TODOs for R-channels paper
 #+CATEGORY: todo
 
-* For "theory" section
+* <2016-01-17 Sun>
+
+
+For "theory" section
 
     In the last decade, Stack Overflow has become the most popular \channel for answering software development related questions, nearly replacing previous methods of communication that accomplished the same objective~\cite{Vasilescu2014c}.
     Despite Stack Overflow's advantages over Q\&A mailing lists such as the R-help (i.e., gamification environment and rich visual user interface), there are still many users who prefer the latter.
@@ -109,3 +112,26 @@ better, richer envinonment
 soFlashmob09 http://conferences.oreilly.com/oscon/oscon2009/public/schedule/detail/10432
 
 rflashmob09 https://blog.stackoverflow.com/2009/07/stack-overflow-flash-mobs/
+
+
+* <2016-01-24 Sun>
+
+To email
+
+\dmg{This should be removed, it does not add much and it is hand-waving. Also, the text does not really reflect the subject.}
+
+\subsubsection{Choose a channel according to the user experience}
+            
+    The variety of communication channels can be overwhelming to decide in which channel post.
+    It is advisable to learn the characteristics of the channels before making a decision.
+    For example, using Stack Overflow has benefits such as low response time~\cite{Mamykina2011} and peer recognition~\cite{Singer2013}, but user manuals should be read prior participation.
+    A bad reputation in the channel might affect users in real life~\cite{Singer2013}.
+    U14 pointed that one of the biggest challenges of using Stack Overflow is learning the \emph{ethos} of the channel.
+    
+    Communities like R, have multiple channels with overlapping functionality.
+    The R-help mailing list can be used for the same purpose as Stack Overflow, but it has a different audience, which might bring some benefits.
+    For instance, the R-help mailing list is less confronting, it can be used to learn rather than just get the answer, and it can be sometimes friendlier.
+    
+    Squire's study~\cite{Squire2015a} as well as our findings suggest that Stack Overflow might not be enough to fully support software developers.
+    As it is suggested by the amount of active users on the R-help mailing list, a community might require a place to discuss topics that are in and out of the software development domain.
+    The fragmentation of topics within the Stack Exchange's Q\&A channels (each channel from Stack Exchange supports a small group of topics), the complex rules of their sites, and the gamification mechanism might be a difficult issue to handle for some users~\cite{Vasilescu2013}.
