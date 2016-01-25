@@ -18,8 +18,8 @@ We identified five main types of knowledge from the messages from the Stack Over
 \item Flags, and
 \item Comments.
 \end{enumerate*}
-    Each of them, with their sub-types of knowledge presented in Table~\ref{table:type-of-knowledge}.
-    Below we explain the five main type of knowledge, similarities and differences, when applicable.
+    Each of them, with their sub-types of knowledge presented in Table~\ref{table:type-of-knowledge}. We also include the frequency of each. As we mentioned in Section~\ref{cha:methodology}, the sample of 400 questions \& answers from each channel provides a reliability of 95\% $\pm$ 5\%.
+    Below we explain the five main type of knowledge, similarities and differences, when applicable and considering the potential margin of error.
 
     \begin{table*}[!htb]
       \centering
@@ -81,12 +81,11 @@ We identified five main types of knowledge from the messages from the Stack Over
         \end{tabular}
       \end{small}
       \label{table:type-of-knowledge}
+\vspace{-3mm}
     \end{table*}
 
-\end{document}
-
 \paragraph*{Questions and Answers}
-    These are similar in both channels. Questions express one or more problems or doubts faced by an user in Stack Overflow or R-help, whereas answers represent solutions to questions.
+    Questions express one or more problems or doubts faced by an user in Stack Overflow or R-help, whereas answers represent solutions to questions.  We observed that the types of questions in \SO are more specific than those in \RH, and are more likely to be tutorials. Also, \SO has more answers per question---2 per question compared to 1.4 of \RH. However, \RH questions tend to offer more suggestions or alternatives than \SO answers. This might be a result of the narrowness of \SO questions.
 
 \paragraph*{Updates}
 	A modification to a question or answer.
@@ -96,21 +95,20 @@ We identified five main types of knowledge from the messages from the Stack Over
 	In Stack Overflow updates are presented in two ways:
 	\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 		\item[Labelled updates] are explicitly shown in the body of questions or answers next to a label that identifies the update (e.g., edit, update, and p.s.).
-		When multiple update labels appear in a message, each label is accompanied by a number (e.g., \textit{``[Edit 1:]''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), by a date (e.g., \textit{``Edit/Update (April 2011):''} {\footnotesize URL:  \href{http://goo.gl/ptYAG0}{Q1452235}}), or by a bulleted list (e.g., ``EDIT: - anova... -drop1...'' {\footnotesize URL:  \href{http://goo.gl/sQiq0M}{Q7273695}})
+		When multiple update labels appear in a message, each label is accompanied by a number (e.g., \textit{``[Edit 1:]''} {\footnotesize URL:  \url{http://goo.gl/ptYAG0}{Q1452235}}), by a date (e.g., \textit{``Edit/Update (April 2011):''} {\footnotesize URL:  \url{http://goo.gl/ptYAG0}{Q1452235}}), or by a bulleted list (e.g., ``EDIT: - anova... -drop1...'' {\footnotesize URL:  \url{http://goo.gl/sQiq0M}{Q7273695}})
 
 		\item[Non-labelled updates] are only visually recognizable through the message history system. The only indication of the change is a box at the end of the message that contains the user who performed the change and the date when it happened.
 	\end{description}
 
 	Depending of the type of update, the usage is different.
-	Non-labelled updates are mainly used to correct format, grammar, spelling, and semantic mistakes, or to incorporate explanations, examples, and suggestions without changing the meaning of the question or answer. Labelled updates are for everything else.
-
+	Non-labelled updates are mainly used to correct format, grammar, spelling, and semantic mistakes, or to incorporate explanations, examples, and suggestions without changing the meaning of the question or answer. Labelled updates are for everything else. Regarding their frequency,  the \SO sample had 2.5 more Updates than \RH.
+Corrections are more common in \SO (almost 50\%), while in \RH updates are usually adding extra information to the thread in various forms (Background, Expansion and Explanation).
 
 \paragraph*{Flags}
 
 	On Stack Overflow, a flag is a mechanism to get a moderator's attention.
 	Flags can accomplish different objectives: to mark messages as spam, rude or abusive behaviour; and, to identify duplicate questions, off-topic messages, unclear questions, opinion-based questions, and low-quality answers.
 	Depending of the type of the flag, threads can be closed or users can lose reputation point.
-    
     On the R-help mailing list, the concept of flag does not exist. 
     Based on the definition of flags on Stack Overflow, we defined flags as \emph{messages used to call the attention of other community members}.
     Thus, we found that flags on the R-help mailing list are used to keep a healthy community, promote discussion, and call the attention of community members to certain issues.
@@ -118,16 +116,18 @@ We identified five main types of knowledge from the messages from the Stack Over
     Due to the unstructured form of messages on the R-help mailing list, flags can be mixed among the text of answers, comments, questions and updates.
 	Flags in the R-help mailing list do not constrain users to answer questions, or to clarify what it is already asked.
 
+In terms of their frequency, \SO uses flags primarily to mark repeated questions; in contrast, \RH uses them to indicate that a previous answer is incorrect. \SO had 1.5 times more Flags than \RH.
+
+
 \paragraph*{Comments}
 In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a question or answer..''}\footnote{\url{http://stackoverflow.com/help/privileges/comment}}.
 	Comments are located below each question or answer, and can be used as a follow-up to questions, to answer a question, or to clarify a question.
-
 	On the R-help mailing list, we defined comments as messages written to \emph{improve an answer in response to an incomplete question, or as a follow-up on a discussion}.
 	Most importantly, messages should be written by a \emph{different person than the author of the question or answer} to which they are responding.
 	In this context, the difference between an update and a comment is the motivation of the user who wrote the message and the author of the message.
-
 	The format of the message in Stack Overflow and the R-help mailing list, permits participants to ask multiple questions in the same thread.
 	Therefore, the categorizations of knowledge presented in this section are non-mutually exclusive.
+        Regarding their frequency, the statistical differences were that in \SO comments are less likely to be Corrections/Alternative; also, \SO had 2.1 times more Comments than \RH.
 
 \subsection{RQ-2. How is knowledge constructed on Stack Overflow and the R-help mailing list?}
 \label{sec:rq2}
@@ -157,6 +157,7 @@ In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a qu
         \includegraphics[width=\columnwidth]{Figures/ML-PKimg11}
         \caption[Participatory knowledge on the R-help mailing list.]{Participatory knowledge on the R-help mailing list.}
         \label{fig:ML-PK1}
+\vspace{-3mm}
     \end{figure}
 
     On Stack Overflow, participatory knowledge takes place when:
@@ -175,6 +176,7 @@ In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a qu
         \includegraphics[width=\columnwidth]{Figures/SO-PKimg5}
         \caption{Example of participatory knowledge on Stack Overflow.}
         \label{fig:SO-PK1}
+\vspace{-3mm}
     \end{figure}
 
     Crowd knowledge construction is observable when:
@@ -190,6 +192,7 @@ In Stack Overflow, comments are \textit{``temporary `Post-It' notes left on a qu
         \includegraphics[width=\columnwidth]{Figures/SO-CSimg2}
         \caption{Example of how crowd knowledge construction occurs.}
         \label{fig:CKC_MLSO}
+\vspace{-3mm}
     \end{figure}
 
 \subsection{RQ-3. Why do certain users post to both Stack Overflow and the R-help mailing list}
@@ -213,8 +216,8 @@ Based on the responses from the survey, we identified that being active on both 
     general, \SO does not allow discussions to take place, including questions that ask for opinions.
 
 \noindent\textbf{\RH}:
-The benefits of using the R-help list include: the convenience of just handling email; following the mailing list provides awareness of and leads towards
-learning new topics; the answers tend to be focused\dmg{this one I don't see how is different from SO, perhaps remove}; the participation of highly experienced
+The benefits of using \RH include: the convenience of just handling email; following the mailing list provides awareness of and leads towards
+learning new topics; the participation of highly experienced
 users; and its flexibility regarding the topics that one can discuss.  The disadvantages that were reported include: sometimes there can be aggressive
 behaviour; searching the archives is not easy; and emails lack categorization, which makes it difficult organize given the massive volume of information.
 
