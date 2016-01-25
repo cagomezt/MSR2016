@@ -17,6 +17,78 @@ These are the numbers I received from Carlos. Used to convert to latex.
 |                     | 400 | 400 |     1. |     1. |
 #+TBLFM: @12$2=vsum(@2..@-1)::@12$3=vsum(@2..@-1)::@12$4=vsum(@2..@-1)::@12$5=vsum(@2..@-1)
 
+
+TOtals:
+
+#+name: totals
+|    | Answers | Updates | Flags | Comments |
+|----+---------+---------+-------+----------|
+| SO |     807 |     613 |    81 |      562 |
+| RH |     579 |     247 |    54 |      267 |
+
+#+begin_src R :results output  :exports both :var a=totals
+summary(a) 
+b=data.matrix(a[2:5],rownames.force=NA)
+chisq.test(b) 
+#+end_src
+
+#+RESULTS:
+#+begin_example
+      X                Answers       Updates          Flags          Comments    
+ Length:2           Min.   :579   Min.   :247.0   Min.   :54.00   Min.   :267.0  
+ Class :character   1st Qu.:636   1st Qu.:338.5   1st Qu.:60.75   1st Qu.:340.8  
+ Mode  :character   Median :693   Median :430.0   Median :67.50   Median :414.5  
+                    Mean   :693   Mean   :430.0   Mean   :67.50   Mean   :414.5  
+                    3rd Qu.:750   3rd Qu.:521.5   3rd Qu.:74.25   3rd Qu.:488.2  
+                    Max.   :807   Max.   :613.0   Max.   :81.00   Max.   :562.0  
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 46.003, df = 3, p-value = 5.663e-10
+
+#+end_example
+
+
+
+#+name: questions
+| Group | How-to | Bug | Discrepancy | Set-up | Decision help | Conceptual | Code reviewing | NonFunctional | FutureReference | Other |
+|-------+--------+-----+-------------+--------+---------------+------------+----------------+---------------+-----------------+-------|
+| SO    |    166 |  27 |          53 |     15 |            36 |         48 |             34 |            14 |               5 |     2 |
+| RH    |    103 |  48 |          88 |     31 |            35 |         49 |             21 |            11 |               4 |    10 |
+
+
+#+begin_src R :results output  :exports both :var a=questions
+library(xtable)
+summary(a)
+b=data.matrix(a[2:11],rownames.force=NA)
+chisq.test(b) 
+#+end_src
+
+#+RESULTS[1c914acd46babb89b6109cba172322289c2bcc36]:
+#+begin_example
+    Group               How.to           Bug         Discrepancy        Set.up   Decision.help     Conceptual    Code.reviewing  NonFunctional   FutureReference     Other   
+ Length:2           Min.   :103.0   Min.   :27.00   Min.   :53.00   Min.   :15   Min.   :35.00   Min.   :48.00   Min.   :21.00   Min.   :11.00   Min.   :4.00    Min.   : 2  
+ Class :character   1st Qu.:118.8   1st Qu.:32.25   1st Qu.:61.75   1st Qu.:19   1st Qu.:35.25   1st Qu.:48.25   1st Qu.:24.25   1st Qu.:11.75   1st Qu.:4.25    1st Qu.: 4  
+ Mode  :character   Median :134.5   Median :37.50   Median :70.50   Median :23   Median :35.50   Median :48.50   Median :27.50   Median :12.50   Median :4.50    Median : 6  
+                    Mean   :134.5   Mean   :37.50   Mean   :70.50   Mean   :23   Mean   :35.50   Mean   :48.50   Mean   :27.50   Mean   :12.50   Mean   :4.50    Mean   : 6  
+                    3rd Qu.:150.2   3rd Qu.:42.75   3rd Qu.:79.25   3rd Qu.:27   3rd Qu.:35.75   3rd Qu.:48.75   3rd Qu.:30.75   3rd Qu.:13.25   3rd Qu.:4.75    3rd Qu.: 8  
+                    Max.   :166.0   Max.   :48.00   Max.   :88.00   Max.   :31   Max.   :36.00   Max.   :49.00   Max.   :34.00   Max.   :14.00   Max.   :5.00    Max.   :10  
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 43.789, df = 9, p-value = 1.543e-06
+
+#+end_example
+
+
+| SO | 41.50% |               6.75% |      13.25% |  3.75% |         9.00% |              12.00% |          8.50% |          3.50% |            1.25% | 0.50% |
+| RH | 25.75% |              12.00% |      22.00% |  7.75% |         8.75% |              12.25% |          5.25% |          2.75% |            1.00% | 2.50% |
+
+
+
+
 400
 
 |----------------------+-----+-----+--------+--------|
@@ -34,6 +106,39 @@ These are the numbers I received from Carlos. Used to convert to latex.
 |                      | 807 | 579 |     1. |     1. |
 #+TBLFM: @11$2=vsum(@2..@-1)::@11$3=vsum(@2..@-1)::@11$4=vsum(@2..@-1)::@11$5=vsum(@2..@-1)
 
+#+name: answers
+| Answers | Redirecting | Tutorial | Source code | Clue/Suggestion/Hint | Alternative | Explanation | Announcement | Benchmark | Opinion |
+|---------+-------------+----------+-------------+----------------------+-------------+-------------+--------------+-----------+---------|
+| SO      |         163 |      105 |         198 |                   43 |          33 |         203 |            8 |         5 |      49 |
+| RH      |          87 |       15 |         102 |                  105 |          98 |         101 |           33 |         3 |      35 |
+
+
+#+begin_src R :results output  :exports both :var a=answers
+library(xtable)
+summary(a)
+b=data.matrix(a[2:10],rownames.force=NA)
+chisq.test(b) 
+#+end_src
+
+#+RESULTS:
+#+begin_example
+   Answers           Redirecting     Tutorial      Source.code  Clue.Suggestion.Hint  Alternative     Explanation     Announcement     Benchmark      Opinion    
+ Length:2           Min.   : 87   Min.   : 15.0   Min.   :102   Min.   : 43.0        Min.   :33.00   Min.   :101.0   Min.   : 8.00   Min.   :3.0   Min.   :35.0  
+ Class :character   1st Qu.:106   1st Qu.: 37.5   1st Qu.:126   1st Qu.: 58.5        1st Qu.:49.25   1st Qu.:126.5   1st Qu.:14.25   1st Qu.:3.5   1st Qu.:38.5  
+ Mode  :character   Median :125   Median : 60.0   Median :150   Median : 74.0        Median :65.50   Median :152.0   Median :20.50   Median :4.0   Median :42.0  
+                    Mean   :125   Mean   : 60.0   Mean   :150   Mean   : 74.0        Mean   :65.50   Mean   :152.0   Mean   :20.50   Mean   :4.0   Mean   :42.0  
+                    3rd Qu.:144   3rd Qu.: 82.5   3rd Qu.:174   3rd Qu.: 89.5        3rd Qu.:81.75   3rd Qu.:177.5   3rd Qu.:26.75   3rd Qu.:4.5   3rd Qu.:45.5  
+                    Max.   :163   Max.   :105.0   Max.   :198   Max.   :105.0        Max.   :98.00   Max.   :203.0   Max.   :33.00   Max.   :5.0   Max.   :49.0  
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 199.75, df = 8, p-value < 2.2e-16
+
+#+end_example
+
+
+
 |--------------+-----+-----+--------+--------|
 | Updates      |  SO |  RH |  SO(%) |  RH(%) |
 |--------------+-----+-----+--------+--------|
@@ -45,6 +150,35 @@ These are the numbers I received from Carlos. Used to convert to latex.
 | Solution     |  12 |   7 |  1.96% |  2.83% |
 |              | 613 | 247 | 0.9999 | 0.9999 |
 #+TBLFM: @8$2=vsum(@2..@-1)::@8$3=vsum(@2..@-1)::@8$4=vsum(@2..@-1)::@8$5=vsum(@2..@-1)
+
+#+name: updates
+| Updates | Announcement | Background | Correction | Expansion | Explanation | Solution |
+|---------+--------------+------------+------------+-----------+-------------+----------|
+| SO      |           27 |         74 |        301 |       116 |          83 |       12 |
+| RH      |            3 |         57 |          2 |        83 |          95 |        7 |
+
+#+begin_src R :results output  :exports both :var a=updates
+summary(a)
+b=data.matrix(a[2:7],rownames.force=NA)
+chisq.test(b) 
+#+end_src
+
+#+RESULTS:
+#+begin_example
+   Updates           Announcement   Background      Correction       Expansion       Explanation    Solution    
+ Length:2           Min.   : 3    Min.   :57.00   Min.   :  2.00   Min.   : 83.00   Min.   :83   Min.   : 7.00  
+ Class :character   1st Qu.: 9    1st Qu.:61.25   1st Qu.: 76.75   1st Qu.: 91.25   1st Qu.:86   1st Qu.: 8.25  
+ Mode  :character   Median :15    Median :65.50   Median :151.50   Median : 99.50   Median :89   Median : 9.50  
+                    Mean   :15    Mean   :65.50   Mean   :151.50   Mean   : 99.50   Mean   :89   Mean   : 9.50  
+                    3rd Qu.:21    3rd Qu.:69.75   3rd Qu.:226.25   3rd Qu.:107.75   3rd Qu.:92   3rd Qu.:10.75  
+                    Max.   :27    Max.   :74.00   Max.   :301.00   Max.   :116.00   Max.   :95   Max.   :12.00  
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 205.52, df = 5, p-value < 2.2e-16
+
+#+end_example
 
 
 |-------------------+----+----+--------+--------|
@@ -58,6 +192,36 @@ These are the numbers I received from Carlos. Used to convert to latex.
 |                   | 81 | 54 |     1. |     1. |
 #+TBLFM: @7$2=vsum(@2..@-1)::@7$3=vsum(@2..@-1)::@7$4=vsum(@2..@-1)::@7$5=vsum(@2..@-1)
 
+#+name: flags
+| Flags | Off-topic/opinion | Not an answer | Repeated question | Too localized | Unclear |
+|-------+-------------------+---------------+-------------------+---------------+---------|
+| SO    |                22 |             0 |                48 |             6 |       5 |
+| RH    |                19 |            27 |                 8 |             0 |       0 |
+
+#+begin_src R :results output  :exports both :var a=flags
+summary(a)
+b=data.matrix(a[2:6],rownames.force=NA)
+chisq.test(b) 
+#+end_src
+
+#+RESULTS:
+#+begin_example
+    Flags           Off.topic.opinion Not.an.answer   Repeated.question Too.localized    Unclear    
+ Length:2           Min.   :19.00     Min.   : 0.00   Min.   : 8        Min.   :0.0   Min.   :0.00  
+ Class :character   1st Qu.:19.75     1st Qu.: 6.75   1st Qu.:18        1st Qu.:1.5   1st Qu.:1.25  
+ Mode  :character   Median :20.50     Median :13.50   Median :28        Median :3.0   Median :2.50  
+                    Mean   :20.50     Mean   :13.50   Mean   :28        Mean   :3.0   Mean   :2.50  
+                    3rd Qu.:21.25     3rd Qu.:20.25   3rd Qu.:38        3rd Qu.:4.5   3rd Qu.:3.75  
+                    Max.   :22.00     Max.   :27.00   Max.   :48        Max.   :6.0   Max.   :5.00  
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 63.949, df = 4, p-value = 4.284e-13
+
+#+end_example
+
+
 |------------------------+-----+-----+--------+--------|
 | Comments               |  SO |  RH |  SO(%) |  RH(%) |
 |------------------------+-----+-----+--------+--------|
@@ -68,4 +232,119 @@ These are the numbers I received from Carlos. Used to convert to latex.
 | External reference     |  78 |  33 | 13.88% | 12.36% |
 |                        | 562 | 267 | 1.0001 |     1. |
 |------------------------+-----+-----+--------+--------|
-#+TBLFM: @7$2=vsum(@2..@-1)::@7$3=vsum(@2..@-1)::@7$4=vsum(@2..@-1)::@7$5=vsum(@2..@-1)
+#+TBLFM: @9$2=vsum(@4..@-1)::@9$3=vsum(@4..@-1)::@9$4=vsum(@4..@-1)::@9$5=vsum(@4..@-1)
+
+#+name: comments
+| Comments | Clarification | Expansion | Correction/alternative | Compliment/criticism | External reference |
+|----------+---------------+-----------+------------------------+----------------------+--------------------|
+| SO       |            98 |       127 |                    102 |                  157 |                 78 |
+| RH       |            28 |        65 |                     89 |                   52 |                 33 |
+
+#+begin_src R :results output  :exports both :var a=comments
+summary(a)
+b=data.matrix(a[2:6],rownames.force=NA)
+chisq.test(b) 
+#+end_src
+
+#+RESULTS:
+#+begin_example
+   Comments         Clarification    Expansion     Correction.alternative Compliment.criticism External.reference
+ Length:2           Min.   :28.0   Min.   : 65.0   Min.   : 89.00         Min.   : 52.00       Min.   :33.00     
+ Class :character   1st Qu.:45.5   1st Qu.: 80.5   1st Qu.: 92.25         1st Qu.: 78.25       1st Qu.:44.25     
+ Mode  :character   Median :63.0   Median : 96.0   Median : 95.50         Median :104.50       Median :55.50     
+                    Mean   :63.0   Mean   : 96.0   Mean   : 95.50         Mean   :104.50       Mean   :55.50     
+                    3rd Qu.:80.5   3rd Qu.:111.5   3rd Qu.: 98.75         3rd Qu.:130.75       3rd Qu.:66.75     
+                    Max.   :98.0   Max.   :127.0   Max.   :102.00         Max.   :157.00       Max.   :78.00     
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 29.556, df = 4, p-value = 6.027e-06
+
+#+end_example
+
+#+RESULTS: comments
+#+begin_example
+    Flags           Off.topic.opinion Not.an.answer   Repeated.question Too.localized    Unclear    
+ Length:2           Min.   :19.00     Min.   : 0.00   Min.   : 8        Min.   :0.0   Min.   :0.00  
+ Class :character   1st Qu.:19.75     1st Qu.: 6.75   1st Qu.:18        1st Qu.:1.5   1st Qu.:1.25  
+ Mode  :character   Median :20.50     Median :13.50   Median :28        Median :3.0   Median :2.50  
+                    Mean   :20.50     Mean   :13.50   Mean   :28        Mean   :3.0   Mean   :2.50  
+                    3rd Qu.:21.25     3rd Qu.:20.25   3rd Qu.:38        3rd Qu.:4.5   3rd Qu.:3.75  
+                    Max.   :22.00     Max.   :27.00   Max.   :48        Max.   :6.0   Max.   :5.00  
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 63.949, df = 4, p-value = 4.284e-13
+
+#+end_example
+
+
+
+Just to make sure
+
+#+name: verify
+|       | choco | van | straw |
+|-------+-------+-----+-------|
+| Men   |   100 | 120 |    60 |
+| Women |   350 | 200 |    90 |
+
+#+begin_src R :results output  :exports both :var a=verify
+summary(a)
+b=data.matrix(a[2:4],rownames.force=NA)
+b
+chisq.test(b) 
+#+end_src
+
+#+RESULTS:
+#+begin_example
+      X                 choco            van          straw     
+ Length:2           Min.   :100.0   Min.   :120   Min.   :60.0  
+ Class :character   1st Qu.:162.5   1st Qu.:140   1st Qu.:67.5  
+ Mode  :character   Median :225.0   Median :160   Median :75.0  
+                    Mean   :225.0   Mean   :160   Mean   :75.0  
+                    3rd Qu.:287.5   3rd Qu.:180   3rd Qu.:82.5  
+                    Max.   :350.0   Max.   :200   Max.   :90.0  
+     choco van straw
+[1,]   100 120    60
+[2,]   350 200    90
+
+	Pearson's Chi-squared test
+
+data:  b
+X-squared = 28.362, df = 2, p-value = 6.938e-07
+
+#+end_example
+
+#+begin_src R :results output  :exports both 
+##### Demonstrating the Chi-Squared Test of Independence in R
+##### By Eric Cai
+##### The Chemical Statistician
+
+# Entering the data into vectors
+men = c(100, 120, 60)
+women = c(350, 200, 90)
+
+# combining the row vectors in matrices, then converting the matrix into a data frame
+ice.cream.survey = as.data.frame(rbind(men, women))
+
+# assigning column names to this data frame
+names(ice.cream.survey) = c('chocolate', 'vanilla', 'strawberry')
+ice.cream.survey
+chisq.test(ice.cream.survey)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+      chocolate vanilla strawberry
+men         100     120         60
+women       350     200         90
+
+	Pearson's Chi-squared test
+
+data:  ice.cream.survey
+X-squared = 28.362, df = 2, p-value = 6.938e-07
+
+#+end_example
+
