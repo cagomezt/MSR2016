@@ -4,7 +4,7 @@
 \section{Methodology}
 \label{cha:methodology}
 
-The main goal of our study is to empirically compare how knowledge, specifically knowledge manifested as questions-and-answers, is seeked, shared, and curated in both, the \RH mailing list and the R section of \SO. We apply a qualitative \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer the following research questions:
+The main goal of this work is to empirically compare how knowledge, specifically knowledge in question-and-answer (Q\&A) form, is sought, shared, and curated in both the \RH mailing list and the R tag in \SO. We used a qualitative \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer the following research questions:
     \begin{enumerate}[label=\bfseries{RQ-\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
         \item \rqa
         \item \rqb
@@ -14,39 +14,32 @@ The main goal of our study is to empirically compare how knowledge, specifically
 %We performed a qualitative case study~\cite{Creswell2009,Runeson2012} of the knowledge that flows through both \RH and \SO.
 %This research method is applicable when a concept or phenomenon requires more understanding, with little pre-existing research~\cite{Creswell2009}.
 
-This study employs two research methods, \textit{mining archival data} and a \textit{qualitative survey}, and is composed of two phases. In the first phase, we conduct a random sampling of questions in both channels. Its purpose is to characterize the types of discussions that happen in both channels. We sampled 400 questions in each channel; this sample guaranteed both saturation and a reliability of 95\% $\pm$ 5\%. \alexey{How? more details on saturation.} In the second phase, we survey the members of the R-community to validate our interpretation of the results of the previous phase. %obtain further additional insights and to verify our findings.
+This study employed two research methods over two phases: we \textit{mined archival data} and then conducted a \textit{qualitative survey}. In the first phase, we randomly sampled questions in both channels to characterize the types of discussions that occur. We sampled 400 questions in each channel---this sample guaranteed both saturation and a reliability of 95\% $\pm$ 5\%. \alexey{How? more details on saturation.} In the second phase, we surveyed the members of the R community to validate our interpretation of the results from the previous phase. %obtain further additional insights and to verify our findings.
 
-\subsection{Phase I: mining archival data} 
+\subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
-
-In this phase we mined both: the archives of the \RH mailing list and \SO archival data.
-
-\subsubsection{Data collection and preparation}
-\label{subsec:preparation}
-
-We used the publicly available archives of both	the R-help mailing list and Stack Overflow. The R-Users mailing list dates started in 1997, while the archives for Stack Overflow start in 2008 (when it was created).
-To make both data sets comparable, we analysed both datasets from 2008 until 2013, a period of time that both channels were available.
-For Stack Overflow, we obtained a data dump file available on its website---Stack Exchange releases a new data dump from all their websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the R-help mailing list data, we retrieved the archives available as MBOX files from the R website.
+We used the public archives of both	the R-help mailing list and Stack Overflow. The R-help mailing list archive starts in 1997, while the archives for Stack Overflow start in 2008 (when it was created).
+To make both data sets comparable, we analyzed both datasets from 2008 until 2013, a period of time that both channels were available.
+For Stack Overflow, we obtained a data dump file available on their Website---Stack Exchange releases a new data dump from all their Websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the R-help mailing list data, we retrieved the archives available as MBOX files from the R-help Website.
 
 %To make the data comparable againt the Stack Overflow dat set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by Stack Overflow (UTC).
     
-In order to answer RQ3 we needed the ability to compare email addresses between both channels. However, the last Stack Exchange dump file that contains email addresses as MD5 hashes was released in September 2013.
-Since then, Stack Exchange does not provide the information about email addresses.
-Because of this, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file, for whose \texttt{ID}s were identical in both data sets.
-If a user from the 2013 data file did not exist in the 2014 data, we did not count it.
-From \SO we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (\texttt{rstats} and \texttt{r-language}).
+In order to answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange has stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013.
+Because of this, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
+However, if a user in the 2013 data file did not exist in the 2014 data, we did not count them.
+From \SO, we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (\texttt{rstats} and \texttt{r-language}).
 
-To determine users who were active in both channels we compared the MD5 hashes of the R-Users participants to the MD5s hashes of the \SO participants. Given the limitations of the \SO data, we did not perform any unification of email addresses, and therefore consider every email address to belong to an independent individual. In total, we found 1,421 different users (email addresses) on both media channels.
+To determine users who were active in both channels, we compared the MD5 hashes of the R-help participants to the MD5 hashes of the \SO participants. Given the limitations of the \SO data, we did not perform any unification of email addresses and considered that every email address belongs to an independent individual. In total, we found 1,421 different users (email addresses) on both media channels.
 
     % Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positives, it is unlikely that two different email addresses share a MD5 hash.
 
 We used two different software tools to prepare the data:
     \begin{enumerate*}[label=(\arabic*)]
-    \item to process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}; and,
-    \item to process the R-help mailing list archives, we wrote a our own mail mining application\footnote{Our tool is available at
-            \url{https://github.com/cagomezt/GTMail}}, To ensure accurate results when processing the R-help mailing list, we followed the series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
+    \item To process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}.
+    \item To process the R-help mailing list data, we wrote our own mail mining application\footnote{Our tool is available at
+            \url{https://github.com/cagomezt/GTMail}}. To ensure accurate results when processing the R-help mailing list, we followed a series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
     \end{enumerate*}
-Table~\ref{table:data} depicts a summary of the data used for this study. Unsurprisingly, the R-help mailing list has more questions, answers, and users, as it contains approximately ten years of additional data.
+Table~\ref{table:data} depicts a summary of the data used for this study. Unsurprisingly, the R-help mailing list has more questions, answers, and users as it contains approximately ten years of additional data.
 Note that only Stack Overflow's data contains ``comments'' information.
 
 	\begin{table}[!htb]
@@ -71,21 +64,21 @@ Note that only Stack Overflow's data contains ``comments'' information.
 
 
 
-\subsubsection{Data analysis process}
+\subsubsection{Data Analysis Process}
 \label{sec:dap}
 
-We followed an inductive approach~\cite{Runeson2012} to analyse the data from Stack Overflow and the R-help mailing list. This is an iterative process, where \alexey{missing a word here?} across the study is necessary to switch between data selection and data analysis, or between data reporting and data collection. To reduce the risk of bias~\cite{Runeson2012}, two researchers conducted the analysis, both computer scientists with a background in qualitative data analysis. To answer RQ-1 and RQ-2, we selected 400 random threads of each channels. To answer RQ-3, we focused on questions that were posted with the same subject, sent to both channels, and by the same author. We found 79 such threads and analyzed them all.
+We followed an inductive approach~\cite{Runeson2012} to analyze the data from Stack Overflow and the R-help mailing list. This was an iterative process where \alexey{We're missing words here that were also missing from Carlos' thesis.} across the study is necessary to switch between data selection and data analysis, or between data reporting and data collection. To reduce the risk of bias~\cite{Runeson2012}, two researchers conducted the analysis, both computer scientists with a background in qualitative data analysis. To answer RQ1 and RQ2, we selected 400 random threads from each channel. To answer RQ3, we focused on questions with identical subjects that were posted to both channels by the same author---we found 79 such threads and analyzed them all.
     
     \begin{figure*}[htbp]
     	\centering
     	\includegraphics[width=.95\textwidth]{Figures/CodingExample}
-    	\caption{Example of data coding. Each row is a thread message. Questions, comments, and answers are identified with the number on the first column. Columns in yellow contain the codification for each message type. The last two columns contain the memos and the URL.}
+    	\caption{Example of data coding. Each row is a threaded message. Questions, comments, and answers are identified with the number on the first column. Columns in yellow contain the codification\cassie{Do you mean code?} for each message type. The last two columns contain the memos and the URL.}
     	\label{fig:CodingExample}
 %\vspace{-3mm}
     \end{figure*}
 
 We used \textbf{memoing}, \textbf{affinity diagrams}, and a \textbf{code book} to support the data analysis process. We wrote reflective memos in a spreadsheet next to the applicable codes (see example in Fig.~\ref{fig:CodingExample}). These memos were used to create the codes and hypotheses about the relationships between concepts. We coded in multiple sessions, which allowed us to refine the code book definitions. Each entry is associated with a title, a formal definition, an example, and notes from the researcher. %The final version of the code book is detailed in section~\ref{cha:findings}.
-For inter-rater reliability we used the Cohen Kappa \textbf{inter-rater agreement} coefficient~\cite{Stemler2004}. Although it is suggested to aim for coefficient values above 0.6 to obtain substantial results~\cite{Landis1977}, based on our previous experience with this method, we aimed for 0.8 or above. We used this coefficient after each coding session as a way to trigger discussion.
+For inter-rater reliability, we used the Cohen Kappa \textbf{inter-rater agreement} coefficient~\cite{Stemler2004}. Although it is suggested to aim for coefficient values above 0.6 to obtain substantial results~\cite{Landis1977}, based on our previous experience \cassie{Reference?}with this method, we aimed for 0.8 or above. We used this coefficient after each coding session as a way to trigger discussion.
 
 
 
@@ -109,21 +102,21 @@ For inter-rater reliability we used the Cohen Kappa \textbf{inter-rater agreemen
 	% 	The final version of the code book is detailed in section~\ref{cha:findings}.
 	% \end{description}
 
-The analysis process required an \textit{understanding of the context} surrounding each message. The process consisted of: (1) gathering the required information from both channels---i.e., the message analysed, and the relevant thread, and (2) mapping between messages from each channel to a specific knowledge type (see Section~\ref{cha:findings-types}). The mapping is necessary as each channel contains a different data structure.
+The analysis process required an \textit{understanding of the context} surrounding each message. The process consisted of: (1) gathering the required information from each channel (i.e., the message analyzed, the relevant thread, and (2) mappings between messages from each channel to a specific knowledge type; see Section~\ref{cha:findings-types}). The mapping is necessary as each channel contains a different data structure.
 
-For mapping R-help mailing list messages we defined the following:
+For mapping the R-help mailing list messages, we defined the following:\cassie{I might be misunderstanding the context, but why don't we talk about mapping the Rtag stuff on SO too?}
 
 	\begin{description}[itemsep=1pt, topsep=2pt, leftmargin=1em, parsep=0pt]
-		\item[Question:] the message is the first on the thread, and it contains the main question.
+		\item[Question:] the message is the first in the thread and it contains the main question.
 		\item[Answer:] the message provides a solution to the main question of the thread.
-	 	\item[Update:] the message claims for a modification to a question (or answer) made by the author of such a question (or answer).
+	 	\item[Update:] the message requests a modification to a question (or answer) made by the author of said question (or answer).
 		\item[Comment:] the message offers a clarification to a specific part of the question or answer.
 		\item[Flag:] the message requests attention from the moderator (e.g., repeated questions, spam, or rude behavior).
 	\end{description}
 
 %	The data set was capped at 400 threads for each channel when we deemed our observations as being saturated.
 
-\subsection{Phase II: qualitative survey} 
+\subsection{Phase II: Qualitative Survey} 
 
 \alexey{German mentioned that we indeed use this as quotes later on. It would help to mention what RQ it applies to, and the goal of the survey (I guess we did it to validate our interpretation of the findings from the previous phase). Also, how long did we run the survey for? Do we have any demographics that might be relevant?}
 
