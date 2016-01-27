@@ -19,36 +19,35 @@ This study employs two research methods, \textit{mining archival data} and a \te
 \subsection{Phase I: mining archival data} 
 \label{sec:studyDesign}
 
-In this phase we mined both the archives of the R-users mailing list and \SO.
+In this phase we mined both: the archives of the \RH mailing list and \SO archival data.
 
 \subsubsection{Data collection and preparation}
 \label{subsec:preparation}
 
-We used the publicly available archives of both	the R-help mailing list and Stack Overflow. The R-Users mailing list dates started in 1997, while
-the archives for Stack Overflow start in 2008 (when it was created).
+We used the publicly available archives of both	the R-help mailing list and Stack Overflow. The R-Users mailing list dates started in 1997, while the archives for Stack Overflow start in 2008 (when it was created).
 To make both data sets comparable, we analysed both datasets from 2008 until 2013, a period of time that both channels were available.
-For Stack Overflow, we obtained a data dump file available in its website. For the R-help mailing list data, we retrieved the archives available as MBOX files from the R website.
-
-	We used two different software tools to prepare the data:
-	\begin{enumerate*}[label=(\arabic*)]
-	\item to process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}; and,
-	\item to process the R-help mailing list archives, we wrote a our own mail mining application\footnote{Our tool is available at
-            \url{https://github.com/cagomezt/GTMail}}, To ensure accurate results when processing the R-help mailing list, we followed the series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
-	\end{enumerate*}
-
+For Stack Overflow, we obtained a data dump file available on its website---Stack Exchange releases a new data dump from all their websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the R-help mailing list data, we retrieved the archives available as MBOX files from the R website.
 
 %To make the data comparable againt the Stack Overflow dat set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by Stack Overflow (UTC).
     
-Stack Exchange releases a new data dump from all their websites every three months\footnote{\url{http://stackexchange.com/sites}}.
-However, the last dump file that containing email addresses as MD5 hashes was released in September 2013.
-Since then, Stack Overflow does not provide the email addresses.
-Because of this, we used the data dump file from September 2014, but updated the table \texttt{users} with the hashes in the dump file from September 2013, for whose \texttt{ID}s were identical in both data sets.
+In order to answer RQ3 we needed the ability to compare email addresses between both channels. However, the last Stack Exchange dump file that contains email addresses as MD5 hashes was released in September 2013.
+Since then, Stack Exchange does not provide the information about email addresses.
+Because of this, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file, for whose \texttt{ID}s were identical in both data sets.
 If a user from the 2013 data file did not exist in the 2014 data, we did not count it.
 From \SO we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (\texttt{rstats} and \texttt{r-language}).
 
-	Table~\ref{table:data} depicts a summary of the data used for this study.
-	The R-help has more questions, answers, and users than Stack Overflow, because there were approximately ten years of additional data.
-	Only Stack Overflow's data contains ``comments'' information.
+To determine users who were active in both channels we compared the MD5 hashes of the R-Users participants to the MD5s hashes of the \SO participants. Given the limitations of the \SO data, we did not perform any unification of email addresses, and therefore consider every email address to belong to an independent individual. In total, we found 1,421 different users (email addresses) on both media channels.
+
+    % Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positives, it is unlikely that two different email addresses share a MD5 hash.
+
+We used two different software tools to prepare the data:
+    \begin{enumerate*}[label=(\arabic*)]
+    \item to process the Stack Overflow data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}; and,
+    \item to process the R-help mailing list archives, we wrote a our own mail mining application\footnote{Our tool is available at
+            \url{https://github.com/cagomezt/GTMail}}, To ensure accurate results when processing the R-help mailing list, we followed the series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
+    \end{enumerate*}
+Table~\ref{table:data} depicts a summary of the data used for this study. Unsurprisingly, the R-help mailing list has more questions, answers, and users, as it contains approximately ten years of additional data.
+Note that only Stack Overflow's data contains ``comments'' information.
 
 	\begin{table}[!htb]
 	  \centering
@@ -68,18 +67,14 @@ From \SO we retrieved all R-related data by selecting only messages with the R t
 	  \label{table:data}
 	\end{table}
 
-To determine users who were common to both channels we compared the MD5 has of the participants of R-Users to the MD5s from \SO. Given the limitations of the
-\SO data, we did not perform any unification fo email addresses, and therefore consider every email address to belong to a different individual. 
-We found 1,421 different users (email addresses) on both media channels.
 
-    % Although MD5 hashes are not \textit{collision resistant} and could possibly lead to false positives, it is unlikely that two different email addresses share a MD5 hash.
 
 
 
 \subsubsection{Data analysis process}
 \label{sec:dap}
 
-    We performed an inductive approach~\cite{Runeson2012} to analyse the data from Stack Overflow and the R-help mailing list. 
+    We followed an inductive approach~\cite{Runeson2012} to analyse the data from Stack Overflow and the R-help mailing list. 
     This is an iterative process, where across the study is necessary to switch between data selection and data analysis, or between data reporting and data collection.
     As advised to reduce bias~\cite{Runeson2012}, two researchers conducted the analysis, both computer scientists with a background in qualitative data analysis.
 To answer RQ-1 and RQ-2, we selected 400 random threads of each channels.
