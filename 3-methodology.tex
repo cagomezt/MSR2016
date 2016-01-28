@@ -19,13 +19,13 @@ This study employed two research methods over two phases: we \textit{mined archi
 \subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
 We used the public archives of both	the R-help mailing list and Stack Overflow. The R-help mailing list archive starts in 1997, while the archives for Stack Overflow start in 2008 (when it was created).
-To make both data sets comparable, we analyzed both datasets from 2008 until 2013, a period of time that both channels were available.
+To make both data sets comparable, we analyzed both datasets from September 2008 until December 2013, a period of time that both channels were available.
 For Stack Overflow, we obtained a data dump file available on their Website---Stack Exchange releases a new data dump from all their Websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the R-help mailing list data, we retrieved the archives available as MBOX files from the R-help Website.
 
 %To make the data comparable againt the Stack Overflow dat set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by Stack Overflow (UTC).
     
-In order to answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange has stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013.
-Because of this, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
+In order to answer RQ-3, we needed the ability to compare email addresses between both channels. However, Stack Exchange has stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013.
+To complete the email addresses from October 2013 to December 2013, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
 However, if a user in the 2013 data file did not exist in the 2014 data, we did not count them.
 From \SO, we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}} (\texttt{rstats} and \texttt{r-language}).
 
