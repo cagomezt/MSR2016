@@ -5,17 +5,19 @@
 \section{Discussion}
 \label{cha:theory}
 
-    In this section we present a theory that encapsulates the observations and insights found during the analysis of the data, including, the comparison of the
-    way knowledge is shared on both channels, and the recommendations of the use of Q\&A \channels.
-    We also discuss them with respect to the related literature.
+In this section we discuss the results presented in the previous section and place them within the context of related research.
+\dmg{I feel like this sentence needs more, not sure what else to say now}
+%of the manual classification and the survey. 
+% present a theory that encapsulates the observations and insights found during the analysis of the data, including, the comparison of the way
+% knowledge is shared on both channels, and the recommendations of the use of Q\&A \channels.  We also discuss them with respect to the related literature.
 
 %Categorization of the way resources are used on Q\&A media channels.
 
 \subsection{Knowledge creation and curation}
 
-    Based on our results, both channels provide roughly the same knowledge support for questions and answers.
-    However, there are some differences between both channels which are summarized in Table~\ref{table:constrat}.
-    These observations are tendencies, and they are not behaviours unique of each channel.
+    Based on the results, both channels seem to provide roughly the same knowledge support for questions and answers.
+    However, there are some important differences between the channels---which are summarized in Table~\ref{table:constrat}. We will discuss each in detail below.
+%    These observations are tendencies, and they are not behaviours unique of each channel.
 
     \begin{table}[!htb]
       \centering
@@ -27,7 +29,7 @@
           \toprule
           \textbf{}      & \textbf{Stack Overflow} & \textbf{\RH}\\
           \midrule
-          Knowledge construction & Crowd-based             & Participatory \\
+          Knowledge construction & Mainly Crowd-based             & Mainly Participatory \\
           Topic restriction      & Yes & No \\
           Emphasis & Curating Knowledge & Developing Knowledge \\ 
           \bottomrule
@@ -38,32 +40,31 @@
 
 \subsubsection{Knowledge construction}
 
-Stack Overflow's gamification system encourages being the first to answer the question~\cite{Singer2013}. In contrast, \RH is less competitive environment,
-where users tend to build on other
-responses; they work more as a team, rather than as individuals searching for points.
+Stack Overflow's gamification system encourages being the first to answer the question~\cite{Singer2013}. In contrast, \RH is a less competitive environment,
+where its users tend to build on other
+responses; \RH users work as a team, rather than as individuals searching for points (as is the case in \SO).
 As 
 a result, in \SO knowledge is built more in a crowd-source manner, while in \RH it is usually build in a participatory manner.
 
-Even when the diversity of answers provided in Stack Overflow is high, users tend to not contribute (edit or comment) to such answers; instead, some users provide their own answers.
-    For example, in the Stack Overflow thread \textit{``Resources for learning SAS if you already familiar with R''}\footnote{\url{http://goo.gl/Mb4Pbk}}, three of the six answerers referenced the same books.
+\SO competitive environment creates an incentive to be the first to answer, rather than to build on others answers.
+For example, in the Stack Overflow thread \textit{``Resources for learning SAS if you are already familiar with R''}\footnote{\url{http://goo.gl/Mb4Pbk}}, three of the six answerers referenced the same books.
 %    The gamification mechanism gives reputation to those who answer the questions, even when each extra answer might not add any new insight about how to solve a specific problem.
-    Stack Overflow curation mechanism is a powerful way to make sure the best answers make it to the top, but it does not provide a mechanism to explain why an
-    answer is better than others.
+And while Stack Overflow provides a powerful curation mechanism that guarantees that the best answers make it to the top, it does not provide a mechanism to explain why an
+answer is better than others.
 
-    In contrast, the R-help mailing list tends to be more collaborative on how users construct knowledge, and discuss proposed answers. Its
-    participants tend to provide more background to the answers and explain better the rational behind answers.
+In contrast, the R-help mailing list tends to be more participatory in how users construct knowledge, and fosters and environment where users discuss proposed
+answers. Its participants tend to provide more background to the answers and explain the rational behind answers  better than in \SO.
 
-An example of difference between communities is the question \textit{``Arrange elements on a matrix according to rowSums + short `apply' Q''}  posted to  Stack Overflow\footnote{\url{http://goo.gl/a8AES8}} and {R-help}\footnote{\url{http://goo.gl/PGflT5}}.
-    Each community answered the question using a different knowledge construction approach.
-    On Stack Overflow, each participant provided its own solution without any evidence of collaboration.
-    Whereas users on the R-help mailing list complemented each other answers by providing extra information and insights into the answers.
+An example of the contrast in which both communities build knowlege is the question \textit{``Arrange elements on a matrix according to rowSums + short `apply' Q''}  posted to both Stack Overflow\footnote{\url{http://goo.gl/a8AES8}} and {R-help}\footnote{\url{http://goo.gl/PGflT5}}.
+In Stack Overflow each participant contributed a solution without any evidence of collaboration with others.
+Whereas users in the R-help mailing list complemented each other answers by providing further information and insights to the answers already contributed.
     
-    The Stack Overflow's knowledge construction is not limited to crowd knowledge construction, it also presents collaborative ways to construct knowledge (such
-    as voting up/down questions and providing comments).
-    However, the crowd-based construction appears to be the more prevalent.
-    Similarly, in \RH, knowledge is also crowed-constructed, but this form is less prevalent than the participatory one.
+The knowledge construction in Stack Overflow is not limited to crowd-based.  In \SO knowledge is also build in participatory ways, such as
+voting up/down questions and providing comments.  However, crowd-based construction appears to be more prevalent manner in which answers are
+created. Participatory construction is used mostly to edit answers (e.g. correct grammar) or to link to previously asked questions.
+The R-help mainling list also develops crowed-constructed knowledge, but this form is less prevalent than the participatory one.
 
-    Tausczik \textit{et al}.~\cite{Tausczik2014} found the same collaborative knowledge construction over another knowledge domain and channel, the mathematics domain on Math Overflow (a Q\&A channel focused on solving mathematical problems).
+    Tausczik \textit{et al}.~\cite{Tausczik2014} found the same participatory knowledge construction over another knowledge domain and channel, the mathematics domain on Math Overflow (a Q\&A channel focused on solving mathematical problems).
     Thus, we extend what Tausczik \textit{et al}. found to other \channels and domains.
 
     Our results seem to imply that the gamification features of \SO, nonetheless effective, have the side effect of reducing collaboration between users towards knowledge creation.
@@ -78,12 +79,12 @@ An example of difference between communities is the question \textit{``Arrange e
 
 \subsubsection{Topic restriction}
 
-The participation rules of \SO make it topic restrictive, since it only allows questions that have a clear answer; in contrast, the R-help mailing list is suitable to discuss
+The participation rules of \SO make it topic restrictive, since it only allows questions that have a clear answer. In contrast, the R-help mailing list is suitable to discuss
 any topic regarding R. For example, on \RH, questions related to R, but not focused on software development, are not rejected by the community (see section
 \ref{cha:findings-types} Flags).\dmg{give a concrete example?}
 The study by Squire~\cite{Squire2015a} found a similar difference between Stack Overflow and a mailing list of multiple projects.
 
-Topics that trigger a discussion are welcomed in to the R-help mailing list. 
+Topics that trigger a discussion are welcomed in R-help. 
 %    For instance, when users discuss the creation or improvement of the R community channels (see section \ref{sec:userbeh}); or when a question about installing R on \textit{Linux} is asked on the R-help mailing list (like {\href{http://goo.gl/1JLOUF}{\textit{``R on X11 under Linux''}}}).
 In contrast, in Stack Overflow questions that trigger a discussion are flagged as opinion-based, or as off-topic, and they are likely to be closed. 
 For example, the questions \textit{``What's a good example of really clean and clear [R] code, for pedagogical purposes?''}\footnote{http://goo.gl/9JjZW1} was
@@ -98,7 +99,7 @@ The advantages of each channel are explained by a user in a message in \RH \emph
 
 \subsubsection{Curated knowledge and knowledge development}
 
-    The main benefit of using crowd-based knowledge construction is the creation and maintenance of a pool of questions and answers. In contrast, \RH provides an environment in which users
+One of the main benefit of the crowd-based knowledge construction of \SO is the creation and curation of a pool of questions and answers. In contrast, \RH provides an environment in which users
     develop knowledge through participation, but this knowledge is not curated for future use, making it difficult to be reused by those who were not
     participants (either active or passive) during its creation.
 
@@ -106,7 +107,7 @@ The advantages of each channel are explained by a user in a message in \RH \emph
     % On the R-help mailing list questions tend to have more background than on Stack Overflow.
     % The knowledge embedded in the R-help mailing list's answers can be used to learn new procedures, as well as identify the train of thought that guided
     % participants when forming an answe
-While \SO  has been successful, some users feel that by now fostering discussion, it restricts thinking that might lead towards better anwers. 
+While \SO  has been successful, some users feel that by not fostering discussion, it restricts thinking that might lead towards better anwers. 
 For instance, U26 explains:
     \begin{quote}
         \textit{``Many developers share my view that [Stack Overflow] is a very bad model, ... [it] removes the value added by reading list traffic that doesn't seem directly relevant to a currently conceptualised question, but which may lead to a new conceptualisation (out of the frame thinking). [Stack Overflow] cannot do that.''}
@@ -125,6 +126,7 @@ For instance, U26 explains:
     % As U26 said, there are some benefits to reading what a user thinks is not important for conceptualized questions, but which may lead to out of the frame thinking. 
 
 \subsubsection{Open questions}
+\dmg{I want to kill this section}
 
 An important research question that arises from these findings is whether \SO can be improved with a more participatory development of knowledge without
 hindering its ability to curate it for future use.
@@ -138,14 +140,6 @@ Further research is required to verify the quality and effectiveness of answers.
 
 
 \subsection{Recommendations for using multiple Q\&A \channels}
-
-    One of the expected outcomes of this study was to derive a set of recommendations for using different \channels.
-    % Based on the analysis of the \textit{flags} (which are often used to point out users' behaviours); rules, manuals and FAQ resources from Stack Overflow and the R-help mailing list; threads that were posted in both channels (i.e., the same question by the same user in both channels); and the answers of the survey.
-    Based on our results, we provide four recommendations.
-
-    By studying communities that migrated development support towards Stack Overflow, Squire~\cite{Squire2015a} found that the main reason for communities coming back to the mailing list are topic restriction and the question's format expected on Stack Overflow.
-    Squire and us suggest that communities of practice should evaluate the real benefits of each channel before moving to newer technologies.
-
 
     \begin{table*}[htbp]
       \caption{Recommendations to improve the benefits from using several Q\&A channels.}
@@ -163,6 +157,16 @@ Further research is required to verify the quality and effectiveness of answers.
       \label{tab:recom}
 \vspace{-3mm}
     \end{table*}
+
+One of the expected outcomes of this study was to derive a set of recommendations for using both \channels.  Based on our results, we provide four
+recommendations, which are summarized in Table~\ref{tab:recom}.
+
+\dmg{this next paragraph does not go here, it needs to be moved somewhere else}
+
+    By studying communities that migrated development support towards Stack Overflow, Squire~\cite{Squire2015a} found that the main reason for communities coming back to the mailing list are topic restriction and the question's format expected on Stack Overflow.
+    Squire and us suggest that communities of practice should evaluate the real benefits of each channel before moving to newer technologies.
+
+
 
 
 
@@ -203,8 +207,8 @@ Thus, R-help is a place for discussion, and Stack Overflow is a place for questi
 
 \subsubsection{\recb}
 
-    Throughout this study, we noticed that most of the harsh responses were given to users who neither read the posting guide nor had learned the basic concept of R or statistics.
-    For anybody using a channel, the community expects that they should learn about it in advance, and learn the basics of the technology that they are using.
+    Throughout this study, we noticed that most of the harsh responses were given to users who did not learn the participation rules or had not learned the basic concept of R or statistics.
+    For anybody using a channel, the community expects that they should learn about it in advance, and learn the basics of the technology that they are discussing.
 
     % For instance, in the R-help's thread \textit{\href{http://goo.gl/Dc8gXw}{``Quantile''}} it is remarked the points of a guide that the user asking the question did not follow: \textit{``...Please read the Posting Guide. It asks that you not crosspost. If you post a followup to rhelp, then the reading of the Posting guide will tell you that much more in the way of detail about your setup was requested...''}.
 
@@ -212,14 +216,15 @@ Thus, R-help is a place for discussion, and Stack Overflow is a place for questi
     Stack Overflow provides user manuals\footnote{\url{http://stackoverflow.com/help}} for each of the main features of the channel, such as badges, questions,
     answers, flags, comments, and reputation system.     In contrast, \RH only has general instructions\footnote{\url{https://www.r-project.org/mail.html\#instructions}} and the posting guide user manual\footnote{\url{https://www.r-project.org/posting-guide.html}}.
 
-    Moreover, depending on the purposes of the \channels, there might exist community-developed guide that should be read before participating in the channel.
+We also discovered that the R-community has developed resources to improve the quality of participation in the communication channels.
+%    Moreover, depending on the purposes of the \channels, there might exist community-developed guide that should be read before participating in the channel.
     For example, the post on Stack Overflow \textit{``How to make a great R reproducible example?''}\footnote{\href{http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example}{http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example}} provides tips and tricks for creating a reproducible example using the R language.
-    Another example is the guide for \RH written by Hadley Wickham \emph{How to write a reproducible
-      example}\footnote{\url{http://adv-r.had.co.nz/Reproducibility.html}}, geared towards mailing lists. 
+    Another example is the document \emph{How to write a reproducible
+      example}\footnote{\url{http://adv-r.had.co.nz/Reproducibility.html}}.
     It provides tips for posting R to mailing lists, such as: \textit{``...Before putting all of your code in an email, consider putting it on \url{http://gist.github.com/}{[GitHub Gist app]}. It will give your code nice syntax highlighting, and you don't have to worry about anything getting mangled by the email system...''}
 
-    Finally, there are manuals like \textit{``An Introduction to R''}), and the FAQ webpages that are available to the public---most of the time free of charge,
-    from which any user can learn the basic of each technology.
+    Finally, there are manuals like \textit{``An Introduction to R''}), and the FAQ webpages for R that are available to the public---most of the time free of charge,
+    from which any user can learn the basics of R.
     For example, the R community provides a compendium of PDF documents for new users on different languages\footnote{The R Manuals are available at \url{https://cran.r-project.org/}}.
     In Stack Overflow, supported technologies are provisioned with webpages and links to free and paid materials\footnote{Materials available at \url{http://stackoverflow.com/tags/r/info}}.
     %Members are able to reference these materials when needed, e.g., \textit{``...You may want to acquaint yourself with the 'An Introduction to R' manual that came with your R installation to learn more about indexing.''}
@@ -231,7 +236,7 @@ Thus, R-help is a place for discussion, and Stack Overflow is a place for questi
     In spite of reading the documentation available, a user may fail to address the channel appropriately.
     The community may feel that the question asked, the information provided or something else is not in compliance with the expectations and rules of the channel.
     In such cases, one should describe the documentation read, the attempts made, and the goal to achieve.
-    This would avoid answers like \textit{``read the manual''} or \textit{``read the posting guide''}, as well as helping the participants to help.
+    This would avoid answers like \textit{``read the manual''} or \textit{``read the posting guide''}. %, as well as helping the participants to help.
     For example, in the thread \textit{``lme4 GLMM''}\footnote{\url{https://goo.gl/Gbek3R}}, the user explicitly acknowledged the repeated question, and explained the rationale for doing so: \textit{``I'm very sorry for my repeated question, which I asked 2 weeks ago, namely: I'm interested in possibly simple random-part specification in the call...''}.
 
 
@@ -242,17 +247,21 @@ Thus, R-help is a place for discussion, and Stack Overflow is a place for questi
     For instance, when a question or answer contains information in an external file hosting service like Dropbox or Google Drive, the owner of the service account can break the link at any moment, leaving the message incomplete or impossible to reproduce, like the thread \textit{\href{http://goo.gl/5nanFU}{``Is it possible to create a 3d contour plot without continuous data in R?''}}.
     U33 suggested: \textit{``Questions should be self-contained as much as possible. Exceptions: recognizable links such as CRAN, R documentation, etc.''}.
 
-    Based on our observations, we constructed a set of recommendations for links that are the exception of the rule:
+    Based on our observations, we provide the following of recommendations for using third-party resources within links.
 
     \begin{description}[itemsep=3pt, topsep=2pt, leftmargin=1em, parsep=0pt]
-        \item[Well known websites] are expected to be maintained in the long term like Wikipedia, the official documentation in CRAN.
-        For example, the Stack Overflow's thread \textit{``calculating convolution of multinomial distribution''} a user posted \textit{`I'm doing a simulation where I need to calculate a \href{https://en.wikipedia.org/wiki/Convolution_of_probability_distributions}{[Wikipedia convolution]} of \href{https://en.wikipedia.org/wiki/Multinomial_distribution}{[Wikipedia multinomial distributions]}...''}.
+        \item[Use well maintained websites] that are expected to be available in the future, such aa Wikipedia and the official documentation in CRAN.
+        For example, the Stack Overflow's thread \textit{``calculating convolution of multinomial distribution''} a user posted \textit{`I'm doing a simulation
+          where I need to calculate a \href{https://en.wikipedia.org/wiki/Convolution_of_probability_distributions}{[Wikipedia link] convolution} of
+          \href{https://en.wikipedia.org/wiki/Multinomial_distribution}{[Wikipedia link] multinomial distributions}...''}.
 
-        \item[Resources that support or expand the message] when the important information is already in the message.
+        \item[Use resources that support or expand the message] to further clarify the message for those who might need it.
         For instance, the Stack Overflow's thread \textit{``How do I save all the draws from a MCMC posterior distribution to a file in R''} clarifies \textit{``...You should be able to open a text connection using ?file \href{http://stat.ethz.ch/R-manual/R-devel/library/base/html/connections.html}{[more information]} with the open argument set to write...''}.
 
-        \item[Material relevant to the message is too big] as papers or demonstrations.
-        For instance, the R-help's thread \textit{``Using FUNCTION to create usable objects''} a user stated \textit{``I suspect you are trying to find your way into Circle 6 of 'The R Inferno' but haven't yet got in. \href{http://www.burns-stat.com/pages/Tutor/R\_inferno.pdf}{[R Inferno]}''}.
+        \item[When material relevant to the message is too big.] Sometimes it is not practical to include in a message all the related information. In that
+          case, a link might be a better alternative, such as when referencing videos or documents as links rather than include them as attachments.
+        For example, the R-help's thread \textit{``Using FUNCTION to create usable objects''} a user linked to a PDF rather than quoting it: \textit{``I suspect you are trying to find your way
+          into Circle 6 of 'The R Inferno' but haven't yet got in. \href{http://www.burns-stat.com/pages/Tutor/R\_inferno.pdf}{[link to PDF of R Inferno]}''}.
     \end{description}
 
 \subsubsection{\rece}
@@ -286,6 +295,7 @@ For example, a user on Stack Overflow modified an answer to provide a more updat
 %         For instance, a user asked a question that seems to be the opposite of what the posting guide recommend, and someone answered: \textit{\href{http://goo.gl/FUm1HC}{``...If you read the Posting Guide I think you will find precisely the opposite expectation explicitly presented. Using my "cheeky code" would only be part of the recommended actions to take before posting if you follow the recommendations of the "Do your homework before posting:"...''}}.
 %     \end{packed_enum}
 
+\dmg{This section needs a way to finish}
 
 
 \section{Threats to validity}
