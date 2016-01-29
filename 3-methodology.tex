@@ -5,7 +5,7 @@
 \label{cha:methodology}
 
 The main goal of this work is to empirically compare how knowledge, specifically knowledge in question-and-answer (Q\&A) form, is sought, shared, and curated in both the \RH mailing list and the R tag in \SO. We used a qualitative \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer the following research questions:
-    \begin{enumerate}[label=\bfseries{RQ-\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
+    \begin{enumerate}[label=\bfseries{RQ\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
         \item \rqa
         \item \rqb
         \item \rqc
@@ -24,7 +24,7 @@ For \SO, we obtained a data dump file available on their Website---Stack Exchang
 
 %To make the data comparable againt the \SO data set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by \SO (UTC).
     
-To answer RQ-3, we needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013. 
+To answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013. 
 To rememdy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
 However, if a user in the 2013 data file did not exist in the 2014 data, we did not count them.
 From \SO, we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its two synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}}, (\texttt{rstats} and \texttt{r-language}).
@@ -67,7 +67,7 @@ Note that only \SO's data contains ``comments'' information.
 \subsubsection{Data analysis process}
 \label{sec:dap}
 
-We followed an inductive approach~\cite{Runeson2012} to analyze the data from \SO and the \RH mailing list. Through this process, we iteratively switched between \textit{data gathering} and \textit{data analysis} until we reached saturation. To reduce the risk of bias~\cite{Runeson2012}, two researchers conducted the analysis, both computer scientists with a background in qualitative data analysis. To answer RQ-1 and RQ-2, we selected 400 random threads from each channel. To answer RQ-3, we focused on questions with identical subjects that were posted to both channels by the same author---we found 79 such threads and analyzed them all.
+We followed an inductive approach~\cite{Runeson2012} to analyze the data from \SO and the \RH mailing list. Through this process, we iteratively switched between \textit{data gathering} and \textit{data analysis} until we reached saturation. To reduce the risk of bias~\cite{Runeson2012}, two researchers conducted the analysis, both computer scientists with a background in qualitative data analysis. To answer RQ1 and RQ2, we selected 400 random threads from each channel. To answer RQ3, we focused on questions with identical subjects that were posted to both channels by the same author---we found 79 such threads and analyzed them all.
     
     \begin{figure*}[htbp]
     	\centering
