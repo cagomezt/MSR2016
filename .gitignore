@@ -36,3 +36,7 @@ knowledge-curation.pdf
 #/notes/
 *.rel
 auto
+diff.pdf
+diff.tex
+new.tex
+old.tex
