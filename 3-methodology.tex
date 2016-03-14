@@ -15,7 +15,7 @@ As mentioned, the main goal of this work is to empirically compare how knowledge
 %This research method is applicable when a concept or phenomenon requires more understanding, with little pre-existing research~\cite{Creswell2009}.
 
 This study employed two research methods over two phases: we \textit{mined archival data} and then conducted a \textit{qualitative survey}. In the first phase,
-we randomly sampled\footnote{Our sample data is openly available at \url{https://zenodo.org/record/47455}} questions in both channels to characterize the types of discussions that occur~\cite{carlos_gomez_teshima_2016_47455}. We iteratively sampled questions in each channel and coded
+we randomly sampled\footnote{Our sample data is openly available at \url{https://zenodo.org/record/47484}} questions in both channels to characterize the types of discussions that occur~\cite{carlos_gomez_teshima_2016_47455}. We iteratively sampled questions in each channel and coded
 the data---we reached saturation after sampling 400 questions in each channel. In the second phase, we surveyed members of the R community to validate our interpretation of the results from the previous phase. %obtain further additional insights and to verify our findings.
 
 \subsection{Phase I: Mining Archival Data} 
@@ -39,7 +39,7 @@ To prepare the data, we used two different software tools:
     \begin{enumerate*}[label=(\arabic*)]
     \item To process the \SO data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}.
     \item To process the \RH mailing list data, we wrote our own mail mining application\footnote{Our tool is available at
-            \url{https://github.com/cagomezt/GTMail}}. To ensure accurate results when processing the \RH mailing list, we followed a series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}.
+            \url{https://github.com/cagomezt/GTMail}}. To ensure accurate results when processing the \RH mailing list, we followed a series of recommendations proposed by Bettenburg \textit{et al}.~\cite{Bettenburg2009}: extracted messages, removed duplicates, removed signatures, and reconstructed discussion threads.
     \end{enumerate*}
 Table~\ref{table:data} depicts a summary of the data used for this study. Unsurprisingly, the \RH mailing list has more questions, answers, and users as it contains approximately ten years of additional data.
 Note that only \SO's data contains ``comments'' information.
