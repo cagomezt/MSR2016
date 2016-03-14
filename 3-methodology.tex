@@ -27,7 +27,7 @@ For \SO, we obtained a data dump file available on their Website---Stack Exchang
 %To make the data comparable againt the \SO data set, we transformed the email addresses to MD5 hashes, and changed the time zone of the mailing list messages (UTC+2) to the time zone used by \SO (UTC).
     
 To answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013. 
-To rememdy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
+To remedy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
 However, if a user in the 2013 data file did not exist in the 2014 data, we did not count them.
 From \SO, we retrieved all R-related data by selecting only messages with the R tag (\texttt{r}) and its two synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}}, (\texttt{rstats} and \texttt{r-language}).
 
