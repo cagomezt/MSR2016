@@ -43,7 +43,8 @@
 \usepackage{color}
 \usepackage{ifthen}
 \newboolean{showcomments}
-\setboolean{showcomments}{true} \ifthenelse{\boolean{showcomments}}
+\setboolean{showcomments}{true}
+\ifthenelse{\boolean{showcomments}}
   {
 				\newcommand{\nbb}[2]{
 				\fcolorbox{black}{yellow}{\bfseries\sffamily\scriptsize#1}
@@ -87,7 +88,7 @@
 \newcommand{\rqa}{What types of knowledge artifacts are shared on Stack Overflow and the R-help mailing list within the R community?}
 \newcommand{\rqb}{How is the knowledge constructed on Stack Overflow and the R-help mailing list?}
 \newcommand{\rqc}{Why do certain users post to both Stack Overflow and the R-help mailing list?}
-\newcommand{\rqd}{How has the community of both Stack Overflow and the R-help mailing list evolved over time?}
+\newcommand{\rqd}{How have the communities of both Stack Overflow and the R-help mailing list evolved over time?}
 
 \newcommand{\reca}{Choose the correct channel}
 \newcommand{\recb}{Be aware of the channel rules and the basic concepts and nomenclature used}
@@ -113,62 +114,125 @@
 \maketitle
 
 \begin{abstract}
-One of the many effects of social media in software development is the flourishing of very large communities of practice where members share a common interest, such as programming languages, frameworks, and tools. These communities of practice use many different \channels but little is known about how these communities create, share, and curate knowledge using such channels.
-In this paper, we report a qualitative study of how one community of practice---the R software development community---creates and curates knowledge associated with questions and answers (Q\&A) in two of its main \channels: the R-tag in Stack Overflow and the R-users mailing list. The results reveal that knowledge is created and curated in two main forms: participatory, where multiple members explicitly collaborate to build knowledge, and crowdsourced, where individuals work independently of each other. The contribution of this paper is a characterization of knowledge types that are exchanged by these communities of practice, including a description of the reasons why members choose one channel over the other.  Finally, this paper enumerates a set of recommendations to assist practitioners in the use of multiple channels for Q\&A.
 \alexey{we'll need to add here the mention of the extension findings: the participation behavior on both channels, in terms of \textbf{quantity} and \textbf{continuity}.}
+  One of the many effects of social media in software development is
+  the flourishing of very large communities of practice where members
+  share a common interest, such as programming languages, frameworks,
+  and tools. These communities of practice use many different
+  \channels but little is known about how these communities create,
+  share, and curate knowledge using such channels.  In this paper, we
+  report a qualitative and quantitative study of how one community of
+  practice---the R software development community---creates and
+  curates knowledge associated with questions and answers (Q\&A) in
+  two of its main \channels: the R-tag in Stack Overflow and the
+  R-users mailing list. The results reveal that knowledge is created
+  and curated in two main forms: participatory, where multiple members
+  explicitly collaborate to build knowledge, and crowdsourced, where
+  individuals work independently of each other. The contribution of
+  this paper are: a characterization of knowledge types that are
+  exchanged by these communities of practice, including a description
+  of the reasons why members choose one channel over the other; and a
+  qualitative study of the evolution of participation in both channels.
+  Finally, this paper enumerates a set of recommendations to assist
+  practitioners in the use of multiple channels for Q\&A.
+>>>>>>> done before discussion
 
 \end{abstract}
 
 \section{Introduction}
 \label{cha:introduction}
-The adoption and emergence of socially enabled tools and channels (e.g., GitHub, \SO, mailing lists) has fostered the formation of large \textit{communities of practice} where members share a common interest, such as programming languages, frameworks, and tools~\cite{Storey2014}. These communities rely on and use many different communication channels, however, little is known about how they create, share, and curate knowledge using such channels. 
 
-One prominent community of practice is the R community. The R programming language is an open source project without commercial backing that relies heavily on its rapidly growing and highly heterogeneous software development community. The R community plays an important role in the diffusion of the R language; members have numerous resources for learning the language and receiving help, such as mailing lists, blogs, books, online and offline courses, and question \& answer sites (e.g., \SO). While the R community benefits from this vast and rich corpus of knowledge, it also drives the creation and curation of the information.
+The adoption and emergence of socially enabled tools and channels
+(e.g., GitHub, \SO, mailing lists) has fostered the formation of large
+\textit{communities of practice} where members share a common
+interest, such as programming languages, frameworks, and
+tools~\cite{Storey2014}. These communities rely on and use many
+different communication channels; however, little is known about how
+they create, share, and curate knowledge using such channels.
+
+One prominent community of practice is the R community. The R
+programming language is an open source project without commercial
+backing that relies heavily on its rapidly growing and highly
+heterogeneous software development community. The R community plays an
+important role in the diffusion of the R language; members have
+numerous resources for learning the language and receiving help, such
+as mailing lists, blogs, books, online and offline courses, and
+question \& answer sites (e.g., \SO). While the R community benefits
+from this vast and rich corpus of knowledge, it also drives the
+creation and curation of the information.
 
 Without a single entity directing and controlling it, the R language has grown organically from its community. Similar to other communities of practice, knowledge is exchanged and curated in many \channels, and two particular \channels are at the center of this process: the \textit{\RH mailing list} and \textit{\SO}. The \RH mailing list was created to assist those using the language, and while \SO is not specifically oriented towards R, its section dedicated to R (the R tag) has grown rapidly\footnote{\href{http://www.r-bloggers.com/r-is-the-fastest-growing-language-on-stackoverflow/}{http://www.r-bloggers.com/r-is-the-fastest-growing-language-on-stackoverflow/}}.
 
 \SO has revolutionized the way programmers seek knowledge~\cite{li2013help,Vasilescu2014c}, assuming the role of a capable ``expert on call'' that is able---and willing---to answer questions of any level of difficulty about any programming technology (R included). \SO's gamification features guarantee that enthusiastic experts will answer questions, often within minutes of being posted~\cite{Mamykina2011}. Equally important is the ability of \SO's users to curate the knowledge being created, making sure that the best answers surface to the top and become a valuable asset to those seeking an answer now or in the future. \SO has become a popular and effective tool for creating, curating, and exchanging knowledge, including knowledge about the R language.
 
-One would expect that the traffic on the \RH mailing list would begin to fizzle as \SO popularity increased. If \SO is so effective at matching those who seek knowledge with those that have it, doesn't that obviate most of the need for the \RH mailing list? Yet that does not appear to be the case as the \RH mailing list continues to grow in traffic, implying that it is still an important resource for the R community. It even appears as if the mailing list and \SO complement each other.
-\alexey{Perhaps here is a good place to mention the prolific contributors, and ``drive by contributors''}.
+One would expect that the traffic on the \RH mailing list would begin
+to fizzle as \SO popularity increased. If \SO is so effective at
+matching those who seek knowledge with those that have it, doesn't
+that obviate most of the need for the \RH mailing list? Yet that does
+not appear to be the case as the \RH mailing list has maintained a
+steady, implying that it is still an important resource for the R
+community. It even appears as if the mailing list and \SO complement
+each other.
 
 There are obvious inherent differences between both \channels. Mailing lists unite users by subscription, creating a tight community. Their content lacks organization, except for the natural structure provided by email metadata (e.g.,subjects, threading, authors, dates), and they are not optimized for long-term storage and retrieval. On the other hand, \SO's community is not as tight and the channel is optimized for the curation and long-term storage of knowledge. However, little is known about the differences in how people use both \channels, such as how the types of questions and answers sought in one channel compare to the other, why users choose one channel over the other, why some users participate in both channels, and how participants perceive each \channel.
 
 
 
-In this paper, we empirically compare how knowledge, specifically knowledge manifested as questions and answers, is sought, shared, and curated in both the \RH mailing list and on \SO. We applied a qualitative \textit{exploratory case study} methodology to answer the following research questions:
+In this paper, we empirically compare how
+knowledge, specifically knowledge manifested as questions and answers,
+is sought, shared, and curated in both the \RH mailing list and on
+\SO.  We also look into the patterns of participation of users in both
+communities. 
+We applied a qualitative \textit{exploratory case study}
+methodology to answer the following research questions:
 
-\begin{enumerate}[label=\bfseries{RQ\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
-        \item \rqa
-        \item \rqb
-        \item \rqc
-        \item \rqd
-    \end{enumerate}
-\alexey{Add research questions regarding the behavior of new and prolific contributors?}
+\begin{enumerate}%[label=\bfseries{RQ\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
+\item \rqa
+\item \rqb
+\item \rqc
+\item \rqd
+\end{enumerate}
 
-By mining archival data, we identified and categorized the main types of knowledge artifacts contained on the \RH mailing list and in \SO messages (RQ1). The emerging categories (see Table~\ref{table:type-of-knowledge}) form a \textit{typology} that allows researchers to study and characterize Q\&A knowledge dissemination within a community of practice. We used the typology to study how knowledge is constructed and shared on \SO and the \RH mailing list. We found that these channels support two distinct approaches for constructing knowledge---\textit{participatory knowledge construction} and \textit{crowd knowledge construction}---however, each channel supports them differently (RQ2). Our findings indicate that participatory knowledge construction is more prevalent on \RH, while crowd knowledge construction is more prevalent on \SO.
+By mining archival data, we identified and categorized the main types
+of knowledge artifacts contained on the \RH mailing list and in \SO
+messages (RQ1). The emerging categories (see
+Table~\ref{table:type-of-knowledge}) form a \textit{typology} that
+allows researchers to study and characterize Q\&A knowledge
+dissemination within a community of practice. We used the typology to
+study how knowledge is constructed and shared on \SO and the \RH
+mailing list. We found that these channels support two distinct
+approaches for constructing knowledge---\textit{participatory
+  knowledge construction} and \textit{crowd knowledge
+  construction}---however, each channel supports them differently
+(RQ2). Our findings indicate that participatory knowledge construction
+is more prevalent on \RH, while crowd knowledge construction is more
+prevalent on \SO.
 
-We found that some developers are active on both channels. As a result, we conducted a survey to investigate the benefits they gain by doing so (RQ3). We conclude the paper by providing recommendations for using different communication channels, and discuss how channel affordances and community rules (e.g., topic restriction and gamification) influence knowledge construction and curation.
-\alexey{and here we need to bring the extended results Daniel has found for the extension.}
+We found that some contributors are active on both channels. As a
+result, we conducted a survey to investigate the benefits they gain by
+doing so (RQ3).
 
+We also studied the participation patterns of contributors. We focused
+on several sets of contributors, such as those who rarely contribute,
+the top contributors, and those who contribute to both channels. We
+also looked at how participation has evolved in both channels over
+time. Our results show that a great majority of participants are
+fleeting, and a small number of individuals are responsible for most
+answers.  Our results also show that both channels are reaching a
+maturating stage. In \RH it means a steady flow of questions; for \SO
+the result is a continuous decrease of questions with a positive score
+(number of positive votes minus negative votes), hinting to the fact
+that, as time progresses, the most frequently asked questions have
+been already asked.
+
+We conclude the paper by providing recommendations for
+using different communication channels, and discuss how channel
+affordances and community rules (e.g., topic restriction and
+gamification) influence knowledge construction and curation.
 
  \section{Background}
 \label{cha:background}
 We begin with an overview of the R community and describe in more detail the two main channels used for asking and answering questions by R community members.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \subsection{The R Community of Practice}
     
@@ -179,11 +243,16 @@ We begin with an overview of the R community and describe in more detail the two
       \item \textit{Periphery}, which includes everyone else (language users and package developers).
     \end{enumerate*}
 
-
     The R community is an eclectic open source community that goes beyond software development 
     and includes biologists and statisticians with no or limited programming experience.
     Its entire history of mailing list communication is archived and publicly available.
     The R community has also been the subject of extensive research in community evolution~\cite{German2013,Vasi1escu2014PhD} and the interplay between channels~\cite{Vasilescu2014c}.
+
+    R popularity has continuously increased over the years. 
+    IEEE Spectrum recently ranked R as the 5th most popular
+    language\footnote{\url{http://spectrum.ieee.org/computing/software/the-2016-top-programming-languages}},
+    implying that the R community is healthy and continues to grow at
+    a fast rate.
 
     Our study focused on the analysis of \SO and the R-help mailing list, two of the main channels in the R community.
     We chose them because they are the main channels that provide Q\&A support to the community.
@@ -191,8 +260,13 @@ We begin with an overview of the R community and describe in more detail the two
 \subsubsection{R-help Mailing List}
     There are several mailing lists to help R community members solve programming problems with the R language: \emph{R-help}, \emph{R-package-devel}, \emph{R-devel}, \emph{R-packages}, \emph{R-announce} and \emph{Bioconductor}. However, the R-help mailing list is the main channel for discussing problems and solutions using R.  Other messages are also encouraged, such as documentation, benchmarks, examples, and announcements.
 
-    The R-help mailing list used to be the main \channel for asking and answering questions within the R community, but a significant number of users migrated to Stack Overflow~\cite{Vasilescu2014c}.
-    Despite the reduced number of users, the R-help mailing list is still very active---on average, a subscriber may receive 55 emails a day.
+    The R-help mailing list used to be the main \channel for asking
+    and answering questions within the R community, but a significant
+    number of users migrated to Stack Overflow~\cite{Vasilescu2014c}.
+    Despite the reduced number of users, the R-help mailing list is
+    still very active---on average, a subscriber may receive
+    around 30 emails
+    a day (as of Oct 2016).
 
 \subsubsection{Stack Overflow}
 \label{subsec:Rtag}
@@ -217,25 +291,65 @@ Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{tran
  \section{Methodology}
 \label{cha:methodology}
 
-As mentioned, the main goal of this work is to empirically compare how knowledge, specifically knowledge in question-and-answer (Q\&A) form, is sought, shared, and curated in both the \RH mailing list and the R tag on \SO. We used a qualitative \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer our research questions (presented in Section~\ref{cha:introduction}).
+As mentioned, the main goal of this work is to empirically compare how
+knowledge, specifically knowledge in question-and-answer (Q\&A) form,
+is sought, shared, and curated in both the \RH mailing list and the R
+tag on \SO. We used a qualitative \textit{exploratory case study}
+methodology~\cite{Creswell2009,Runeson2012} to answer our research
+questions (presented in Section~\ref{cha:introduction}).
                     
-\alexey{do we present all the findings as a single study or as a study and then an extension? if we present it as a single study, we need to adjust the methodology.}
-This study employed two research methods over two phases: we \textit{mined archival data} and then conducted a \textit{qualitative survey}. In the first phase,
-we randomly sampled and iteratively coded\footnote{Our sample data is openly available at \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}} questions in both channels to characterize the types of discussions that occur. This process was continued until we reached saturation, which amounted to 400 threads in each channel. In the second phase, we surveyed members of the R community to validate our interpretation of the results from the previous phase. 
+This study employed two research methods over two phases: we
+\textit{mined archival data} and then conducted a \textit{qualitative
+  survey}. In the first phase, we randomly sampled and iteratively
+coded\footnote{Our sample data is openly available at
+  \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}}
+questions in both channels to characterize the types of discussions
+that occur. This process was continued until we reached saturation,
+which amounted to 400 threads in each channel. In the second phase, we
+surveyed members of the R community to validate our interpretation of
+the results from the previous phase.
+
 \subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
-We mined data from the public archives of both the \RH mailing list and \SO. The \RH mailing list archive started in 1997, while the archives for \SO started in 2008 (when it was created).
-To make the data sets comparable, we analyzed both datasets from September 2008 until December 2013, a period of time that both channels were available.
-For \SO, we obtained a data dump file from their Website---Stack Exchange releases a new data dump from all their Websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the \RH mailing list data, we retrieved MBOX files of the archives from the \RH Website.
 
-    
-To answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013. 
-To remedy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.
-However, if a user in the 2013 data file did not exist in the 2014 data, we did not count them.
-From \SO, we retrieved all R-related data by selecting only messages that contained the R tag (\texttt{r}) or its two synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}}, (\texttt{rstats} and \texttt{r-language}).
+We mined data from the public archives of both the \RH mailing list and \SO. The \RH mailing list archive started in
+1997, while the archives for \SO started in 2008 (when it was created). We used hte archives of \RH up to Sept 2016. And
+the post and comments information of \SO up to Sept 2016 too. However, we restricted the analysis of users data up to
+Sept 2014.
 
-To determine which users were active in both channels, we compared the MD5 hashes of the \RH mailing list and \SO participants. Given the limitations of the \SO data, we did not perform any unification of email addresses and considered that every email address belonged to an individual. In total, we found 1,421 active users (email addresses) on both media channels.
+To make the
+data sets comparable for the qualitative part of this research, we analyzed and compared both datasets from September 2008
+until December 2013, a period of time that both channels were
+available.  For \SO, we obtained a data dump file from their
+Website---Stack Exchange releases a new data dump from all their
+Websites every three
+months\footnote{\url{http://stackexchange.com/sites}}. For the \RH
+mailing list data, we retrieved MBOX files of the archives from the
+\RH Website.
 
+To answer RQ3, we needed the ability to compare email addresses
+between both channels. However, Stack Exchange stopped providing
+information about email addresses and the last Stack Exchange dump
+file to contain email addresses as MD5 hashes was released in
+September 2013---this meant we did not have complete data for October,
+November, and December 2013.  To remedy this gap, we used the data
+dump file from September 2014, but updated the \texttt{users} table
+with the hashes taken from the September 2013 dump file for those
+\texttt{ID}s that were identical in both data sets.  However, if a
+user in the 2013 data file did not exist in the 2014 data, we did not
+count them.  From \SO, we retrieved all R-related data by selecting
+only messages that contained the R tag (\texttt{r}) or its two
+synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
+(\texttt{rstats} and \texttt{r-language}).
+
+We performed unification of email addresses in \RH. We reduced the
+number of email addresses from 36.6k to 31.7 persons=--a reduction of 15\%; a similar number was reported inxo
+\cite{Vasilescu2014c}).
+
+To determine which users were active in both channels, we compared the
+MD5 hashes of the email addresess of \RH mailing list and \SO participants. If there was
+match, we associated the \SO user to the same person. This way we
+identified 1,449 persons who have used both media channels.
     
 To prepare the data, we used two different software tools:
     \begin{enumerate*}[label=(\arabic*)]
@@ -257,16 +371,15 @@ Note that only \SO's data contains ``comments'' information.
 	        Questions     & 101,931 &  67,393 \\
 	        Answers       & 213,366 &  99,620 \\
 	        Comments      &       - & 286,124 \\
-	        Users         &  39,150 &  26,324 \\
+          Different individuals & 31,729 &  26,324\footnote{Up to Sept
+                                           2014.} \\
 	        \bottomrule
         \end{tabular}
       \end{small}
 	  \label{table:data}
 	\end{table}
 
-
-
-
+        \dmg{The data for stackoverflow needs to be updated.. will do that when I have time}
 
 \subsubsection{Data analysis process}
 \label{sec:dap}
@@ -519,22 +632,20 @@ In contrast, a discussion on \RH can continue long after an answer has been foun
 
 \subsection{\rqd}
 
-\textbf{this needs to be moved to methodlogy/data gathering}
-
-In order to make the comparison more meaningful, we unified email addresses of the same persons (this step
-reduced the number of emails from 36.6k to 31.5k---a reduction of 15\% the same reduction reported in
-\cite{Vasilescu2014c}).
-
 Vasilescu et al. studied the participation of the \RH and \SO communities over time. Their
 research showed strong evidence that knowledge seeking activities were moving from \RH to \SO---as of the end of
-2013~\cite{Vasilescu2014c}. Figure~\ref{fig:channelsActPerMonth} shows the activity of questions per month in both channels up to Sept 2016. We
-have also included \SO questions with a positive score (the sum of positive minus negative votes is larger than zero). As it can be
-seen, \SO has continued its growth while \RH has decreased significantly to a steady count. However, in the last year, total number of
-questions in both channels seem to
-have stabilized. Figure~\ref{fig:channelsActPerMonthLatests} shows only the number of questions since Jan 2015. At it can be
-seen, both channels are relatively flat in overall questions. The number of questions in \SO is between 10 and 20 times
-the number of questions in \RH. However, the number of positive questions in \SO is starting to
-decrease. 
+2013~\cite{Vasilescu2014c}.
+
+We first explore the evolution of the number of questions in both channels, as the main proxy of activity. The results
+are shown in Figure~\ref{fig:channelsActPerMonth}. As reported in~\cite{Vasilescu2014c}, the trend indicates that \SO
+continues to grow and \RH continues to decrease. One aspect that is changing in \SO is the growth of questions that
+receive a negative score. A score in \SO is the sum of positive votes minus negative votes and can be seen as a proxy of
+the quality of the question. As it can be seen, the number of positive questions has flattened and starting to decrease.
+
+Looking at the trends over the last 10 years might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
+number of questions since Jan 2015. At it can be seen, both channels are relatively flat in overall questions. The
+number of questions in \SO is between 10 and 20 times the number of questions in \RH. However, the number of positive
+questions in \SO is starting to decrease (this might be a temporary effect).
 
 \begin{figure*}[htbp]
   \centering
@@ -553,20 +664,14 @@ decrease.
   \label{fig:channelsActPerMonthLatests}
 \end{figure*}
 
-\subsubsection{Regarding users}
-
-The number of participants of each channel is
-
-An important aspect of a community is its ability to attract new participants and to make them stay. We looked at the
-number of participants that only ask one question and do not have any other contributions (either questions of responses).
-
 \subsubsection{Common users of both channels}
 
-The number of common users between both datasets is relatively small (around 2.5\%). Yet, a handful of these
-contributors are responsible for a very large proportion of the answers to both channels. Figure~\ref{fig:common} shows
-the accumulated proportion of answers that have been contributed by these authors. As it can be seen, the top
-contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO, respectively. In fact, the top 6 contributors to
-both channels are responsible of 10\% of the answers to both channels. Answers to \SO include both posts and comments to questions.
+The number of common users between both datasets that we identified is relatively small (around 2.5\% of all
+users). Yet, a handful of these contributors are responsible for a very large proportion of the answers to both
+channels. Figure~\ref{fig:common} shows the accumulated proportion of answers that have been contributed by these
+authors. As it can be seen, the top contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO,
+respectively. In fact, the top 6 contributors to both channels are responsible of 10\% of the answers to both
+channels. Answers to \SO include both posts and comments to questions.
 
 \begin{figure*}[htbp]
   \centering
@@ -576,16 +681,16 @@ both channels are responsible of 10\% of the answers to both channels. Answers t
   \label{fig:common}
 \end{figure*}
 
-\subsubsection{Prolific users}
+\subsubsection{Super-contributors}
 
-
-Both channels benefit from few very prolific users. Figure~\ref{fig:prolific} shows the most prolific users  in each
-channel, ordered by the number of answers they have contributed. The vertical axis is the the accumulated proportion of
-contributions to all answers in each channel. In \RH, 9 users have contributed 25\% of all answers, and 49 50\%. In \SO,
-the distribution is not as steep, yet, 24 users have contributed 25\% of all answers (including comments) and 131 are
-have contributed 50\%. This means that 0.15\% of the users of \RH contribute 50\% of all the answers, while 0.45\% of
-users of \SO
-contribute 50\% of all the answers.
+Both channels benefit from a handful of very prolific users who answer most questions. We will refer to these users as
+super-contributors. Figure~\ref{fig:prolific} shows the supe-contributors in each channel, ordered by the number of
+answers they have contributed. The vertical axis is the accumulated proportion of contributions to all answers in
+each channel. As it can be seen, in \RH, 9 users have contributed 25\% of all answers, and 49 50\%. In \SO, the distribution is not as
+steep, yet, 24 users have contributed 25\% of all answers (including comments) and 131 are have contributed 50\%. This
+means that 0.15\% of the users of \RH contribute 50\% of all the answers, while 0.45\% of users of \SO contribute 50\%
+of all the answers. To put into context, the super-contributors in \RH post an average of between 2 and 3 answers a day, while the
+super-contributors of \SO post, on the average, between 3 and 5 answers a day.
 
 \begin{figure*}[htbp]
   \centering
@@ -598,23 +703,23 @@ contribute 50\% of all the answers.
 
 \subsubsection{New users}
 
+New users are important for the survival and continuity of a community. Unfortunately we can only track users when they
+participate in the channel, hence, we do not know who is a passive participant. Hence we use the date of first
+contribution as the proxy of when a user joins the community.  Figure~\ref{fig:newusers} shows the proportion of users
+who have posted their first question in a particular month (thicker lines). As it can be seen, both communities show a
+very similar pattern: between 25 and 35\% of the users who post new questions are new during that month. We found,
+however, that many of these users participate only once: they post a question and they never post anything else (either
+a question or an answer). These users are represented by the thinner lines. In \SO around 1 in 10 users only ever post
+one question, while in \RH the number has been increasing over time. There has been a visible decrease in the proportion
+of new users in both channels. 
 
-New users are important for the survival and continuity of a community. Figure~\ref{fig:newusers} shows the proportion
-of users who have posted their first question in a particular month (thicker lines). As it can be seen, both communities
-show a very similar pattern: between 25 and 35\% of its users who post new questions are new during that month. However,
-there is a significant subset of these users: those who ask one question and never contribute again (either questions or
-answers). These users are represented by the thinner lines. In \SO around 1 in 10 users only ever post one question,
-while in \RH the number has been increasing over time. There has been a visible decrease in the proportion of new
-users in both channels.
-
-In fact, the number of users who only participate once is relatively large over the lifetime of the channels: 43\% in \RH and and 32\% in
-\SO.
-
+In fact, the number of users who only participate once (at any time) is relatively large over the lifetime of the channels: 43\% in
+\RH and and 32\% in \SO.
 
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/actByMonthUsers.pdf}
-  \caption{Proportion of new users over time. The top lines (thicker)x correspond to
+  \caption{Proportion of new users over time. The top lines (thicker) correspond to
     the number of users who post their first question in that month.
 The bottom (thinner) lines  correspond to the subset of new users who only ask one
     questions and never participate again. }
@@ -623,14 +728,15 @@ The bottom (thinner) lines  correspond to the subset of new users who only ask o
 
 \subsubsection{How long users participate}
 
-To measure the length of participation in either
-channel we divided the history of both channels into one month segments. In \RH a user participate in a given month if she
-posted an email to the list during that period. For \SO, we considered a user participated in a given month if she
-posted a question, a response or a comment.
+Another important measure of the community and its ability to hold knowledge is if their users continuously participate
+over time (even if their participation is small). To measure the continuity of participation in either
+channel we divided the history of both channels into one month segments. In \RH a user participates in a given month if she
+posted at least one email to the list during that period. For \SO, we considered a user participated in a given month if she
+at least posted one question, responded to one question, or commented on one question.
 
-The results show that users do not continue participating in either channel for a long
+The results show that users do not participate in either channel for a long
 time. Figure~\ref{fig:monthsPerUser} shows the accumulated proportion of users that participate a given number of
-months. The curves are very similar and skewed: 62\% of \RH users and 65\% of \SO users are active one month only and
+months (not necessarily consecutive). The curves are very similar and skewed: 62\% of \RH users and 65\% of \SO users are active one month only and
 90\% of \RH users are active 5 or less months while in SO, 90\% of users participate 4 or less months.
 
 \begin{figure*}[htbp]
@@ -638,7 +744,8 @@ months. The curves are very similar and skewed: 62\% of \RH users and 65\% of \S
   \includegraphics[width=.95\textwidth]{figs/monthsPerUser.pdf}
   \caption{Months a user has been active. This plot shows the accumulated proportion of users who have been active at a
     given number of months. As it can be seen, 62\% of \RH users and 65\% of \SO users are active one month only.
-    90\% of \RH users are active 5 or less months. In SO, 90\% of users participate 4 or less months.}
+    90\% of \RH users are active 5 or less months. In SO, 90\% of users participate 4 or less months. Months do not have
+  to consecutive.}
   \label{fig:monthsPerUser}
 \end{figure*}
 
@@ -864,6 +971,10 @@ For example, a user on \SO modified an answer to provide a more updated version 
 {
   \color{red}{\textbf{this section needs to be written}}
   }
+
+  When we consider that the popularity of R continues to increase, this implies
+that new users of R might not need to post questions to find the answers they are looking for (a testament to the value
+of \SO).
 
 \begin{itemize}
 \item Activity has flattened.
