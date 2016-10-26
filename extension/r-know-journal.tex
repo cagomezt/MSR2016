@@ -210,6 +210,7 @@ Software development is a knowledge-building process~\cite{naur1985programming}.
 As part of a study on the transition to gamified environments, Vasilescu~\cite{Vasi1escu2014PhD} examined the popularity of Stack Exchange (including the \SO R tag) and
 mailing lists within the R community. He found that since 2010, the number of message threads has decreased on the \RH mailing list, while the number of
 R-related questions asked on the Stack Exchange network has increased. Our study also examined \SO's R tag and the \RH mailing list, but we aimed to understand the \textit{knowledge types} used. This allows us to characterize the different knowledge seeking and sharing approaches on each channel. Vasilescu also examined the \textit{difference in activity} between contributions made by members active on both channels and members focused on a single medium. We also found members of the R community that were active on both channels, however, we aimed to understand \textit{why members post to a particular channel}.
+\alexey{we may need to adjust the previous sentence comparing our study with Vasilecu, since we plan to add similar type of analysis in the extension.}
 
 Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{transition to the \SO gamified channel}. She focused on examining whether four software projects that moved from mailing lists to \SO showed improvements in terms of developer participation and response time. She found that all four projects showed improvements on \SO compared to mailing lists, however, she also found that several projects have moved back to using mailing lists despite achieving these improvements. In our study, we found that both channels have knowledge support for question and answers, however, there are important differences between the two channels. For example, \SO's competitive environment creates an incentive to be the first to answer rather than improve other answers and participate in discussions.
 
@@ -218,7 +219,7 @@ Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{tran
 
 As mentioned, the main goal of this work is to empirically compare how knowledge, specifically knowledge in question-and-answer (Q\&A) form, is sought, shared, and curated in both the \RH mailing list and the R tag on \SO. We used a qualitative \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer our research questions (presented in Section~\ref{cha:introduction}).
                     
-
+\alexey{do we present all the findings as a single study or as a study and then an extension? if we present it as a single study, we need to adjust the methodology.}
 This study employed two research methods over two phases: we \textit{mined archival data} and then conducted a \textit{qualitative survey}. In the first phase,
 we randomly sampled and iteratively coded\footnote{Our sample data is openly available at \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}} questions in both channels to characterize the types of discussions that occur. This process was continued until we reached saturation, which amounted to 400 threads in each channel. In the second phase, we surveyed members of the R community to validate our interpretation of the results from the previous phase. 
 \subsection{Phase I: Mining Archival Data} 
@@ -294,11 +295,11 @@ The analysis process required an \textit{understanding of the context} surroundi
 We defined the following mappings between messages in both channels:
 
 	\begin{description}[itemsep=1pt, topsep=2pt, leftmargin=1em, parsep=0pt]
-		\item[Question:] The message is the first in the thread and contains the main question.
-		\item[Answer:] The message provides a solution to the main question of the thread.
-	 	\item[Update:] The message requests a modification to a question or answer made by the author of said question or answer.
-		\item[Comment:] The message offers clarification to a specific part of the question or answer.
-		\item[Flag:] The message requests attention from the moderator (e.g., repeated questions, spam, or rude behavior).
+		\item[\textbf{Question:}] The message is the first in the thread and contains the main question.
+		\item[\textbf{Answer:}] The message provides a solution to the main question of the thread.
+	 	\item[\textbf{Update:}] The message requests a modification to a question or answer made by the author of said question or answer.
+		\item[\textbf{Comment:}] The message offers clarification to a specific part of the question or answer.
+		\item[\textbf{Flag:}] The message requests attention from the moderator (e.g., repeated questions, spam, or rude behavior).
 	\end{description}
 
 
@@ -308,20 +309,22 @@ The analysis from Phase I revealed that some developers are active on both chann
 To test and refine the questions, format, and tone, we piloted the survey twice. 
 We promoted our survey on Twitter, Reddit, the \RH mailing list, and Meta Stack Exchange to reach users of both channels and minimize selection bias. However, our survey invitation on Stack Exchange was deemed off topic and deleted a few minutes later. In total, we received 37 responses, 26 of which were valid (invalid responses occurred if the session ended or the participant did not complete the survey).
 
+\alexey{add phase III?}
+
  \section{Findings}
 \label{cha:findings}
-To understand how knowledge in the form of questions and answers is created, shared, and curated, we first identified and categorized the main types of knowledge artifacts contained within \RH mailing list messages and in \SO messages with the R tag (RQ1). The emerging categories formed a typology and allowed us to identify and describe two approaches for constructing knowledge that are supported by these channels (RQ2). Interestingly, we found that some developers are active on both channels, and in some cases, even post the same questions. As a result, we investigated the benefits they gain by doing so (RQ3). In this section, we present our findings.
+To understand how knowledge in the form of questions and answers is created, shared, and curated, we first identified and categorized the main types of knowledge artifacts contained within \RH mailing list messages and in \SO messages with the R tag (RQ1). The emerging categories formed a typology and allowed us to identify and describe two approaches for constructing knowledge that are supported by these channels (RQ2). Interestingly, we found that some developers are active on both channels, and in some cases, even post the same questions. As a result, we investigated the benefits they gain by doing so (RQ3). \alexey{add RQ4-about the extension.} In this section, we present our findings.
 
 \subsection{What Types of Knowledge Artifacts Are Shared on \SO and the \RH Mailing List}
 \label{cha:findings-types}
 
 To answer RQ1, we randomly sampled 400 threads of messages from both \SO and the \RH mailing list, where each thread included a question and the associated responses. We identified five main types of artifacts that capture knowledge:
 \begin{enumerate*}[label=(\arabic*)]
-\item Questions 
-\item Answers 
-\item Updates 
-\item Flags
-\item Comments
+\item Questions, 
+\item Answers,
+\item Updates,
+\item Flags, and
+\item Comments.
 \end{enumerate*}
 Through our analysis, we further divided these types into sub-types---table~\ref{table:type-of-knowledge} presents our typology of knowledge artifacts, their
 descriptions, and their frequency in the sample of 400 threads in each channel. Even though we did not aim for a statistically significant sample size, the size of this sample
@@ -390,17 +393,15 @@ all cases, they were found to be statistically different (with $\rho \ll 0.001$ 
 \vspace{-3mm}
     \end{table*}
 
-\paragraph*{Questions and Answers}
+\paragraph{Questions and Answers}
     Questions express one or more problems or concerns faced by a user on the \RH mailing list or on \SO, whereas answers represent solutions to questions.  We observed that the types of questions on \SO are more specific than those on the \RH mailing list, and \SO answers are more likely to be tutorials. Also, \SO has more answers per question---2 per question compared to 1.4 for \RH (see Table~\ref{table:type-of-knowledge}). However, \RH answers tend to offer more suggestions or alternatives than \SO answers. 
-\paragraph*{Updates}
+\paragraph{Updates}
 An update is a modification of a question or answer. In \SO, updates are presented in one of two ways.
 \begin{description}[itemsep=3pt, topsep=2pt, leftmargin=1em, parsep=0pt]
-\item[Labeled updates] are explicitly shown in the body of questions or answers next to a label that identifies the update (e.g., edit, update, and p.s.).
+\item[\textbf{Labeled updates}] are explicitly shown in the body of questions or answers next to a label that identifies the update (e.g., edit, update, and p.s.).
   When multiple update labels appear in a message, each label is accompanied by a number (e.g., \textit{``[Edit 1:]''}), a date (e.g., \textit{``Edit/Update (April 2011):''}), or a bulleted list
   (e.g., ``EDIT: - anova... -drop1...'').
-
-\item[Non-labeled updates] are only visually recognizable through the message history system. The only indication of the change is a box at the end of the
-  message that identifies the user who performed the change and the date when it occurred.
+\item[\textbf{Non-labeled updates}] are only visually recognizable through the message history system. The only indication of the change is a box at the end of the message that identifies the user who performed the change and the date when it occurred.
 \end{description}
 We found that \textit{non-labeled} updates are often used to correct formatting, grammar, semantic mistakes, and spelling, or to incorporate explanations, examples, and suggestions without changing the meaning of the question or answer. \textit{Labeled} updates are for everything else.
 
@@ -408,7 +409,7 @@ On the \RH mailing list, all communication occurs through emails, and authors do
 
 Regarding update frequency in our sample, the \SO R tag contained 2.5 more updates than the \RH mailing list. Corrections are more common on \SO (almost 50\%), while \RH updates are often related to the adding of information to a thread (providing background, expansion, and explanation).
 
-\paragraph*{Flags}
+\paragraph{Flags}
 Flags are used to alert members of the community that a question or answer does not match community expectations.
 
 \SO contains a flagging mechanism, often used to get a moderator's attention. These flags can accomplish various objectives: mark a message as containing spam or rude/abusive behavior, or identify
@@ -421,7 +422,7 @@ The \RH mailing list doesn't have a built-in flagging mechanism, however, \RH us
 
 In terms of their frequency, R tag posts on \SO contained 1.5 times more flags than posts on the \RH mailing list. \SO flags are primarily used to mark repeated questions. In contrast, flags on \RH are often used to indicate that a previous answer is incorrect.
 
-\paragraph*{Comments}
+\paragraph{Comments}
 
 In \SO, comments are considered ``temporary `Post-It' notes left on a question or answer''\footnote{\url{http://stackoverflow.com/help/privileges/comment}}. Comments are located below each question or answer and can be used as a follow-up to a question, or to answer or clarify a question. On the \RH mailing list, we define comments as messages written to \emph{improve an answer or as a follow-up to a discussion}. It should be noted that in order for an email to qualify as a comment, it should not be written by the person who asked or answered the original question (otherwise, the message would be considered an update).
 Because both \SO and the \RH mailing list permit participants to ask multiple questions in the same thread, the sub-categories of comments are not mutually exclusive.  
@@ -434,15 +435,9 @@ Regarding the frequency of comments, the main difference between the two channel
 Our analysis helped us identify two different approaches used for constructing knowledge (RQ2) on \SO and the \RH mailing list: participatory knowledge construction and crowd knowledge construction.
 
 \begin{description}[itemsep=2pt, topsep=0pt, leftmargin=1em, parsep=0pt]
-\item[Participatory knowledge construction] is an approach where answers are created through the cooperation of multiple users in the same thread. Participants complement each other's solutions by discussing the pros and
-  cons of each answer, and by adding different viewpoints, additional information, and examples.
-  This process is similar to a team working together towards
-  a common objective.
+\item[\textbf{Participatory knowledge construction}] is an approach where answers are created through the cooperation of multiple users in the same thread. Participants complement each other's solutions by discussing the pros and cons of each answer, and by adding different viewpoints, additional information, and examples. This process is similar to a team working together towards a common objective.
 
-\item[Crowd knowledge construction] leverages the experiences of many users who work in a relatively
-  independent manner. Each user contributes to the thread, adding variety to the pool of solutions. However, the user's priority is to provide a correct answer and not to discuss other solutions.
-  This is comparable with the concept of a group in which people work towards the same objective but not necessarily together (e.g., Amazon's Mechanical Turk). Participants can vote on other's ideas, but the
-  main idea is not constructed through a discussion process.
+\item[\textbf{Crowd knowledge construction}] leverages the experiences of many users who work in a relatively independent manner. Each user contributes to the thread, adding variety to the pool of solutions. However, the user's priority is to provide a correct answer and not to discuss other solutions. This is comparable with the concept of a group in which people work towards the same objective but not necessarily together (e.g., Amazon's Mechanical Turk). Participants can vote on other's ideas, but the main idea is not constructed through a discussion process.
 \end{description}
 
 On the \RH mailing list, \textit{participatory knowledge} construction takes place when:
