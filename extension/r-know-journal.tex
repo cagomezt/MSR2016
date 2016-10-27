@@ -685,25 +685,34 @@ super-contributors of \SO post, on the average, between 3 and 5 answers a day.
 New users are important for the survival and continuity of a community. Unfortunately we can only track users when they
 participate in the channel, hence, we do not know who is a passive participant. Hence we use the date of first
 contribution as the proxy of when a user joins the community.  Figure~\ref{fig:newusers} shows the proportion of users
-who have posted their first question in a particular month (thicker lines). As it can be seen, both communities show a
-very similar pattern: between 25 and 35\% of the users who post new questions are new during that month. We found,
-however, that many of these users participate only once: they post a question and they never post anything else (either
-a question or an answer). These users are represented by the thinner lines. In \SO around 1 in 10 users only ever post
-one question, while in \RH the number has been increasing over time. There has been a visible decrease in the proportion
-of new users in both channels. 
+who have posted their first question in a particular month. As it can be seen, both communities show a very similar
+pattern: between 25 and 35\% of the users who post new questions are new during that month. We found, however, that many
+of these users participate only once: they post a question and they never post anything else (either a question or an
+answer). Figure~\ref{fig:newusersOnce} shows this information. One year after the creation of \SO, around 1 in 10 users
+only ever post one question, while in \RH the number has been increasing over time. There has been a visible decrease in
+the proportion of new users in both channels.
 
 In fact, the number of users who only participate once (at any time) is relatively large over the lifetime of the channels: 43\% in
 \RH and and 32\% in \SO.
 
 \begin{figure*}[htbp]
   \centering
-  \includegraphics[width=.95\textwidth]{figs/actByMonthUsers.pdf}
+  \includegraphics[width=\textwidth]{figs/actByMonthUsers.pdf}
   \caption{Proportion of new users over time. The top lines (thicker) correspond to
     the number of users who post their first question in that month.
 The bottom (thinner) lines  correspond to the subset of new users who only ask one
     questions and never participate again. }
   \label{fig:newusers}
 \end{figure*}
+
+\begin{figure*}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figs/actByMonthUsersOnce.pdf}
+  \caption{Proportion of one time users in any given month. }
+  \label{fig:newusersOnce}
+\end{figure*}
+
+
 
 \subsubsection{How long users participate}
 
@@ -945,34 +954,59 @@ For example, a user on \SO modified an answer to provide a more updated version 
 \item[Ideas to improve the channel:] This behaviour is specific to the \RH mailing list. Sometimes users suggest modifications or new features to improve the channel. For example, a {user proposed to create a package repository that can be accessible through a public wiki or version control interface.}\footnote{\url{http://goo.gl/p0IunD}}
 \end{description}
 
+\subsection{Quantitative Particiption}
 
-\subsubsection{Composition of the communities}
-{
-  \color{red}{\textbf{this section needs to be written}}
-  }
+In the following sections we discussed the implications of the results of the qualitative analysis of users and their
+participation in both channels.
 
-  When we consider that the popularity of R continues to increase, this implies
-that new users of R might not need to post questions to find the answers they are looking for (a testament to the value
-of \SO).
 
-\begin{itemize}
-\item Activity has flattened.
-  \begin{itemize}
-  \item Likely SO has the most questions answered already
-  \item Negative score reflect the fact that new questions do not add value
-  \item SO has probably relieved some of the workload of \RH regarding the questions of new users with frequently asked questions. 
-   \RH has now on average less than 10 emails a day: making it manageable.
-  \end{itemize}
-\item User continue to join, guaranteeing the viability of both channels
-  \begin{itemize}
-  \item Even if most of these users are sporadic (one timers and only participating one month)
-  \end{itemize}
-\item A hand-full core of dedicated contributors holds the fort
-  \begin{itemize}
-  \item They contribute a huge amount of postings
-  \item Some are bridges between both communities (3 contribute 6\% of all postings to both channels)
-  \end{itemize}
-\end{itemize}
+\subsubsection{Activity in \SO is slowing down and has stabilized in \RH}
+
+One of the major discoveries of the quantitative analysis of participation over time is the slowing of the growth of
+participation in \SO. In particular, that the number of questions asked with a positive score is starting to 
+decrease over time. This was expected: most frequently asked questions have probably been asked already.  Given the
+very large number of questions already asked in \SO, many questions today are expected to be either duplicates of previous
+questions, be questions of low intrinsic value (to specific to an issue to be useful to others), or end being flag as
+not a question. 
+
+When we consider that the popularity of R continues to increase, this also implies that new users of R might not need to
+post questions to find the answers they are looking for (a testament to the value of the knowledge currently gathered by
+\SO). This result also seems to imply that the activities of \SO contributors are shifting from answering new question to
+tagging and flagging questions  (e.g. as  duplicates, unclear, or off-topic).
+
+The frequency of postings in \RH has now flattened to approximately 200 questions every month. It is very possible that
+\SO, by reducing the number of frequentl-asked questions asked in \RH, has contributed to have a less traffic, that
+might now be able to concentrate on higher level questions that those asked in the past. Further research should verify
+this hypothesis.
+
+
+\subsubsection{Frequency of Participation}
+
+Regarding the frequency of participation of users we found that approximately 43\% of users of \RH only ask a question
+once (and never participate again, either asking another question, or answering one. In
+\SO the proportion is 33\%. It is not clear why persons will participate once, and further research is needed to
+understand why these users do not continue to participate. Similarly, approximately two thirds of users in both channels
+only participate during one month and never come back. We have observed in the set of common users that some of them
+migrate from one channel to the other. But the majority simply stop participating. It is very likely that they continue
+to use \SO as passive users; hence, benefiting from the channel but without contributing back.
+
+Nonetheless, new users appear to be joining both channels all the time. Between 25\% and 35\% of users in any given month
+are new. It is very likely that some of them will participate for a long time, guaranteeing the long term survival of
+both channels.
+
+\subsubsection{Super-contributors}
+
+There is a handful of users that are responsible for a large proportion of answers. We found that in \RH 50\% of the
+answers are contributed by 0.15\% of its users. While in \SO, 0.45\% of its users contributed 50\% of the answers. It is
+not clear if the success of both channels can be attributed to them or not. It is possible, for example, that without
+them other users might have answered those questions. Further research should look into the motivations of these
+individuals, the time they commit to help others, and also compare these patterns of activity with similar channels and
+see if this is a common phenomena or not.
+
+Several of these super-contributors actively participate in both channels. The top one is responsible for almost 4\% of
+the answers in either channel. Combined, the top 6 contributors have authored approximately 10\% of the answers of
+either channel. These super-contributors are very likely serving as a bridge of knowledge between the channels, moving
+it from one channel to the other.
 
 
 \subsection{Threats to Validity}
@@ -981,14 +1015,25 @@ Here we examine and discuss threats to the validity of our approach~\cite{Runeso
 
 \begin{description}[itemsep=3pt, topsep=2pt, leftmargin=1em, parsep=0pt]
 
-\item[Construct validity:] To reach the emerging themes, we relied on subjective human judgment during the data coding phase. Researchers had to decide if a message fell within a specific coding category. To alleviate this issue, two researchers coded the qualitative data as part of the analysis process. We applied the Cohen Kappa coefficient on categories that were not mutually exclusive, but whose purpose was to trigger discussion between coders. We set a threshold of 0.8 as the minimum to obtain agreeable results, which is higher than the 0.6 suggested in the literature~\cite{Landis1977}.
+\item[Construct validity:] To reach the emerging themes, we relied on subjective human judgment during the data coding
+  phase. Researchers had to decide if a message fell within a specific coding category. To alleviate this issue, two
+  researchers coded the qualitative data as part of the analysis process. We applied the Cohen Kappa coefficient on
+  categories that were not mutually exclusive, but whose purpose was to trigger discussion between coders. We set a
+  threshold of 0.8 as the minimum to obtain agreeable results, which is higher than the 0.6 suggested in the
+  literature~\cite{Landis1977}.
 
-\item[Internal validity:] \SO's data is structured while the \RH mailing list consists of unstructured data. As a result, some of the mapping between the two channels was straightforward (e.g., a follow-up to a reply is a comment to that question), while in other cases it wasn't as obvious (e.g., identifying some emails as questions). To reduce the risk of bias when mapping the messages between channels, two researchers performed the mapping.  
+\item[Internal validity:] \SO's data is structured while the \RH mailing list consists of unstructured data. As a
+  result, some of the mapping between the two channels was straightforward (e.g., a follow-up to a reply is a comment to
+  that question), while in other cases it wasn't as obvious (e.g., identifying some emails as questions). To reduce the
+  risk of bias when mapping the messages between channels, two researchers performed the mapping.
 
-
-
-
-\item[External validity:] Our case study was exploratory in nature and we purposefully aimed to study the R community. Many R users are likely to be \textit{casual developers} with limited or non-existent programming experience, with backgrounds that vary from biology to statistics. Thus our findings may not apply to other developer communities. However, since \SO and mailing lists are widely used by other communities, we believe that our findings may be extended to these communities as well~\cite{Squire2015a}. We do not claim the generalizability of our findings to other communication channels (e.g., Slack, GitHub), and further research is required to examine how knowledge is shared on other channels used by developers.
+\item[External validity:] Our case study was exploratory in nature and we purposefully aimed to study the R
+  community. Many R users are likely to be \textit{casual developers} with limited or non-existent programming
+  experience, with backgrounds that vary from biology to statistics. Thus our findings may not apply to other developer
+  communities. However, since \SO and mailing lists are widely used by other communities, we believe that our findings
+  may be extended to these communities as well~\cite{Squire2015a}. We do not claim the generalizability of our findings
+  to other communication channels (e.g., Slack, GitHub), and further research is required to examine how knowledge is
+  shared on other channels used by developers.
 
 \end{description}
 
