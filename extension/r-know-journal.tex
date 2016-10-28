@@ -87,8 +87,10 @@
 
 \newcommand{\rqa}{What types of knowledge artifacts are shared on Stack Overflow and the R-help mailing list within the R community?}
 \newcommand{\rqb}{How is the knowledge constructed on Stack Overflow and the R-help mailing list?}
-\newcommand{\rqc}{Why do certain users post to both Stack Overflow and the R-help mailing list?}
-\newcommand{\rqd}{How have the communities of both Stack Overflow and the R-help mailing list evolved over time?}
+\newcommand{\rqc}{Why do members post to a particular channel?}
+\newcommand{\rqd}{How does participation differ between the two channels over time?}
+\newcommand{\rqe}{Are there significant differences in participation activity between community members?}
+%\newcommand{\rqd}{How have the communities of both Stack Overflow and the R-help mailing list evolved over time?}
 
 \newcommand{\reca}{Choose the correct channel}
 \newcommand{\recb}{Be aware of the channel rules and the basic concepts and nomenclature used}
@@ -118,7 +120,7 @@ One of the many effects of social media in software development is the flourishi
 
 In this paper, we report a mixed methods study of how one community of practice---the R software development community---creates and curates knowledge associated with questions and answers (Q\&A) in two of its main \channels: the R-tag in Stack Overflow and the R-users mailing list. The results reveal that knowledge is created and curated in two main forms: participatory, where multiple members explicitly collaborate to build knowledge, and crowdsourced, where individuals work independently of each other. Moreover, our study reveals participation patterns, showing the existence of super-contributors---members who are active on both channels and are responsible for a large proportion of the answers, serving as a bridge of knowledge between both channels.
 
-The contributions of this paper are: a characterization of knowledge types that are exchanged by this community of practice; a description of the reasons why members choose one channel over the other; and insights on the participation patterns, which indicate an evolution of the community and a shift from knowledge creation to knowledge curation. Finally, this paper enumerates a set of recommendations to assist practitioners in the use of multiple channels for Q\&A.
+The key contributions of this paper are: a characterization of knowledge artifacts that are exchanged by this community of practice; a description of the reasons why members choose one channel over the other; and insights on the participation patterns, which indicate an evolution of the community and a shift from knowledge creation to knowledge curation. Finally, this paper enumerates a set of recommendations to assist practitioners in the use of multiple channels for Q\&A.
 \end{abstract}
 
 \section{Introduction}
@@ -165,22 +167,21 @@ knowledge, specifically knowledge manifested as questions and answers,
 is sought, shared, and curated in both the \RH mailing list and on
 \SO.  We also look into the patterns of participation of users in both
 communities. 
-We applied a qualitative \textit{exploratory case study}
+We applied a mixed methods \textit{exploratory case study}
 methodology to answer the following research questions:
 
-\begin{enumerate}%[label=\bfseries{RQ\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
+\begin{enumerate}[label=\bfseries{RQ\arabic*.},itemsep=3pt, topsep=2pt, leftmargin=3em, parsep=0pt]
 \item \rqa
 \item \rqb
 \item \rqc
 \item \rqd
+\item \rqe
 \end{enumerate}
-
-\alexey{the fourth RQ is not clear I think. Will try to see if I can improve.}
 
 By mining archival data, we identified and categorized the main types
 of knowledge artifacts contained on the \RH mailing list and in \SO
-messages (RQ1). The emerging categories (see
-Table~\ref{table:type-of-knowledge}) form a \textit{typology} that
+messages (RQ1). The emerging categories form a \textit{typology} (see
+Table~\ref{table:type-of-knowledge}) that
 allows researchers to study and characterize Q\&A knowledge
 dissemination within a community of practice. We used the typology to
 study how knowledge is constructed and shared on \SO and the \RH
@@ -194,16 +195,12 @@ prevalent on \SO.
 
 We found that some contributors are active on both channels. As a
 result, we conducted a survey to investigate the benefits they gain by
-doing so (RQ3). \alexey{smoother transition needed - will work on this tomorrow morning}
-We also studied the participation patterns of contributors. We focused
-on several sets of contributors, such as those who rarely contribute,
-the top contributors, and those who contribute to both channels. We
-also looked at how participation has evolved in both channels over
-time. Our results show that a great majority of participants are
+doing so (RQ3). But beyond that, we wanted to examine how does participation differ between \SO and the \RH mailing list over time (RQ4). Additionally, we wanted to understand the behavior and \textit{participation patterns} of the contributing members (RQ5). We focused on several sets of contributors: those who rarely contribute,
+the top contributors, and those who contribute to both channels. 
+Our results show that a great majority of participants are
 fleeting, and a small number of individuals are responsible for most
-answers.  Our results also show that both channels are reaching a
-maturating stage. In \RH it means a steady flow of questions; for \SO
-the result is a continuous decrease of questions with a positive score
+answers.  Furthermore, our findings indicate that both channels are reaching
+maturity. For \RH it means a steady flow of questions; for \SO it is a continuous decrease of questions with a positive score
 (number of positive votes minus negative votes), hinting to the fact
 that, as time progresses, the most frequently asked questions have
 been already asked.
@@ -277,11 +274,11 @@ Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{tran
 As mentioned, the main goal of this work is to empirically compare how
 knowledge, specifically knowledge in question-and-answer (Q\&A) form,
 is sought, shared, and curated in both the \RH mailing list and the R
-tag on \SO. We used a qualitative \textit{exploratory case study}
+tag on \SO. We used a mixed methods \textit{exploratory case study}
 methodology~\cite{Creswell2009,Runeson2012} to answer our research
 questions (presented in Section~\ref{cha:introduction}).
                     
-This study employed two research methods over two phases: we
+This study employed two research methods over three phases: we
 \textit{mined archival data} and then conducted a \textit{qualitative
   survey}. In the first phase, we randomly sampled and iteratively
 coded\footnote{Our sample data is openly available at
@@ -290,7 +287,7 @@ questions in both channels to characterize the types of discussions
 that occur. This process was continued until we reached saturation,
 which amounted to 400 threads in each channel. In the second phase, we
 surveyed members of the R community to validate our interpretation of
-the results from the previous phase.
+the results from the previous phase. And in the third phase, we ... \alexey{Daniel needs to adds a sentence here, or tell me the details and I can add it.}
 
 \subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
