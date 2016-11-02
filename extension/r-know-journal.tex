@@ -268,7 +268,7 @@ R-related questions asked on the Stack Exchange network has increased. Our study
 
 Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{transition to the \SO gamified channel}. She focused on examining whether four software projects that moved from mailing lists to \SO showed improvements in terms of developer participation and response time. She found that all four projects showed improvements on \SO compared to mailing lists, however, she also found that several projects have moved back to using mailing lists despite achieving these improvements. In our study, we found that both channels have knowledge support for question and answers, however, there are important differences between the two channels. For example, \SO's competitive environment creates an incentive to be the first to answer rather than improve other answers and participate in discussions.
 
- \section{Methodology}
+\section{Methodology}
 \label{cha:methodology}
 
 As mentioned, the main goal of this work is to empirically compare how
@@ -292,20 +292,9 @@ the results from the previous phase. And in the third phase, we ... \alexey{Dani
 \subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
 
-We mined data from the public archives of both the \RH mailing list and \SO. The \RH mailing list archive started in
-1997, while the archives for \SO started in 2008 (when it was created). We used the \RH archives up to Sept 2016 and
-the post and comments information of \SO up to Sept 2016. However, we restricted the analysis of user data up to
-Sept 2014.
-
-To make the
-data sets comparable for the qualitative part of this research, we analyzed and compared both datasets from September 2008
-until December 2013, a period of time that both channels were
-available.  For \SO, we obtained a data dump file from their
-Website---Stack Exchange releases a new data dump from all their
-Websites every three
-months\footnote{\url{http://stackexchange.com/sites}}. For the \RH
-mailing list data, we retrieved MBOX files of the archives from the
-\RH Website.
+We mined data from the public archives of both the \RH mailing list and \SO. The \RH mailing list archive started in 1997, while the archives for \SO started in 2008 (when it was created).
+To make the data sets comparable, we analyzed both datasets from September 2008 until December 2013, a period of time that both channels were available.
+For \SO, we obtained a data dump file from their Website---Stack Exchange releases a new data dump from all their Websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the \RH mailing list data, we retrieved MBOX files of the archives from the \RH Website.
 
 To answer RQ3, we needed the ability to compare email addresses
 between both channels. However, Stack Exchange stopped providing
@@ -317,20 +306,13 @@ dump file from September 2014, but updated the \texttt{users} table
 with the hashes taken from the September 2013 dump file for those
 \texttt{ID}s that were identical in both data sets.  However, if a
 user in the 2013 data file did not exist in the 2014 data, we did not
-count them.  From \SO, we retrieved all R-related data by selecting
+examine them.  From \SO, we retrieved all R-related data by selecting
 only messages that contained the R tag (\texttt{r}) or its two
 synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
 (\texttt{rstats} and \texttt{r-language}).
 
-We performed unification of email addresses in \RH. We reduced the
-number of email addresses from 36.6k to 31.7 persons=--a reduction of 15\%; a similar number was reported in 
-\cite{Vasilescu2014c}).
+To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was match, we associated the \SO user to the same person. This way we identified 1,449 persons who have used both media channels.
 
-To determine which users were active in both channels, we compared the
-MD5 hashes of the email addresses of \RH mailing list and \SO participants. If there was
-match, we associated the \SO user to the same person. This way we
-identified 1,449 persons who have used both media channels.
-    
 To prepare the data, we used two different software tools:
     \begin{enumerate*}[label=(\arabic*)]
     \item To process the \SO data, we used a modified version of Sam Saffron's application, So-Slow\footnote{\url{https://github.com/SamSaffron/So-Slow}}.
