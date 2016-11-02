@@ -213,14 +213,14 @@ gamification) influence knowledge construction and curation.
 
  \section{Background}
 \label{cha:background}
-We begin with an overview of the R community and describe in more detail the two main channels used for asking and answering questions by R community members.
+We begin with an overview of the R community and detail the two main channels its members use to ask and answer questions.
 
 \subsection{The R Community of Practice}
     
     The R project\footnote{\url{https://www.r-project.org/}} was born in 1993 as a free and open source programming language and software environment for statistical computing, bioinformatics, and graphics~\cite{Ihaka1996}.
-    The R community is composed of two groups:
+    The R community is composed of:
     \begin{enumerate*}[label=(\arabic*)]
-      \item \textit{R-core}, a team of 20 software developers that maintain and evolve the R language, and
+      \item \textit{R-core}, a team of 20 software developers that maintain and evolve the R language; and
       \item \textit{Periphery}, which includes everyone else (language users and package developers).
     \end{enumerate*}
 
@@ -229,42 +229,42 @@ We begin with an overview of the R community and describe in more detail the two
     Its entire history of mailing list communication is archived and publicly available.
     The R community has also been the subject of extensive research in community evolution~\cite{German2013,Vasi1escu2014PhD} and the interplay between channels~\cite{Vasilescu2014c}.
 
-    R popularity has continuously increased over the years. 
+    R's popularity has continuously increased over the years. 
     IEEE Spectrum recently ranked R as the 5th most popular
     language\footnote{\url{http://spectrum.ieee.org/computing/software/the-2016-top-programming-languages}},
     implying that the R community is healthy and continues to grow at
     a fast rate.
 
-    Our study focused on the analysis of \SO and the R-help mailing list, two of the main channels in the R community.
+    Our study focused on the analysis of \SO and the \RH mailing list, two channels in the R community.
     We chose them because they are the main channels that provide Q\&A support to the community.
 
 \subsubsection{R-help Mailing List}
-    There are several mailing lists to help R community members solve programming problems with the R language: \emph{R-help}, \emph{R-package-devel}, \emph{R-devel}, \emph{R-packages}, \emph{R-announce} and \emph{Bioconductor}. However, the R-help mailing list is the main channel for discussing problems and solutions using R.  Other messages are also encouraged, such as documentation, benchmarks, examples, and announcements.
+    There are several mailing lists to help R community members solve programming problems with the R language: \emph{R-help}, \emph{R-package-devel}, \emph{R-devel}, \emph{R-packages}, \emph{R-announce}, and \emph{Bioconductor}. However, the R-help mailing list is the main channel for discussing problems and solutions using R. Other messages are also encouraged, such as documentation, benchmarks, examples, and announcements.
 
-    The R-help mailing list used to be the main \channel for asking
+    The \RH mailing list used to be the main \channel for asking
     and answering questions within the R community, but a significant
     number of users migrated to Stack Overflow~\cite{Vasilescu2014c}.
     Despite the reduced number of users, the R-help mailing list is
     still very active---on average, a subscriber may receive
-    around 30 emails
+    approximately 30 emails
     a day (as of Oct 2016).
 
 \subsubsection{Stack Overflow}
 \label{subsec:Rtag}
 
-    In contrast to the R-help mailing list, Stack Overflow incorporates a rich visual and user-friendly interface with social media and gamification features.
+    In contrast to the \RH mailing list, \SO incorporates a rich visual and user-friendly interface with social media and gamification features.
     The social aspect of the Website improves participation and provides strong support for creating and sharing knowledge as well as encouraging informal mentorship~\cite{Jenkins2009,Storey2014}.
-    Meanwhile, its gamification features provide a system based on reputation points and badges to reward user participation and earn them points that enable functionality inside the site.
+    Meanwhile, \SO's gamification features provide reputation points and badges to reward user participation and earn them points that enable functionality inside the site.
     It has been reported that \SO's gamification mechanisms boost participation~\cite{Vasi1escu2014PhD} and enable mutual assessment~\cite{Singer2013}.
 
 
 \subsection{\SO vs. Mailing Lists}
-Software development is a knowledge-building process~\cite{naur1985programming}. Due to the emergence of socially-enabled tools and channels and the formation of communities of practice~\cite{Storey2014}, it is important to understand how knowledge is created and shared within these communities. In our study, we focus on knowledge in the form of questions and answers within the R community.
+Software development is a knowledge-building process~\cite{naur1985programming}. Due to the emergence of socially enabled tools and channels and the formation of communities of practice~\cite{Storey2014}, it is important to understand how knowledge is created and shared within these communities. In our study, we focus on knowledge in the form of questions and answers within the R community.
 
 
-As part of a study on the transition to gamified environments, Vasilescu~\cite{Vasi1escu2014PhD} examined the popularity of Stack Exchange (including the \SO R tag) and
-mailing lists within the R community. He found that since 2010, the number of message threads has decreased on the \RH mailing list, while the number of
-R-related questions asked on the Stack Exchange network has increased. Our study also examined \SO's R tag and the \RH mailing list, but we aimed to understand the \textit{knowledge types} used. This allows us to characterize the different knowledge seeking and sharing approaches on each channel. Vasilescu also examined the \textit{difference in activity} between contributions made by members active on both channels and members focused on a single medium. We also found members of the R community that were active on both channels, however, we aimed to understand \textit{why members post to a particular channel}.
+As part of a study on the transition to gamified environments, Vasilescu~\cite{Vasi1escu2014PhD} examined the popularity of Stack Exchange (including the \SO R-tag) and
+mailing lists within the R community. He found that the number of message threads has decreased on the \RH mailing list since 2010, while the number of
+R-related questions asked on the Stack Exchange network has increased. Our study also examined \SO's R-tag and the \RH mailing list, but we aimed to understand the \textit{knowledge types} used. This allowed us to characterize the different knowledge seeking and sharing approaches on each channel. Vasilescu also examined the \textit{difference in activity} between contributions made by members active on both channels and members focused on a single medium. While we also found members of the R community that were active on both channels, we aimed to understand \textit{why members post to a particular channel}.
 \alexey{we may need to adjust the previous sentence comparing our study with Vasilescu, since we plan to add similar type of analysis in the extension.}
 
 Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{transition to the \SO gamified channel}. She focused on examining whether four software projects that moved from mailing lists to \SO showed improvements in terms of developer participation and response time. She found that all four projects showed improvements on \SO compared to mailing lists, however, she also found that several projects have moved back to using mailing lists despite achieving these improvements. In our study, we found that both channels have knowledge support for question and answers, however, there are important differences between the two channels. For example, \SO's competitive environment creates an incentive to be the first to answer rather than improve other answers and participate in discussions.
