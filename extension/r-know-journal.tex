@@ -272,23 +272,18 @@ Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{tran
 \section{Methodology}
 \label{cha:methodology}
 
+<<<<<<< 16bce47613ca036a57cb2ca31cb51be5fd4de329
 As mentioned, the main goal of this work is to empirically compare how
 knowledge, specifically knowledge in question-and-answer (Q\&A) form,
 is sought, shared, and curated on both the \RH mailing list and the R-
 tag on \SO. We used a mixed methods \textit{exploratory case study}
 methodology~\cite{Creswell2009,Runeson2012} to answer our research
 questions (presented in Section~\ref{cha:introduction}).
+=======
+As mentioned, the main goal of this work is to empirically compare how knowledge, specifically knowledge in question-and-answer (Q\&A) form, is sought, shared, and curated in both the \RH mailing list and the R tag on \SO. We used a mixed methods \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer our research questions (presented in Section~\ref{cha:introduction}).
+>>>>>>> revert the first half of methodology to previous version, and create a new phase for the extension
                     
-This study employed two research methods over three phases: we
-\textit{mined archival data} and then conducted a \textit{qualitative
-  survey}. In the first phase, we randomly sampled and iteratively
-coded\footnote{Our sample data is openly available at
-  \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}}
-questions in both channels to characterize the types of discussions
-that occur. This process was continued until we reached saturation,
-which amounted to 400 threads in each channel. In the second phase, we
-surveyed members of the R community to validate our interpretation of
-the results from the previous phase. And in the third phase, we ... \alexey{Daniel needs to adds a sentence here, or tell me the details and I can add it.}
+This study employed two research methods over three phases: we \textit{mined archival data} and then conducted a \textit{qualitative survey}. In the first phase, we randomly sampled and iteratively coded\footnote{Our sample data is openly available at \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}} questions in both channels to characterize the types of discussions that occur. This process was continued until we reached saturation, which amounted to 400 threads in each channel. In the second phase, we surveyed members of the R community to validate our interpretation of the results from the previous phase. And in the third phase, we extended the collected data set up to September 2016 and focused on investigating participation patterns on both channels.
 
 \subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
@@ -297,22 +292,10 @@ We mined data from the public archives of both the \RH mailing list and \SO. The
 To make the data sets comparable, we analyzed both datasets from September 2008 until December 2013, a period of time that both channels were available.
 For \SO, we obtained a data dump file from their Website---Stack Exchange releases a new data dump from all their Websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the \RH mailing list data, we retrieved MBOX files of the archives from the \RH Website.
 
-To answer RQ3, we needed the ability to compare email addresses
-between both channels. However, Stack Exchange stopped providing
-information about email addresses and the last Stack Exchange dump
-file to contain email addresses as MD5 hashes was released in
-September 2013---this meant we did not have complete data for October,
-November, and December 2013.  To remedy this gap, we used the data
-dump file from September 2014, but updated the \texttt{users} table
-with the hashes taken from the September 2013 dump file for those
-\texttt{ID}s that were identical in both data sets.  However, if a
-user in the 2013 data file did not exist in the 2014 data, we did not
-examine them.  From \SO, we retrieved all R-related data by selecting
-only messages that contained the R tag (\texttt{r}) or its two
-synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
+To answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013.  To remedy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.  However, if a user in the 2013 data file did not exist in the 2014 data, we did not examine them.  From \SO, we retrieved all R-related data by selecting only messages that contained the R tag (\texttt{r}) or its two synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
 (\texttt{rstats} and \texttt{r-language}).
 
-To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was a match, we associated the \SO user to the same person. Using this approach, we identified 1,449 persons who used both media channels.
+To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was match, we associated the \RH and \SO user accounts to the same person. Using this approach, we identified 1,421 persons who used both media channels.
 
 To prepare the data, we used two different software tools:
     \begin{enumerate*}[label=(\arabic*)]
@@ -325,7 +308,7 @@ Note that only \SO's data contains ``comments'' information.
 
 	\begin{table}[!htb]
 	  \centering
-      \caption{Raw data collected for each channel.}
+      \caption{Raw data collected for each channel during Phase I - up to September 2014.}
       \begin{small}
         \begin{tabular}{lrr}
 	        \toprule
@@ -334,38 +317,30 @@ Note that only \SO's data contains ``comments'' information.
 	        Questions     & 101,931 &  67,393 \\
 	        Answers       & 213,366 &  99,620 \\
 	        Comments      &       - & 286,124 \\
-          Different individuals\tablefootnote{Up to September 2014.} & 31,729 &  26,324 \\
+          Different individuals & 31,729 &  26,324 \\
 	        \bottomrule
         \end{tabular}
       \end{small}
 	  \label{table:data}
 	\end{table}
 
-        \dmg{The data for stackoverflow needs to be updated.. will do that when I have time}
-
 \subsubsection{Data analysis process}
 \label{sec:dap}
 
-We followed an inductive approach~\cite{Runeson2012} to analyze the data from \SO and the \RH mailing list. 
-To reduce the risk of bias~\cite{Runeson2012}, the analysis was conducted by two computer scientists with a background in qualitative data analysis.
- To answer RQ1 and RQ2, we selected 400 random threads from each channel. To answer RQ3, we focused on questions with identical subjects that were posted to both channels by the same author---we found and analyzed 79 such threads.
-    
-    \begin{figure*}[htbp]
-    	\centering
-    	\includegraphics[width=.95\textwidth]{../Figures/CodingExample}
-    	\caption{Example of data coding. Each row is a threaded message. Questions, comments, and answers are identified with the number on the first column. Columns in yellow (columns 4-10) contain the code for each message type. The last two columns contain the memos and the URL.}
-    	\label{fig:CodingExample}
-    \end{figure*}
+We followed an inductive approach~\cite{Runeson2012} to analyze the data from \SO and the \RH mailing list. To reduce the risk of bias~\cite{Runeson2012}, the analysis was conducted by two computer scientists with a background in qualitative data analysis. To answer RQ1 and RQ2, we selected 400 random threads from each channel. To answer RQ3, we focused on questions with identical subjects that were posted to both channels by the same author---we found and analyzed 79 such threads.
 
-We used \textbf{memoing}, \textbf{affinity diagrams}, and a \textbf{code book} to support the data analysis process. We wrote reflective memos in a spreadsheet next to the applicable codes (see example in Fig.~\ref{fig:CodingExample}). These memos were used to create the codes and hypotheses about the relationships between concepts. We coded in multiple sessions, which allowed us to refine the definitions in the code book 
-in an iterative manner. Each entry is associated with a title, a formal definition, an example, and notes from the researchers. For inter-rater reliability, we used the Cohen Kappa \textbf{inter-rater agreement} coefficient~\cite{Stemler2004}. Although it is suggested that one should aim for coefficient values above 0.6 to obtain substantial results~\cite{Landis1977}, based on our previous experience with this method~\cite{Gomez2013}, we aimed for 0.8 or above. We used this coefficient after each coding session as a way to trigger discussion and to further refine the codes if necessary.  
-The emergent codes were fully saturated after reviewing 400 threads from each channel. 
+\begin{figure*}[htbp]
+	\centering
+	\includegraphics[width=.95\textwidth]{../Figures/CodingExample}
+	\caption{Example of data coding. Each row is a threaded message. Questions, comments, and answers are identified with the number on the first column. Columns in yellow (columns 4-10) contain the code for each message type. The last two columns contain the memos and the URL.}
+	\label{fig:CodingExample}
+\end{figure*}
+
+We used memoing, affinity diagrams, and a code book to support the data analysis process. We wrote reflective memos in a spreadsheet next to the applicable codes (see example in Fig.~\ref{fig:CodingExample}). These memos were used to create the codes and hypotheses about the relationships between concepts. We coded in multiple sessions, which allowed us to refine the definitions in the code book 
+in an iterative manner. Each entry is associated with a title, a formal definition, an example, and notes from the researchers. For inter-rater reliability, we used the Cohen Kappa inter-rater agreement coefficient~\cite{Stemler2004}. Although it is suggested that one should aim for coefficient values above 0.6 to obtain substantial results~\cite{Landis1977}, based on our previous experience with this method~\cite{Gomez2013}, we aimed for 0.8 or above. We used this coefficient after each coding session as a way to trigger discussion and to further refine the codes if necessary.  
+The emergent codes were fully saturated after reviewing 400 threads from each channel.
 
 
-		  
-		
-					
-					
 The analysis process required an \textit{understanding of the context} surrounding each message. The process consisted of: (1) gathering the required information from each channel (i.e., the message analyzed, the relevant thread), and (2) mapping the messages from each channel to a specific knowledge type (see Section~\ref{cha:findings-types}). The mapping was necessary as each channel contained a different data structure.
 We defined the following mappings between messages in both channels:
 
@@ -384,7 +359,57 @@ The analysis from Phase I revealed that some developers are active on both chann
 To test and refine the questions, format, and tone, we piloted the survey twice. 
 We promoted our survey on Twitter, Reddit, the \RH mailing list, and Meta Stack Exchange to reach users of both channels and minimize selection bias. However, our survey invitation on Stack Exchange was deemed off topic and deleted a few minutes later. In total, we received 37 responses, 26 of which were valid (invalid responses occurred if the session ended or the participant did not complete the survey).
 
-\alexey{add phase III?}
+\subsection{Phase III: A Deeper Quantitative Analysis}
+
+\alexey{the following is not written yet, I just put here the parts that mention the extension phase}
+
+We mined data from the public archives of both the \RH mailing list and \SO. The \RH mailing list archive started in
+1997, while the archives for \SO started in 2008 (when it was created). We used hte archives of \RH up to Sept 2016. And
+the post and comments information of \SO up to Sept 2016 too. However, we restricted the analysis of users data up to
+Sept 2014.
+
+To make the
+data sets comparable for the qualitative part of this research, we analyzed and compared both datasets from September 2008
+until December 2013, a period of time that both channels were
+available.  For \SO, we obtained a data dump file from their
+Website---Stack Exchange releases a new data dump from all their
+Websites every three
+months\footnote{\url{http://stackexchange.com/sites}}. For the \RH
+mailing list data, we retrieved MBOX files of the archives from the
+\RH Website.
+
+We performed unification of email addresses in \RH. We reduced the
+number of email addresses from 36.6k to 31.7 persons=--a reduction of 15\%; a similar number was reported in 
+\cite{Vasilescu2014c}).
+
+To determine which users were active in both channels, we compared the
+MD5 hashes of the email addresses of \RH mailing list and \SO participants. If there was
+match, we associated the \SO user to the same person. This way we
+identified 1,449 persons who have used both media channels.
+
+To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was match, we associated the \RH and \SO user accounts to the same person. Using this approach, we identified 1,449 persons who used both media channels.
+
+  \begin{table}[!htb]
+    \centering
+      \caption{Raw data collected for each channel during Phase I.}
+      \begin{small}
+        \begin{tabular}{lrr}
+          \toprule
+          Type          &  \RH & \SO \\
+          \midrule
+          Questions     & 101,931 &  67,393 \\
+          Answers       & 213,366 &  99,620 \\
+          Comments      &       - & 286,124 \\
+          Different individuals\tablefootnote{Up to September 2014.} & 31,729 &  26,324 \\
+          \bottomrule
+        \end{tabular}
+      \end{small}
+    \label{table:data}
+  \end{table}
+
+\dmg{The data for stackoverflow needs to be updated.. will do that when I have time}
+
+
 
  \section{Findings}
 \label{cha:findings}
