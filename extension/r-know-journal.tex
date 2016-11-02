@@ -312,7 +312,7 @@ only messages that contained the R tag (\texttt{r}) or its two
 synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
 (\texttt{rstats} and \texttt{r-language}).
 
-To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was match, we associated the \SO user to the same person. This way we identified 1,449 persons who have used both media channels.
+To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was a match, we associated the \SO user to the same person. Using this approach, we identified 1,449 persons who used both media channels.
 
 To prepare the data, we used two different software tools:
     \begin{enumerate*}[label=(\arabic*)]
@@ -401,7 +401,7 @@ To answer RQ1, we randomly sampled 400 threads of messages from both \SO and the
 \item Flags, and
 \item Comments.
 \end{enumerate*}
-Through our analysis, we further divided these types into sub-types---table~\ref{table:type-of-knowledge} presents our typology of knowledge artifacts, their
+Through our analysis, we further divided these types into sub-types---Table~\ref{table:type-of-knowledge} presents our typology of knowledge artifacts, their
 descriptions, and their frequency in the sample of 400 threads in each channel. Even though we did not aim for a statistically significant sample size, the size of this sample
 (400 threads in each channel) guarantees a confidence level of approximately 95\% $\pm$ 5\% for both channels. Using the Chi-square test of independence, we tested whether the distribution of types and sub-types of questions were different between the two channels.  In
 all cases, they were found to be statistically different (with $\rho \ll 0.001$ in all cases).
@@ -582,7 +582,7 @@ Our analysis of the archived data revealed that some users (79 cases in our samp
 Based on the responses from the survey, we identified that being active on both channels brings benefits to those asking and answering questions (RQ3).
 
 \begin{description}[itemsep=2pt, topsep=0pt, leftmargin=1em, parsep=0pt]
-\item[Find a better answer:] As expected, two channels are better than one as 
+\item[Find a better answer:] As expected, two channels are better than one---
   one channel might result in a better answer than the other.
 \item[Support follow-up questions:] We found that the \RH mailing list is often used to conduct follow-up discussions on
   specific answers provided to \SO questions. \SO's focus is on finding an answer to a question and does not
@@ -602,17 +602,17 @@ We first explore the evolution of the number of questions in both channels, as t
 are shown in Figure~\ref{fig:channelsActPerMonth}. As reported in~\cite{Vasilescu2014c}, the trend indicates that \SO
 continues to grow and \RH continues to decrease. One aspect that is changing in \SO is the growth of questions that
 receive a negative score. A score in \SO is the sum of positive votes minus negative votes and can be seen as a proxy of
-the quality of the question. As it can be seen, the number of positive questions has flattened and starting to decrease.
+the quality of the question. As can be seen, the number of positive questions has flattened and starting to decrease.
 
-Looking at the trends over the last 10 years might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
-number of questions since Jan 2015. At it can be seen, both channels are relatively flat in overall questions. The
-number of questions in \SO is between 10 and 20 times the number of questions in \RH. However, the number of positive
-questions in \SO is starting to decrease (this might be a temporary effect).
+However, looking at the trends over the last 10 years might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
+number of questions since Jan 2015. As can be seen, both channels are relatively flat in overall questions. The
+number of questions in \SO is between 10 and 20 times the number of questions in \RH, but the number of questions with
+a positive overall score in \SO is starting to decrease (we recognize this might be a temporary effect).
 
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/actByMonth.pdf}
-  \caption{Number of questions asked over time. As it can be seen, \SO activity has been much larger than \RH. However,
+  \caption{Number of questions asked over time. As can be seen, \SO activity has been much larger than \RH. However,
     the number of questions with positive score has flattened.}
   \label{fig:channelsActPerMonth}
 \end{figure*}
@@ -621,7 +621,7 @@ questions in \SO is starting to decrease (this might be a temporary effect).
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/actByMonth2016.pdf}
-  \caption{Detail of Figure~\ref{fig:channelsActPerMonth} showing only activity after January 2015. As it can be seen, both
+  \caption{Detail of Figure~\ref{fig:channelsActPerMonth} showing only activity after January 2015. As can be seen, both
     channels have flattened, but the number of questions with positive score in \SO is starting to decrease.}
   \label{fig:channelsActPerMonthLatests}
 \end{figure*}
@@ -631,14 +631,14 @@ questions in \SO is starting to decrease (this might be a temporary effect).
 The number of common users between both datasets that we identified is relatively small (around 2.5\% of all
 users). Yet, a handful of these contributors are responsible for a very large proportion of the answers to both
 channels. Figure~\ref{fig:common} shows the accumulated proportion of answers that have been contributed by these
-authors. As it can be seen, the top contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO,
+authors. As can be seen, the top contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO,
 respectively. In fact, the top 6 contributors to both channels are responsible for 10\% of the answers to both. 
 Answers to \SO include both posts and comments to questions.
 
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/common.pdf}
-  \caption{Accumulative proportion of contributions by the most prolific users who post to both channels. As it can be seen, the top 6
+  \caption{Accumulative proportion of contributions by the most prolific users who post to both channels. As can be seen, the top 6
     most prolific users contribute approximately 10\% of the answers in both channels.}
   \label{fig:common}
 \end{figure*}
@@ -646,29 +646,29 @@ Answers to \SO include both posts and comments to questions.
 \subsubsection{Super contributors}
 
 Both channels benefit from a handful of very prolific users who answer most questions. We will refer to these users as
-super contributors. Figure~\ref{fig:prolific} shows the super contributors in each channel, ordered by the number of
+\textit{super contributors}. Figure~\ref{fig:prolific} shows the super contributors in each channel, ordered by the number of
 answers they have contributed. The vertical axis is the accumulated proportion of contributions to all answers in
-each channel. As it can be seen, in \RH, 9 users have contributed 25\% of all answers, and 49 50\%. In \SO, the distribution is not as
-steep, yet, 24 users have contributed 25\% of all answers (including comments) and 131 are have contributed 50\%. This
-means that 0.15\% of the users of \RH contribute 50\% of all the answers, while 0.45\% of users of \SO contribute 50\%
-of all the answers. To put into context, the super contributors in \RH post an average of between 2 and 3 answers a day, while the
-super contributors of \SO post, on the average, between 3 and 5 answers a day.
+each channel. As can be seen in \RH, 9 users have contributed 25\% of all answers and 49 have contributed 50\% of all answers. In \SO, the distribution is not as
+steep, yet 24 users have contributed 25\% of all answers (including comments) and 131 have contributed 50\% of all answers. This
+means that 0.15\% of the \RH mailing list users contribute 50\% of all the answers, while 0.45\% of the \SO users contribute 50\%
+of all the answers. To put this into context, the super contributors in \RH post between 2 and 3 answers a day on average, while the
+super contributors of \SO average between 3 and 5 answers a day.
 
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/prolific.pdf}
-  \caption{Accumulative proportion of contributions by the most prolific users of each channel. As it can be seen, the
+  \caption{Accumulative proportion of contributions by the most prolific users of each channel. As can be seen, the
     top 9 and top 24
-    contributors to \RH and \SO respectively  are responsible for 25\% of all the answers.}
+    contributors to \RH and \SO, respectively, are responsible for 25\% of all the answers.}
   \label{fig:prolific}
 \end{figure*}
 
 \subsubsection{New users}
 
 New users are important for the survival and continuity of a community. Unfortunately we can only track users when they
-participate in the channel, hence, we do not know who is a passive participant. Hence we use the date of first
+participate in a channel, so we do not know who is a passive participant. Hence we use the date of first
 contribution as the proxy of when a user joins the community.  Figure~\ref{fig:newusers} shows the proportion of users
-who have posted their first question in a particular month. As it can be seen, both communities show a very similar
+who have posted their first question in a particular month. As can be seen, both communities show a very similar
 pattern: between 25 and 35\% of the users who post new questions are new during that month. We found, however, that many
 of these users participate only once: they post a question and they never post anything else (either a question or an
 answer). Figure~\ref{fig:newusersOnce} shows this information. One year after the creation of \SO, around 1 in 10 users
@@ -700,21 +700,21 @@ The bottom (thinner) lines  correspond to the subset of new users who only ask o
 \subsubsection{How long users participate}
 
 Another important measure of the community and its ability to hold knowledge is if their users continuously participate
-over time (even if their participation is small). To measure the continuity of participation in either
-channel we divided the history of both channels into one month segments. In \RH a user participates in a given month if she
-posted at least one email to the list during that period. For \SO, we considered a user participated in a given month if she
-at least posted one question, responded to one question, or commented on one question.
+over time, even if their participation is small. To measure the continuity of participation in either
+channel, we divided the history of both channels into one month segments. In \RH, we considered that a a user participated in a given month if they
+posted at least one email to the list during that period. For \SO, we considered that a user participated in a given month if they
+posted, responded to, or commented on at least one question.
 
 The results show that users do not participate in either channel for a long
 time. Figure~\ref{fig:monthsPerUser} shows the accumulated proportion of users that participate a given number of
-months (not necessarily consecutive). The curves are very similar and skewed: 62\% of \RH users and 65\% of \SO users are active one month only and
-90\% of \RH users are active 5 or less months while in SO, 90\% of users participate 4 or less months.
+months (not necessarily consecutively). The curves are very similar and skewed: 62\% of \RH users and 65\% of \SO users are active one month only, and
+90\% of \RH users are active 5 months or less, while in \SO, 90\% of users participate 4 months or less.
 
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/monthsPerUser.pdf}
   \caption{Months a user has been active. This plot shows the accumulated proportion of users who have been active at a
-    given number of months. As it can be seen, 62\% of \RH users and 65\% of \SO users are active one month only.
+    given number of months. As can be seen, 62\% of \RH users and 65\% of \SO users are active one month only.
     90\% of \RH users are active 5 or less months. In SO, 90\% of users participate 4 or less months. Months do not have
   to consecutive.}
   \label{fig:monthsPerUser}
@@ -937,19 +937,19 @@ For example, a user on \SO modified an answer to provide a more updated version 
 \item[Ideas to improve the channel:] This behaviour is specific to the \RH mailing list. Sometimes users suggest modifications or new features to improve the channel. For example, a {user proposed to create a package repository that can be accessible through a public wiki or version control interface.}\footnote{\url{http://goo.gl/p0IunD}}
 \end{description}
 
-\subsection{Quantitative Participation}
+\subsection{Quantitative participation}
 
-In the following sections we discussed the implications of the results of the qualitative analysis of users and their
+In the following, we discuss the implications of the results of the quantitative analysis of users and their
 participation in both channels.
 
 
 \subsubsection{Activity in \SO is slowing down and has stabilized in \RH}
 
 One of the major discoveries of the quantitative analysis of participation over time is the slowing of the growth of
-participation in \SO. In particular, that the number of questions asked with a positive score is starting to 
+participation in \SO. In particular, that the number of questions asked with an overall positive score is starting to 
 decrease over time. This was expected: most frequently asked questions have probably been asked already.  Given the
 very large number of questions already asked in \SO, many questions today are expected to be either duplicates of previous
-questions, be questions of low intrinsic value (to specific to an issue to be useful to others), or end being flag as
+questions, be questions of low intrinsic value (too specific to be useful to others), or end up being flagged as
 not a question. 
 
 When we consider that the popularity of R continues to increase, this also implies that new users of R might not need to
@@ -957,17 +957,17 @@ post questions to find the answers they are looking for (a testament to the valu
 \SO). This result also seems to imply that the activities of \SO contributors are shifting from answering new question to
 tagging and flagging questions  (e.g. as  duplicates, unclear, or off-topic).
 
-The frequency of postings in \RH has now flattened to approximately 200 questions every month. It is very possible that
-\SO, by reducing the number of frequently asked questions posted in \RH, has contributed to have a less traffic, that
-might now be able to concentrate on higher level questions that those asked in the past. Further research should verify
+The frequency of postings on the \RH mailing list has now flattened to approximately 200 questions every month. It is possible that
+\SO, by reducing the number of frequently asked questions posted on the \RH mailing list, has contributed to a reduction in traffic and
+might now be able to concentrate on higher-level questions than those asked in the past. Further research should verify
 this hypothesis.
 
 
 \subsubsection{Frequency of Participation}
 
 Regarding the frequency of participation of users we found that approximately 43\% of users of \RH only ask a question
-once (and never participate again, either asking another question, or answering one. In
-\SO the proportion is 33\%. It is not clear why persons will participate once, and further research is needed to
+once (and never participate again, either asking another question, or answering one). In
+\SO, the proportion is 33\%. It is not clear why persons will participate once, and further research is needed to
 understand why these users do not continue to participate. Similarly, approximately two thirds of users in both channels
 only participate during one month and never come back. We have observed in the set of common users that some of them
 migrate from one channel to the other. But the majority simply stop participating. It is very likely that they continue
@@ -979,12 +979,12 @@ both channels.
 
 \subsubsection{Super contributors}
 
-There is a handful of users that are responsible for a large proportion of answers. We found that in \RH 50\% of the
-answers are contributed by 0.15\% of its users. While in \SO, 0.45\% of its users contributed 50\% of the answers. It is
+There is a handful of users that are responsible for a large proportion of answers. In \RH, we found that 50\% of the
+answers have been contributed by 0.15\% of the users. While in \SO, 0.45\% of the users have contributed 50\% of the answers. It is
 not clear if the success of both channels can be attributed to them or not. It is possible, for example, that without
-them other users might have answered those questions. Further research should look into the motivations of these
+them, other users might have answered those questions. Further research should look into the motivations of these
 individuals, the time they commit to help others, and also compare these patterns of activity with similar channels and
-see if this is a common phenomena or not.
+see if this is a common phenomenon.
 
 Several of these super contributors actively participate in both channels. The top one is responsible for almost 4\% of
 the answers in either channel. Combined, the top 6 contributors have authored approximately 10\% of the answers of
