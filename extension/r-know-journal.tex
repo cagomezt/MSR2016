@@ -350,55 +350,31 @@ The analysis from Phase I revealed that some developers are active on both chann
 To test and refine the questions, format, and tone, we piloted the survey twice. 
 We promoted our survey on Twitter, Reddit, the \RH mailing list, and Meta Stack Exchange to reach users of both channels and minimize selection bias. However, our survey invitation on Stack Exchange was deemed off topic and deleted a few minutes later. In total, we received 37 responses, 26 of which were valid (invalid responses occurred if the session ended or the participant did not complete the survey).
 
-\subsection{Phase III: A Deeper Quantitative Analysis}
+\subsection{Phase III: An Extended Quantitative Analysis}
 
-\alexey{the following is not written yet, I just put here the parts that mention the extension phase}
+For this phase, we extended our analysis of the archival data to focus on the behavior and participation patterns of community members on the \RH mailing list and \SO. We analyzed data from September 2008 up to September 2016 for both channels. 
 
-We mined data from the public archives of both the \RH mailing list and \SO. The \RH mailing list archive started in
-1997, while the archives for \SO started in 2008 (when it was created). We used hte archives of \RH up to Sept 2016. And
-the post and comments information of \SO up to Sept 2016 too. However, we restricted the analysis of users data up to
-Sept 2014.
+To improve our analysis, we performed a unification of email addresses for data extracted from \RH mailing list. It is a process intended to identify messages sent by the same person but from different email addresses. As a result, the number of different individuals identified on \RH has been reduced from 36.6k to 31.7k (a reduction of 15\%) --- a similar number was reported by Vasilescu \textit{et al.}~\cite{Vasilescu2014c}. Using MD5 hashes of the email addresses extracted from the \RH mailing list and \SO, we identified 1,449 persons who used both media channels.
 
-To make the
-data sets comparable for the qualitative part of this research, we analyzed and compared both datasets from September 2008
-until December 2013, a period of time that both channels were
-available.  For \SO, we obtained a data dump file from their
-Website---Stack Exchange releases a new data dump from all their
-Websites every three
-months\footnote{\url{http://stackexchange.com/sites}}. For the \RH
-mailing list data, we retrieved MBOX files of the archives from the
-\RH Website.
+\begin{table}[!htb]
+  \centering
+    \caption{Raw data collected for each channel during Phase III - up to September 2016.}
+    \begin{small}
+      \begin{tabular}{lrr}
+        \toprule
+        Type          &  \RH & \SO \\
+        \midrule
+        Questions     & 101,931 &  67,393 \\
+        Answers       & 213,366 &  99,620 \\
+        Comments      &       - & 286,124 \\
+        Different individuals\tablefootnote{Note: \SO data about user activity only goes up to September 2014.} & 31,729 &  26,324 \\
+        \bottomrule
+      \end{tabular}
+    \end{small}
+  \label{table:extended_data}
+\end{table}
 
-We performed unification of email addresses in \RH. We reduced the
-number of email addresses from 36.6k to 31.7 persons=--a reduction of 15\%; a similar number was reported in 
-\cite{Vasilescu2014c}).
-
-To determine which users were active in both channels, we compared the
-MD5 hashes of the email addresses of \RH mailing list and \SO participants. If there was
-match, we associated the \SO user to the same person. This way we
-identified 1,449 persons who have used both media channels.
-
-To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was match, we associated the \RH and \SO user accounts to the same person. Using this approach, we identified 1,449 persons who used both media channels.
-
-  \begin{table}[!htb]
-    \centering
-      \caption{Raw data collected for each channel during Phase I.}
-      \begin{small}
-        \begin{tabular}{lrr}
-          \toprule
-          Type          &  \RH & \SO \\
-          \midrule
-          Questions     & 101,931 &  67,393 \\
-          Answers       & 213,366 &  99,620 \\
-          Comments      &       - & 286,124 \\
-          Different individuals\tablefootnote{Up to September 2014.} & 31,729 &  26,324 \\
-          \bottomrule
-        \end{tabular}
-      \end{small}
-    \label{table:data}
-  \end{table}
-
-\dmg{The data for stackoverflow needs to be updated.. will do that when I have time}
+\alexey{DMG, please update the data above (check stackoverflow side). Also, need to reference this table in text.}
 
 
 
