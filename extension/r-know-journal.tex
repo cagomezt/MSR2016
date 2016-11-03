@@ -119,7 +119,7 @@
 \begin{abstract}
 One of the many side effects of social media's prevalence in software development are the flourishing communities of practice where members share a common interest, such as programming languages, frameworks, and tools. These large communities use many different \channels but little is known about how they create, share, and curate knowledge using such channels.
 
-In this paper, we report a mixed methods study of how one community of practice---the R software development community---creates and curates knowledge associated with questions and answers (Q\&A) in two of its main \channels: the R tag in Stack Overflow and the R-users mailing list. The results reveal that knowledge is created and curated in two main forms: participatory, where multiple members explicitly collaborate to build knowledge, and crowdsourced, where individuals primarily work independently of each other. Moreover, our study reveals participation patterns, showing the existence of super contributors: members who are active across both channels and are responsible for a large proportion of the answers, serving as a bridge of knowledge.
+In this paper, we report a mixed methods study of how one community of practice---the R software development community---creates and curates knowledge associated with questions and answers (Q\&A) in two of its main \channels: the R tag in Stack Overflow and the R-users mailing list. The results reveal that knowledge is created and curated in two main forms: participatory, where multiple members explicitly collaborate to build knowledge, and crowdsourced, where individuals primarily work independently of each other. Moreover, our study reveals participation patterns, showing the existence of prolific contributors: members who are active across both channels and are responsible for a large proportion of the answers, serving as a bridge of knowledge.
 
 The key contributions of this paper are: a characterization of knowledge artifacts that are exchanged by this community of practice; the reasons why members choose one channel over the other; and insights on the community participation patterns, which indicate an evolution of the community and a shift from knowledge creation to knowledge curation. Finally, this paper enumerates a set of recommendations to assist practitioners in the use of multiple channels for Q\&A.
 \end{abstract}
@@ -590,18 +590,17 @@ In contrast, a discussion on \RH can continue long after an answer has been foun
 %RQ4. How does participation differ between the two channels over time?
 \subsection{\rqd}
 
-Vasilescu et al. studied the participation of the \RH and \SO communities over time. Their
+In their research, Vasilescu et al. studied the participation of the \RH and \SO communities over time. Their
 research showed strong evidence that knowledge seeking activities were moving from \RH to \SO---as of the end of
 2013~\cite{Vasilescu2014c}.
-
-To answer RQ4, we first explore the evolution of the number of questions in both channels, as the main proxy of activity. The results
+Their findings findings prompted us to also consider how participation differs over both channels over time (RQ4).  We first explore the evolution of the number of questions in both channels, as the main proxy of activity. The results
 are shown in Figure~\ref{fig:channelsActPerMonth}. As reported in~\cite{Vasilescu2014c}, the trend indicates that \SO
 continues to grow and \RH continues to decrease. One aspect that is changing in \SO is the growth of questions that
-receive a negative score. A score in \SO is the sum of positive votes minus negative votes and can be seen as a proxy of
-the quality of the question. As can be seen, the number of positive questions has flattened and starting to decrease.
+receive an overall negative score. A score in \SO is the sum of positive votes minus negative votes and can be seen as a proxy of
+the quality of the question. As can be seen, the number of questions with an overall positive score has flattened and is starting to decrease.
 
-However, looking at the trends over the last 10 years might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
-number of questions since Jan 2015. As can be seen, both channels are relatively flat in overall questions. The
+However, looking at the trends over the last 10 years, this might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
+number of questions since Jan 2015. As can be seen, both channels are relatively flat in terms of overall questions. The
 number of questions in \SO is between 10 and 20 times the number of questions in \RH, but the number of questions with
 a positive overall score in \SO is starting to decrease (we recognize this might be a temporary effect).
 
@@ -625,7 +624,7 @@ a positive overall score in \SO is starting to decrease (we recognize this might
 \subsubsection{Common users of both channels}
 
 The number of common users between both datasets that we identified is relatively small (around 2.5\% of all
-users). Yet, a handful of these contributors are responsible for a very large proportion of the answers to both
+users). Yet, a handful of these contributors are responsible for a very large proportion of the answers in both
 channels. Figure~\ref{fig:common} shows the accumulated proportion of answers that have been contributed by these
 authors. As can be seen, the top contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO,
 respectively. In fact, the top 6 contributors to both channels are responsible for 10\% of the answers to both. 
@@ -639,16 +638,16 @@ Answers to \SO include both posts and comments to questions.
   \label{fig:common}
 \end{figure*}
 
-\subsubsection{Super contributors}
+\subsubsection{Prolific contributors}
 
-Both channels benefit from a handful of very prolific users who answer most questions. We will refer to these users as
-\textit{super contributors}. Figure~\ref{fig:prolific} shows the super contributors in each channel, ordered by the number of
-answers they have contributed. The vertical axis is the accumulated proportion of contributions to all answers in
+Both channels benefit from a handful of very prolific users who answer most questions. Thus, we refer to these users as
+\textit{prolific contributors}. Figure~\ref{fig:prolific} shows the prolific contributors in each channel, ordered by the number of
+answers they have contributed. The vertical axis shows the accumulated proportion of contributions to all answers in
 each channel. As can be seen in \RH, 9 users have contributed 25\% of all answers and 49 have contributed 50\% of all answers. In \SO, the distribution is not as
 steep, yet 24 users have contributed 25\% of all answers (including comments) and 131 have contributed 50\% of all answers. This
 means that 0.15\% of the \RH mailing list users contribute 50\% of all the answers, while 0.45\% of the \SO users contribute 50\%
-of all the answers. To put this into context, the super contributors in \RH post between 2 and 3 answers a day on average, while the
-super contributors of \SO average between 3 and 5 answers a day.
+of all the answers. To put this into context, the prolific contributors in \RH post between 2 and 3 answers a day on average, while the
+prolific contributors of \SO average between 3 and 5 answers a day.
 
 \begin{figure*}[htbp]
   \centering
@@ -662,14 +661,14 @@ super contributors of \SO average between 3 and 5 answers a day.
 \subsubsection{New users}
 
 New users are important for the survival and continuity of a community. Unfortunately we can only track users when they
-participate in a channel, so we do not know who is a passive participant. Hence we use the date of first
+participate in a channel, so we do not know who is a passive participant. Hence we use the date of a first
 contribution as the proxy of when a user joins the community.  Figure~\ref{fig:newusers} shows the proportion of users
 who have posted their first question in a particular month. As can be seen, both communities show a very similar
 pattern: between 25 and 35\% of the users who post new questions are new during that month. We found, however, that many
-of these users participate only once: they post a question and they never post anything else (either a question or an
-answer). Figure~\ref{fig:newusersOnce} shows this information. One year after the creation of \SO, around 1 in 10 users
+of these users participate only once: they post a question and they never post anything else, neither a question nor an
+answer (see Fig.~\ref{fig:newusersOnce}).  One year after the creation of \SO, around 1 in 10 users
 only ever post one question, while in \RH the number has been increasing over time. There has been a visible decrease in
-the proportion of new users in both channels.
+the proportion of new users contributing to both channels.
 
 In fact, the number of users who only participate once (at any time) is relatively large over the lifetime of the channels: 43\% in
 \RH and and 32\% in \SO.
@@ -973,7 +972,7 @@ Nonetheless, new users appear to be joining both channels all the time. Between 
 are new. It is very likely that some of them will participate for a long time, guaranteeing the long term survival of
 both channels.
 
-\subsubsection{Super contributors}
+\subsubsection{Prolific contributors}
 
 There is a handful of users that are responsible for a large proportion of answers. In \RH, we found that 50\% of the
 answers have been contributed by 0.15\% of the users. While in \SO, 0.45\% of the users have contributed 50\% of the answers. It is
@@ -982,9 +981,9 @@ them, other users might have answered those questions. Further research should l
 individuals, the time they commit to help others, and also compare these patterns of activity with similar channels and
 see if this is a common phenomenon.
 
-Several of these super contributors actively participate in both channels. The top one is responsible for almost 4\% of
+Several of these prolific contributors actively participate in both channels. The top one is responsible for almost 4\% of
 the answers in either channel. Combined, the top 6 contributors have authored approximately 10\% of the answers of
-either channel. These super contributors are very likely serving as a bridge of knowledge between the channels, moving
+either channel. These prolific contributors are very likely serving as a bridge of knowledge between the channels, moving
 it from one channel to the other.
 
 
