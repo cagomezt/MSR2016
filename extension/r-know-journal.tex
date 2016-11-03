@@ -117,7 +117,7 @@
 \maketitle
 
 \begin{abstract}
-One of the many side effects of social media's prevalence in software development are the flourishing communities of practice where users share a common interest, such as programming languages, frameworks, and tools. These large communities use many different \channels but little is known about how they create, share, and curate knowledge using such channels.
+One of the effects of social media's prevalence in software development is the many flourishing communities of practice where users share a common interest. These large communities use many different \channels, but little is known about how they create, share, and curate knowledge using such channels.
 
 In this paper, we report a mixed methods study of how one community of practice---the R software development community---creates and curates knowledge associated with questions and answers (Q\&A) in two of its main \channels: the R tag in Stack Overflow and the R-users mailing list. The results reveal that knowledge is created and curated in two main forms: participatory, where multiple users explicitly collaborate to build knowledge, and crowdsourced, where individuals primarily work independently of each other. Moreover, our study reveals participation patterns, showing the existence of prolific contributors: users who are active across both channels and are responsible for a large proportion of the answers, serving as a bridge of knowledge.
 
@@ -132,7 +132,7 @@ The emergence and adoption of socially enabled tools and channels
 \textit{communities of practice} where users share a common
 interest, such as programming languages, frameworks, and
 tools~\cite{Storey2014}. These communities rely on many
-different communication channels, but little is known about how
+different \channels, but little is known about how
 they create, share, and curate knowledge using such channels.
 
 One prominent community of practice is the group that has formed in support of the R
@@ -582,7 +582,7 @@ Based on the responses from the survey, we identified that being active on both 
   specific answers provided to \SO questions. \SO's focus is on finding an answer to a question and does not
   provide an environment to discuss the specifics of an answer (unless it is asked as another question).
 In contrast, a discussion on \RH can continue long after an answer has been found through follow-up questions, and not only by the person who asked the original question.  
-\item[\textbf{Speed up answers:}] users ask the same question on both channels in order to get an answer faster. However, this behavior is not encouraged by the community as it is deemed impolite\footnote{\href{https://goo.gl/p9vVaj}{https://goo.gl/p9vVaj}}.
+\item[\textbf{Speed up answers:}] Users ask the same question on both channels in order to get an answer faster. However, this behavior is not encouraged by the community as it is deemed impolite\footnote{\href{https://goo.gl/p9vVaj}{https://goo.gl/p9vVaj}}.
 \end{description}
 
 %RQ4. How does participation differ between the two channels over time?
@@ -593,15 +593,16 @@ To bring insights to RQ4, we first discuss how user participation differs betwee
 \subsubsection{How user participation differs
 between the two channels over time}
 
-In their research, Vasilescu et al. studied the participation of the \RH and \SO communities over time. Their
-research showed strong evidence that knowledge seeking activities were moving from \RH to \SO---as of the end of
-2013~\cite{Vasilescu2014c}.
-Their findings findings prompted us to also consider how participation differs over both channels over time (RQ4).  We first explore the evolution of the number of questions in both channels, as the main proxy of activity. The results
-are shown in Figure~\ref{fig:channelsActPerMonth}. As reported in~\cite{Vasilescu2014c}, the trend indicates that \SO
-continues to grow and \RH continues to decrease. One aspect that is changing in \SO is the growth of questions that
-receive an overall negative score. A score in \SO is the sum of positive votes minus negative votes and can be seen as a proxy of
-the quality of the question. As can be seen, the number of questions with an overall positive score has flattened and is starting to decrease.
+Vasilescu \textit{et al.} studied the participation of the \RH and \SO communities over time. Their
+research showed strong evidence that knowledge seeking activities were moving from \RH to \SO (as of the end of
+2013)~\cite{Vasilescu2014c}.
+These findings prompted us to also consider how participation differs over both channels over time (RQ4).
 
+We first explore the evolution of the number of questions in both channels as the main proxy of activity (the results
+are shown in Figure~\ref{fig:channelsActPerMonth}). As reported in~\cite{Vasilescu2014c}, the trend indicates that \SO
+continues to grow and \RH continues to decrease. One aspect that is changing in \SO is the growth of questions that
+receive an overall negative score. A score in \SO is the sum of positive votes minus negative votes, which can be considered a proxy of
+the question's quality. As can be seen, the number of questions with an overall positive score has flattened and is starting to decrease. 
 However, looking at the trends over the last 10 years, this might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
 number of questions since Jan 2015. As can be seen, both channels are relatively flat in terms of overall questions. The
 number of questions in \SO is between 10 and 20 times the number of questions in \RH, but the number of questions with
@@ -610,7 +611,7 @@ a positive overall score in \SO is starting to decrease (we recognize this might
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/actByMonth.pdf}
-  \caption{Number of questions asked over time. As can be seen, \SO activity has been much larger than \RH. However,
+  \caption{Number of questions asked over time. As can be seen, \SO activity has been much larger than \RH activity. However,
     the number of questions with positive score has flattened.}
   \label{fig:channelsActPerMonth}
 \end{figure*}
@@ -620,29 +621,28 @@ a positive overall score in \SO is starting to decrease (we recognize this might
   \centering
   \includegraphics[width=.95\textwidth]{figs/actByMonth2016.pdf}
   \caption{Detail of Figure~\ref{fig:channelsActPerMonth} showing only activity after January 2015. As can be seen, both
-    channels have flattened, but the number of questions with positive score in \SO is starting to decrease.}
+    channels have flattened, but the number of \SO questions with a positive score is starting to decrease.}
   \label{fig:channelsActPerMonthLatests}
 \end{figure*}
 
 \subsubsection{How long users participate}
 
-Another important measure of the community and its ability to curate and maintain knowledge is if their users continuously participate
-over time, even if their participation is small. To measure the continuity of participation in both
-channels, we divided the history of both channels into one month segments. In \RH, we considered that a user participated in a given month if they
+Another important measure of the community and its ability to curate and maintain knowledge is whether their users continuously participate
+over time, even if their participation is small. To measure the continuity of participation, we divided the history of both channels into one month segments. In \RH, we considered that a user participated in a given month if they
 posted at least one email to the list during that period. For \SO, we considered that a user participated in a given month if they
 posted, responded to, or commented on at least one question.
 
 The results show that users do not participate in either channel for a long
-time. Figure~\ref{fig:monthsPerUser} shows the accumulated proportion of users that participate during a given number of
-months (not necessarily consecutively). The curves are very similar and skewed: 62\% of \RH users and 65\% of \SO users are active one month only, and
-90\% of \RH users are active 5 months or less, while in \SO, 90\% of users participate 4 months or less.
+time. Figure~\ref{fig:monthsPerUser} shows the accumulated proportion of users that participated during a given number of
+months (not necessarily consecutively). The curves are very similar and skewed: 62\% of \RH users and 65\% of \SO users are active for a single month; 
+90\% of \RH users are active for 5 months or less; 90\% of \SO users participate 4 months or less.
 
 \begin{figure*}[htbp]
   \centering
   \includegraphics[width=.95\textwidth]{figs/monthsPerUser.pdf}
-  \caption{Months a user has been active. This plot shows the accumulated proportion of users who have been active at a
-    given number of months. As can be seen, 62\% of \RH users and 65\% of \SO users are active one month only.
-    90\% of \RH users are active 5 or less months. In SO, 90\% of users participate 4 or less months. Months do not have
+  \caption{Months a user has been active. This plot shows the accumulated proportion of users who have been active for a
+    given number of months. As can be seen, 62\% of \RH users and 65\% of \SO users are active for 1 month only;
+    90\% of \RH users are active 5 or months or less; 90\% of \SO users participate 4 or months or less. Months do not have
   to consecutive.}
   \label{fig:monthsPerUser}
 \end{figure*}
@@ -652,19 +652,19 @@ months (not necessarily consecutively). The curves are very similar and skewed: 
 %RQ5. Are there significant differences in participation activity between community users?
 \subsection{\rqe}
 
-To consider participation activity of members in the two channels, we first consider new users. We wish to explore, how many newcomers there are to both channels, and we consider if they are likely to post again.  Lastly, we look at contributors that are responsible for the vast majority of posts in both channels.
+To consider participation activity in the two channels, we first consider new users. We explore how many newcomers there are to both channels and consider if they are likely to post again. Lastly, we look at contributors that are responsible for the vast majority of posts in both channels.
 
 
 \subsubsection{Activity of new users}
 
-New users are important for the survival and continuity of a community. Unfortunately we can only track users when they
-participate in a channel, so we do not know who is a passive participant. Hence we use the date of a first
-contribution as the proxy of when a user joins the community.  Figure~\ref{fig:newusers} shows the proportion of users
-who have posted their first question in a particular month. As can be seen, both communities show a very similar
-pattern: between 25 and 35\% of the users who post new questions are new during that month. We found, however, that many
-of these users participate only once: they post a question and they never post anything else, neither a question nor an
-answer (see Fig.~\ref{fig:newusersOnce}).  One year after the creation of \SO, around 1 in 10 users
-only ever post one question, while in \RH the number has been increasing over time. There has been a visible decrease in
+New users are important for the survival and continuity of a community. Unfortunately, since we can only track users when they
+actively participate in a channel, we do not know who is a passive participant. Hence we use the date of a first
+contribution as the proxy of when a user joins the community. Figure~\ref{fig:newusers} shows the proportion of users
+who have posted their first question in a particular month. As can be seen, both communities show a similar
+pattern: between 25 and 35\% of the users who post new questions are new during that month. However, we found that many
+of these users participate only once: they post an initial question and then never post again (question or
+answer, see Fig.~\ref{fig:newusersOnce}).  One year after the creation of \SO, around 1 in 10 users
+only ever post a single question, while in \RH, the number has been increasing over time. There has been a visible decrease in
 the proportion of new users contributing to both channels.
 
 In fact, the number of users who only participate once (at any time) is relatively large over the lifetime of the channels: 43\% in
