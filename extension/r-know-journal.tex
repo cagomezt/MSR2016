@@ -283,7 +283,7 @@ We mined data from the public archives of both the \RH mailing list and \SO. The
 To make the data sets comparable, we analyzed both datasets from September 2008 until December 2013, a period of time that both channels were available.
 For \SO, we obtained a data dump file from their Website---Stack Exchange releases a new data dump from all their Websites every three months\footnote{\url{http://stackexchange.com/sites}}. For the \RH mailing list data, we retrieved MBOX files of the archives from the \RH Website.
 
-To answer RQ3, we needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013.  To remedy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.  However, if a user in the 2013 data file did not exist in the 2014 data, we did not examine them.  From \SO, we retrieved all R-related data by selecting only messages that contained the R tag (\texttt{r}) or its two synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
+To answer RQ3, we also needed the ability to compare email addresses between both channels. However, Stack Exchange stopped providing information about email addresses and the last Stack Exchange dump file to contain email addresses as MD5 hashes was released in September 2013---this meant we did not have complete data for October, November, and December 2013.  To remedy this gap, we used the data dump file from September 2014, but updated the \texttt{users} table with the hashes taken from the September 2013 dump file for those \texttt{ID}s that were identical in both data sets.  However, if a user in the 2013 data file did not exist in the 2014 data, we did not examine them.  From \SO, we retrieved all R-related data by selecting only messages that contained the R tag (\texttt{r}) or its two synonyms\footnote{\url{http://stackoverflow.com/tags/r/synonyms}},
 (\texttt{rstats} and \texttt{r-language}).
 
 To determine which users were active in both channels, we compared the MD5 hashes of the email addresses extracted from the \RH mailing list and \SO. If there was match, we associated the \RH and \SO user accounts to the same person. Using this approach, we identified 1,421 persons who used both media channels.
@@ -382,8 +382,10 @@ To study the participation behavior of different members, we assigned them a uni
 
  \section{Findings}
 \label{cha:findings}
-To understand how knowledge in the form of questions and answers is created, shared, and curated, we first identified and categorized the main types of knowledge artifacts contained within \RH mailing list messages and in \SO messages with the R tag (RQ1). The emerging categories formed a typology and allowed us to identify and describe two approaches for constructing knowledge that are supported by these channels (RQ2). Interestingly, we found that some developers are active on both channels, and in some cases, even post the same questions. As a result, we investigated the benefits they gain by doing so (RQ3). \alexey{add RQ4-about the extension.} In this section, we present our findings.
+In this section, we present our findings.
+To understand how knowledge in the form of questions and answers is created, shared, and curated, we first identified and categorized the main types of knowledge artifacts contained within \RH mailing list messages and in \SO messages with the R tag (RQ1). The emerging categories formed a typology and allowed us to identify and describe two approaches for constructing knowledge that are supported by these channels (RQ2). Interestingly, we found that some developers are active on both channels, and in some cases, even post the same questions. As a result, we investigated the benefits they gain by doing so (RQ3). We also present our findings about participation on the two channels over time (RQ4) and look closely at differences on participation activity between community members (RQ5). \alexey{add RQ4-about the extension.} 
 
+% RQ1
 \subsection{What Types of Knowledge Artifacts Are Shared on \SO and the \RH Mailing List}
 \label{cha:findings-types}
 
@@ -496,6 +498,7 @@ Because both \SO and the \RH mailing list permit participants to ask multiple qu
 
 Regarding the frequency of comments, the main difference between the two channels is that \SO comments are less likely to be considered corrections or alternatives (Correction/Alternative sub-category) than on the \RH mailing list. The \SO R tag sample also contained 2.1 times more comments than the \RH sample (see Table~\ref{table:type-of-knowledge}).
 
+% RQ2
 \subsection{How Knowledge Is Constructed on \SO and the \RH Mailing List}
 \label{sec:rq2}
 
