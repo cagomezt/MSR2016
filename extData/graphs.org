@@ -806,7 +806,7 @@ gg <- gg + scale_x_continuous(limits = c(1, 100))
 gg <- gg + scale_y_continuous(limits = c(0, 0.3))
 
 gg <- gg + geom_point(aes(x=m15, y=.15), colour="black", size=4) + geom_label(aes(x=37,y=.14, label = paste(m15, "contrib. 15%")),size=6,color="black")
-gg <- gg + geom_point(aes(x=s20, y=.20), colour="black", size=4) + geom_label(aes(x=11,y=.21, label = paste(m15, "contrib. 20%")),size=6,color="black")
+gg <- gg + geom_point(aes(x=s20, y=.20), colour="black", size=4) + geom_label(aes(x=11,y=.21, label = paste(s20, "contrib. 20%")),size=6,color="black")
 
 gg <- gg + geom_point(aes(x=s10, y=.10), colour="black", size=4) + geom_label(aes(x=20,y=.08, label = paste(s10, "contrib. 10%")),size=6,color="black")
 #gg <- gg + geom_point(aes(x=m10, y=.10), colour="black", size=4) + geom_label(aes(x=20,y=.01, label = paste(s10, "contrib. 10%")),size=6,color="black")
