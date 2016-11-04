@@ -159,7 +159,7 @@ steady level of activity, implying that it is still an important resource for th
 community. It even appears as if the mailing list and \SO complement
 each other.
 
-There are obvious inherent differences between both \channels. On the one hand, mailing lists unite users by subscription, creating a tight community, but their content lacks organization, except for the natural structure provided by email metadata (e.g., subjects, threading, authors, dates), and they are not optimized for long-term storage and retrieval. On the other hand, \SO's community is not as tight as an email community, but the channel is optimized for the curation and long-term storage of knowledge. However, little is known about the differences in how people use both \channels, such as how the types of questions and answers sought in one channel compare to the other, why users choose one channel over the other, why some users participate in both channels, and how participants perceive each \channel.
+There are obvious inherent differences between both \channels. On the one hand, mailing lists unite users by subscription, creating a tight community, but their content lacks organization, except for the natural structure provided by email metadata (e.g., subjects, threading, authors, dates), and they are not optimized for long-term storage and retrieval. On the other hand, \SO's community is not as tight as the \RH mailing list community, but the channel is optimized for the curation and long-term storage of knowledge. However, little is known about the differences in how people use both \channels, such as how the types of questions and answers sought in one channel compare to the other, why users choose one channel over the other, why some users participate in both channels, and how participants perceive each \channel.
 
 
 
@@ -203,7 +203,7 @@ fleeting and a small number of individuals are responsible for most
 answers.  Furthermore, our findings indicate that both channels are reaching
 maturity: for the \RH mailing list, this means a steady flow of questions; for \SO, there is a continuous decrease of questions with a positive score
 (number of positive votes minus negative votes), hinting to the fact
-that, as time progresses, the most frequently asked questions have
+that, as time progresses, the most sought after questions have
 been already asked.
 
 We conclude the paper by providing recommendations for
@@ -264,8 +264,7 @@ Software development is a knowledge-building process~\cite{naur1985programming}.
 
 As part of a study on the transition to gamified environments, Vasilescu~\cite{Vasi1escu2014PhD} examined the popularity of Stack Exchange (including the \SO R tag) and
 mailing lists within the R community. He found that the number of message threads has decreased on the \RH mailing list since 2010, while the number of
-R-related questions asked on the Stack Exchange network has increased. Our study also examined \SO's R tag and the \RH mailing list, but we aimed to understand the \textit{knowledge types} used. This allowed us to characterize the different knowledge seeking and sharing approaches on each channel. Vasilescu also examined the \textit{difference in activity} between contributions made by users active on both channels and users focused on a single medium. While we also found users of the R community that were active on both channels, we aimed to understand \textit{why users post to a particular channel}.
-\alexey{we may need to adjust the previous sentence comparing our study with Vasilescu, since we plan to add similar type of analysis in the extension.}
+R-related questions asked on the Stack Exchange network has increased. Our study also examined \SO's R tag and the \RH mailing list, but we aimed to understand the \textit{knowledge types} used. This allowed us to characterize the different knowledge seeking and sharing approaches on each channel. Vasilescu also examined the \textit{difference in activity} between contributions made by users active on both channels and users focused on a single medium. While we also found users of the R community that were active on both channels, we first aimed to understand \textit{why users post to a particular channel}, and then understand \textit{user participation activity over time}.
 
 Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{transition to the \SO gamified channel}. She focused on examining whether four software projects that moved from mailing lists to \SO showed improvements in terms of developer participation and response time. She found that all four projects showed improvements on \SO compared to mailing lists, however, she also found that several projects have moved back to using mailing lists despite achieving these improvements. In our study, we found that both channels have knowledge support for question and answers, however, there are important differences between the two channels. For example, \SO's competitive environment creates an incentive to be the first to answer rather than improve other answers and participate in discussions.
 
@@ -274,7 +273,7 @@ Similar to Vasilescu, Squire~\cite{Squire2015a} studied a project's \textit{tran
 
 As mentioned, the main goal of this work is to empirically compare how knowledge, specifically knowledge in question-and-answer (Q\&A) form, is sought, shared, and curated on both the \RH mailing list and the R tag on \SO. We used a mixed methods \textit{exploratory case study} methodology~\cite{Creswell2009,Runeson2012} to answer our research questions (presented in Section~\ref{cha:introduction}).
                     
-This study employed two research methods over three phases: we \textit{mined archival data} and then conducted a \textit{qualitative survey}. In the first phase, we randomly sampled and iteratively coded\footnote{Our sample data is openly available at \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}} questions in both channels to characterize the types of discussions that occur. This process was continued until we reached saturation, which amounted to 400 threads in each channel. In the second phase, we surveyed users of the R community to validate our interpretation of the results from the previous phase. And in the third phase, we extended the collected data set up to September 2016 and focused on investigating participation patterns on both channels.
+This study employed two research methods over three phases: we \textit{mined archival data} and conducted a \textit{qualitative survey}. In the first phase, we randomly sampled and iteratively coded\footnote{Our sample data is openly available at \url{https://github.com/thechiselgroup/R-ML-and-StackOverflow}} questions in both channels to characterize the types of discussions that occur. This process was continued until we reached saturation, which amounted to 400 threads in each channel. In the second phase, we surveyed users of the R community to validate our interpretation of the results from the previous phase. And in the third phase, we extended the collected data set up to September 2016 and focused on investigating participation patterns on both channels.
 
 \subsection{Phase I: Mining Archival Data} 
 \label{sec:studyDesign}
@@ -337,7 +336,7 @@ We defined the following mappings between messages in both channels:
 	\begin{description}[itemsep=1pt, topsep=2pt, leftmargin=1em, parsep=0pt]
 		\item[\textbf{Question:}] The message is the first in the thread and contains the main question.
 		\item[\textbf{Answer:}] The message provides a solution to the main question of the thread.
-	 	\item[\textbf{Update:}] The message requests a modification to a question or answer made by the author of said question or answer.
+	 	\item[\textbf{Update:}] The message provides a modification to a question or answer made by the author of said question or answer.
 		\item[\textbf{Comment:}] The message offers clarification to a specific part of the question or answer.
 		\item[\textbf{Flag:}] The message requests attention from the moderator (e.g., repeated questions, spam, or rude behavior).
 	\end{description}
@@ -355,7 +354,7 @@ In this phase, we focused our analysis on the behavior and participation pattern
 
 For \SO, we used Stack Exchange's Data Explorer\footnote{\url{https://data.stackexchange.com/stackoverflow/query/new}} to query the data. The structured metadata allowed us to automatically classify each message as a question, an answer, or a comment.
 
-For the \RH mailing list, we downloaded all the email threads and extracted the separate emails and corresponding metadata from each thread. As opposed to \SO, the \RH mailing list data doesn't include metadata to indicate whether a message is a question or an answer. Thus, we used the following heuristic to classify the \RH messages: if a message contained an \texttt{In-Reply-To} or a \texttt{References} header, it was classified as an answer (239,976 responses); otherwise, a message was classified as a question (124,925 questions).
+For the \RH mailing list, we downloaded all the email threads and extracted the separate emails and corresponding metadata from each thread. As opposed to \SO, the \RH mailing list data doesn't include metadata to indicate whether a message is a question or an answer. Thus, we used the following heuristic to classify the \RH messages: if a message contained an \texttt{In-Reply-To} or a \texttt{References} header, it was classified as an answer (239,604 responses); otherwise, a message was classified as a question (124,791 questions).
 
 To study the participation behavior of different users, we assigned them a unique \texttt{person} identifier and performed a unification of identities. We extracted email addresses from the \RH mailing list data using the \texttt{From:} field, and using a conservative approach, identified messages sent by the same person but from different email addresses. As a result, the number of unique individuals identified on \RH was reduced from 36,600 to 31,731 (a reduction of 15\%)---a similar number was reported by Vasilescu \textit{et al.}~\cite{Vasilescu2014c}. Next, by using MD5 hashes of the email addresses extracted from the \RH mailing list and \SO, we identified 1,480 persons who used both media channels. We summarize the data collected during this phase in Table~\ref{table:extended_data}.
 
@@ -367,8 +366,8 @@ To study the participation behavior of different users, we assigned them a uniqu
         \toprule
         Type          &  \RH & \SO \\
         \midrule
-        Questions     & 101,931 &  67,393 \\
-        Answers       & 213,366 &  99,620 \\
+        Questions     & 124,791 &  67,393 \\
+        Answers       & 239,604 &  99,620 \\
         Comments      &       - & 286,124 \\
         Different individuals\tablefootnote{Note: \SO data about user activity only goes up to September 2014.} & 31,729 &  26,324 \\
         \bottomrule
@@ -381,7 +380,7 @@ To study the participation behavior of different users, we assigned them a uniqu
 
  \section{Findings}
 \label{cha:findings}
-To understand how knowledge in the form of questions and answers is created, shared, and curated, we first identified and categorized the main types of knowledge artifacts contained within messages on the\RH mailing list and \SO `R tag' (RQ1). The emerging categories formed a typology and allowed us to identify and describe two approaches for constructing knowledge that are supported by these channels (RQ2). Interestingly, we found that some developers are active on both channels, and in some cases, even post the same questions. As a result, we investigated the benefits they gain by doing so (RQ3). We also present our findings about participation on the two channels over time (RQ4) and look closely at the different levels of participation activity between community users (RQ5). \alexey{add RQ4-about the extension.} 
+To understand how knowledge in the form of questions and answers is created, shared, and curated, we first identified and categorized the main types of knowledge artifacts contained within messages on the\RH mailing list and \SO `R tag' (RQ1). The emerging categories formed a typology and allowed us to identify and describe two approaches for constructing knowledge that are supported by these channels (RQ2). Interestingly, we found that some developers are active on both channels, and in some cases, even post the same questions. As a result, we investigated the benefits they gain by doing so (RQ3). We also present our findings about participation on the two channels over time (RQ4) and look closely at the different levels of participation activity between community users (RQ5).
 
 % RQ1
 \subsection{What Types of Knowledge Artifacts Are Shared on \SO and the \RH Mailing List}
@@ -586,7 +585,7 @@ In contrast, a discussion on \RH can continue long after an answer has been foun
 \end{description}
 
 %RQ4. How does participation differ between the two channels over time?
-\subsection{\rqd}
+\subsection{How Participation Differs Between the Two Channels Over Time}
 
 To bring insights to RQ4, we first discuss how user participation differs between the two channels over time and then consider how long users participate. 
 
@@ -603,7 +602,7 @@ are shown in Figure~\ref{fig:channelsActPerMonth}). As reported in~\cite{Vasiles
 continues to grow and \RH continues to decrease. One aspect that is changing in \SO is the growth of questions that
 receive an overall negative score. A score in \SO is the sum of positive votes minus negative votes, which can be considered a proxy of
 the question's quality. As can be seen, the number of questions with an overall positive score has flattened and is starting to decrease. 
-However, looking at the trends over the last 10 years, this might be misleading. Figure~\ref{channelsActPerMonthLatests} shows only the
+However, looking at the trends over the last 10 years, this might be misleading. Figure~\ref{fig:channelsActPerMonthLatests} shows only the
 number of questions since Jan 2015. As can be seen, both channels are relatively flat in terms of overall questions. The
 number of questions in \SO is between 10 and 20 times the number of questions in \RH, but the number of questions with
 a positive overall score in \SO is starting to decrease (we recognize this might be a temporary effect).
@@ -650,7 +649,7 @@ months (not necessarily consecutively). The curves are very similar and skewed: 
 
 
 %RQ5. Are there significant differences in participation activity between community users?
-\subsection{\rqe}
+\subsection{Are There Significant Differences in Participation Activity between Community Members?}
 
 To consider participation activity in the two channels, we first consider new users. We explore how many newcomers there are to both channels and consider if they are likely to post again. Lastly, we look at contributors that are responsible for the vast majority of posts in both channels.
 
@@ -661,7 +660,7 @@ New users are important for the survival and continuity of a community. Unfortun
 actively participate in a channel, we do not know who is a passive participant. Hence we use the date of a first
 contribution as the proxy of when a user joins the community. Figure~\ref{fig:newusers} shows the proportion of users
 who have posted their first question in a particular month. As can be seen, both communities show a similar
-pattern: between 25 and 35\% of the users who post new questions are new during that month. However, we found that many
+pattern: between 25\% and 35\% of the users who post new questions are new during that month. However, we found that many
 of these users participate only once: they post an initial question and then never post again (question or
 answer, see Fig.~\ref{fig:newusersOnce}).  One year after the creation of \SO, around 1 in 10 users
 only ever post a single question, while in \RH, the number has been increasing over time. There has been a visible decrease in
@@ -688,13 +687,14 @@ The bottom (thinner) lines correspond to the subset of new users who only ask on
 
 
 \subsubsection{Common users of both channels}
+\alexey{I don't like using the term ``common users'', because it's not clear we're talking about users active on both channels. Also, we should probably use the term members more often than users.}
 
 The number of common users we identified across both datasets is relatively small (around 2.5\% of all
 users). Yet a handful of these contributors are responsible for a very large proportion of the answers in both
 channels. Figure~\ref{fig:common} shows the accumulated proportion of answers that have been contributed by these
 authors. As can be seen, the top contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO,
-respectively. In fact, the top 6 contributors to both channels are responsible for 10\% of the answers. 
-Answers to \SO include both posts and comments to questions.
+respectively. In fact, the top 6 contributors to both channels are responsible for 10\% of the answers (and only one of those belongs to the \textit{R-core} group). 
+Here, answers on \SO include both posts and comments to questions.
 
 \begin{figure*}[htbp]
   \centering
@@ -706,7 +706,7 @@ Answers to \SO include both posts and comments to questions.
 
 \subsubsection{Prolific contributors}
 
-Both channels benefit from a handful of very prolific users who answer most questions. Thus, we refer to these users as
+Both channels benefit from a handful of very prolific members (also referred to as ``caretakers'' by Srba and Bielikova~\cite{Srba2016}) who answer most questions. Thus, we refer to these users as
 \textit{prolific contributors}. Figure~\ref{fig:prolific} shows the prolific contributors in each channel, ordered by the number of
 answers they have contributed. The vertical axis shows the accumulated proportion of contributions to all answers in
 each channel. As can be seen in \RH, 9 users have contributed 25\% of all answers and 49 have contributed 50\% of all answers. In \SO, the distribution is not as
@@ -822,7 +822,7 @@ Another interesting aspect emerging from our findings is that the activity on th
 
 \subsubsection{Maturing as a community: from knowledge creation to knowledge curation}
 
-One of the major discoveries from Phase III of our study is the slowing of the growth of active participation in \SO (asking or answering questions). In particular, the number of new questions with an overall positive score is starting to decrease over time. This is to be expected: most sought after questions have probably been asked already. Given the very large number of questions already asked through \SO, many questions today are expected to be either duplicates of previous questions, or to be questions of low intrinsic value (too specific to be useful to others), or to end up being flagged as not a question. 
+One of the major discoveries from Phase III of our study is the slowing of the growth of active participation in \SO (asking or answering questions). In particular, the number of new questions with an overall positive score is starting to decrease over time. This is to be expected: most sought after questions have probably been asked already. Given the very large number of questions already asked through \SO, many questions today are expected to be either duplicates of previous questions, or to be questions of low intrinsic value (too specific to be useful to others), or to end up being flagged as not a question. This decline of participation on \SO has been discussed by community members\footnote{\url{https://www.javacodegeeks.com/2016/09/stopped-contributing-stackoverflow-not-declining.html}} and the \SO development team\footnote{\url{https://stackoverflow.blog/2016/10/podcast-89-the-decline-of-stack-overflow-has-been-greatly-exaggerated/}}, both agree that \SO \textit{``is not declining, it is serving its purpose quite well''}.
 
 When we consider that the popularity of R continues to increase, this implies that when new members to the R community seek answers they might not need to post questions---a testament to the value of the knowledge currently gathered by \SO. This also seems to imply that the activities of \SO contributors are shifting from answering new question to tagging, flagging (e.g. as  duplicates, unclear, or off-topic), or editing existing questions.
 
@@ -858,7 +858,7 @@ Several of these prolific contributors actively participate in both channels. Th
 
 \subsection{Recommendations for Using Multiple Q\&A \Channels}
 
-One of the expected outcomes of this study is a set of recommendations for using multiple \channels. Other research on \SO also points to these and other recommendations.  For example, Yao \textit{et al.} discuss the importance of how the phrasing of a question influences the quality of the answer provided~\cite{Yao2013a}, and Anderson \textit{et al.} emphasize the importance of badges (i.e., gamification) on participation~\cite{Anderson2013}. In the following, we build on this existing literature as well as our results to  provide five recommendations for people seeking or contributing answers in community forums.  Our recommendations are summarized in Table~\ref{tab:recom}.
+One of the expected outcomes of this study is a set of recommendations for using multiple \channels. Other research on \SO also points to these and other recommendations.  For example, Yao \textit{et al.} discuss the importance of how the phrasing of a question influences the quality of the answer provided~\cite{Yao2013a}, and Anderson \textit{et al.} emphasize the importance of badges (i.e., gamification) on participation~\cite{Anderson2013,Antin2011}. In the following, we build on this existing literature as well as our results to  provide five recommendations for people seeking or contributing answers in community forums.  Our recommendations are summarized in Table~\ref{tab:recom}.
 
 \begin{table}[htbp]
   \caption{Recommendations to improve the benefits experienced from using several Q\&A channels.}
