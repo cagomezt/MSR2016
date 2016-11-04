@@ -5010,3 +5010,17 @@ group by posttypeid, datepart(year, posts.creationdate),
         datepart(month, posts.creationdate)
 order by year, month
 #+END_SRC
+
+
+Common users
+
+#+BEGIN_SRC sql 
+WITH sofshash as (select emailhash from (select owneruserid as id from sof_posts union select userid from sof_comments) as rip natural join sof_users) 
+select count(*) from (select emailhash from sofshash intersect select dmgshaemail from dmgmails) as rip;
+#+END_SRC
+
+#+RESULTS:
+| count |
+|-------|
+|  1480 |
+
