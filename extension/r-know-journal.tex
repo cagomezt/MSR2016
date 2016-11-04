@@ -729,13 +729,15 @@ prolific contributors of \SO average between 3 and 5 answers a day.
 \section{Discussion}
 \label{cha:theory}
 
-In this section, we reflect on the results presented in the previous section and place them within the context of related research. Additionally, we identify research opportunities and derive recommendations for using multiple Q\&A channels.
-In the following, we provide representative quotes extracted from the survey, using P\# to indicate the participant ID.
+In this section, we reflect on the results presented in the previous section, distilling some themes from this work,  relating them to relevant related research and pointing out possibilities for future work. 
+  
+We then derive and share recommendations that members of a community may follow when they have the option of posting questions (and answers) to multiple Q\&A channels.
+While we present these themes and recommendations, we provide representative quotes extracted from the survey we conducted in the second phase of our study, using P\# to indicate the participant ID.
 
 \subsection{Knowledge Creation and Curation}
 
-Based on the results, both channels provide similar knowledge support for questions and answers.
-However, there are some important differences between the channels which we discuss in detail below (and summarize in Table~\ref{table:constrat}).
+Based on our results, we found that both channels provide similar knowledge support for asking questions and providing answers.
+However, there are some important differences between the channels we studied which we discuss in detail below (and summarize in Table~\ref{table:constrat}).
 
 \begin{table}[htbp]
   \centering
@@ -758,8 +760,8 @@ However, there are some important differences between the channels which we disc
 
 \subsubsection{Knowledge construction}
 
-\SO's gamification mechanism encourages users to be first when answering questions~\cite{Singer2013}. In contrast, the \RH mailing list is a less competitive
-environment where users tend to build on other responses. On \RH, users work as a team rather than as individuals searching for points (as is the case on \SO).
+\SO's gamification mechanism encourages many users to respond first when answering questions~\cite{Singer2013}. In contrast, the \RH mailing list is a less competitive
+environment where users tend to build on other responses. On \RH, users work as a team rather than acting as individuals searching for points (as is the case on \SO).
 As a result, knowledge on \SO is built in a more crowdsourced manner, while knowledge on the \RH mailing list is usually built in a participatory manner.
 
 Since, the competitive \SO environment creates an incentive to be the first to answer rather than improve and build on other answers, it is common to find a question with several answers that provide the same information. For example, three of the six answers in the \SO question titled \textit{``Resources for learning SAS if you are already familiar with R''}\footnote{\url{http://goo.gl/Mb4Pbk}} referenced the same books.
@@ -768,23 +770,23 @@ And while \SO provides a powerful curation mechanism to ensure the best answers 
 In contrast, the \RH mailing list tends to be more participatory in how users construct knowledge. It fosters an environment where users discuss proposed answers---users tend to provide more background to answers and explain the rationale behind them.
 For example, the question \textit{``Arrange elements on a matrix according to rowSums + short `apply' Q''} was posted to both \SO\footnote{\url{http://goo.gl/a8AES8}} and {\RH}\footnote{\url{http://goo.gl/PGflT5}}. This question illustrates the contrast in how the two communities build knowledge.
 On \SO, each participant contributed a solution without any evidence of collaboration with others.
-Whereas users on the \RH mailing list complemented each other's answers by providing further information and insights to the answers already
-contributed. Vasilescu \textit{et al.}~\cite{Vasilescu2014c} showed that users who are active in both channels tend to provide answers faster on \SO than on \RH,
+Whereas users on the \RH mailing list complemented each other's answers by providing further information and insights to existing answers. Vasilescu \textit{et al.}~\cite{Vasilescu2014c} showed that users who are active in both channels tend to provide answers faster on \SO than on \RH,
 suggesting that they are motivated by the gamification aspects of \SO, and thus tend to gravitate towards crowd knowledge construction.
 
-    
-While prevalent, the construction of knowledge on \SO is not limited to the crowd-based approach. Participatory knowledge construction is also existent, such as by up/down voting questions and by the provision of comments. In most cases, participatory knowledge construction on \SO is used for editing answers (e.g., correcting grammar) or linking to previously asked questions.
-Similarly, some knowledge on the \RH mailing list is constructed in a crowd-based manner, but this is less prevalent than participatory construction.
+While the crowd-based approach is prevalent, 
+the construction of knowledge on \SO is not limited to the crowd-based approach. Participatory knowledge construction can also be observed, such as the up/down voting of questions and through the provision of comments. However, in most cases, participatory knowledge construction on \SO is used for editing answers (e.g., correcting grammar) or linking to previously asked questions.
+Similarly, some knowledge on the \RH mailing list is constructed in a crowd-based manner, but this is much less prevalent than participatory construction.
 
 Tausczik \textit{et al.}~\cite{Tausczik2014} examined how users of Math Overflow (a Q\&A platform for mathematicians) collaborate and construct knowledge. They found that collaboration was diverse and fell on the spectrum between \textit{independent} (crowd-based) and \textit{interdependent} (participatory). Similar to our findings with \SO, the most common collaborative act was of an independent nature (i.e., providing information), while other contributions that built on existing work were less common (i.e., clarifying the question, critiquing answers, revising answers, and extending answers).
 
-Our results seem to imply that \SO's gamification features, while highly effective, have the side effect of reducing collaborative knowledge creation between users. In their study on building \SO reputation, Bosu \textit{et al.}~\cite{Bosu2013} proposed six strategies for increasing reputation score, two of which were \textit{be the first to answer}, and \textit{do it at off-peak hours}, indicating crowd knowledge creation. Furthermore, while \SO gives people the ability to vote on comments, it does not reward points to users that post comments. For example, some users search \SO for answers within comments and convert them to proper answers to gain reputation points\footnote{\url{http://duncanlock.net/blog/2013/06/14/the-smart-guide-to-stack-overflow-zero-to-hero}}.
+Our results seem to imply that \SO's gamification features, while highly effective, have the side effect of reducing collaborative knowledge creation between users. In their study on building \SO reputation, Bosu \textit{et al.}~\cite{Bosu2013} proposed six strategies for increasing reputation score, two of which were \textit{to be the first to answer}, and \textit{to answer at off-peak hours}, indicating crowd knowledge creation. Furthermore, while \SO gives people the ability to vote on comments, it does not reward points to users that post comments. For example, some users search \SO for answers within comments and convert them to proper answers to gain reputation points\footnote{\url{http://duncanlock.net/blog/2013/06/14/the-smart-guide-to-stack-overflow-zero-to-hero}}.
 
+An important research question that arises from these findings is whether \SO's model can be improved to provide better participatory knowledge construction support without hindering its ability to curate information for future use.
 
                 
 \subsubsection{Topic restriction}
 
-\SO's participation rules only permit questions that have a clear answer, making it topic restrictive. In contrast, the \RH mailing list is suitable for discussing
+\SO's participation rules only permit questions that have a clear answer, restricting topics discussed. In contrast, the \RH mailing list is suitable for discussing
 any topic related to the R language. For example, questions related to R but not focused on software development are not rejected by the \RH mailing list community---topics that trigger discussion are welcomed.
 
 \SO questions that trigger a discussion are flagged as opinion-based or off-topic and typically closed. Correa and Sureka~\cite{Correa2014} found that 18\% of deleted questions on \SO are subjective (i.e., ask for opinion).
@@ -797,7 +799,7 @@ An \RH user wrote a fine explanation of the purpose of each channel in a message
 Squire reported that, despite the gains in participation and the response time provided by \SO, many development communities keep using mailing lists, either as
 a primary communication channel or as part of a hybrid solution where multiple channels are used, thus allowing for non-restrictive topics and fostering of
 discussion~\cite{Squire2015a}.
-Mailing lists are also favored for their simplicity, and for allowing guaranteed delivery (i.e., knowing who will receive the email) ~\cite{Zhang2015}.
+Mailing lists are also favoured for their simplicity, and for allowing guaranteed delivery (i.e., knowing who will receive the email) ~\cite{Zhang2015}.
 
         
 \subsubsection{Curated knowledge and knowledge development}
@@ -817,12 +819,13 @@ However, \SO shines when questions have to be kept for posterity. Its curation m
     Ability to include light markup, render code blocks nicely, no nested email threads all helps the experience of searching for and finding the help that a user needs, and I want to contribute to that.''}
 \end{quote}
 
+Another interesting aspect emerging from our findings is that the activity on the \RH mailing list is only marginally smaller than on \SO (the proportion of responses in each category fluctuated between 1.4 and 2 times). Further research is required to assess and verify the quality and effectiveness of answers.
 
 \subsubsection{Maturing as a community: from knowledge creation to knowledge curation}
 
-One of the major discoveries from Phase III of our study is the slowing of the growth of active participation in \SO (asking or answering questions). In particular, the number of new questions with an overall positive score is starting to decrease over time. This is to be expected: most sought after questions have probably been asked already. Given the very large number of questions already asked through \SO, many questions today are expected to be either duplicates of previous questions, be questions of low intrinsic value (too specific to be useful to others), or end up being flagged as not a question. 
+One of the major discoveries from Phase III of our study is the slowing of the growth of active participation in \SO (asking or answering questions). In particular, the number of new questions with an overall positive score is starting to decrease over time. This is to be expected: most sought after questions have probably been asked already. Given the very large number of questions already asked through \SO, many questions today are expected to be either duplicates of previous questions, or to be questions of low intrinsic value (too specific to be useful to others), or to end up being flagged as not a question. 
 
-When we consider that the popularity of R continues to increase, this implies that when new members to the R community seek for answers they might not need to post questions---a testament to the value of the knowledge currently gathered by \SO. This also seems to imply that the activities of \SO contributors are shifting from answering new question to tagging, flagging (e.g. as  duplicates, unclear, or off-topic), or editing existing questions.
+When we consider that the popularity of R continues to increase, this implies that when new members to the R community seek answers they might not need to post questions---a testament to the value of the knowledge currently gathered by \SO. This also seems to imply that the activities of \SO contributors are shifting from answering new question to tagging, flagging (e.g. as  duplicates, unclear, or off-topic), or editing existing questions.
 
 The frequency of postings on the \RH mailing list has now stabilized on approximately 200 questions per month. It is possible that \SO, by curating answers to most frequently asked questions, has contributed to a reduction of questions posted on the \RH mailing list, and the \RH community may now be able to concentrate on higher-level questions than those asked in the past. Further research should verify this hypothesis.
 
@@ -831,7 +834,7 @@ The frequency of postings on the \RH mailing list has now stabilized on approxim
  
 We found that approximately 43\% of participating members on the \RH mailing list only ask a question once (and never actively participate again, neither asking nor answering any additional questions). In \SO, the proportion is 33\%. It is not clear why a person participates only once, perhaps these persons continue to passively participate (e.g., consuming content, voting up/down). 
 
-Similarly, approximately two thirds of users in both channels only participate for a short period of one month and never actively participate again. We have observed in the set of common users that some of them migrate from one channel to the other. But the majority simply stop participating. It is very likely that they continue to use \SO as passive users; hence, benefiting from the channel but without contributing back. Further research is needed to characterize both active and passive participation patterns.
+Similarly, approximately two thirds of users in both channels only participate for a short period of one month and never actively participate again. We have observed in the set of common users of both channels that some of them migrate from one channel to the other. But the majority simply stop participating. It is very likely that they continue to use \SO as passive users; hence, benefiting from the channel but without contributing back. Further research is needed to characterize both active and passive participation patterns.
 
 Nonetheless, new users appear to be joining both channels all the time. Between 25\% and 35\% of users in any given month are new. It is very likely that some of them will participate for a long time, guaranteeing the long term survival of both channels.
 
@@ -839,16 +842,17 @@ Nonetheless, new users appear to be joining both channels all the time. Between 
 \subsubsection{Prolific contributors}
 
 There is a handful of users that are responsible for a large proportion of answers. In \RH, we found that 50\% of the answers have been contributed by 0.15\% of the users. While in \SO, 0.45\% of the users have contributed 50\% of the answers. It is not clear if the success of both channels can be attributed to them or not. It is possible, for example, that without them, other users might have answered those questions. Further research should look into the motivations of these
-individuals, the time they commit to help others, and also compare these patterns of activity with similar channels and see if this is a common phenomenon.
+individuals, consider the time they commit to help others, and also compare these patterns of activity with similar channels to see if this is a common phenomenon.
 
-Several of these prolific contributors actively participate in both channels. The top one is responsible for almost 4\% of the answers in either channel. Combined, the top 6 contributors have authored approximately 10\% of the answers of either channel. These prolific contributors are very likely serving as a bridge of knowledge between the channels, moving it from one channel to the other.
+Several of these prolific contributors actively participate in both channels. The top one is responsible for almost 4\% of the answers in either channel. Combined, the top 6 contributors have authored approximately 10\% of the answers of either channel. These prolific contributors are very likely serving as a bridge of knowledge between the channels, moving knowledge from one channel to the other.
 
-        
-\subsubsection{Research opportunities}
 
-An important research question that arises from these findings is whether \SO's model can be improved to provide better participatory knowledge construction support without hindering its ability to curate information for future use.
-
-Another interesting aspect emerging from our findings is that the activity on the \RH mailing list is only marginally smaller than on \SO (the proportion of responses in each category fluctuated between 1.4 and 2 times). Further research is required to assess and verify the quality and effectiveness of answers.
+% future research opportunities are already hinted at above so I think distributing these make sense rather than having a short section.  Will just comment out and copy the main points above, I will annotate those additions with RO      
+%\subsubsection{Research opportunities}
+%
+%An important research question that arises from these findings is whether \SO's model can be improved to provide better participatory knowledge construction support without hindering its ability to curate information for future use.
+%
+%Another interesting aspect emerging from our findings is that the activity on the \RH mailing list is only marginally smaller than on \SO (the proportion of responses in each category fluctuated between 1.4 and 2 times). Further research is required to assess and verify the quality and effectiveness of answers.
 
 
 \subsection{Recommendations for Using Multiple Q\&A \Channels}
