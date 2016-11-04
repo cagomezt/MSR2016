@@ -246,7 +246,7 @@ We begin with an overview of the R community and detail the two main channels it
     number of users migrated to \SO~\cite{Vasilescu2014c}.
     Despite the reduced number of users, the \RH mailing list is
     still very active---on average, a subscriber may receive
-    approximately 30 emails
+    approximately 25 emails
     a day (as of Oct 2016).
 
 \subsubsection{Stack Overflow}
@@ -356,7 +356,7 @@ For \SO, we used Stack Exchange's Data Explorer\footnote{\url{https://data.stack
 
 For the \RH mailing list, we downloaded all the email threads and extracted the separate emails and corresponding metadata from each thread. As opposed to \SO, the \RH mailing list data doesn't include metadata to indicate whether a message is a question or an answer. Thus, we used the following heuristic to classify the \RH messages: if a message contained an \texttt{In-Reply-To} or a \texttt{References} header, it was classified as an answer (239,604 responses); otherwise, a message was classified as a question (124,791 questions).
 
-To study the participation behavior of different users, we assigned them a unique \texttt{person} identifier and performed a unification of identities. We extracted email addresses from the \RH mailing list data using the \texttt{From:} field, and using a conservative approach, identified messages sent by the same person but from different email addresses. As a result, the number of unique individuals identified on \RH was reduced from 36,600 to 31,731 (a reduction of 15\%)---a similar number was reported by Vasilescu \textit{et al.}~\cite{Vasilescu2014c}. Next, by using MD5 hashes of the email addresses extracted from the \RH mailing list and \SO, we identified 1,480 persons who used both media channels. We summarize the data collected during this phase in Table~\ref{table:extended_data}.
+To study the participation behavior of different users, we assigned them a unique \texttt{person} identifier and performed a unification of identities. We extracted email addresses from the \RH mailing list data using the \texttt{From:} field, and using a conservative approach, identified messages sent by the same person but from different email addresses. As a result, the number of unique individuals identified on \RH was reduced from 36,600 to 31,729 (a reduction of 15\%)---a similar number was reported by Vasilescu \textit{et al.}~\cite{Vasilescu2014c}. Next, by using MD5 hashes of the email addresses extracted from the \RH mailing list and \SO, we identified 1,480 persons who used both media channels. We summarize the data collected during this phase in Table~\ref{table:extended_data}.
 
 \begin{table}[!htb]
   \centering
