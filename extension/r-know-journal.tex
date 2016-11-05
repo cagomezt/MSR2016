@@ -5,6 +5,7 @@
 \synctex=-1 
 \usepackage[english]{babel}
 
+\usepackage{longtable}[]
 \usepackage[bookmarks=false, hidelinks]{hyperref} 
 \usepackage{xspace}
 \usepackage{multirow}
@@ -44,7 +45,7 @@
 \usepackage{color}
 \usepackage{ifthen}
 \newboolean{showcomments}
-\setboolean{showcomments}{true}
+\setboolean{showcomments}{false}
 \ifthenelse{\boolean{showcomments}}
   {
 				\newcommand{\nbb}[2]{
@@ -123,6 +124,7 @@ In this paper, we report a mixed methods study of how one community of practice-
 
 The key contributions of this paper are: a characterization of knowledge artifacts that are exchanged by this community of practice; the reasons why users choose one channel over the other; and insights on the community participation patterns, which indicate an evolution of the community and a shift from knowledge creation to knowledge curation. Finally, this paper enumerates a set of recommendations to assist practitioners in the use of multiple channels for Q\&A.
 \end{abstract}
+
 
 \section{Introduction}
 \label{cha:introduction}
@@ -394,72 +396,22 @@ To answer RQ1, we randomly sampled 400 threads of messages from both \SO and the
 \item Flags
 \item Comments
 \end{enumerate*}
+
 Through our analysis, we further divided these types into sub-types---Table~\ref{table:type-of-knowledge} presents our typology of knowledge artifacts, their
 descriptions, and their frequency in the sample of 400 threads in each channel. Even though we did not aim for a statistically significant sample size, the size of this sample
 (400 threads in each channel) guarantees a confidence level of approximately 95\% $\pm$ 5\% for both channels. Using the Chi-square test of independence, we tested whether the distribution of types and sub-types of questions were different between the two channels.  In
 all cases, they were found to be statistically different (with $\rho \ll 0.001$ in all cases).
-    \begin{table*}[]
-      \centering
-      \caption{Typology of knowledge artifacts found on both \SO (SO) and the \RH (RH) mailing list and their frequency in the analyzed sample. Numbers in bold represent the most significant differences between the two sets.}
-      \begin{small}
-\begin{tabular}[h]{p{2.3cm}p{7.3cm}rrrrr}
- && \textbf{SO}                                                                                                                                              & \textbf{RH}  & \textbf{Prop SO} & \textbf{Prop RH}                \\
-\toprule
-\multicolumn{2}{@{}l}{\textbf{Questions}}\\
-  \emph{How-to}                   & Asks how to do something specific.                                                                                                                        & {166}          & {103}              & \textbf{41.50\% }       & \textbf{25.75\%}        \\
-  \emph{Bug/Error\-/Exception}    & Asks for a solution or reasons for an error message.                                                                                                       & 27           & 48               & 6.75\%         & 12.00\%        \\
-  \emph{Discrepancy}              & Asks about an unexpected result of a specific function, process, or package.                                                                              & 53           & 88               & \textbf{13.25\%}        & \textbf{22.00\%}        \\
-  \emph{Set-up}                   & Asks for possible ways to set up the R environment before or after deployment.                                                                            & 15           & 31               & 3.75\%         & 7.75\%         \\
-  \emph{Decision help}            & Asks for advice in making a decision.                                                                                                                     & 36           & 35               & 9.00\%         & 8.75\%         \\
-  \emph{Conceptual\-/Guidance}    & Asks for conceptual clarification or guidance on topics related to R or statistics.                                                         & 48           & 49               & 12.00\%        & 12.25\%        \\
-  \emph{Code reviewing}           & Asks for a code review, explicitly or implicitly.                                                                                                           & 34           & 21               & 8.50\%         & 5.25\%         \\
-  \emph{Non-functional}           & Asks for help (or suggestions) with a non-functional requirement such as performance or memory usage.                                                   & 14           & 11               & 3.50\%         & 2.75\%         \\
-  \emph{Future reference}         & Asks a question (often self-answering it) that might not exist on the channel, but that is interesting enough to warrant a thread for future reference.         & 5            & 4                & 1.25\%         & 1.00\%         \\
-  \emph{Other}                    & Asks for assistance unrelated to the channel, or the message contains unrelated information (e.g., announcements, ideas for improvement).                  & 2            & 10               & 0.50\%         & 2.50\%         \\\cline{3-6}
-                                  &                                                                                                                                                          & {400} & {400}     & {100\%} & {100\%} \\
-\hline
-  \multicolumn{2}{@{}l}{\textbf{Answers}}                                                                                                                                                                                                                          \\
-  \emph{Redirecting}                & Provides a link to an existing solution that is not in the thread (e.g., external application, tutorial, project).                                     & 163          & 87               & 20.20\%        & 15.03\%        \\
-  \emph{Tutorial}                   & Provides a set of steps to teach people how to solve the issue.                                                                                          & 105          & 15               & \textbf{13.01\%}        & \textbf{2.59\% }        \\
-  \emph{Source code}                & Provides a source code snippet as the solution without an extensive explanation about the answer.                                                                   & 198          & 102              & 24.54\%        & 17.62\%        \\
-  \emph{Clue/Suggestion/Hint}       & Provides a possible way to fix the issue without actually solving it.                                                                                                     & 43           & 105              & \textbf{5.33\% }        & \textbf{18.13\% }       \\
-  \emph{Alternative}                & Provides a different approach to a solution that is related to but not exactly what is being asked (e.g., mathematical approach, data structure modification). & 33           & 98               & \textbf{4.09\% }        & \textbf{16.93\% }       \\
-  \emph{Explanation}                & Provides an explanation of an approach that answers the question and lists steps on how to implement it.                                                                          & 203          & 101              & 25.15\%        & 17.44\%        \\
-  \emph{Announcement}               & Provides a notification about some artifact (e.g., packages, libraries).                                                                                 & 8            & 33               & 0.99\%         & 5.70\%         \\
-  \emph{Benchmark}                  & Provides a benchmark of multiple solutions posted by others or compares different answers.                                                               & 5            & 3                & 0.62\%         & 0.52\%         \\
-  \emph{Opinion}                    & Provides an opinion or an expansion of another answer by including scenarios and examples.                                                                    & 49           & 35               & 6.07\%         & 6.04\%         \\\cline{3-6}
-                                    &                                                                                                                                                          & \textbf{807} & \textbf{579}     & {100\%} & {100\%} \\
-\hline
-  \multicolumn{2}{@{}l}{\textbf{Updates}}                                                                                                                                                                                                                          \\
-  \emph{Announcement}               & Announces specific events (e.g., bounties, future updates).                                                                                              & 27           & 3                & 4.40\%         & 1.21\%         \\
-  \emph{Background}                 & Adds additional context to the question or answer.                                                                                                       & 74           & 57               & 12.07\%        & 23.08\%        \\
-  \emph{Correction}                 & Corrects format, grammar, spelling, and semantic mistakes.                                                                                               & 301          & 2                & \textbf{49.10\% }       & \textbf{0.81\% }        \\
-  \emph{Expansion}                  & Expands the question or answer by providing scenarios or examples.                                                                                       & 116          & 83               & \textbf{18.92\% }       & \textbf{33.60\%}        \\
-  \emph{Explanation}                & Explains or clarifies a specific point in the question or answer, such as why the user chose a specific data structure, or the meaning of a variable.    & 83           & 95               & 13.54\%        & 38.46\%        \\
-  \emph{Solution}                   & The user answers their own question.                                                                                                                     & 12           & 7                & 1.96\%         & 2.83\%         \\\cline{3-6}
-                                    &                                                                                                                                                          & \textbf{613} & \textbf{247}     & {100\%} & {100\%} \\
-\hline
-  \multicolumn{2}{@{}l}{\textbf{Flags}}                                                                                                                                                                                                                            \\
-        \emph{Off-topic/Opinion}          & Identifies questions that are unrelated to the channels' interests, or requests answers based on opinion.                                                      & 22           & 19               & 27.16\%        & 35.19\%        \\
-      \emph{Not an answer}              & Indicates answers that are out of scope of the question or that do not answer the question.                    & 0            & 27               & \textbf{0.00\% }        & \textbf{50.00\%}        \\
-    \emph{Repeated question}          & Notifies a user that the question has been answered previously.                                                                                                & 48           & 8                & \textbf{59.26\%}        & \textbf{14.81\%}        \\
-  \emph{Too localized}              & Questions that are too specific and might not help future readers.                                                                                    & 6            & 0                & 7.41\%         & 0.00\%         \\
-  \emph{Unclear}                    & Questions that are difficult to understand.                                                                                                              & 5            & 0                & 6.17\%         & 0.00\%         \\\cline{3-6}
-                                    &                                                                                                                                                          & {81}  & {54}      & {100\%} & {100\%} \\
-\hline
-  \multicolumn{2}{@{}l}{\textbf{Comments}}                                                                                                                                                                                                                     \\
-  \emph{Clarification}          & Provides (or requests) additional information about a question or answer.                                                                                & 98           & 28               & 17.44\%        & 10.49\%        \\
-  \emph{Expansion}              & Provides additional information.                                                                                                                         & 127          & 65               & 22.60\%        & 24.34\%        \\
-  \emph{Correction/Alternative} & Suggests a change to a question or answer, offers an alternative solution or a correction.                                                               & 102          & 89               & \textbf{18.15\%}        & \textbf{33.33\% }       \\
-  \emph{Compliment/Critic}   & Posts something good, offers thanks, or provides an opinion or criticism.                                                                           & 157          & 52               & 27.94\%        & 19.48\%        \\
-  \emph{External reference}     & References an external resource.                                                                                                                         & 78           & 33               & 13.88\%        & 12.36\%        \\\cline{3-6}
-                                &                                                                                                                                                          &{562}  & {267}     & {100\%} & {100\%} \\
-  \bottomrule
-        \end{tabular}
-      \end{small}
-      \label{table:type-of-knowledge}
-\vspace{-3mm}
-    \end{table*}
+
+
+%      \caption{Typology of knowledge artifacts found on both \SO (SO) and the \RH (RH) mailing list and their frequency in the analyzed sample. Numbers in bold represent the most significant differences between the two sets.}
+%      
+%\begin{tabular}[h]
+
+
+   %    \begin{table*}[]
+
+\input{table-types.tex}
+
 
 \paragraph{Questions and Answers:}
     Questions express one or more problems or concerns faced by a user on the \RH mailing list or on \SO, whereas answers represent solutions to questions.  We observed that the types of questions on \SO are more specific than those on the \RH mailing list and are more likely to be tutorials. \SO also has more answers per question: 2 per question compared to 1.4 for \RH (see Table~\ref{table:type-of-knowledge}). However, \RH answers tend to offer more suggestions or alternatives than \SO answers. 
@@ -687,9 +639,10 @@ The bottom (thinner) lines correspond to the subset of new users who only ask on
 
 
 \subsubsection{Common users of both channels}
-\alexey{I don't like using the term ``common users'', because it's not clear we're talking about users active on both channels. Also, we should probably use the term members more often than users.}
+%\alexey{I don't like using the term ``common users'', because it's not clear we're talking about users active on both channels. Also, we should probably use the term members more often than users.}
 
-The number of common users we identified across both datasets is relatively small (around 2.5\% of all
+The number
+of common users we identified across both datasets is relatively small (around 2.5\% of all
 users). Yet a handful of these contributors are responsible for a very large proportion of the answers in both
 channels. Figure~\ref{fig:common} shows the accumulated proportion of answers that have been contributed by these
 authors. As can be seen, the top contributor has contributed 3.9\% and 3.7\% of answers in \RH and \SO,
@@ -833,12 +786,16 @@ The frequency of postings on the \RH mailing list has now stabilized on approxim
  
 We found that approximately 43\% of participating members on the \RH mailing list only ask a question once (and never actively participate again, neither asking nor answering any additional questions). In \SO, the proportion is 33\%. It is not clear why a person participates only once, perhaps these persons continue to passively participate (e.g., consuming content, voting up/down). 
 
-Similarly, approximately two thirds of users in both channels only participate for a short period of one month and never actively participate again. 
-\peggy{ for this brief participation perhaps they just ask questions rather than answer and thus don't need to again because they find their answers?}
+Similarly, approximately two thirds of users in both channels only participate for a short period of one month and never
+actively participate again. This might indicate that some users are sporadic users of R--perhaps learning it-- and use
+it only for a short period. But more research is necessary to know the true reasons.
+%\peggy{ for this brief participation perhaps they just ask questions rather than answer and thus don't need to again because they find their answers?}
 We have observed in the set of common users to both channels that some of them migrate from one channel to the other. But the majority simply stop participating. It is very likely that they continue to use \SO as passive users; hence, benefiting from the channel but without contributing back. Further research is needed to characterize both active and passive participation patterns.
 
-Nonetheless, new users appear to be joining both channels all the time. Between 25\% and 35\% of users in any given month are new. It is very likely that some of them will participate for a long time, guaranteeing the long term survival of both channels.
-\peggy{this doesn't make sense to me -- don't we know some of them do stay long term -- so why say this is very likely? indeed isn't this what the next theme is about?}
+Nonetheless, new users appear to be joining both channels all the time. Between 25\% and 35\% of users in any given
+month are new.
+% It is very likely that some of them will participate for a long time, guaranteeing the long term survival of both channels.
+% \peggy{this doesn't make sense to me -- don't we know some of them do stay long term -- so why say this is very likely? indeed isn't this what the next theme is about?}
 
 
 \subsubsection{Prolific contributors}
@@ -848,7 +805,7 @@ individuals, consider the time they commit to help others, and also compare thes
 
 Several of these prolific contributors actively participate in both channels. The top one is responsible for almost 4\% of the answers in either channel. Combined, the top 6 contributors have authored approximately 10\% of the answers of either channel. These prolific contributors are very likely serving as a bridge of knowledge between the channels, moving knowledge from one channel to the other.  This should be confirmed in future work. 
 
-\peggy{ future research opportunities are already hinted at above so I think distributing these make sense rather than having a short section.  Will just comment out and copy the main points above. But change it }     
+%\peggy{ future research opportunities are already hinted at above so I think distributing these make sense rather than having a short section.  Will just comment out and copy the main points above. But change it }     
 %\subsubsection{Research opportunities}
 %
 %An important research question that arises from these findings is whether \SO's model can be improved to provide better participatory knowledge construction support without hindering its ability to curate information for future use.
@@ -930,9 +887,10 @@ we believe are worth mentioning.  These behaviours provide evidence of an altrui
 \begin{description}[itemsep=2pt, topsep=0pt, leftmargin=1em, parsep=0pt]
   \item[I answered my own question:] Some questions are answered by the user that asked the question. They posted back to the channel to document their solution and help others: \textit{``Just for the records (and if anyone ever wants to find the `solution'), I solved my own problem.''}\footnote{\url{https://goo.gl/r3z0DX}} 
    
-  \item[I did it for you:] When answering, authors provide source code to help others: \textit{``I coded up the algorithm from the Cameron and Turner paper. Dunno if it gives exactly the same results as my (Splus?) code from lo these many years ago...''}
+  \item[I did it for you:] When answering, authors provide source code to help others: \textit{``I coded up the
+      algorithm from the Cameron and Turner paper. Dunno if it gives exactly the same results as my (Splus?) code from
+      lo [sic] these many years ago...''}
   \footnote{\url{http://goo.gl/GXWGG3}}.
-  \peggy{lo??}
 
   \item[Updated or continued years later:] Some questions are answered months or years later.
   For example, a user on \SO modified an answer to provide a more updated version of the source code\footnote{\url{http://goo.gl/k6ZARR}}, and a {question asked on the \RH mailing list in 2012 was continued two years later.}\footnote{\url{http://goo.gl/kgSHZv}}
@@ -940,18 +898,26 @@ we believe are worth mentioning.  These behaviours provide evidence of an altrui
   \item[Ideas to improve the channel:] This behaviour is specific to the \RH mailing list. Sometimes users suggest modifications or new features to improve the channel. For example, a {user proposed to create a package repository that can be accessible through a public wiki or version control interface.}\footnote{\url{http://goo.gl/p0IunD}}
 \end{description}
 
-\peggy{I guess not much to add to recommendations from the new parts added to the paper?  }
+%\peggy{I guess not much to add to recommendations from the new parts added to the paper?  }
 
 
 \subsection{Threats to Validity}
 \label{cha:threats}
 Here we examine and discuss threats to the validity of our approach~\cite{Runeson2012}.
 
-\peggy{has this been updated for the new phase?}
+%\peggy{has this been updated for the new phase?}
 
 \begin{description}[itemsep=3pt, topsep=2pt, leftmargin=1em, parsep=0pt]
 
-  \item[Construct validity:] To reach the emerging themes, we relied on subjective human judgment during the data coding phase. Researchers had to decide if a message fell within a specific coding category. To alleviate this issue, two researchers coded the qualitative data as part of the analysis process. We applied the Cohen Kappa coefficient on categories that were not mutually exclusive, but whose purpose was to trigger discussion between coders. We set a threshold of 0.8 as the minimum to obtain agreeable results, which is higher than the 0.6 suggested in the literature~\cite{Landis1977}.
+  \item[Construct validity:] To reach the emerging themes, we relied on subjective human judgment during the data coding
+    phase. Researchers had to decide if a message fell within a specific coding category. To alleviate this issue, two
+    researchers coded the qualitative data as part of the analysis process. We applied the Cohen Kappa coefficient on
+    categories that were not mutually exclusive, but whose purpose was to trigger discussion between coders. We set a
+    threshold of 0.8 as the minimum to obtain agreeable results, which is higher than the 0.6 suggested in the
+    literature~\cite{Landis1977}. Regarding the quantitative analysis. The main thread to validity is that in R-help, we
+    consider all emails that start a thread as questions, and their follow-ups as responses. It is likely that a small
+    proportion of emails are announcements or non-question emails. Stack Overflow stopped publishing the md5 of users,
+    and hence it is likely that the number of common contributors between the two channels is underestimated.
 
   \item[Internal validity:] \SO's data is structured while the \RH mailing list consists of unstructured data. As a result, some of the mapping between the two channels was straightforward (e.g., a follow-up to a reply is a comment to that question), while in other cases it wasn't as obvious (e.g., identifying some emails as questions). To reduce the risk of bias when mapping the messages between channels, two researchers performed the mapping.
 
@@ -985,6 +951,17 @@ Another result of our research is that we found that participants prefer \SO to 
 question requests opinions (\SO forbids them) or when they expect to reach core developers of the R project. Some participants ask the same question in both
 channels in the hopes of gaining the advantages of both channels. Additionally, \RH has the ability to complement \SO by providing a medium where the rationale
 of answers can be discussed.
+
+A major result of our quantitative study is the impact of a small fraction of the members of both channels who answer a
+large proportion of the questions in both channels. There is a also a dedicated core of members who contribute to both channels
+and serve as avenues connecting the two communities. At the same time, a large proportion of members participate
+very few times over a very short period of time.
+
+It was also interesting to observe that the frequency of
+new questions in \SO is starting to slow down, specially those with a positive score. This is effect is probably due to
+the fact the most-frequently-asked questions in R have been already asked---an answered; the new questions are either inherently
+more difficult, or more specialized and therefore have a smaller pool of members who would benefit from them; however research is
+needed to understand this effect.
 
 Overall, this research shows that the R community is committed to using both channels to help others. Each channel has advantages and disadvantages, and the
 community appears to be using both effectively to create and curate knowledge regarding the R language.  We provided \textbf{recommendations} for community users that need to use these or other Q\&A channels.  Furthermore, our \textbf{typology of knowledge artifacts} that we summarized in Table~\ref{table:type-of-knowledge} can be used by other researchers that wish to study and understand how knowledge is constructed and curated in other channels or across other communities.  As new channels (such as Slack) become more widely adopted, studying these newer channels and comparing them to existing channels is an imperative aspect of understanding knowledge formation in software development. 
