@@ -14,5 +14,5 @@ Submission instructions:
 
 **Submission website:** [http://www.editorialmanager.com/emse/default.aspx](http://www.editorialmanager.com/emse/default.aspx)  
 **Original submission date:** Friday, October 21st, 2016  
-**Revised submission date:**Saturday, April 22nd, 2017  
+**Revised submission date:** Saturday, April 22nd, 2017  
 
