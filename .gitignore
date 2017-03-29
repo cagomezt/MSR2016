@@ -1,7 +1,7 @@
 # Generic backup files
 *~
 \#*#
-r-know-journal.pdf
+/r-know-journal.pdf
 # LaTeX temporary files
 *.aux
 *.glo
