@@ -27,12 +27,12 @@ Reviewer #2: Online communities play a more important role in sharing knowledge 
 As a summary, the newly added content is sufficient for the extension. This paper is well written. However, there are a few points needed to be clarified.
 - The authors should explicitly mention that this is an extension of their MSR paper.
 - Lack of discussion on findings described in Sections 4.4.1 and 4.4.2. What can we learn from the reported findings? Although there is a seperate discussion section (i.e., Sections 5.1.5 and 5.1.6), the two sections are just duplicate of Section 4. Findings are listed as Section 4 without deep discussions. The authors should revise Sections 5.1.5 and 5.1.6 to discuss what do their findings imply and how the R community benefits from their findings.
-- Page 10, ln14, ``Using the Chi-square test'', could you give more details on how the test is performed. For example, what is the input of the test?
-- Table 3, what the is criteria to determine ``the most significant differences'', i.e., numbers in bold.
-- page 16, ln 35, ``find a better answer. As expected, two channels are better than one -- one channel might result in a better answer than the other''. Do you have any evidence? For example, is there any difference in the rate of successfully answered questions for each type of questions?
-- page 16, ln 41, ``Stack Overflow ... does not provide an environment to discuss the specifics of an answer''. The statement is not very accurate. Stack Overflow users can post comments under each question or each answer.
+- Page 10, ln14, "Using the Chi-square test", could you give more details on how the test is performed. For example, what is the input of the test?
+- Table 3, what the is criteria to determine 'the most significant differences', i.e., numbers in bold.
+- page 16, ln 35, "find a better answer. As expected, two channels are better than one -- one channel might result in a better answer than the other". Do you have any evidence? For example, is there any difference in the rate of successfully answered questions for each type of questions?
+- page 16, ln 41, "Stack Overflow ... does not provide an environment to discuss the specifics of an answer". The statement is not very accurate. Stack Overflow users can post comments under each question or each answer.
 - page 7, ln13 and page 9, ln23, do Table 1 and 2 show the statistics of all data since the creation of R-help mailing list and Stack Overflow? If so, another two tables are needed to show the statistics of the data used in the study, i.e., the data collected between 2008.9 to 2013.12 and between 2008.9 to 2016.9.
-- ``different individuals'' of R mailing list remains the same in Tables 1 and 2. Please check if there is a typo, or confirm that no new individuals use R mailing list between 2014.01 to 2016.9, or any other reason?
+- "different individuals" of R mailing list remains the same in Tables 1 and 2. Please check if there is a typo, or confirm that no new individuals use R mailing list between 2014.01 to 2016.9, or any other reason?
 - page 25, ln39 and page 19, ln32, the two numbers do not match, i.e., 33% and 32%. Please correct.
 
 
@@ -64,7 +64,7 @@ Here are some questions and concerns I would like the authors address in a futur
 
 7. Section 4.5.2. establishes that several users are common between both channels. Where do these people come from? I would like to see the authors compare their identities to those who have contributed code to the R project. Are these the core R developers? The maintainers? 
 
-7.a. How does R persuade its developers to participate in the forums, if indeed it does? 
+ 7.a. How does R persuade its developers to participate in the forums, if indeed it does? 
 
 8. In Section 5.1.4. the authors speculate on why the number of posts with a positive score is decreasing. They propose 3 possible answers that are each easy to check from the authors' data. I would like to see the authors check their explanations and tell the readers how much of an effect each has on the decrease. 
 
@@ -75,3 +75,4 @@ Here are some questions and concerns I would like the authors address in a futur
 10.a How might the participation rate distribution be explained by Lave and Wenger's theory of Legitimate Peripheral Participation? 
 
 11. The threats to internal validity should include the email identity merging algorithm which may have incorrectly merged some individuals or left some unmerged.
+
