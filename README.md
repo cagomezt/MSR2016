@@ -13,6 +13,6 @@ Submission instructions:
 >* Please ensure to submit an overall high quality manuscript; EMSE is a high-quality, high-impact journal.
 
 **Submission website:** [http://www.editorialmanager.com/emse/default.aspx](http://www.editorialmanager.com/emse/default.aspx)  
-**Original submission date:** Friday, October 21st, 2016  
-**Revised submission date:** Saturday, April 22nd, 2017  
+**Original (1st round) submission date:** Friday, October 21st, 2016  
+**Revised (2nd round) submission date:** Saturday, April 22nd, 2017  
 
