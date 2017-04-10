@@ -94,12 +94,6 @@
 \newcommand{\rqe}{Are there significant differences in participation activity between community users?}
 %\newcommand{\rqd}{How have the communities of both Stack Overflow and the R-help mailing list evolved over time?}
 
-\newcommand{\reca}{Choose the correct channel}
-\newcommand{\recb}{Be aware of the channel rules and the basic concepts and nomenclature used}
-\newcommand{\recc}{Provide good background to the question}
-\newcommand{\recd}{Learn to use external resources}
-\newcommand{\rece}{Behave altruistically}
-
 
 \begin{document}
 
@@ -122,7 +116,7 @@ One of the effects of social media's prevalence in software development is the m
 
 In this paper, we report a mixed methods study of how one community of practice---the R software development community---creates and curates knowledge associated with questions and answers (Q\&A) in two of its main \channels: the R tag in Stack Overflow and the R-users mailing list. The results reveal that knowledge is created and curated in two main forms: participatory, where multiple users explicitly collaborate to build knowledge, and crowdsourced, where individuals primarily work independently of each other. Moreover, our study reveals participation patterns, showing the existence of prolific contributors: users who are active across both channels and are responsible for a large proportion of the answers, serving as a bridge of knowledge.
 
-The key contributions of this paper are: a characterization of knowledge artifacts that are exchanged by this community of practice; the reasons why users choose one channel over the other; and insights on the community participation patterns, which indicate an evolution of the community and a shift from knowledge creation to knowledge curation. Finally, this paper enumerates a set of recommendations to assist practitioners in the use of multiple channels for Q\&A.
+The key contributions of this paper are: a characterization of knowledge artifacts that are exchanged by this community of practice; the reasons why users choose one channel over the other; and insights on the community participation patterns, which indicate an evolution of the community and a shift from knowledge creation to knowledge curation.
 \end{abstract}
 
 
@@ -208,8 +202,7 @@ maturity: for the \RH mailing list, this means a steady flow of questions; for \
 that, as time progresses, the most sought after questions have
 been already asked.
 
-We conclude the paper by providing recommendations for
-using the different communication channels, and discussing how channel
+We conclude the paper by discussing how channel
 affordances and community rules (e.g., topic restriction and
 gamification) influence knowledge construction and curation.
 
@@ -811,94 +804,6 @@ Several of these prolific contributors actively participate in both channels. Th
 %An important research question that arises from these findings is whether \SO's model can be improved to provide better participatory knowledge construction support without hindering its ability to curate information for future use.
 %
 %Another interesting aspect emerging from our findings is that the activity on the \RH mailing list is only marginally smaller than on \SO (the proportion of responses in each category fluctuated between 1.4 and 2 times). Further research is required to assess and verify the quality and effectiveness of answers.
-
-
-\subsection{Recommendations for Using Multiple Q\&A \Channels}
-
-One of the expected outcomes of this study is a set of recommendations for using multiple \channels. Other research on \SO also points to these and other recommendations.  For example, Yao \textit{et al.} discuss the importance of how the phrasing of a question influences the quality of the answer provided~\cite{Yao2013a}, and Anderson \textit{et al.} emphasize the importance of badges (i.e., gamification) on participation~\cite{Anderson2013,Antin2011}. In the following, we build on this existing literature as well as our results to  provide five recommendations for people seeking or contributing answers in community forums.  Our recommendations are summarized in Table~\ref{tab:recom}.
-
-\begin{table}[htbp]
-  \caption{Recommendations to improve the benefits experienced from using several Q\&A channels.}
-  \centering
-  \small
-  \begin{tabularx}{1.0\linewidth}[h]{@{}X@{}}
-    \toprule
-    \reca \\
-    \recb \\
-    \recc \\
-    \recd \\
-    \rece \\
-    \bottomrule
-  \end{tabularx}
-  \label{tab:recom}
-\end{table}
-
-
-\subsubsection{\reca}
-
-Each channel provides a list of \textit{topics} that are deemed acceptable. The topics are regulated either by the community or the channel's moderators. \textit{``...\SO has (a) more limited range of help topics (help for code only), whereas \RH is broader (philosophy, posting announcements, etc.)''} [P35]. Knowing which channel is more suitable for a specific topic can improve the response time or the quality of the answer.
-
-In some cases, it is expected that questions will be answered by a \textit{specific group} (e.g., R-core team) regardless of the topic, as P32 stated: \textit{``If I really want an answer from someone in R-core or closely related people, I would definitely choose the mailing list.''}
-For example, in the \RH thread \textit{``Co-integration and ECM in Package \{urca\}''}\footnote{\url{http://goo.gl/7olLv7}} a participant asked the R-core team how to solve a problem: 
-\begin{quote}
-  \textit{``Dear R Core Team, I am using package \{urca\} to do co-integration and estimate ECM model, but I have the following two problems...''}
-\end{quote}
-In this scenario, Websites associated with a specific package or library might be the best way to communicate directly with the creators of that technology. Thus, the \RH mailing list is a place for discussion and \SO is a place for questions that have a clear answer.
-
-\subsubsection{\recb}
-
-Throughout this study, we noticed that most of the harsh responses were given to users who did not learn the participation rules or had not learned the basics of R or statistics (and were seen as wasting other's time). For anybody using a channel, the community expects users to familiarize themselves with the channel in advance and learn the basics of the technology that they are discussing.
-
-\SO provides user guides\footnote{\url{http://stackoverflow.com/help}} for each of the main features of the channel, such as badges, questions, answers, flags, comments, and the reputation system. The \RH mailing list only has general instructions\footnote{\url{https://www.r-project.org/mail.html\#instructions}} and a guide about posting on the channel\footnote{\url{https://www.r-project.org/posting-guide.html}}.
-
-We also discovered that the R community has developed resources to improve the quality of participation on the communication channels. For example, the post on \SO \textit{``How to make a great R reproducible example?''}\footnote{\href{http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example}{http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example}} provides tips and tricks for creating a reproducible example using the R language. Another example is the document \textit{``How to write a reproducible example''}\footnote{\url{http://adv-r.had.co.nz/Reproducibility.html}} which provides tips for posting a reproducible R code example to mailing lists: \textit{``...Before putting all of your code in an email, consider putting it on \url{http://gist.github.com/}{[GitHub Gist app]}. It will give your code nice syntax highlighting, and you don't have to worry about anything getting mangled by the email system...''}
-
-Finally, there are manuals like \textit{``An Introduction to R''}, and the FAQ Web pages for R that are available to the public---most of the time, free of charge---and from which any user can learn the basics of R. For example, the R community provides a compendium of PDF documents for new users of different languages.\footnote{The R manuals are available at \url{https://cran.r-project.org/}} In \SO, supported technologies are provisioned with Web pages and links to free and paid materials.\footnote{Materials available at \url{http://stackoverflow.com/tags/r/info}}
-
-\subsubsection{\recc}
-
-In spite of reading the documentation, a user may fail to use the channel appropriately. The community may feel that the question asked, the information provided, or something else entirely is not in compliance with the expectations and rules of the channel.
- In such cases, one should describe the documentation they read before posting, the attempts made to answer a question if they asked one, and the goal(s) they want to achieve in the question or answer posted. For poor questions, this would avoid the user having to receive answers like \textit{``read the manual''} or \textit{``read the posting guide''}.     For example, in the thread \textit{``lme4 GLMM''}\footnote{\url{https://goo.gl/Gbek3R}} the user explicitly acknowledged the repeated question and explained the rationale for doing so: \textit{``I'm very sorry for my repeated question, which I asked 2 weeks ago, namely: I'm interested in possibly simple random-part specification in the call...''}
-
-\subsubsection{\recd}
-
-A common practice when answering or asking questions is to provide links to documentation, examples, source code, or other resources. As links point to online resources that may no longer be available in the future, it is important to include the key points of the resource within the question or answer. For instance, when a question or answer contains information in an external file hosting service like Dropbox or Google Drive, the owner of the service account can remove or break the link at any moment, leaving the message incomplete or impossible to reproduce. P33 suggested that \textit{``Questions should be self-contained as much as possible. Exceptions: recognizable links such as CRAN, R documentation, etc.''}
-
-Based on our observations, we provide the following set of recommendations for using third-party resources within links.
-
-\begin{description}[itemsep=3pt, topsep=2pt, leftmargin=1em, parsep=0pt]
-    \item[Use well-maintained Websites] that are expected to be available in the future, such as Wikipedia and the official documentation in CRAN.
-    For example,         a user on \SO posted: \textit{``I'm doing a simulation where I need to calculate a \href{https://en.wikipedia.org/wiki/Convolution_of_probability_distributions}{[Wikipedia link] convolution} of
-      \href{https://en.wikipedia.org/wiki/Multinomial_distribution}{[Wikipedia link] multinomial distributions}...''}
-
-    \item[Use resources that support or expand the message] to further clarify the message for those who might need it. For instance, a thread on \SO titled \textit{``How do I save all the draws from a MCMC posterior distribution to a file in R''} states \textit{``...You should be able to open a text connection using ?file \href{http://stat.ethz.ch/R-manual/R-devel/library/base/html/connections.html}{[more information]} with the open argument set to write...''}
-
-    \item[Use links rather than large attachments] as it is not always practical to include all the related information in a message. Providing links to  videos or large documents is usually preferred over including them as attachments.
-    For example, in the \RH thread \textit{``Using FUNCTION to create usable objects''}, a user linked to a PDF rather than quoting it: \textit{``I suspect you are trying to find your way
-      into Circle 6 of `The R Inferno' but haven't yet got in. \href{http://www.burns-stat.com/pages/Tutor/R\_inferno.pdf}{[link to PDF of R Inferno]}.''}
-\end{description}
-
-\subsubsection{\rece}
-\label{sec:userbeh}
-
-It is obvious that users help others by answering questions. However, while analyzing questions and answers, we identified positive user behaviours that
-we believe are worth mentioning.  These behaviours provide evidence of an altruistic way of thinking and the strong commitment that users have towards building knowledge in their community.
-
-\begin{description}[itemsep=2pt, topsep=0pt, leftmargin=1em, parsep=0pt]
-  \item[I answered my own question:] Some questions are answered by the user that asked the question. They posted back to the channel to document their solution and help others: \textit{``Just for the records (and if anyone ever wants to find the `solution'), I solved my own problem.''}\footnote{\url{https://goo.gl/r3z0DX}} 
-   
-  \item[I did it for you:] When answering, authors provide source code to help others: \textit{``I coded up the
-      algorithm from the Cameron and Turner paper. Dunno if it gives exactly the same results as my (Splus?) code from
-      lo [sic] these many years ago...''}
-  \footnote{\url{http://goo.gl/GXWGG3}}.
-
-  \item[Updated or continued years later:] Some questions are answered months or years later.
-  For example, a user on \SO modified an answer to provide a more updated version of the source code\footnote{\url{http://goo.gl/k6ZARR}}, and a {question asked on the \RH mailing list in 2012 was continued two years later.}\footnote{\url{http://goo.gl/kgSHZv}}
-
-  \item[Ideas to improve the channel:] This behaviour is specific to the \RH mailing list. Sometimes users suggest modifications or new features to improve the channel. For example, a {user proposed to create a package repository that can be accessible through a public wiki or version control interface.}\footnote{\url{http://goo.gl/p0IunD}}
-\end{description}
-
-%\peggy{I guess not much to add to recommendations from the new parts added to the paper?  }
 
 
 \subsection{Threats to Validity}
