@@ -1,0 +1,122 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\synctex=-1 
+\usepackage[english]{babel}
+
+\usepackage[bookmarks=false, hidelinks]{hyperref} % back-referencing + hyperlinks
+
+\usepackage{xspace}
+%\usepackage{subscript}
+\usepackage{multirow}
+\usepackage[font=small]{caption}
+\captionsetup{skip=4pt}
+
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{tabularx}
+
+\usepackage[normalem]{ulem}
+\usepackage{fixltx2e}
+\usepackage{booktabs}
+\usepackage{pslatex}
+%\usepackage{mathptmx,helvet,courier}
+\usepackage[inline]{enumitem}
+\usepackage{flushend}
+
+\newcommand{\mytitle}{How the R Community Creates and Curates Knowledge:\\ A Comparative Study of Stack Overflow and Mailing Lists}
+\newcommand{\myauthor}{Zagalsky et al.}
+\newcommand{\mysubject}{Q&A Knowledge curation}
+\newcommand{\mykeywords}{Knowledge curation, Case study}
+
+% PDF metadata. Disable when using latexdiff and enable for final version.
+%\usepackage[unicode=true,
+%            bookmarks=false,breaklinks=true,pdfborder={0 0 0},
+%            backref=none,colorlinks=false]{hyperref}
+\hypersetup{pdftitle={\mytitle},
+             pdfauthor={\myauthor},
+             pdfsubject={\mysubject},
+             pdfkeywords={\mykeywords}
+}
+
+
+\newenvironment{packed_enum}{
+\begin{enumerate}[itemsep=3pt, topsep=2pt, leftmargin=2.4em, parsep=0pt]
+}{\end{enumerate}}
+
+% Comments
+% commands for inserting comments
+\usepackage{color}
+\usepackage{ifthen}
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+  {
+		%\usepackage{showkeys} %Show lables and refs
+		\newcommand{\nbb}[2]{
+		% \fbox{\bfseries\sffamily\scriptsize#1}
+		\fcolorbox{black}{yellow}{\bfseries\sffamily\scriptsize#1}
+		{\sf$\blacktriangleright$\textcolor{blue}{\textit{#2}}$\blacktriangleleft$}
+		% \marginpar{\fbox{\bfseries\sffamily#1}}
+		}
+        \newcommand{\dmg}[1]{{\color{blue}\emph{Daniel says: #1}}\xspace}
+        \newcommand{\alexey}[1]{{\color{cyan}\emph{Alexey says: #1}}\xspace}
+        \newcommand{\gpoo}[1]{{\color{red}\emph{Germán says: #1}}\xspace}
+        \newcommand{\peggy}[1]{{\color{magenta}\emph{Peggy says: #1}}\xspace}
+        \newcommand{\cassie}[1]{{\color{magenta}\emph{Cassie says: #1}}\xspace}
+        \newcommand{\todo}[1]{\textcolor{red}{{\sc #1}}}
+        \newcommand{\internalnote}[1]{\marginpar{\scriptsize note: #1}}
+        \newcommand{\version}{\emph{\scriptsize{$-$\today$-$}}}
+		\newcommand{\remarks}[1]{\color{red}[#1]\color{black}}
+		\newcommand{\modified}[1]{\color{blue}[#1]\color{black}}
+		\newcommand{\raw}{$\rightarrow$}
+		\newcommand{\ins}[1]{\textcolor{blue}{\uline{#1}}} % please insert
+		\newcommand{\del}[1]{\textcolor{red}{\sout{#1}}} % please delete
+		\newcommand{\chg}[2]{\textcolor{red}{\sout{#1}}{\raw}\textcolor{blue}{\uline{#2}}} % please change
+		\newcommand{\ugh}[1]{\textcolor{red}{\uwave{#1}}} % please rephrase
+		\newcommand{\cn}{\textcolor{blue}{[citation needed]}\xspace}
+  }
+  {
+        \newcommand{\dmg}[1]{}
+        \newcommand{\alexey}[1]{}
+        \newcommand{\cassie}[1]{}
+        \newcommand{\gpoo}[1]{}
+		\newcommand{\nbb}[2]{}
+        \newcommand{\todo}[1]{}
+        \newcommand{\internalnote}[1]{}
+		\newcommand{\remarks}[1]{}
+		\newcommand{\modified}[1]{#1}
+		\newcommand{\version}{}
+		\newcommand{\ugh}[1]{#1} % please rephrase
+		\newcommand{\ins}[1]{#1} % please insert
+		\newcommand{\del}[1]{} % please delete
+		\newcommand{\chg}[2]{#2} % please change
+		\newcommand{\cn}{}{}
+  }
+
+\newcommand{\channel}{communication channel\xspace}
+\newcommand{\channels}{communication channels\xspace}
+\newcommand{\Channel}{Communication channel\xspace}
+\newcommand{\Channels}{Communication channels\xspace}
+
+\newcommand{\SO}{Stack Overflow\xspace}
+\newcommand{\RH}{R-help\xspace}
+
+\newcommand{\rqa}{What types of knowledge artifacts are shared on Stack Overflow and the R-help mailing list within the R community?}
+\newcommand{\rqb}{How is the knowledge constructed on Stack Overflow and the R-help mailing list?}
+\newcommand{\rqc}{Why do certain users post to both Stack Overflow and the R-help mailing list?}
+%\newcommand{\rqd}{What are the advantages and disadvantages of using Stack Overlow or the R-help mailing list?}
+
+\newcommand{\reca}{Choose the correct channel}
+\newcommand{\recb}{Be aware of the channel rules and the basic concepts and nomenclature used}
+\newcommand{\recc}{Provide good background to the question}
+\newcommand{\recd}{Learn to use external resources}
+\newcommand{\rece}{Behave altruistically}
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "knowledge-curation.tex"
+%%% End:
